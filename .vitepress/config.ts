@@ -11,20 +11,25 @@ export default defineConfig({
       { text: 'Docs', link: '/v2/introduction' }
     ],
 
-    sidebar: [
-      {
-        text: 'Skuul V2 Documentation',
-        items: [
-          { text: 'Introduction', link: '/v2/introduction' },
-          { text: 'Getting Started', items: [
-              { text: 'Requirements', link: '/v2/getting-started/requirements' },
-              { text: 'Installation', link: '/v2/getting-started/installation' },
-              { text: 'Deployment', link: '/v2/getting-started/deployment' },
-              { text: 'Updating', link: '/v2/getting-started/updating' },
-          ]},
-        ]
-      }
-    ],
+    sidebar: {
+      'v2' : [
+          { 
+            text: 'Skuul V2'  , items: [
+                { text: 'Introduction'  , link: '/v2/introduction' },
+            ]
+          },
+          {
+            text: 'Getting Started', 
+            collapsed: true,
+            items: [
+                { text: 'Requirements', link: '/v2/getting-started/requirements' },
+                { text: 'Installation', link: '/v2/getting-started/installation' },
+                { text: 'Deployment', link: '/v2/getting-started/deployment' },
+                { text: 'Updating', link: '/v2/getting-started/updating' },
+            ]
+          }
+      ],
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/yungifez/skuul' }
