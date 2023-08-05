@@ -20,6 +20,7 @@ export default defineConfig({
               { text: 'Requirements', link: '/v2/getting-started/requirements' },
               { text: 'Installation', link: '/v2/getting-started/installation' },
               { text: 'Deployment', link: '/v2/getting-started/deployment' },
+              { text: 'Updating', link: '/v2/getting-started/updating' },
           ]},
         ]
       }
