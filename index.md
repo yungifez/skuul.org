@@ -7,11 +7,11 @@ hero:
   text: "A multi school management system"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: View Demo
+      link: http://yungifez.xyz
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Documentation
+      link: /v2/introduction
 
 features:
   - title: Multiple Schools

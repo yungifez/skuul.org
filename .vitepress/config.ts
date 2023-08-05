@@ -3,26 +3,30 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Skuul.org",
-  description: "A VitePress Site",
+  description: "A multi school management system",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Docs', link: '/v2/introduction' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Skuul V2 Documentation',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Introduction', link: '/v2/introduction' },
+          { text: 'Getting Started', items: [
+              { text: 'Requirements', link: '/v2/getting-started/requirements' },
+              { text: 'Installation', link: '/v2/getting-started/installation' },
+              { text: 'Deployment', link: '/v2/getting-started/deployment' },
+          ]},
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/yungifez/skuul' }
     ]
   }
 })
