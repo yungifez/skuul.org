@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Skuul.org",
-  base: "/repo/",
+  base: "/skuul.org/",
   description: "A multi school management system",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
