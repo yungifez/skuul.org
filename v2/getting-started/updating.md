@@ -8,4 +8,6 @@ To upgrade, run the command below
     php artisan skuul:update
 ```
 
-This would try to automatically update the application
+This would try to automatically update the application.
+
+If this doesn't work, consider opening an issue on github.

@@ -90,3 +90,51 @@ You can specify another path in the .env file
 When configuring your webserver, point the entry directory to the public folder of the application and not the root folder of the application itself
 
 Once your webserver has been properly configured, you can access the site and log in with the credentials you created in the install wizard
+
+An example nginx configuration I use is
+
+```shell
+    server {
+    if ($host = example.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    listen 80; 
+    server_name example.com www.example.com;
+    return 301 https://example.com$request_uri;
+
+
+}
+server {
+    listen 443 ssl http2;
+    server_name example.com www.example.com;
+    root /var/www/sites/example.com/public;
+    ssl_certificate /etc/letsencrypt/live/example.com-0001/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/example.com-0001/privkey.pem; # managed by Certbot
+
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-Content-Type-Options "nosniff";
+
+    index index.php;
+
+    charset utf-8;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    error_page 404 /index.php;
+
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+
+}
+```
