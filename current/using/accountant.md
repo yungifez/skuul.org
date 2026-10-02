@@ -77,3 +77,5 @@ Budget editing and period closing remain administrator duties unless separately 
 | Refund exceeds held credit | Review existing allocations and refunds. |
 | Build it is absent | Review the separate `create report` permission. |
 | Budget or closure controls are absent | Request the authorized administrator's review. |
+
+Complete [finance reconciliation](../finance/reconciliation) to compare receipts, allocations, cash, bank, and export scope.

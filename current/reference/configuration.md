@@ -9,6 +9,7 @@ Do not commit `.env` or secrets.
 | Variable | Purpose or default |
 | --- | --- |
 | `APP_NAME` | Application name. |
+| `DEMO_MODE` | Default `false`. Enabling it permits hourly destructive application-data resets and refuses web model deletion. Never enable for real school data. |
 | `APP_ENV` | Runtime environment; use `production` for live deployment. |
 | `APP_DEBUG` | Keep `false` in production. |
 | `APP_URL` | Public application URL used to generate links. |

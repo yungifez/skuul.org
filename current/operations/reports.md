@@ -72,6 +72,37 @@ The live application state at build time supplies the data; the request is not a
 | Download is refused | Recheck current authorization and campus; access is checked again at download. |
 | Result still contains old data | Request a fresh export after the underlying correction. |
 
+## Understand dates and learner selection
+
+A Financial period selection does not apply the same filter to every report.
+Read the report definition before comparing its totals with another export.
+
+| Report | Date and selection behavior |
+| --- | --- |
+| General ledger, Trial balance, Income statement | Ledger transactions within the selected financial window. |
+| Cash and bank | Opening before the window, movements within it, and resulting Closing. |
+| Balance sheet | Cumulative ledger values through the ending date. |
+| Expenses | Expense records within the financial window. |
+| Income by fee type | Invoice lines selected by invoice issue date, with current allocations and balances. |
+| Student balances | Current learner ledger balance and unapplied credit; no historical period balance. |
+| Student aging | Current invoice balances, aged at build time by default. Financial period does not filter those balances. |
+| Budget variance | Budget comparison for the request's academic cycle. |
+
+For window-based reports, a selected financial period supplies the start and end dates.
+Without it, the report uses the request's academic cycle dates where available.
+The report desk does not expose a general date-range or learner-status filter.
+
+Student balances and Student aging default to active learners still attached to the campus.
+They also include applicable moved-away learners with balances or credit held here.
+Other local statuses, including Suspended and Graduated, can be absent from the default local selection.
+Review those accounts directly before using the export as a complete debtor list.
+Student aging uses current invoice balances, rather than reconstructing a historical balance at its aging date.
+Income by fee type's Collected column reflects allocations to the selected invoice lines.
+It does not mean cash received during the selected window.
+
+Use [finance reconciliation](../finance/reconciliation) to compare cash, bank, learner balances, and period closure.
+Use [service recovery](./recovery#recover-queued-reports) when an export remains Queued or Failed.
+
 ## Check the result
 
 - Check that the report reached Ready and reports the expected row count.

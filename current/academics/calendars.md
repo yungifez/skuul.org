@@ -113,3 +113,5 @@ Archived periods have no reopening transition.
 - Confirm cycle and period dates after publication.
 - Check the current status before recording new work.
 - After closure, verify that the intended records reject ordinary edits.
+
+Use [period closure and next-cycle handover](./year-end) to coordinate results, documents, structure, and learner placement.

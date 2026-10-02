@@ -90,6 +90,18 @@ The report desk exposes report, format, and financial-period controls.
 It has no general learner, class, cycle, or date-range filter editor.
 See [report exports](../operations/reports).
 
+## Closure review and finance report scope
+
+Academic closure checks unfinished grade entries and warns about draft timetables and open child periods.
+It does not confirm every result approval, published document, attendance entry, or finance review.
+Complete those reviews through the [academic handover](../academics/year-end) procedure.
+
+Financial-period selection does not create a historical snapshot of every report.
+Student balances and aging use current balances and default to active local learners, plus applicable moved-away accounts.
+Inactive learners still attached here can be absent from the default selection.
+Income by fee type uses invoice issue dates and current allocations, rather than payment receipt dates.
+Review [report definitions](../operations/reports#understand-dates-and-learner-selection) before reconciling totals.
+
 ## Documentation scope
 
 The guides cover implemented application areas, their main procedures, and developer entry points.

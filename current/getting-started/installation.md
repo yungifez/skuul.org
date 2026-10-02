@@ -111,6 +111,9 @@ time zone. Create or select the current school year, reporting periods,
 teaching approach, classes, sections or course offerings, and grading scales.
 Then add staff and learners through the account and enrollment workflows.
 
+Use [the disposable demo guide](./demo) when evaluating the hourly-reset demo.
+Keep demo mode disabled when retaining your local records.
+
 ## Run background work
 
 Run each command in a separate terminal:

@@ -81,3 +81,5 @@ Follow [staff responsibilities](./delegated-staff#staff-employment-and-leave) wh
 | Syllabus cannot be approved | Send it to the authorized academic reviewer. |
 | Mark save reports some row errors | Review saved counts; correct failed rows without assuming every row failed. |
 | Family still sees an earlier result | Check approval of the new revision. |
+
+Use [daily checks](./daily-checks#complete-teaching-records) and [academic handover](../academics/year-end#finish-and-approve-academic-work) for record review.

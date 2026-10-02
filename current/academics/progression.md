@@ -101,3 +101,5 @@ Use **Take the excusal back** to remove the exemption while retaining its audit 
 - Confirm graduation status through the graduation workflow.
 
 See [student enrollment](../people/students) and [result approval](./results).
+
+Follow [next-cycle handover](./year-end#prepare-the-next-cycle) for target-cycle setup and deliberate placement changes.

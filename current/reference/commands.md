@@ -8,6 +8,7 @@ Use `artisan list` and `artisan <command> --help` to check available options.
 
 | Command | Purpose and options |
 | --- | --- |
+| `skuul:refresh-demo` | Destructively reset the application database when demo mode is enabled. No dry-run option. See [demo isolation](../getting-started/demo). |
 | `skuul:init` | Interactive installation. It changes installation data. |
 | `skuul:create-super-admin` | Create a platform administrator interactively. |
 | `skuul:update` | Install the newest configured GitHub release. `--check` only checks availability; `--no-backup` skips backup. |
@@ -37,7 +38,7 @@ Times use the application's scheduler time zone, currently UTC.
 | Interval or time | Work |
 | --- | --- |
 | Every minute | Cache scheduler heartbeat and enqueue the queue-worker heartbeat. |
-| Hourly | Prune expired invitations. |
+| Hourly | Prune expired invitations. Reset the demo database only when demo mode is enabled. |
 | Every fifteen minutes | Process scheduled and expiring notices. |
 | Daily 00:15 | End campus access for staff leavers. |
 | Daily 00:30 | Open due scheduled academic periods. |
