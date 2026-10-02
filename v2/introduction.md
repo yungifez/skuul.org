@@ -1,6 +1,12 @@
 # Introduction
 
-![Skuul Homepage](/public/images/homepage.png)
+::: warning V2 release guide
+This section describes older V2 releases. It does not describe the current
+Laravel 13 code. Use [Current development](/current/introduction) for that code.
+Check the [release notes](https://github.com/yungifez/skuul/releases) for your tag.
+:::
+
+![Skuul Homepage](/images/homepage.png)
 
 ## The Skuul management system
 Welcome to the official documentation for Skuul – a powerful web platform designed to enhance school management and streamline key educational activities.

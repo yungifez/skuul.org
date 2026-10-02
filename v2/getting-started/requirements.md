@@ -1,5 +1,13 @@
 # Requirements
 
+::: warning V2 release guide
+These are historical V2 requirements. The `V2.6.4` tag uses Laravel 10
+and requires PHP 8.1 or later in Composer. The current Laravel 13 code has
+[different requirements](/current/getting-started/requirements).
+Check the locked dependencies of your selected release with
+`composer check-platform-reqs`.
+:::
+
 The following are the requirements that are necessary to run and deploy skuul
 - PHP version 8.1 and above
 - Mysql 
@@ -15,4 +23,3 @@ Skuul is built on the following technologies
 - [Livewire](http://livewire.laravel.com)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Alpine Js](https://alpinejs.dev/)
-
