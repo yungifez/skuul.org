@@ -1,5 +1,12 @@
 # Installation
 
+::: warning V2 release guide
+These instructions and demo accounts apply to older V2 releases.
+For the Laravel 13 code and browser installer, use
+[current installation](/current/getting-started/installation).
+The Git examples below select the published `V2.6.4` tag, not the development branch.
+:::
+
 This guide is intended for installing skuul locally for testing, to see how to deploy skuul, visit [The Deployment Page](deployment)
 
 ## Installation Options
@@ -16,12 +23,12 @@ To Install this application with docker, you must have docker on your local mach
 
     Composer
     ```shell
-        composer create-project yungifez/skuul --keep-vcs skuul
+        composer create-project yungifez/skuul skuul '^2.0' --keep-vcs
     ```
     Git
     
     ```shell
-     git clone https://github.com/yungifez/skuul.git skuul
+     git clone --branch V2.6.4 https://github.com/yungifez/skuul.git skuul
     ```
 
     Then go to the project directory
@@ -61,12 +68,12 @@ To Install this application without docker.
 
     Composer
     ```shell
-        composer create-project yungifez/skuul --keep-vcs skuul
+        composer create-project yungifez/skuul skuul '^2.0' --keep-vcs
     ```
     Git
     
     ```shell
-     git clone https://github.com/yungifez/skuul.git skuul
+     git clone --branch V2.6.4 https://github.com/yungifez/skuul.git skuul
     ```
 
     Then go to the project directory
@@ -87,7 +94,7 @@ To Install this application without docker.
     This command walks you through setting up application name, URL, Database credentials, mail credentials and some other tasks.
 
 - Serve the application
-    ```sail
+    ```sh
         php artisan serve
     ```
 

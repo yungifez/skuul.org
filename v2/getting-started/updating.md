@@ -1,13 +1,36 @@
-# Updating Application
+# Updating V2
 
-Upgrading is relatively easy if your application was configured properly.
+::: warning V2 release guide
+Published V2 releases have an older update command. The
+[current updater guide](/current/getting-started/updating) describes the
+Laravel 13 development code, not the command in an older installation.
+:::
 
-To upgrade, run the command below
+## Prepare the upgrade
 
-```shell
-    php artisan skuul:update
-```
+1. Record the installed release tag.
+2. Read the [release notes](https://github.com/yungifez/skuul/releases) for the
+   target version. Check its PHP, database, and frontend requirements.
+3. Take a database backup and a matching backup of uploaded files through
+   your hosting or database service.
+4. Preserve `.env` and `APP_KEY`.
+5. Test the target release and migrations on an isolated copy of the data.
+6. Prepare and test a recovery procedure before changing production.
 
-This would try to automatically update the application.
+Install the selected release's locked dependencies with `composer install`.
+Do not use `composer update` as a routine deployment step. Do not rerun a
+fresh-install seeder against live records.
 
-If this doesn't work, consider opening an issue on github.
+Review the update command in your installed release before using it. Do not
+assume it provides the backup and failure handling of the current development
+command. Keep the site in maintenance mode if an update fails.
+
+## Moving to the current development code
+
+Do not treat the new browser installer as a V2 upgrade tool. It expects an
+empty application database or a usable existing installation state. The new
+code changes academic records, account access, and campus structure.
+
+Use a tested, release-specific migration and recovery procedure. These guides
+do not establish a supported automatic migration from V2 to the development
+branch.

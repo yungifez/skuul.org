@@ -1,5 +1,11 @@
 # Deployment
 
+::: warning V2 release guide
+This page describes older V2 releases. Use
+[current deployment](/current/getting-started/deployment) for the Laravel 13 code.
+Select a release tag before installing dependencies.
+:::
+
 To properly deploy this application, you'll need to follow a few steps, it is quite similar to the installation process in someways and the requirements remain the same.
 
 ::: warning 
@@ -15,12 +21,12 @@ Just like we have seen in the install, you can fetch the code from two sources, 
 
 Composer
 ```shell
-    composer create-project yungifez/skuul --keep-vcs folder-name
+    composer create-project yungifez/skuul folder-name '^2.0' --keep-vcs
 ```
 Git
 
 ```shell
-    git clone https://github.com/yungifez/skuul.git folder-name
+    git clone --branch V2.6.4 https://github.com/yungifez/skuul.git folder-name
 ```
 
 ::: warning
@@ -60,18 +66,8 @@ For this demonstration, we are using a linux user called ubuntu.
 :::
 
 ```shell
- # we are giving the webserver ownership of the direcotry
- sudo chown -Rh www-data:www-data .
- # now we are adding the linux user (ubuntu) to the webserver group
- sudo usermod -a -G www-data ubuntu
- # We set the permissions of all files to 644 more info here https://www.multacom.com/faq/password_protection/file_permissions.htm#:~:text=755%20%2D%20owner%20can%20read%2Fwrite,can%20read%2Fwrite%2Fsearch.
- sudo find . -type f -exec chmod 644 {} \;
- # we do the same for the directories but this time set them to 755
- sudo find . -type f -exec chmod 755 {} \;
- # give that user ownership of files that concern them
- sudo chown -Rh ubuntu:www-data .git package.json package-lock.json vite.config.js
- # give vendor folder less strict permissions
- sudo chmod 775 -R node_modules vendor 
+ sudo chown -R ubuntu:www-data storage bootstrap/cache
+ sudo chmod -R ug+rwX storage bootstrap/cache
 ```
 ::: warning 
 Permissions must be set correctly or update wizard might not work properly

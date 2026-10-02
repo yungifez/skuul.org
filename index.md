@@ -1,30 +1,33 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "Skuul"
-  text: "A multi school management system"
+  name: Skuul
+  text: School management
+  tagline: Manage campuses, student records, teaching, and fees.
   actions:
     - theme: brand
-      text: View Demo
-      link: http://yungifez.xyz
+      text: Current development
+      link: /current/introduction
     - theme: alt
-      text: Documentation
+      text: V2 release guides
       link: /v2/introduction
 
 features:
-  - title: Multiple Schools
-    details: Skuul has multi school capabilities and can be used to run multiple schools at once
-  - title: Student Information System
-    details: Store and manage student information easily
-  - title: Exam Records Management and Result Checking
-    details: Record and publish exam results with ease
-  - title: Timetable Management
-    details: Create, manage and edit timetables.
-  - title: Fee Management
-    details: Create fee invoices and record collected payments
-  - title: Custom Grading system for different class groups
-    details: Create custom grading systems for different class groups
+  - title: Organizations and campuses
+    details: Manage several campuses within an organization.
+  - title: Student records
+    details: Manage admissions, enrollment, student profiles, and attendance.
+  - title: Gradebooks and reports
+    details: Record assessments and prepare report cards and transcripts.
+  - title: Teaching and timetables
+    details: Plan academic calendars, course offerings, and teaching schedules.
+  - title: Fees and accounts
+    details: Manage fee invoices, payments, and financial records.
+  - title: Access and accountability
+    details: Assign campus access and roles, and record audited changes.
 ---
 
+Use **Current development** for the Laravel 13 code. Use **V2 release guides**
+for older installations. Read the [release notes](https://github.com/yungifez/skuul/releases)
+before choosing a version or upgrading.
