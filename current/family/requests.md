@@ -5,6 +5,12 @@ Requests belong to a learner and the family member who sent them.
 
 ## Send a request
 
+<!-- screenshot: family-request
+Path: /images/current/family-request-light-desktop.webp
+Alt: The family request and staff inbox show the submitted state and response.
+Caption: A request response does not directly change the underlying record.
+-->
+
 1. Open the learner in **Everything of mine**.
 2. Open Requests.
 3. Choose Document, Correction, Appointment, or Acknowledgement.
@@ -34,5 +40,10 @@ Removing a guardian link cancels that guardian's open requests for the learner.
 It also ends their related family access.
 A response does not by itself change enrollment, gradebook, invoice, or health records.
 Complete any requested record change through its authorized workflow.
+
+## Check the result
+
+- Check the request status and saved response.
+- Verify any requested data change in its separate workflow.
 
 See [guardian links](../people/guardians), [official documents](../academics/results), and [portal access](./portal).

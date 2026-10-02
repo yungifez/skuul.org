@@ -5,6 +5,12 @@ You need student read or management permission for the operation.
 
 ## Enroll a learner
 
+<!-- screenshot: student-enrollment
+Path: /images/current/student-enrollment-light-desktop.webp
+Alt: The student list shows fictional learners with admission and placement details.
+Caption: Review the learner identity and placement after enrollment.
+-->
+
 1. Create or select the person's account.
 2. Enter the admission number and admission date.
 3. Select the academic level and section for the cycle.
@@ -37,5 +43,11 @@ Use today's date or an earlier valid date. Future enrollment changes are not acc
 Only Active learners count as attending.
 Reinstatement checks current enrollment elsewhere, staff status, and destination capacity.
 Closed enrollment states cannot receive a normal new placement.
+
+## Check the result
+
+- Confirm one intended person and enrollment were created.
+- Check the admission number, section, cycle, and status.
+- Review placement history after a placement change.
 
 See [admission queues](./admissions), [campus moves](./moves), and [promotion and graduation](../academics/progression).

@@ -5,6 +5,12 @@ A level is reusable. A section belongs to a level and one cycle.
 
 ## Create the structure
 
+<!-- screenshot: section-structure
+Path: /images/current/section-structure-light-desktop.webp
+Alt: Sections show their levels, cycle, and capacity.
+Caption: Section capacity includes suspended enrollments and open offers.
+-->
+
 1. Create the academic levels used by the campus.
 2. Set valid parent levels where the structure needs a hierarchy.
 3. Create sections for the cycle under the correct levels.
@@ -38,5 +44,10 @@ An offering-specific exception can permit a different roster where the applicati
 Preview section copying into the next cycle.
 Check the destination names, capacity, and teacher assignments.
 The copy action is for structure. Use the enrollment workflow to move learners.
+
+## Check the result
+
+- Check that every section belongs to the correct level and cycle.
+- Review its occupied seats and reserved offers before new placement.
 
 See [course offerings](./offerings), [students](../people/students), and [academic calendars](./calendars).

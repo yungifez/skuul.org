@@ -6,6 +6,12 @@ You need financial-period management permission to open or close them.
 
 ## Control financial posting
 
+<!-- screenshot: financial-periods
+Path: /images/current/financial-periods-light-desktop.webp
+Alt: Financial-period controls distinguish open and closed periods.
+Caption: Financial periods control ledger posting independently of teaching.
+-->
+
 Create the period with its name, start date, and end date.
 Check the date interval before saving.
 New postings require an applicable open financial period.
@@ -51,5 +57,11 @@ Use General ledger, Trial balance, Income statement, and Balance sheet in Report
 Use student balances and aging for learner obligations.
 A campus move can carry debt or credit only within a shared billing group.
 The originating ledger remains available in its owning campus.
+
+## Check the result
+
+- Check the posting date and financial period for each transaction.
+- Review expenses and cash deposits in the corresponding reports.
+- Confirm debit and credit totals balance in the trial balance.
 
 See [report catalogue](../operations/reports) and [campus moves](../people/moves).

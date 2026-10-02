@@ -1,0 +1,478 @@
+{
+  "status": "planned",
+  "captureOwner": "Claude",
+  "sourceScope": "Current development; match the documented source revision.",
+  "desktop": {
+    "width": 1440,
+    "height": 1000,
+    "deviceScaleFactor": 2,
+    "theme": "light"
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "deviceScaleFactor": 2,
+    "theme": "light"
+  },
+  "optionalThemes": [
+    "dark"
+  ],
+  "data": "Use fictional records in a disposable local installation.",
+  "shots": [
+    {
+      "id": "workspace",
+      "guide": "current/using/workspace",
+      "section": "Choose the working context",
+      "routeName": "dashboard",
+      "priority": "essential",
+      "path": "/images/current/workspace-light-desktop.webp",
+      "alt": "Working campus and academic context selectors are visible.",
+      "caption": "The workspace shows the selected campus, cycle, and period.",
+      "requiredState": "Working campus and academic context selectors are visible.",
+      "routeParameters": []
+    },
+    {
+      "id": "campus-setup",
+      "guide": "current/administration/campuses",
+      "section": "Complete campus setup",
+      "routeName": "schools.settings",
+      "priority": "essential",
+      "path": "/images/current/campus-setup-light-desktop.webp",
+      "alt": "Campus setup details and terminology are visible.",
+      "caption": "Review campus settings before adding operational records.",
+      "requiredState": "Campus setup details and terminology are visible.",
+      "routeParameters": []
+    },
+    {
+      "id": "features",
+      "guide": "current/administration/features",
+      "section": "Optional features",
+      "routeName": "schools.features.edit",
+      "priority": "essential",
+      "path": "/images/current/features-light-desktop.webp",
+      "alt": "Feature switches show Attendance enabled and Library disabled.",
+      "caption": "A feature switch controls the whole application area.",
+      "requiredState": "Feature switches show Attendance enabled and Library disabled.",
+      "routeParameters": []
+    },
+    {
+      "id": "campus-role",
+      "guide": "current/administration/permissions",
+      "section": "Create a campus role",
+      "routeName": "roles.create",
+      "priority": "extended",
+      "path": "/images/current/campus-role-light-desktop.webp",
+      "alt": "A custom role form shows a selected set of permissions.",
+      "caption": "Select only the permissions required for the job.",
+      "requiredState": "A custom role form shows a selected set of permissions.",
+      "routeParameters": []
+    },
+    {
+      "id": "organizations",
+      "guide": "current/administration/organizations",
+      "section": "Set up an organization",
+      "routeName": "organizations.index",
+      "priority": "extended",
+      "path": "/images/current/organizations-light-desktop.webp",
+      "alt": "The organization list contains two fictional campuses in one organization.",
+      "caption": "Organization ownership and campus access are separate.",
+      "requiredState": "The organization list contains two fictional campuses in one organization.",
+      "routeParameters": []
+    },
+    {
+      "id": "account-invitations",
+      "guide": "current/people/accounts",
+      "section": "Invite a person",
+      "routeName": "users.invitations.index",
+      "priority": "essential",
+      "path": "/images/current/account-invitations-light-desktop.webp",
+      "alt": "The invitation list shows an unused invitation and its expiry.",
+      "caption": "A new invitation replaces earlier unused links.",
+      "requiredState": "The invitation list shows an unused invitation and its expiry.",
+      "routeParameters": []
+    },
+    {
+      "id": "student-enrollment",
+      "guide": "current/people/students",
+      "section": "Enroll a learner",
+      "routeName": "students.index",
+      "priority": "essential",
+      "path": "/images/current/student-enrollment-light-desktop.webp",
+      "alt": "The student list shows fictional learners with admission and placement details.",
+      "caption": "Review the learner identity and placement after enrollment.",
+      "requiredState": "The student list shows fictional learners with admission and placement details.",
+      "routeParameters": []
+    },
+    {
+      "id": "admission-queue",
+      "guide": "current/people/admissions",
+      "section": "Offer and fill a place",
+      "routeName": "admissions.waitlist.index",
+      "priority": "extended",
+      "path": "/images/current/admission-queue-light-desktop.webp",
+      "alt": "The queue shows a waiting candidate and an offered seat.",
+      "caption": "An open offer reserves a section seat.",
+      "requiredState": "The queue shows a waiting candidate and an offered seat.",
+      "routeParameters": []
+    },
+    {
+      "id": "guardian-links",
+      "guide": "current/people/guardians",
+      "section": "Link a guardian",
+      "routeName": "parents.index",
+      "priority": "extended",
+      "path": "/images/current/guardian-links-light-desktop.webp",
+      "alt": "The guardian directory leads to a fictional guardian with linked learners.",
+      "caption": "Guardian links control which learners the family can read.",
+      "requiredState": "The guardian directory leads to a fictional guardian with linked learners.",
+      "routeParameters": []
+    },
+    {
+      "id": "campus-move",
+      "guide": "current/people/moves",
+      "section": "Move within the organization",
+      "routeName": "campus-moves.index",
+      "priority": "extended",
+      "path": "/images/current/campus-move-light-desktop.webp",
+      "alt": "A pending move lists the source, destination, and decision state.",
+      "caption": "Review the destination and approval state before completing a move.",
+      "requiredState": "A pending move lists the source, destination, and decision state.",
+      "routeParameters": []
+    },
+    {
+      "id": "record-sharing",
+      "guide": "current/people/sharing",
+      "section": "Request and receive records",
+      "routeName": "data-sharing-requests.index",
+      "priority": "extended",
+      "path": "/images/current/record-sharing-light-desktop.webp",
+      "alt": "A sharing request displays selected categories and its current state.",
+      "caption": "Approval and receipt are separate record-sharing steps.",
+      "requiredState": "A sharing request displays selected categories and its current state.",
+      "routeParameters": []
+    },
+    {
+      "id": "academic-calendar",
+      "guide": "current/academics/calendars",
+      "section": "Prepare a cycle",
+      "routeName": "academic-years.index",
+      "priority": "essential",
+      "path": "/images/current/academic-calendar-light-desktop.webp",
+      "alt": "A fictional academic cycle lists dated periods and their statuses.",
+      "caption": "Check period dates and status before operational work.",
+      "requiredState": "A fictional academic cycle lists dated periods and their statuses.",
+      "routeParameters": []
+    },
+    {
+      "id": "section-structure",
+      "guide": "current/academics/structure",
+      "section": "Create the structure",
+      "routeName": "academic-cycle-sections.index",
+      "priority": "extended",
+      "path": "/images/current/section-structure-light-desktop.webp",
+      "alt": "Sections show their levels, cycle, and capacity.",
+      "caption": "Section capacity includes suspended enrollments and open offers.",
+      "requiredState": "Sections show their levels, cycle, and capacity.",
+      "routeParameters": []
+    },
+    {
+      "id": "course-roster",
+      "guide": "current/academics/offerings",
+      "section": "Create an offering",
+      "routeName": "course-offerings.index",
+      "priority": "extended",
+      "path": "/images/current/course-roster-light-desktop.webp",
+      "alt": "Offerings show the subject, level, period, and active state.",
+      "caption": "An offering defines the teaching context and learner roster.",
+      "requiredState": "Offerings show the subject, level, period, and active state.",
+      "routeParameters": []
+    },
+    {
+      "id": "attendance-register",
+      "guide": "current/academics/attendance",
+      "section": "Record a register",
+      "routeName": "attendance.register",
+      "priority": "essential",
+      "path": "/images/current/attendance-register-light-desktop.webp",
+      "alt": "A daily register shows fictional learners and mixed attendance states.",
+      "caption": "Use explicit attendance states and review unrecorded entries.",
+      "requiredState": "A daily register shows fictional learners and mixed attendance states.",
+      "routeParameters": []
+    },
+    {
+      "id": "timetable",
+      "guide": "current/academics/timetables",
+      "section": "Build a timetable",
+      "routeName": "timetables.index",
+      "priority": "extended",
+      "path": "/images/current/timetable-light-desktop.webp",
+      "alt": "The timetable list distinguishes draft and published revisions.",
+      "caption": "Publish only after reviewing timetable conflicts.",
+      "requiredState": "The timetable list distinguishes draft and published revisions.",
+      "routeParameters": []
+    },
+    {
+      "id": "syllabus-coverage",
+      "guide": "current/academics/syllabi",
+      "section": "Track delivery",
+      "routeName": "syllabi.coverage",
+      "priority": "extended",
+      "path": "/images/current/syllabus-coverage-light-desktop.webp",
+      "alt": "Topic coverage distinguishes covered, partial, and outstanding work.",
+      "caption": "A published outline and recorded coverage are separate.",
+      "requiredState": "Topic coverage distinguishes covered, partial, and outstanding work.",
+      "routeParameters": []
+    },
+    {
+      "id": "exam-schedule",
+      "guide": "current/academics/exams",
+      "section": "Plan an exam",
+      "routeName": "exams.index",
+      "priority": "extended",
+      "path": "/images/current/exam-schedule-light-desktop.webp",
+      "alt": "The exam list shows an assessment window inside a teaching period.",
+      "caption": "Exam dates describe the assessment window.",
+      "requiredState": "The exam list shows an assessment window inside a teaching period.",
+      "routeParameters": []
+    },
+    {
+      "id": "gradebook",
+      "guide": "current/academics/gradebooks",
+      "section": "Record marks",
+      "routeName": "course-offerings.gradebook.show",
+      "priority": "essential",
+      "path": "/images/current/gradebook-light-desktop.webp",
+      "alt": "The selected gradebook marksheet shows numeric marks and explicit entry states.",
+      "caption": "Review marks and entry states before submitting results.",
+      "requiredState": "The selected gradebook marksheet shows numeric marks and explicit entry states.",
+      "routeParameters": [
+        "courseOffering"
+      ]
+    },
+    {
+      "id": "result-review",
+      "guide": "current/academics/results",
+      "section": "Submit and approve results",
+      "routeName": "course-offerings.gradebook.show",
+      "priority": "essential",
+      "path": "/images/current/result-review-light-desktop.webp",
+      "alt": "The selected academic record shows approved publication data and its revision.",
+      "caption": "Families read approved publication revisions.",
+      "requiredState": "The selected academic record shows approved publication data and its revision.",
+      "routeParameters": [
+        "courseOffering"
+      ]
+    },
+    {
+      "id": "graduation-plan",
+      "guide": "current/academics/progression",
+      "section": "Define graduation requirements",
+      "routeName": "graduation-plans.index",
+      "priority": "extended",
+      "path": "/images/current/graduation-plan-light-desktop.webp",
+      "alt": "A plan shows requirements, credits, and learner progress.",
+      "caption": "Graduation progress uses approved subject results.",
+      "requiredState": "A plan shows requirements, credits, and learner progress.",
+      "routeParameters": []
+    },
+    {
+      "id": "calendar-events",
+      "guide": "current/operations/calendar",
+      "section": "Add an event",
+      "routeName": "calendar-events.index",
+      "priority": "extended",
+      "path": "/images/current/calendar-events-light-desktop.webp",
+      "alt": "A calendar shows a fictional event and a closure day.",
+      "caption": "A closure day differs from closing an academic period.",
+      "requiredState": "A calendar shows a fictional event and a closure day.",
+      "routeParameters": []
+    },
+    {
+      "id": "notices",
+      "guide": "current/operations/notices",
+      "section": "Prepare a notice",
+      "routeName": "notices.index",
+      "priority": "extended",
+      "path": "/images/current/notices-light-desktop.webp",
+      "alt": "The notice list shows scheduled and published messages.",
+      "caption": "The scheduler controls due publication and expiry.",
+      "requiredState": "The notice list shows scheduled and published messages.",
+      "routeParameters": []
+    },
+    {
+      "id": "student-case",
+      "guide": "current/operations/cases",
+      "section": "Review and finish a case",
+      "routeName": "incidents.index",
+      "priority": "extended",
+      "path": "/images/current/student-case-light-desktop.webp",
+      "alt": "The case list uses fictional facts and shows category and status.",
+      "caption": "Case category affects access to its records.",
+      "requiredState": "The case list uses fictional facts and shows category and status.",
+      "routeParameters": []
+    },
+    {
+      "id": "student-support",
+      "guide": "current/operations/wellbeing",
+      "section": "Create a support plan",
+      "routeName": "support-plans.index",
+      "priority": "extended",
+      "path": "/images/current/student-support-light-desktop.webp",
+      "alt": "A fictional support plan shows its category, review date, and progress.",
+      "caption": "Confidential support requires its specific access permission.",
+      "requiredState": "A fictional support plan shows its category, review date, and progress.",
+      "routeParameters": []
+    },
+    {
+      "id": "staff-leave",
+      "guide": "current/operations/staff",
+      "section": "Process leave",
+      "routeName": "staff-leave.index",
+      "priority": "extended",
+      "path": "/images/current/staff-leave-light-desktop.webp",
+      "alt": "The leave board shows fictional requests and their decision state.",
+      "caption": "Approved leave affects teaching availability.",
+      "requiredState": "The leave board shows fictional requests and their decision state.",
+      "routeParameters": []
+    },
+    {
+      "id": "programme-participation",
+      "guide": "current/operations/groups-programmes",
+      "section": "Give a learner a place",
+      "routeName": "programs.index",
+      "priority": "extended",
+      "path": "/images/current/programme-participation-light-desktop.webp",
+      "alt": "A programme record shows fictional learners and participation states.",
+      "caption": "Programme participation does not change class placement.",
+      "requiredState": "A programme record shows fictional learners and participation states.",
+      "routeParameters": []
+    },
+    {
+      "id": "facility-booking",
+      "guide": "current/operations/facilities",
+      "section": "Book a resource",
+      "routeName": "facilities.index",
+      "priority": "extended",
+      "path": "/images/current/facility-booking-light-desktop.webp",
+      "alt": "The facility page shows availability and a dated booking.",
+      "caption": "Facility bookings share availability checks with published timetables.",
+      "requiredState": "The facility page shows availability and a dated booking.",
+      "routeParameters": []
+    },
+    {
+      "id": "boarding-roll",
+      "guide": "current/operations/boarding",
+      "section": "Take a roll",
+      "routeName": "boarding-rolls.index",
+      "priority": "extended",
+      "path": "/images/current/boarding-roll-light-desktop.webp",
+      "alt": "The roll sheet shows fictional boarders and recorded states.",
+      "caption": "Complete the roll after recording every required entry.",
+      "requiredState": "The roll sheet shows fictional boarders and recorded states.",
+      "routeParameters": []
+    },
+    {
+      "id": "library-loan",
+      "guide": "current/operations/library",
+      "section": "Lend and return a copy",
+      "routeName": "library-loans.index",
+      "priority": "extended",
+      "path": "/images/current/library-loan-light-desktop.webp",
+      "alt": "The lending desk shows copy identifiers, due dates, and active loans.",
+      "caption": "A loan belongs to a physical copy and an eligible borrower.",
+      "requiredState": "The lending desk shows copy identifiers, due dates, and active loans.",
+      "routeParameters": []
+    },
+    {
+      "id": "checked-import",
+      "guide": "current/operations/imports",
+      "section": "Check and apply a file",
+      "routeName": "imports.index",
+      "priority": "essential",
+      "path": "/images/current/checked-import-light-desktop.webp",
+      "alt": "An import batch shows valid rows, invalid rows, and row error messages.",
+      "caption": "Checking a file does not apply its rows.",
+      "requiredState": "An import batch shows valid rows, invalid rows, and row error messages.",
+      "routeParameters": []
+    },
+    {
+      "id": "report-export",
+      "guide": "current/operations/reports",
+      "section": "Build an export",
+      "routeName": "reports.index",
+      "priority": "extended",
+      "path": "/images/current/report-export-light-desktop.webp",
+      "alt": "The report desk shows one Ready export and its download action.",
+      "caption": "Download a report after the build reaches Ready.",
+      "requiredState": "The report desk shows one Ready export and its download action.",
+      "routeParameters": []
+    },
+    {
+      "id": "fee-invoice",
+      "guide": "current/finance/invoices",
+      "section": "Create an invoice",
+      "routeName": "fee-invoices.index",
+      "priority": "essential",
+      "path": "/images/current/fee-invoice-light-desktop.webp",
+      "alt": "An invoice lists fee lines, amount due, and payment actions.",
+      "caption": "Review issued fee lines before taking money.",
+      "requiredState": "An invoice lists fee lines, amount due, and payment actions.",
+      "routeParameters": []
+    },
+    {
+      "id": "student-payment",
+      "guide": "current/finance/payments",
+      "section": "Record received money",
+      "routeName": "fee-invoices.pay",
+      "priority": "essential",
+      "path": "/images/current/student-payment-light-desktop.webp",
+      "alt": "The invoice payment form shows method, amount, reference, and allocation.",
+      "caption": "Record money received and review any credit left unallocated.",
+      "requiredState": "The invoice payment form shows method, amount, reference, and allocation.",
+      "routeParameters": [
+        "fee_invoice"
+      ]
+    },
+    {
+      "id": "financial-periods",
+      "guide": "current/finance/ledger",
+      "section": "Control financial posting",
+      "routeName": "fee-invoices.index",
+      "priority": "extended",
+      "path": "/images/current/financial-periods-light-desktop.webp",
+      "alt": "Financial-period controls distinguish open and closed periods.",
+      "caption": "Financial periods control ledger posting independently of teaching.",
+      "requiredState": "Financial-period controls distinguish open and closed periods.",
+      "routeParameters": []
+    },
+    {
+      "id": "family-overview",
+      "guide": "current/family/portal",
+      "section": "Open a learner's records",
+      "routeName": "portal.overview",
+      "priority": "essential",
+      "path": "/images/current/family-overview-light-desktop.webp",
+      "alt": "The family overview shows only fictional linked learners and available areas.",
+      "caption": "Choose the learner before opening family records.",
+      "requiredState": "The family overview shows only fictional linked learners and available areas.",
+      "routeParameters": []
+    },
+    {
+      "id": "family-request",
+      "guide": "current/family/requests",
+      "section": "Send a request",
+      "routeName": "portal.requests.index",
+      "priority": "extended",
+      "path": "/images/current/family-request-light-desktop.webp",
+      "alt": "The family request and staff inbox show the submitted state and response.",
+      "caption": "A request response does not directly change the underlying record.",
+      "requiredState": "The family request and staff inbox show the submitted state and response.",
+      "additionalRouteNames": [
+        "portal-requests.index"
+      ],
+      "routeParameters": [
+        "studentRecord"
+      ]
+    }
+  ]
+}

@@ -5,6 +5,12 @@ Prepare subjects, course offerings, teachers, and rooms first.
 
 ## Build a timetable
 
+<!-- screenshot: timetable
+Path: /images/current/timetable-light-desktop.webp
+Alt: The timetable list distinguishes draft and published revisions.
+Caption: Publish only after reviewing timetable conflicts.
+-->
+
 1. Create the timetable for the section and period.
 2. Add time slots with the required recurrence and date range.
 3. Add subject lessons or custom timetable items.
@@ -39,4 +45,10 @@ These exceptions do not rewrite the published repeating schedule.
 A closure day can prevent a lesson or cover assignment.
 
 Families see published schedules when the timetable portal area is enabled.
+## Check the result
+
+- Confirm the published revision and applicable section and period.
+- Check a dated lesson and its assigned teacher and room.
+- After cover changes, verify the affected date without changing the repeating schedule.
+
 See [facilities](../operations/facilities), [staff availability](../operations/staff), and [calendar events](../operations/calendar).

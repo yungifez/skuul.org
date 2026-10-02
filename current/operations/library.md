@@ -17,6 +17,12 @@ A copy on loan cannot be withdrawn as available stock.
 
 ## Lend and return a copy
 
+<!-- screenshot: library-loan
+Path: /images/current/library-loan-light-desktop.webp
+Alt: The lending desk shows copy identifiers, due dates, and active loans.
+Caption: A loan belongs to a physical copy and an eligible borrower.
+-->
+
 Select the available copy and an eligible campus borrower.
 Check the due date and issue the loan.
 A learner must be actively attending; campus access checks also apply to other borrowers.
@@ -40,4 +46,10 @@ Record collection or close the reservation through the queue workflow.
 The daily hold process expires uncollected holds and offers copies to the next person.
 
 Families can view eligible loans and reservations through the Library portal area.
+## Check the result
+
+- Review the borrower, copy, and due date after issue.
+- After return, check the condition and copy availability.
+- Review the reservation queue before renewing a loan.
+
 See [feature switches](../administration/features) and [scheduled work](../reference/commands).

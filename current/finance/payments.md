@@ -6,6 +6,12 @@ You need the relevant payment or adjustment permission.
 
 ## Record received money
 
+<!-- screenshot: student-payment
+Path: /images/current/student-payment-light-desktop.webp
+Alt: The invoice payment form shows method, amount, reference, and allocation.
+Caption: Record money received and review any credit left unallocated.
+-->
+
 1. Check the learner and invoice.
 2. Enter the positive amount and date received.
 3. Select the payment method.
@@ -47,4 +53,10 @@ Review the account and ledger after the action.
 
 The current portal provides invoice viewing, without family checkout.
 The Stripe channel is an extension implementation, not a complete configured checkout workflow.
+## Check the result
+
+- Review payment history and the remaining invoice balance.
+- Confirm any excess appears as unapplied credit.
+- After an adjustment, check both the account balance and its recorded reason.
+
 See [payment extensions](../reference/extensions) before enabling provider settings.

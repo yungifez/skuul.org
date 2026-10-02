@@ -6,6 +6,12 @@ You need the relevant school management permissions.
 
 ## Complete campus setup
 
+<!-- screenshot: campus-setup
+Path: /images/current/campus-setup-light-desktop.webp
+Alt: Campus setup details and terminology are visible.
+Caption: Review campus settings before adding operational records.
+-->
+
 1. Check the campus name, contact details, and organization.
 2. Select the terminology profile and campus time zone.
 3. Configure optional features.
@@ -32,5 +38,10 @@ It does not grant families a staff working-campus membership.
 Archive or close records through their own workflows.
 A feature switch hides an area and prevents its operations. It does not erase its records.
 A change to labels or settings does not replace existing placements or published results.
+
+## Check the result
+
+- Review the campus name, organization, terminology, and time zone after saving.
+- Confirm that the setup checklist reflects the completed steps.
 
 See [feature switches](./features), [academic calendars](../academics/calendars), and [family access](../family/portal).

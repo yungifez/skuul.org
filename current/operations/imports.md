@@ -6,6 +6,12 @@ The application supports student and staff imports.
 
 ## Check and apply a file
 
+<!-- screenshot: checked-import
+Path: /images/current/checked-import-light-desktop.webp
+Alt: An import batch shows valid rows, invalid rows, and row error messages.
+Caption: Checking a file does not apply its rows.
+-->
+
 1. Prepare a CSV file with a header row.
 2. Choose Students or Staff and upload the file.
 3. Review the checked rows and errors.
@@ -49,5 +55,11 @@ Use `source_id` to identify the same source record in later imports.
 Keep it stable within that import source and type.
 The importer can update its previously linked record instead of creating a duplicate.
 Check row errors and the resulting records before sending invitations.
+
+## Check the result
+
+- Review the applied and failed counts after applying a batch.
+- Open sample resulting records and check their campus and placement.
+- Confirm the same batch cannot apply again.
 
 See [CSV examples and import design](../reference/imports) and [accounts](../people/accounts).

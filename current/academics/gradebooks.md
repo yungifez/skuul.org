@@ -23,6 +23,12 @@ Templates copy assessment structure, not learner grades.
 
 ## Record marks
 
+<!-- screenshot: gradebook
+Path: /images/current/gradebook-light-desktop.webp
+Alt: The selected gradebook marksheet shows numeric marks and explicit entry states.
+Caption: Review marks and entry states before submitting results.
+-->
+
 Enter a numeric mark between zero and the item's maximum, or choose a valid scale option.
 Record the entry state explicitly when a normal mark is unavailable.
 
@@ -46,5 +52,11 @@ Numeric scales need valid numeric values within their maximum.
 Descriptive options have no numeric value.
 A scale already used in records has restrictions on changing its type, maximum, and used options.
 Retire it and create a replacement when the grading policy changes.
+
+## Check the result
+
+- Reload the marksheet and confirm the saved values and states.
+- Review calculated totals and excluded items.
+- Check unentered and incomplete items before submission.
 
 See [result approval](./results) for publication and [calendar closure](./calendars) for incomplete-work checks.

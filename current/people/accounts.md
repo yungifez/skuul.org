@@ -5,6 +5,12 @@ The administrator provisions an account and sends an invitation. There is no pub
 
 ## Invite a person
 
+<!-- screenshot: account-invitations
+Path: /images/current/account-invitations-light-desktop.webp
+Alt: The invitation list shows an unused invitation and its expiry.
+Caption: A new invitation replaces earlier unused links.
+-->
+
 1. Enter the person's name and valid email address.
 2. Add the required campus membership and role.
 3. Issue an account invitation.
@@ -40,4 +46,9 @@ Store recovery codes where you can retrieve them without this device.
 Review browser sessions and end sessions that you do not recognize.
 
 Profile photos use public storage. The application does not enable Jetstream API tokens or teams.
+## Check the result
+
+- Check the invitation recipient, expiry, and acceptance state.
+- Confirm the person can sign in with their active account after acceptance.
+
 See [troubleshooting](../using/troubleshooting) for blocked sign-in and expired links.

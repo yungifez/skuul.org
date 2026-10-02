@@ -21,6 +21,12 @@ Other seeded roles, such as accountant or librarian, are not protected by this l
 
 ## Create a campus role
 
+<!-- screenshot: campus-role
+Path: /images/current/campus-role-light-desktop.webp
+Alt: A custom role form shows a selected set of permissions.
+Caption: Select only the permissions required for the job.
+-->
+
 1. Select the campus.
 2. Duplicate a suitable role or create a new one.
 3. Enter a unique name for the campus.
@@ -36,5 +42,11 @@ Remove those assignments separately when revoking access.
 
 Platform permissions and organization permissions use their own scope.
 A teacher assignment, staff employment record, guardian link, or learner placement is not a substitute for permission.
+
+## Check the result
+
+- Check the role name and permissions after saving.
+- Verify permitted actions with the intended member account.
+- Verify that an account without the permission cannot perform the action.
 
 See [account access](../people/accounts) and [security design](../reference/security).

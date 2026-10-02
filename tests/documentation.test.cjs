@@ -29,6 +29,25 @@ test('every current guide is inventoried, built, and present in navigation', () 
   }
 });
 
+test('breaking-upgrade warnings remain visible before migration instructions', () => {
+  for (const guide of ['current/introduction.md', 'current/getting-started/updating.md', 'current/getting-started/deployment.md', 'v2/getting-started/updating.md', 'current/reference/limitations.md']) {
+    const text = read(guide);
+    const warningStart = text.indexOf('::: danger');
+    const warningEnd = text.indexOf('\n:::', warningStart);
+    assert(warningStart >= 0 && warningEnd > warningStart, `Missing breaking-upgrade warning: ${guide}`);
+    const warning = text.slice(warningStart, warningEnd).toLowerCase();
+    for (const required of ['breaking change', 'data loss', 'v2', 'live database', 'rollback', 'backup']) {
+      assert(warning.includes(required), `Warning omits ${required}: ${guide}`);
+    }
+    const migration = text.indexOf('php artisan migrate');
+    assert(migration < 0 || warningEnd < migration, `Migration command precedes warning: ${guide}`);
+  }
+  const upgrade = read('current/getting-started/updating.md');
+  for (const effect of ['course offerings', 'categories, items, entries, and result snapshots', 'publication audit events', 'grade-system schema', 'old columns']) {
+    assert(upgrade.includes(effect), `Upgrade guide omits an affected data area: ${effect}`);
+  }
+});
+
 test('every inventoried application surface maps to a guide', () => {
   assert(coverage.routes.length > 0, 'Route inventory is empty');
   const routeKeys = new Set();
@@ -100,6 +119,46 @@ test('built local links, assets, and anchors resolve under the Pages base path',
   assert(checked > 0, 'No local links were checked');
   assert.deepEqual(failures, []);
   process.stdout.write(`Checked ${checked} built links, assets, and anchors.\n`);
+});
+
+test('screenshot plans identify real routes and usable guide placements', () => {
+  const plan = JSON.parse(read('public/reference/screenshot-plan.json'));
+  assert(['planned', 'complete'].includes(plan.status), 'Unknown screenshot plan status');
+  const ids = new Set();
+  const imagePaths = new Set();
+  const routeNames = new Set(coverage.routes.map(route => route.name).filter(Boolean));
+  const requireImages = process.env.REQUIRE_DOC_SCREENSHOTS === '1' || plan.status === 'complete';
+  let present = 0;
+  for (const shot of plan.shots) {
+    guideExists(shot.guide);
+    assert(!ids.has(shot.id), `Duplicate screenshot ID: ${shot.id}`);
+    assert(!imagePaths.has(shot.path), `Duplicate screenshot path: ${shot.path}`);
+    ids.add(shot.id);
+    imagePaths.add(shot.path);
+    for (const route of [shot.routeName, ...(shot.additionalRouteNames || [])]) {
+      assert(routeNames.has(route), `Unknown screenshot route: ${route}`);
+    }
+    assert(shot.path.startsWith('/images/current/') && shot.path.endsWith('.webp'), `Invalid image path: ${shot.path}`);
+    assert(shot.alt.trim() && shot.caption.trim() && shot.requiredState.trim(), `Missing capture instructions: ${shot.id}`);
+    const markdown = read(shot.guide + '.md');
+    const visible = markdown.replace(/<!--[\s\S]*?-->/g, '');
+    const images = [...visible.matchAll(/!\[([^\]]*)\]\(([^)]+)\)/g)];
+    const figure = images.find(image => image[2] === shot.path);
+    assert(markdown.includes('<!-- screenshot: ' + shot.id + '\n') || figure, `Missing guide placement: ${shot.id}`);
+    const image = path.join(root, 'public', shot.path);
+    if (!fs.existsSync(image)) {
+      assert(!requireImages, `Planned screenshot is missing: ${shot.path}`);
+      continue;
+    }
+    present++;
+    assert(figure, `Image exists but guide has no figure: ${shot.path}`);
+    assert(figure[1].trim(), `Figure has no alternative text: ${shot.path}`);
+    assert(visible.includes(shot.caption), `Figure has no planned caption: ${shot.path}`);
+    const bytes = fs.readFileSync(image);
+    assert(bytes.length > 12 && bytes.toString('ascii', 0, 4) === 'RIFF' && bytes.toString('ascii', 8, 12) === 'WEBP', `Invalid WebP file: ${shot.path}`);
+  }
+  assert(plan.shots.length > 0, 'Screenshot plan is empty');
+  process.stdout.write(`Screenshot plan: ${present}/${plan.shots.length} captures present; mode ${requireImages ? 'required' : 'planned'}.\n`);
 });
 
 const application = process.env.SKUUL_SOURCE_PATH;

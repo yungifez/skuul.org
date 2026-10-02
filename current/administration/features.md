@@ -5,6 +5,12 @@ Each switch saves when you change it.
 A disabled feature removes its menu entries and blocks its routes and writes.
 Existing records remain stored.
 
+<!-- screenshot: features
+Path: /images/current/features-light-desktop.webp
+Alt: Feature switches show Attendance enabled and Library disabled.
+Caption: A feature switch controls the whole application area.
+-->
+
 | Feature | Default | Purpose |
 | --- | --- | --- |
 | Attendance | On | Daily and lesson registers. |
@@ -32,3 +38,15 @@ Ask the operator to check them when a feature is enabled but a page remains unav
 Before disabling an area, finish or review its open work.
 Staff can still process existing family requests when family submission is disabled.
 Re-enable a feature to use its retained records, subject to normal permissions and period status.
+
+## Change a feature
+
+1. Select the campus and open its feature profile.
+2. Review existing work in the feature before disabling it.
+3. Change the required switch and wait for the save result.
+4. Reload the page and check its saved state.
+
+## Check the result
+
+- Reload the page and confirm that each saved switch retains its state.
+- Confirm enabled menu entries appear for an authorized role.

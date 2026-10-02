@@ -1,5 +1,18 @@
 # Updating V2
 
+::: danger Breaking change: data loss
+Moving an existing V2 installation to this development code is a breaking change with data loss in the live database.
+The migrations delete legacy academic records and remove schema columns.
+They do not automatically convert all V2 records into the new academic model.
+Selected JSON archives do not prevent this live-data removal and have no automatic restore or re-import workflow.
+Affected migrations cannot restore the deleted records through rollback.
+
+Do not run these migrations on a live V2 database as a routine update.
+Test a specific migration plan on an isolated restored copy first.
+Keep a verified full database backup, uploaded files, and the original `APP_KEY` before proceeding.
+See [the upgrade details](/current/getting-started/updating#breaking-upgrade-effects).
+:::
+
 ::: warning V2 release guide
 Published V2 releases have an older update command. The
 [current updater guide](/current/getting-started/updating) describes the

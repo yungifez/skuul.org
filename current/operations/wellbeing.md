@@ -5,6 +5,12 @@ Support plans and health records require their own read and management permissio
 
 ## Create a support plan
 
+<!-- screenshot: student-support
+Path: /images/current/student-support-light-desktop.webp
+Alt: A fictional support plan shows its category, review date, and progress.
+Caption: Confidential support requires its specific access permission.
+-->
+
 1. Select the learner's active enrollment.
 2. Choose the support category.
 3. Enter the need, planned support, and start date.
@@ -32,5 +38,11 @@ A stale form cannot write through a learner's completed campus move.
 Health records and confidential plans are not ordinary family-portal documents.
 Restricted record sharing needs explicit authority and approval.
 An organization role alone does not grant access to these records.
+
+## Check the result
+
+- Check the learner, category, review date, and recorded steps.
+- Verify access with a permitted account and a restricted account.
+- Review current field values before confirming a conflicting health-record edit.
 
 See [cases](./cases), [record sharing](../people/sharing), and [data retention](../reference/security).

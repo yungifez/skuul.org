@@ -5,6 +5,12 @@ Select the campus and use the appropriate parent and student permissions.
 
 ## Link a guardian
 
+<!-- screenshot: guardian-links
+Path: /images/current/guardian-links-light-desktop.webp
+Alt: The guardian directory leads to a fictional guardian with linked learners.
+Caption: Guardian links control which learners the family can read.
+-->
+
 1. Create or select the guardian's account.
 2. Open the parent record.
 3. Select the learner from the campus.
@@ -27,5 +33,10 @@ Retained school records and published results are not deleted by unlinking.
 A guardian account's sign-in status is separate from the link.
 Suspending the account blocks application access even when a link remains.
 A disabled campus portal or portal area can also hide records.
+
+## Check the result
+
+- Sign in as the test guardian and confirm the correct learner list.
+- Verify that an unrelated learner does not appear.
 
 See [family portal](../family/portal), [family requests](../family/requests), and [account access](./accounts).

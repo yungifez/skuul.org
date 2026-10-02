@@ -6,6 +6,12 @@ You need exam read or management permission.
 
 ## Plan an exam
 
+<!-- screenshot: exam-schedule
+Path: /images/current/exam-schedule-light-desktop.webp
+Alt: The exam list shows an assessment window inside a teaching period.
+Caption: Exam dates describe the assessment window.
+-->
+
 1. Create an exam with a clear name.
 2. Select its academic period.
 3. Enter the description, start date, and end date.
@@ -31,5 +37,10 @@ A valid exam date range does not by itself prove that every lesson or room alloc
 
 After marking, submit the result revisions for approval.
 Families see approved results through the results portal area.
+
+## Check the result
+
+- Check the exam start and end dates against the selected period.
+- Confirm assessment items and marking remain in the relevant gradebook.
 
 See [gradebooks](./gradebooks), [syllabi](./syllabi), and [result approval](./results).

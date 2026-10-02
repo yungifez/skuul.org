@@ -6,6 +6,12 @@ The campus must enable Portal and the relevant portal area.
 
 ## Open a learner's records
 
+<!-- screenshot: family-overview
+Path: /images/current/family-overview-light-desktop.webp
+Alt: The family overview shows only fictional linked learners and available areas.
+Caption: Choose the learner before opening family records.
+-->
+
 1. Check the learner name and campus on the overview.
 2. Select the required area.
 3. Review the selected cycle, period, or date context.
@@ -16,6 +22,12 @@ It uses the learner's identity or guardian link to check access.
 It does not expose other families' records.
 Archived enrollments are excluded.
 The underlying access service permits several earlier enrollment states, but graduated student accounts have a route limitation.
+## Check the result
+
+- Check the learner name and campus on each view.
+- Confirm the latest approved result and eligible published documents.
+- Verify that unrelated learner records remain inaccessible.
+
 See [known limits](../reference/limitations) for this restriction.
 
 ## Available areas

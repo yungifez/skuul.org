@@ -21,6 +21,12 @@ Use the print view for a printable copy.
 
 ## Track delivery
 
+<!-- screenshot: syllabus-coverage
+Path: /images/current/syllabus-coverage-light-desktop.webp
+Alt: Topic coverage distinguishes covered, partial, and outstanding work.
+Caption: A published outline and recorded coverage are separate.
+-->
+
 Record topic coverage for the relevant section.
 Use Covered, Partial, or Skipped as appropriate.
 A topic without a coverage record remains outstanding.
@@ -43,5 +49,11 @@ Use the assessment plan to link gradebook items to syllabus topics.
 The syllabus must be published and belong to the same offering.
 The plan reads gradebook weights. Linking a topic does not change those weights.
 Review uncovered topics before the assessment.
+
+## Check the result
+
+- Check the syllabus publication state and revision.
+- Verify each coverage record belongs to the intended section.
+- Review outstanding topics and returned lesson notes.
 
 See [gradebooks](./gradebooks) and [curriculum extensions](../reference/extensions).

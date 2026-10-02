@@ -6,6 +6,12 @@ Families see the latest approved revision.
 
 ## Submit and approve results
 
+<!-- screenshot: result-review
+Path: /images/current/result-review-light-desktop.webp
+Alt: The selected academic record shows approved publication data and its revision.
+Caption: Families read approved publication revisions.
+-->
+
 1. Review the offering's gradebook and learner entries.
 2. Submit the calculated result snapshot for approval.
 3. A different authorized reviewer checks the revision.
@@ -45,5 +51,11 @@ Enable Ranking to use **Assessment → Rankings**.
 Select the relevant cycle, period, and group.
 Review the comparison in the context of the selected assessment data.
 Keep ranking access limited to the roles allowed by campus policy.
+
+## Check the result
+
+- Use a different authorized reviewer for approval.
+- Check the result revision visible to the test family account.
+- After a correction, confirm the earlier approved result remains visible until the new revision is approved.
 
 See [report exports](../operations/reports), [graduation progress](./progression), and [family portal](../family/portal).

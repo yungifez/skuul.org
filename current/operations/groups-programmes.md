@@ -26,6 +26,12 @@ Keep the programme active while it accepts new participation.
 
 ## Give a learner a place
 
+<!-- screenshot: programme-participation
+Path: /images/current/programme-participation-light-desktop.webp
+Alt: A programme record shows fictional learners and participation states.
+Caption: Programme participation does not change class placement.
+-->
+
 1. Open the programme record.
 2. Select the learner and participation start date.
 3. Save the proposed place.
@@ -41,5 +47,11 @@ A programme does not grant a learner or staff member new campus permissions.
 
 Families see eligible participation when Programmes and the Programmes portal area are enabled.
 Financial budgets can optionally refer to a campus programme.
+
+## Check the result
+
+- Check the participation state, start date, schedule, and responsible staff.
+- Confirm that the learner has no duplicate running place.
+- Review group membership separately from the learner placement.
 
 See [student enrollment](../people/students), [budgets](../finance/ledger), and [family portal](../family/portal).

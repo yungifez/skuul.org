@@ -18,6 +18,12 @@ It does not create a second enrollment.
 
 ## Offer and fill a place
 
+<!-- screenshot: admission-queue
+Path: /images/current/admission-queue-light-desktop.webp
+Alt: The queue shows a waiting candidate and an offered seat.
+Caption: An open offer reserves a section seat.
+-->
+
 1. Review the section's available capacity.
 2. Offer the next available place from the queue.
 3. Record acceptance or decline.
@@ -31,4 +37,9 @@ Declining finishes that offer.
 
 Before archiving a section, resolve its waiting candidates and active offers.
 Move current learners before removing the section from use.
+## Check the result
+
+- Check the candidate state and section capacity after offering a place.
+- After acceptance, confirm the learner has the intended enrollment and placement.
+
 See [academic structure](../academics/structure) for capacity and section history.

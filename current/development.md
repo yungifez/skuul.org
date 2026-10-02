@@ -57,6 +57,9 @@ The Pages site lives in [yungifez/skuul.org](https://github.com/yungifez/skuul.o
 Keep current development instructions separate from V2 release instructions.
 Use simple technical English, short active sentences, and direct procedure steps.
 Check command names, state transitions, permissions, and button labels against the implementation.
+Each workflow guide must state prerequisites, ordered steps, result checks, and applicable limits.
+Review the upgrade warning before editing any procedure that runs migrations.
+Use the [screenshot capture brief](./reference/screenshots) and its image plan when adding visual examples.
 
 The site uses VitePress. Current guides live under `current/`.
 Navigation lives in `.vitepress/config.ts`.

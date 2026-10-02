@@ -6,6 +6,12 @@ The menu label can follow the campus terminology profile.
 
 ## Create an offering
 
+<!-- screenshot: course-roster
+Path: /images/current/course-roster-light-desktop.webp
+Alt: Offerings show the subject, level, period, and active state.
+Caption: An offering defines the teaching context and learner roster.
+-->
+
 1. Select the campus and academic cycle.
 2. Choose the subject and applicable period.
 3. Select the academic level and roster method.
@@ -38,5 +44,11 @@ Review the roster before making changes.
 Existing class ownership cannot be changed through a normal roster update.
 Archived offerings are retained and cannot accept ordinary changes.
 Do not replace an offering to hide its previous grades or published results.
+
+## Check the result
+
+- Review the resolved roster before activation.
+- Check the responsible teacher and included sections.
+- Confirm the gradebook uses that offering.
 
 See [gradebooks](./gradebooks), [syllabi](./syllabi), and [teaching models](./structure).

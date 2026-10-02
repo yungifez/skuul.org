@@ -6,6 +6,12 @@ Platform administrators can manage the platform scope.
 
 ## Set up an organization
 
+<!-- screenshot: organizations
+Path: /images/current/organizations-light-desktop.webp
+Alt: The organization list contains two fictional campuses in one organization.
+Caption: Organization ownership and campus access are separate.
+-->
+
 1. Create the organization and enter its details.
 2. Create or attach its campuses.
 3. Add organization members.
@@ -37,5 +43,10 @@ Create a billing group within the organization. Assign campuses that should carr
 A group must contain only campuses from its own organization.
 Changing a group's membership does not move existing ledger entries.
 An empty group can be removed.
+
+## Check the result
+
+- Confirm that each campus belongs to the intended organization.
+- Check organization membership separately from campus membership.
 
 See [campus moves](../people/moves) for approval and balance carry rules.

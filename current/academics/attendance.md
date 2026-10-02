@@ -6,6 +6,12 @@ You need attendance read or record permission.
 
 ## Record a register
 
+<!-- screenshot: attendance-register
+Path: /images/current/attendance-register-light-desktop.webp
+Alt: A daily register shows fictional learners and mixed attendance states.
+Caption: Use explicit attendance states and review unrecorded entries.
+-->
+
 1. Select the date and daily or lesson register.
 2. For a lesson register, select the subject context.
 3. Check the learner list and historical placements.
@@ -34,5 +40,11 @@ A learner's later campus move does not give the destination ownership of old reg
 Review totals alongside the register coverage.
 A rate can be misleading when many dates remain unrecorded.
 Families see attendance only when their campus enables the corresponding portal area.
+
+## Check the result
+
+- Check the date, register kind, and saved entries.
+- Review the change history after a correction.
+- Compare totals with the number of recorded registers.
 
 See [calendar closures](../operations/calendar), [campus moves](../people/moves), and [family portal](../family/portal).

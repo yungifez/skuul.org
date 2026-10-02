@@ -6,6 +6,12 @@ Select the campus before requesting an export.
 
 ## Build an export
 
+<!-- screenshot: report-export
+Path: /images/current/report-export-light-desktop.webp
+Alt: The report desk shows one Ready export and its download action.
+Caption: Download a report after the build reaches Ready.
+-->
+
 1. Choose the report type.
 2. Select the applicable cycle, period, dates, or learner filters.
 3. Choose CSV, XLSX, or PDF.
@@ -39,4 +45,10 @@ An export reflects the data used for that build. Rebuild it after relevant recor
 
 Report-card and transcript exports use their published academic records.
 Publishing an official document is a separate workflow.
+## Check the result
+
+- Check that the report reached Ready and reports the expected row count.
+- Open the download and review its campus, dates, headings, and sample rows.
+- Verify access with the intended requesting role.
+
 See [official documents](../academics/results) and [finance](../finance/ledger).

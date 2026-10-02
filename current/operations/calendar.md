@@ -6,6 +6,12 @@ You need event management permission to make changes.
 
 ## Add an event
 
+<!-- screenshot: calendar-events
+Path: /images/current/calendar-events-light-desktop.webp
+Alt: A calendar shows a fictional event and a closure day.
+Caption: A closure day differs from closing an academic period.
+-->
+
 1. Select the campus and calendar context.
 2. Enter the event title, type, and dates.
 3. Add the description and applicable audience or teaching scope.
@@ -29,5 +35,10 @@ This is separate from closing an academic period, which freezes its operational 
 Families can read the calendar when Events and the Calendar portal area are enabled.
 Check the event scope when an expected event does not appear.
 Calendar reminders depend on the running scheduler and configured email delivery.
+
+## Check the result
+
+- Check the event date, type, and scope in the calendar.
+- For a closure day, confirm the intended register or cover restriction.
 
 See [academic calendars](../academics/calendars), [attendance](../academics/attendance), and [scheduled work](../reference/commands).

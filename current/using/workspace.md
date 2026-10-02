@@ -5,6 +5,12 @@ Use the invitation from your administrator to set your first password.
 
 ## Choose the working context
 
+<!-- screenshot: workspace
+Path: /images/current/workspace-light-desktop.webp
+Alt: Working campus and academic context selectors are visible.
+Caption: The workspace shows the selected campus, cycle, and period.
+-->
+
 1. Open the dashboard.
 2. Select the campus where you need to work.
 3. Select the academic cycle.
@@ -34,5 +40,10 @@ Wait for the save result before leaving a form. Read validation messages beside 
 Some forms detect changes made by another person. Review the current value before confirming an overwrite.
 A closed period, archived record, or published revision can prevent editing.
 Use the workflow for correction or revision instead of creating a duplicate.
+
+## Check the result
+
+- Confirm the intended campus appears in the workspace.
+- Confirm the selected cycle and period match the records you will change.
 
 See [account access](../people/accounts), [campus settings](../administration/campuses), and [troubleshooting](./troubleshooting).

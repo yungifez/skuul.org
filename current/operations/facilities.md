@@ -17,6 +17,12 @@ A room's capacity does not replace section enrollment capacity.
 
 ## Book a resource
 
+<!-- screenshot: facility-booking
+Path: /images/current/facility-booking-light-desktop.webp
+Alt: The facility page shows availability and a dated booking.
+Caption: Facility bookings share availability checks with published timetables.
+-->
+
 1. Select the facility.
 2. Enter the purpose, start time, and end time.
 3. Check the date and teaching context.
@@ -31,5 +37,10 @@ Cancel an eligible booking when the resource is no longer needed.
 Completed history cannot be changed as if it were a future booking.
 The booking does not rewrite a published timetable.
 Use the timetable revision or dated override workflow for teaching schedule changes.
+
+## Check the result
+
+- Check the resource, booking interval, and saved purpose.
+- Verify that a conflicting booking is rejected.
 
 See [timetables](../academics/timetables) and [calendar events](./calendar).

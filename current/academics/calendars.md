@@ -6,6 +6,12 @@ You need calendar management access. Closure and reopening require their own aut
 
 ## Prepare a cycle
 
+<!-- screenshot: academic-calendar
+Path: /images/current/academic-calendar-light-desktop.webp
+Alt: A fictional academic cycle lists dated periods and their statuses.
+Caption: Check period dates and status before operational work.
+-->
+
 1. Create the cycle with its start and end dates.
 2. Add dated teaching periods.
 3. Check that periods fit within the cycle and do not overlap incorrectly.
@@ -53,3 +59,9 @@ Preview the section and course-offering copy actions before applying them.
 Select a different target cycle in the same campus.
 Copying teaching structure does not promote learners or publish new results.
 Complete [promotion](./progression) separately.
+
+## Check the result
+
+- Confirm cycle and period dates after publication.
+- Check the current status before recording new work.
+- After closure, verify that the intended records reject ordinary edits.

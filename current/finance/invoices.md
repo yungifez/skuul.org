@@ -17,6 +17,12 @@ Do not change it as a way to convert existing balances.
 
 ## Create an invoice
 
+<!-- screenshot: fee-invoice
+Path: /images/current/fee-invoice-light-desktop.webp
+Alt: An invoice lists fee lines, amount due, and payment actions.
+Caption: Review issued fee lines before taking money.
+-->
+
 1. Select the learner or eligible learner group.
 2. Enter the invoice name and due date.
 3. Add the required fee lines.
@@ -40,5 +46,11 @@ A waiver reduces the amount owed; it does not record a payment.
 Check the financial period if posting is refused.
 Closing an academic period does not close its financial period.
 For older unposted invoices, an operator can use the reviewed legacy posting command.
+
+## Check the result
+
+- Review the learner, fee lines, due date, and total.
+- Check the amount due before recording money.
+- Confirm the printed invoice matches the issued record.
 
 See [payments and adjustments](./payments), [financial periods](./ledger), and [report exports](../operations/reports).

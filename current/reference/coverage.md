@@ -9,6 +9,9 @@ The guides cover all 12 optional features, 13 report types, 2 import types, and 
 Livewire file coverage includes authentication, layouts, and reusable concerns.
 These counts describe documentation coverage, not application test coverage.
 
+Each main workflow guide now includes a result check.
+The [screenshot capture brief](./screenshots) defines the planned images and the checks required before using them.
+
 ## Workflow entry points
 
 | Entry points | Guide |

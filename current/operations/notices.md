@@ -5,6 +5,12 @@ You need notice read, create, or publication permission for the action.
 
 ## Prepare a notice
 
+<!-- screenshot: notices
+Path: /images/current/notices-light-desktop.webp
+Alt: The notice list shows scheduled and published messages.
+Caption: The scheduler controls due publication and expiry.
+-->
+
 1. Create a notice with a clear title and message.
 2. Set its start and end dates.
 3. Select the whole campus, academic levels, or sections as its audience.
@@ -35,5 +41,11 @@ Open **Notification settings** and choose notice email preferences for the campu
 Email delivery also depends on the notice's send-email setting, mail configuration, and queue worker.
 An email preference does not grant access to a notice or change its audience.
 Families see eligible notices when the Notices portal area is enabled.
+
+## Check the result
+
+- Review the recorded recipient audience.
+- Check the publication state and attachment access.
+- Confirm the test recipient sees the eligible published notice.
 
 See [family portal](../family/portal), [account access](../people/accounts), and [queue troubleshooting](../using/troubleshooting).

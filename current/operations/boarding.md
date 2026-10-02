@@ -30,6 +30,12 @@ Shared residence configuration does not grant unrestricted access to other campu
 
 ## Take a roll
 
+<!-- screenshot: boarding-roll
+Path: /images/current/boarding-roll-light-desktop.webp
+Alt: The roll sheet shows fictional boarders and recorded states.
+Caption: Complete the roll after recording every required entry.
+-->
+
 Open the house's boarding roll workflow.
 Select the date and roll type, then start the roll for its boarders.
 Record each learner's state and review missing entries.
@@ -46,4 +52,10 @@ Record the learner's return through the leave workflow.
 Ending boarding can cancel leave that has not begun.
 
 Families see eligible placements and leave through the Boarding portal area.
+## Check the result
+
+- Check bed occupancy and placement history.
+- Confirm the completed roll has no required unrecorded entries.
+- Check the decision and return state of a nights-away request.
+
 See [student status](../people/students) and [campus moves](../people/moves).

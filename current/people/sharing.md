@@ -5,6 +5,12 @@ Record sharing requires source approval. Organization membership alone does not 
 
 ## Request and receive records
 
+<!-- screenshot: record-sharing
+Path: /images/current/record-sharing-light-desktop.webp
+Alt: A sharing request displays selected categories and its current state.
+Caption: Approval and receipt are separate record-sharing steps.
+-->
+
 1. Select the learner and source campus.
 2. Select the required data categories.
 3. Enter the reason and applicable date range.
@@ -30,5 +36,11 @@ Review the request's expiry before processing it.
 Revocation or expiry ends the authority to continue the workflow.
 The package and audit history record the request and its decisions.
 Do not use a campus move as a substitute for permission to share restricted records.
+
+## Check the result
+
+- Check the approved categories, source, destination, and expiry.
+- Confirm receipt only after the source fulfils the request.
+- Verify that restricted categories were not included without their specific approval.
 
 See [security design](../reference/security) and [campus moves](./moves).

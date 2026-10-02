@@ -283,6 +283,10 @@ export default defineConfig({
               "link": "/current/reference/limitations"
             },
             {
+              "text": "Screenshot capture brief",
+              "link": "/current/reference/screenshots"
+            },
+            {
               "text": "Documentation coverage",
               "link": "/current/reference/coverage"
             }

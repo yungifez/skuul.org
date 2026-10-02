@@ -21,6 +21,12 @@ The current staff profile includes credentials and availability; it has no appra
 
 ## Process leave
 
+<!-- screenshot: staff-leave
+Path: /images/current/staff-leave-light-desktop.webp
+Alt: The leave board shows fictional requests and their decision state.
+Caption: Approved leave affects teaching availability.
+-->
+
 Open **Staff → Staff leave**.
 Submit a request with its leave type, dates, and reason.
 The request must belong to an eligible employment record.
@@ -35,5 +41,11 @@ Set the employment's leaving date and status through the staff record.
 The scheduled leaver process ends campus membership after the last day passes.
 It does not automatically archive the person's entire organization account.
 Review remaining memberships and responsibilities separately.
+
+## Check the result
+
+- Check employment and leave dates after saving.
+- Review approval state before assigning lesson cover.
+- After a last day passes, verify the campus membership ends through the scheduled process.
 
 See [accounts](../people/accounts), [course assignments](../academics/offerings), and [timetable cover](../academics/timetables).
