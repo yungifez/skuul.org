@@ -4,9 +4,9 @@ This brief defines the screenshots to add to the current-development guides.
 Claude owns the planned image capture. The guides contain marked source slots for those images.
 The slots are HTML comments and do not display as empty figures.
 
-The [capture plan](/reference/screenshot-plan.json) lists 37 images, their guide, route, required state, filename, alternative text, and caption.
+The [capture plan](/reference/screenshot-plan.json) lists 40 images, their guide, route, required state, filename, alternative text, and caption.
 Start with the Essential images, then complete the Extended images.
-The plan currently records proposed captures. It does not claim that screenshots already exist.
+Three installation images are present. The other 37 captures remain planned.
 
 ## Prepare the application
 
@@ -26,6 +26,8 @@ Do not capture live personal data, real financial records, tokens, passwords, ma
 
 Use the role recorded in each capture-plan entry, with its required campus or organization membership.
 Follow [instructions by role](../using/roles) when preparing that account.
+Installer captures use an empty database before sign-in; they do not require an existing account.
+The first school setup capture uses the platform administrator created by installation.
 Grant only the additional permissions listed for the capture and the specific workflow.
 Use the teacher account for marks and attendance, the accountant for collections, and the librarian for lending.
 Use a guardian account for family views.

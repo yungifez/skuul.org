@@ -32,7 +32,10 @@
       "alt": "The installer lists its checks. The countries and states check failed and offers an install button.",
       "caption": "A failed check shows its cause and, where possible, an action to fix it.",
       "requiredState": "Fresh migrated database without country reference data.",
-      "routeParameters": []
+      "routeParameters": [],
+      "captureAccess": "installer",
+      "captureRole": null,
+      "additionalPermissions": []
     },
     {
       "id": "install-form",
@@ -47,7 +50,10 @@
       "alt": "The completed installer form for a fictional school district and its first elementary campus.",
       "caption": "All checks pass and the form holds the administrator, organization, and first campus.",
       "requiredState": "All checks pass; form filled with fictional administrator and campus details; demo notice off.",
-      "routeParameters": []
+      "routeParameters": [],
+      "captureAccess": "installer",
+      "captureRole": null,
+      "additionalPermissions": []
     },
     {
       "id": "school-setup-start",
@@ -62,7 +68,9 @@
       "routeParameters": [
         "school",
         "step"
-      ]
+      ],
+      "captureRole": "platform-admin",
+      "additionalPermissions": []
     },
     {
       "id": "workspace",

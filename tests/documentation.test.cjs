@@ -305,7 +305,14 @@ test('each seeded role and delegated duty has usable role instructions', () => {
   }
   const captures = JSON.parse(read('public/reference/screenshot-plan.json'));
   for (const shot of captures.shots) {
-    assert(roles.roles[shot.captureRole], `Unknown screenshot role: ${shot.id}: ${shot.captureRole}`);
+    if (shot.captureAccess === 'installer') {
+      assert.equal(shot.captureRole, null, `Installer capture must not imply an existing account: ${shot.id}`);
+      assert.equal(shot.routeName, 'install.index', `Unsigned-in capture must use the installer: ${shot.id}`);
+      assert((shot.additionalRouteNames ?? []).every(route => route.startsWith('install.')), `Installer capture includes an account route: ${shot.id}`);
+      assert.deepEqual(shot.additionalPermissions, [], `Installer capture must not require staff permissions: ${shot.id}`);
+    } else {
+      assert(roles.roles[shot.captureRole], `Unknown screenshot role: ${shot.id}: ${shot.captureRole}`);
+    }
     for (const [route, name] of Object.entries(shot.additionalCaptureRoles ?? {})) {
       assert(roles.roles[name], `Unknown additional screenshot role: ${shot.id}: ${name}`);
       assert((shot.additionalRouteNames ?? []).includes(route), `Screenshot role names an unplanned route: ${shot.id}: ${route}`);
