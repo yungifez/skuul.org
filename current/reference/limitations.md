@@ -1,0 +1,65 @@
+# Current implementation limits
+
+These guides describe the current development checkout, not a stable-release promise.
+The V2 guides remain separate because their runtime and workflows differ.
+
+## Family access after graduation
+
+The portal access service permits eligible graduated enrollment records.
+However, `PreventGraduatedStudent` also wraps dashboard portal routes.
+It redirects a graduated student-role account to the dashboard before the portal controller runs.
+Do not promise graduate self-service access until this route behavior is corrected and tested.
+Guardian access follows its own account and link checks.
+
+## Online payment integration
+
+The current portal invoice page is read-only.
+Stripe implements the online payment contract, but current web routes have no connected checkout or callback endpoints.
+Setting provider secrets makes the channel available in the registry; it does not complete online settlement handling.
+Office payment recording is a separate workflow.
+See [extension design](./extensions).
+
+## File backup configuration
+
+`BackupWriter` reads `monitoring.backup.files_disk` for uploaded-file backup.
+The current monitoring configuration does not define that setting.
+An environment variable named `BACKUP_FILES_DISK` alone is insufficient.
+Verify file coverage before relying on scheduled backup or automatic updates.
+The restore rehearsal restores the database only; there is no file-archive restore command.
+See [backup operations](../operations).
+
+## Detailed feature settings
+
+The feature screen controls whole-feature switches.
+Portal-area and attendance-register flags are stored settings without a dedicated editor in the current screen.
+An operator integration must preserve those settings when changing the configuration array.
+See [configuration](./configuration).
+
+## Assessment completeness
+
+The numeric calculator can contribute zero for unentered, missing, absent, or incomplete items.
+Review the entry states before publishing results.
+The closure checks do not turn a calculated zero into a deliberate grading decision.
+See [gradebooks](../academics/gradebooks).
+
+## Staff appraisals and APIs
+
+The Staff operations feature description mentions appraisals, but the current staff screens do not implement an appraisal workflow.
+The application also has no registered public REST API in the current route configuration.
+Jetstream API tokens are disabled.
+Do not use the old V2 descriptions as evidence that these interfaces exist.
+
+## Next-cycle progression and programme capacity
+
+The promotion form lists both source and destination sections from the selected cycle.
+It does not provide a destination-cycle selector.
+Calendar and structure copying remain separate from learner placement.
+Programme participation has state and duplicate checks, but no capacity or admission queue.
+Use the separate section admission queue for section capacity management.
+
+## Documentation scope
+
+The guides cover implemented application areas, their main procedures, and developer entry points.
+The [coverage inventory](./coverage) records the reviewed route and feature snapshot.
+A coverage link proves that a workflow has a guide. It does not prove that every implementation branch is correct.
+Use application tests and a release review to verify behavior before deployment.

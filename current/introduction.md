@@ -1,27 +1,54 @@
 # Current development
 
-Skuul manages organizations, campuses, students, academic calendars,
-attendance, gradebooks, timetables, fees, and reports.
+Skuul manages organizations and campuses, enrollment, teaching, assessment, finance, and campus services.
+These guides cover the implemented application and its main user, administrator, and developer workflows.
 
 ::: warning Version scope
-These guides describe the current development code, which uses Laravel 13
-and Livewire 4. This code is not the published V2 release. Use the
-[V2 guides](/v2/introduction) for an older installation, and check the
-[release notes](https://github.com/yungifez/skuul/releases) before upgrading.
+These guides describe the current development code, which uses Laravel 13 and Livewire 4.
+This code is not the published V2 release.
+Use the [V2 guides](/v2/introduction) for an older installation.
+Check the [release notes](https://github.com/yungifez/skuul/releases) before upgrading.
 :::
 
-## Start here
+## Choose your starting point
 
-1. Check the [requirements](./getting-started/requirements).
-2. Follow [local installation](./getting-started/installation) to evaluate Skuul.
-3. Read [deployment](./getting-started/deployment) before using live data.
-4. Prepare [backups and monitoring](./operations) before an update.
-5. Follow [updating](./getting-started/updating) for an existing installation.
+| Your task | Start here |
+| --- | --- |
+| Evaluate or install Skuul | [Requirements](./getting-started/requirements) and [installation](./getting-started/installation). |
+| Set up an organization or campus | [Organizations](./administration/organizations) and [campus setup](./administration/campuses). |
+| Manage access | [Accounts](./people/accounts) and [roles](./administration/permissions). |
+| Enroll learners | [Students](./people/students), [admissions](./people/admissions), and [guardians](./people/guardians). |
+| Plan teaching | [Calendars](./academics/calendars), [structure](./academics/structure), and [offerings](./academics/offerings). |
+| Record teaching and assessment | [Attendance](./academics/attendance), [syllabi](./academics/syllabi), and [gradebooks](./academics/gradebooks). |
+| Publish results | [Result approval and documents](./academics/results). |
+| Manage money | [Invoices](./finance/invoices), [payments](./finance/payments), and [ledger](./finance/ledger). |
+| Use family access | [Family portal](./family/portal) and [requests](./family/requests). |
+| Maintain a deployment | [Deployment](./getting-started/deployment), [operations](./operations), and [updating](./getting-started/updating). |
+| Develop or extend Skuul | [Development](./development), [architecture](./reference/architecture), and [extensions](./reference/extensions). |
 
-The browser installer creates the first platform administrator, organization,
-and campus. You choose the administrator credentials. There is no default
-production password. After installation, complete the school setup checklist.
+The sidebar contains the remaining campus-service guides, including notices, student care, staff, facilities, boarding, library, imports, and reports.
+[Application terms](./using/glossary) explains names used across the guides.
 
-For code structure and verification commands, read [development](./development).
-Report reproducible problems in the
+## First campus workflow
+
+1. Install Skuul and create the first platform administrator, organization, and campus.
+2. Complete campus settings, terminology, time zone, and feature choices.
+3. Create the academic calendar, levels, sections, and teaching model.
+4. Add staff and learners with their campus access.
+5. Link guardians and issue account invitations.
+6. Create subjects, offerings, teaching assignments, and timetables.
+7. Prepare syllabi and gradebook assessments.
+8. Record attendance and grades during the open period.
+9. Review and approve result revisions.
+10. Close teaching periods and publish eligible official documents.
+
+Finance, boarding, library, and other services have their own prerequisites and state controls.
+Prepare backups and monitoring before entering live data.
+The browser installer lets you choose administrator credentials. There is no default production password.
+
+## Scope and known limits
+
+Read the [current limits](./reference/limitations) before promising a feature to users.
+The [coverage inventory](./reference/coverage) identifies the reviewed source areas and workflow guides.
+For a problem, follow [troubleshooting](./using/troubleshooting) and include reproducible steps in the
 [application issue tracker](https://github.com/yungifez/skuul/issues).

@@ -1,0 +1,2074 @@
+{
+  "reviewedAt": "2026-10-02",
+  "sourceRepository": "yungifez/skuul",
+  "sourceRevision": "3ebc155e3a6ef5030f09c3a19440678ff8178a35",
+  "sourceIncludesWorkingChanges": true,
+  "pages": [
+    "current/academics/attendance",
+    "current/academics/calendars",
+    "current/academics/exams",
+    "current/academics/gradebooks",
+    "current/academics/offerings",
+    "current/academics/progression",
+    "current/academics/results",
+    "current/academics/structure",
+    "current/academics/syllabi",
+    "current/academics/timetables",
+    "current/administration/campuses",
+    "current/administration/features",
+    "current/administration/organizations",
+    "current/administration/permissions",
+    "current/development",
+    "current/family/portal",
+    "current/family/requests",
+    "current/finance/invoices",
+    "current/finance/ledger",
+    "current/finance/payments",
+    "current/getting-started/deployment",
+    "current/getting-started/installation",
+    "current/getting-started/requirements",
+    "current/getting-started/updating",
+    "current/introduction",
+    "current/operations",
+    "current/operations/boarding",
+    "current/operations/calendar",
+    "current/operations/cases",
+    "current/operations/facilities",
+    "current/operations/groups-programmes",
+    "current/operations/imports",
+    "current/operations/library",
+    "current/operations/notices",
+    "current/operations/reports",
+    "current/operations/staff",
+    "current/operations/wellbeing",
+    "current/people/accounts",
+    "current/people/admissions",
+    "current/people/guardians",
+    "current/people/moves",
+    "current/people/sharing",
+    "current/people/students",
+    "current/reference/architecture",
+    "current/reference/commands",
+    "current/reference/configuration",
+    "current/reference/coverage",
+    "current/reference/data-model",
+    "current/reference/extensions",
+    "current/reference/imports",
+    "current/reference/limitations",
+    "current/reference/security",
+    "current/using/glossary",
+    "current/using/troubleshooting",
+    "current/using/workspace"
+  ],
+  "routes": [
+    {
+      "method": "GET|HEAD",
+      "uri": "/",
+      "name": "home",
+      "action": "Closure",
+      "guide": "current/using/workspace"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard",
+      "name": "dashboard",
+      "action": "Closure",
+      "guide": "current/using/workspace"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-cycle-sections",
+      "name": "academic-cycle-sections.index",
+      "action": "App\\Http\\Controllers\\AcademicCycleSectionController@index",
+      "guide": "current/academics/structure"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-cycle-sections/create",
+      "name": "academic-cycle-sections.create",
+      "action": "App\\Http\\Controllers\\AcademicCycleSectionController@create",
+      "guide": "current/academics/structure"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-cycle-sections/roll-forward",
+      "name": "academic-cycle-sections.roll-forward.show",
+      "action": "App\\Http\\Controllers\\AcademicCycleSectionController@rollForwardForm",
+      "guide": "current/academics/structure"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-cycle-sections/{academicCycleSection}",
+      "name": "academic-cycle-sections.show",
+      "action": "App\\Http\\Controllers\\AcademicCycleSectionController@show",
+      "guide": "current/academics/structure"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-cycle-sections/{academicCycleSection}/edit",
+      "name": "academic-cycle-sections.edit",
+      "action": "App\\Http\\Controllers\\AcademicCycleSectionController@edit",
+      "guide": "current/academics/structure"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-levels",
+      "name": "academic-levels.index",
+      "action": "App\\Http\\Controllers\\AcademicLevelController@index",
+      "guide": "current/academics/structure"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-levels/create",
+      "name": "academic-levels.create",
+      "action": "App\\Http\\Controllers\\AcademicLevelController@create",
+      "guide": "current/academics/structure"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-levels/{academicLevel}",
+      "name": "academic-levels.show",
+      "action": "App\\Http\\Controllers\\AcademicLevelController@show",
+      "guide": "current/academics/structure"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-levels/{academicLevel}/edit",
+      "name": "academic-levels.edit",
+      "action": "App\\Http\\Controllers\\AcademicLevelController@edit",
+      "guide": "current/academics/structure"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-periods",
+      "name": "academic-periods.index",
+      "action": "App\\Http\\Controllers\\AcademicPeriodController@index",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "POST",
+      "uri": "dashboard/academic-periods",
+      "name": "academic-periods.store",
+      "action": "App\\Http\\Controllers\\AcademicPeriodController@store",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-periods/create",
+      "name": "academic-periods.create",
+      "action": "App\\Http\\Controllers\\AcademicPeriodController@create",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "PUT",
+      "uri": "dashboard/academic-periods/{academicPeriod}",
+      "name": "academic-periods.update",
+      "action": "App\\Http\\Controllers\\AcademicPeriodController@update",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-periods/{academicPeriod}/edit",
+      "name": "academic-periods.edit",
+      "action": "App\\Http\\Controllers\\AcademicPeriodController@edit",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-years",
+      "name": "academic-years.index",
+      "action": "App\\Http\\Controllers\\AcademicYearController@index",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-years/create",
+      "name": "academic-years.create",
+      "action": "App\\Http\\Controllers\\AcademicYearController@create",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-years/{academic_year}",
+      "name": "academic-years.show",
+      "action": "App\\Http\\Controllers\\AcademicYearController@show",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "DELETE",
+      "uri": "dashboard/academic-years/{academic_year}",
+      "name": "academic-years.destroy",
+      "action": "App\\Http\\Controllers\\AcademicYearController@destroy",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-years/{academic_year}/edit",
+      "name": "academic-years.edit",
+      "action": "App\\Http\\Controllers\\AcademicYearController@edit",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-years/{academic_year}/instructional-model",
+      "name": "academic-years.instructional-model.edit",
+      "action": "App\\Http\\Controllers\\InstructionalModelController@edit",
+      "guide": "current/academics/structure"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/academic-years/{academic_year}/setup/{step?}",
+      "name": "academic-years.setup",
+      "action": "App\\Http\\Controllers\\AcademicYearSetupController@show",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/admins",
+      "name": "admins.index",
+      "action": "App\\Http\\Controllers\\AdminController@index",
+      "guide": "current/people/accounts"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/admins/create",
+      "name": "admins.create",
+      "action": "App\\Http\\Controllers\\AdminController@create",
+      "guide": "current/people/accounts"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/admins/{admin}",
+      "name": "admins.show",
+      "action": "App\\Http\\Controllers\\AdminController@show",
+      "guide": "current/people/accounts"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/admins/{admin}/edit",
+      "name": "admins.edit",
+      "action": "App\\Http\\Controllers\\AdminController@edit",
+      "guide": "current/people/accounts"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/admissions/waitlist",
+      "name": "admissions.waitlist.index",
+      "action": "App\\Http\\Controllers\\AdmissionWaitlistController@index",
+      "guide": "current/people/admissions"
+    },
+    {
+      "method": "POST",
+      "uri": "dashboard/admissions/waitlist",
+      "name": "admissions.waitlist.store",
+      "action": "App\\Http\\Controllers\\AdmissionWaitlistController@store",
+      "guide": "current/people/admissions"
+    },
+    {
+      "method": "POST",
+      "uri": "dashboard/admissions/waitlist/{admissionWaitlistEntry}/accept",
+      "name": "admissions.waitlist.accept",
+      "action": "App\\Http\\Controllers\\AdmissionWaitlistController@accept",
+      "guide": "current/people/admissions"
+    },
+    {
+      "method": "POST",
+      "uri": "dashboard/admissions/waitlist/{admissionWaitlistEntry}/decline",
+      "name": "admissions.waitlist.decline",
+      "action": "App\\Http\\Controllers\\AdmissionWaitlistController@decline",
+      "guide": "current/people/admissions"
+    },
+    {
+      "method": "POST",
+      "uri": "dashboard/admissions/waitlist/{admissionWaitlistEntry}/offer",
+      "name": "admissions.waitlist.offer",
+      "action": "App\\Http\\Controllers\\AdmissionWaitlistController@offer",
+      "guide": "current/people/admissions"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/attendance/register",
+      "name": "attendance.register",
+      "action": "App\\Http\\Controllers\\AttendanceRegisterController@index",
+      "guide": "current/academics/attendance"
+    },
+    {
+      "method": "POST",
+      "uri": "dashboard/attendance/register",
+      "name": "attendance.register.store",
+      "action": "App\\Http\\Controllers\\AttendanceRegisterController@store",
+      "guide": "current/academics/attendance"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/boarding/houses",
+      "name": "dormitories.index",
+      "action": "App\\Http\\Controllers\\DormitoryController@index",
+      "guide": "current/operations/boarding"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/boarding/houses/create",
+      "name": "dormitories.create",
+      "action": "App\\Http\\Controllers\\DormitoryController@create",
+      "guide": "current/operations/boarding"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/boarding/houses/{dormitory}",
+      "name": "dormitories.show",
+      "action": "App\\Http\\Controllers\\DormitoryController@show",
+      "guide": "current/operations/boarding"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/boarding/houses/{dormitory}/edit",
+      "name": "dormitories.edit",
+      "action": "App\\Http\\Controllers\\DormitoryController@edit",
+      "guide": "current/operations/boarding"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/boarding/nights-away",
+      "name": "overnight-leaves.index",
+      "action": "App\\Http\\Controllers\\OvernightLeaveController@index",
+      "guide": "current/operations/boarding"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/boarding/rolls",
+      "name": "boarding-rolls.index",
+      "action": "App\\Http\\Controllers\\BoardingRollController@index",
+      "guide": "current/operations/boarding"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/boarding/rolls/{boardingRoll}",
+      "name": "boarding-rolls.show",
+      "action": "App\\Http\\Controllers\\BoardingRollController@show",
+      "guide": "current/operations/boarding"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/calendar-events",
+      "name": "calendar-events.index",
+      "action": "App\\Http\\Controllers\\CalendarEventController@index",
+      "guide": "current/operations/calendar"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/calendar-events/create",
+      "name": "calendar-events.create",
+      "action": "App\\Http\\Controllers\\CalendarEventController@create",
+      "guide": "current/operations/calendar"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/calendar-events/{calendarEvent}",
+      "name": "calendar-events.edit",
+      "action": "App\\Http\\Controllers\\CalendarEventController@edit",
+      "guide": "current/operations/calendar"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/cohorts",
+      "name": "cohorts.index",
+      "action": "App\\Http\\Controllers\\CohortController@index",
+      "guide": "current/operations/groups-programmes"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/cohorts/create",
+      "name": "cohorts.create",
+      "action": "App\\Http\\Controllers\\CohortController@create",
+      "guide": "current/operations/groups-programmes"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/cohorts/{cohort}",
+      "name": "cohorts.show",
+      "action": "App\\Http\\Controllers\\CohortController@show",
+      "guide": "current/operations/groups-programmes"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/course-offerings",
+      "name": "course-offerings.index",
+      "action": "App\\Http\\Controllers\\CourseOfferingController@index",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/course-offerings/bulk-create",
+      "name": "course-offerings.bulk-create",
+      "action": "App\\Http\\Controllers\\CourseOfferingController@bulkCreate",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/course-offerings/bulk-create/form",
+      "name": "course-offerings.bulk-create.form",
+      "action": "App\\Http\\Controllers\\CourseOfferingController@bulkCreateForm",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/course-offerings/create",
+      "name": "course-offerings.create",
+      "action": "App\\Http\\Controllers\\CourseOfferingController@create",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/course-offerings/roll-forward",
+      "name": "course-offerings.roll-forward.show",
+      "action": "App\\Http\\Controllers\\CourseOfferingController@rollForwardForm",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/course-offerings/{courseOffering}/edit",
+      "name": "course-offerings.edit",
+      "action": "App\\Http\\Controllers\\CourseOfferingController@edit",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/course-offerings/{courseOffering}/gradebook",
+      "name": "course-offerings.gradebook.show",
+      "action": "App\\Http\\Controllers\\GradebookController@show",
+      "guide": "current/academics/gradebooks"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/custom-timetable-items",
+      "name": "custom-timetable-items.index",
+      "action": "App\\Http\\Controllers\\CustomTimetableItemController@index",
+      "guide": "current/academics/timetables"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/custom-timetable-items/create",
+      "name": "custom-timetable-items.create",
+      "action": "App\\Http\\Controllers\\CustomTimetableItemController@create",
+      "guide": "current/academics/timetables"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/custom-timetable-items/{custom_timetable_item}",
+      "name": "custom-timetable-items.show",
+      "action": "App\\Http\\Controllers\\CustomTimetableItemController@show",
+      "guide": "current/academics/timetables"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/custom-timetable-items/{custom_timetable_item}/edit",
+      "name": "custom-timetable-items.edit",
+      "action": "App\\Http\\Controllers\\CustomTimetableItemController@edit",
+      "guide": "current/academics/timetables"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/data-sharing-requests",
+      "name": "data-sharing-requests.index",
+      "action": "App\\Http\\Controllers\\DataSharingRequestController@index",
+      "guide": "current/people/sharing"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/data-sharing-requests/create",
+      "name": "data-sharing-requests.create",
+      "action": "App\\Http\\Controllers\\DataSharingRequestController@create",
+      "guide": "current/people/sharing"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/data-sharing-requests/{dataSharingRequest}",
+      "name": "data-sharing-requests.show",
+      "action": "App\\Http\\Controllers\\DataSharingRequestController@show",
+      "guide": "current/people/sharing"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/exams",
+      "name": "exams.index",
+      "action": "App\\Http\\Controllers\\ExamController@index",
+      "guide": "current/academics/exams"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/exams/create",
+      "name": "exams.create",
+      "action": "App\\Http\\Controllers\\ExamController@create",
+      "guide": "current/academics/exams"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/exams/{exam}/edit",
+      "name": "exams.edit",
+      "action": "App\\Http\\Controllers\\ExamController@edit",
+      "guide": "current/academics/exams"
+    },
+    {
+      "method": "POST",
+      "uri": "dashboard/exams/{exam}/set--active-status",
+      "name": "exams.set-active-status",
+      "action": "App\\Http\\Controllers\\ExamController@setExamActiveStatus",
+      "guide": "current/academics/exams"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/facilities",
+      "name": "facilities.index",
+      "action": "App\\Http\\Controllers\\FacilityController@index",
+      "guide": "current/operations/facilities"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees",
+      "name": "fees.index",
+      "action": "App\\Http\\Controllers\\FeeController@index",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/accounts/{student_record}",
+      "name": "student-accounts.show",
+      "action": "App\\Http\\Controllers\\StudentAccountController@show",
+      "guide": "current/finance/payments"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/budgets",
+      "name": "budgets.index",
+      "action": "App\\Http\\Controllers\\BudgetController@index",
+      "guide": "current/finance/ledger"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/cash-deposits",
+      "name": "cash-deposits.index",
+      "action": "App\\Http\\Controllers\\CashDepositController@index",
+      "guide": "current/finance/ledger"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/cash-deposits/create",
+      "name": "cash-deposits.create",
+      "action": "App\\Http\\Controllers\\CashDepositController@create",
+      "guide": "current/finance/ledger"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/create",
+      "name": "fees.create",
+      "action": "App\\Http\\Controllers\\FeeController@create",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/expenses",
+      "name": "expenses.index",
+      "action": "App\\Http\\Controllers\\ExpenseController@index",
+      "guide": "current/finance/ledger"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/expenses/create",
+      "name": "expenses.create",
+      "action": "App\\Http\\Controllers\\ExpenseController@create",
+      "guide": "current/finance/ledger"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/fee-categories",
+      "name": "fee-categories.index",
+      "action": "App\\Http\\Controllers\\FeeCategoryController@index",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/fee-categories/create",
+      "name": "fee-categories.create",
+      "action": "App\\Http\\Controllers\\FeeCategoryController@create",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/fee-categories/{fee_category}",
+      "name": "fee-categories.show",
+      "action": "App\\Http\\Controllers\\FeeCategoryController@show",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/fee-categories/{fee_category}/edit",
+      "name": "fee-categories.edit",
+      "action": "App\\Http\\Controllers\\FeeCategoryController@edit",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/fee-invoices",
+      "name": "fee-invoices.index",
+      "action": "App\\Http\\Controllers\\FeeInvoiceController@index",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/fee-invoices/create",
+      "name": "fee-invoices.create",
+      "action": "App\\Http\\Controllers\\FeeInvoiceController@create",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/fee-invoices/{fee_invoice}",
+      "name": "fee-invoices.show",
+      "action": "App\\Http\\Controllers\\FeeInvoiceController@show",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/fee-invoices/{fee_invoice}/edit",
+      "name": "fee-invoices.edit",
+      "action": "App\\Http\\Controllers\\FeeInvoiceController@edit",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/fee-invoices/{fee_invoice}/pay",
+      "name": "fee-invoices.pay",
+      "action": "App\\Http\\Controllers\\FeeInvoiceController@payView",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/fee-invoices/{fee_invoice}/print",
+      "name": "fee-invoices.print",
+      "action": "App\\Http\\Controllers\\FeeInvoiceController@print",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/payments/{student_payment}/receipt",
+      "name": "student-payments.receipt",
+      "action": "App\\Http\\Controllers\\StudentPaymentController@print",
+      "guide": "current/finance/payments"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/{fee}",
+      "name": "fees.show",
+      "action": "App\\Http\\Controllers\\FeeController@show",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/fees/{fee}/edit",
+      "name": "fees.edit",
+      "action": "App\\Http\\Controllers\\FeeController@edit",
+      "guide": "current/finance/invoices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/gradebooks",
+      "name": "gradebooks.index",
+      "action": "App\\Http\\Controllers\\GradebookController@index",
+      "guide": "current/academics/gradebooks"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/grading-scales",
+      "name": "grading-scales.index",
+      "action": "App\\Http\\Controllers\\GradingScaleController@index",
+      "guide": "current/academics/gradebooks"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/graduation-plans",
+      "name": "graduation-plans.index",
+      "action": "App\\Http\\Controllers\\GraduationPlanController@index",
+      "guide": "current/academics/progression"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/graduation-plans/create",
+      "name": "graduation-plans.create",
+      "action": "App\\Http\\Controllers\\GraduationPlanController@create",
+      "guide": "current/academics/progression"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/graduation-plans/{graduationPlan}",
+      "name": "graduation-plans.show",
+      "action": "App\\Http\\Controllers\\GraduationPlanController@show",
+      "guide": "current/academics/progression"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/health-records",
+      "name": "health-records.index",
+      "action": "App\\Http\\Controllers\\StudentHealthRecordController@index",
+      "guide": "current/operations/wellbeing"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/health-records/{studentRecord}",
+      "name": "health-records.edit",
+      "action": "App\\Http\\Controllers\\StudentHealthRecordController@edit",
+      "guide": "current/operations/wellbeing"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/imports",
+      "name": "imports.index",
+      "action": "App\\Http\\Controllers\\ImportController@index",
+      "guide": "current/operations/imports"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/imports/{importBatch}",
+      "name": "imports.show",
+      "action": "App\\Http\\Controllers\\ImportController@show",
+      "guide": "current/operations/imports"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/incidents",
+      "name": "incidents.index",
+      "action": "App\\Http\\Controllers\\IncidentController@index",
+      "guide": "current/operations/cases"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/incidents/create",
+      "name": "incidents.create",
+      "action": "App\\Http\\Controllers\\IncidentController@create",
+      "guide": "current/operations/cases"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/incidents/{incident}",
+      "name": "incidents.show",
+      "action": "App\\Http\\Controllers\\IncidentController@show",
+      "guide": "current/operations/cases"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/library",
+      "name": "library-copies.index",
+      "action": "App\\Http\\Controllers\\LibraryCopyController@index",
+      "guide": "current/operations/library"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/library/desk",
+      "name": "library-loans.index",
+      "action": "App\\Http\\Controllers\\LibraryLoanController@index",
+      "guide": "current/operations/library"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/library/queue",
+      "name": "library-reservations.index",
+      "action": "App\\Http\\Controllers\\LibraryReservationController@index",
+      "guide": "current/operations/library"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/library/rules",
+      "name": "library-rules.edit",
+      "action": "App\\Http\\Controllers\\LibraryLendingRulesController@edit",
+      "guide": "current/operations/library"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/notice-preferences",
+      "name": "notice-preferences.edit",
+      "action": "App\\Http\\Controllers\\NoticeNotificationPreferenceController@edit",
+      "guide": "current/operations/notices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/notices",
+      "name": "notices.index",
+      "action": "App\\Http\\Controllers\\NoticeController@index",
+      "guide": "current/operations/notices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/notices/create",
+      "name": "notices.create",
+      "action": "App\\Http\\Controllers\\NoticeController@create",
+      "guide": "current/operations/notices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/notices/{notice}",
+      "name": "notices.show",
+      "action": "App\\Http\\Controllers\\NoticeController@show",
+      "guide": "current/operations/notices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/notices/{notice}/attachment",
+      "name": "notices.attachments.download",
+      "action": "App\\Http\\Controllers\\NoticeAttachmentController",
+      "guide": "current/operations/notices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations",
+      "name": "organizations.index",
+      "action": "App\\Http\\Controllers\\OrganizationController@index",
+      "guide": "current/administration/organizations"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations/create",
+      "name": "organizations.create",
+      "action": "App\\Http\\Controllers\\OrganizationController@create",
+      "guide": "current/administration/organizations"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations/{organization}",
+      "name": "organizations.show",
+      "action": "App\\Http\\Controllers\\OrganizationController@show",
+      "guide": "current/administration/organizations"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations/{organization}/billing-groups",
+      "name": "organizations.billing-groups.index",
+      "action": "App\\Http\\Controllers\\OrganizationBillingGroupController@index",
+      "guide": "current/administration/organizations"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations/{organization}/boarding-residences",
+      "name": "organizations.boarding-residences.index",
+      "action": "App\\Http\\Controllers\\OrganizationBoardingResidenceController@index",
+      "guide": "current/operations/boarding"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations/{organization}/calendar-templates",
+      "name": "organizations.calendar-templates.index",
+      "action": "App\\Http\\Controllers\\CalendarTemplateController@index",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations/{organization}/calendar-templates/create",
+      "name": "organizations.calendar-templates.create",
+      "action": "App\\Http\\Controllers\\CalendarTemplateController@create",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations/{organization}/calendar-templates/{calendarTemplate}/edit",
+      "name": "organizations.calendar-templates.edit",
+      "action": "App\\Http\\Controllers\\CalendarTemplateController@edit",
+      "guide": "current/academics/calendars"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations/{organization}/dashboard",
+      "name": "organizations.dashboard",
+      "action": "App\\Http\\Controllers\\OrganizationDashboardController",
+      "guide": "current/administration/organizations"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations/{organization}/domains",
+      "name": "organizations.domains.index",
+      "action": "App\\Http\\Controllers\\OrganizationDomainController@index",
+      "guide": "current/administration/organizations"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations/{organization}/edit",
+      "name": "organizations.edit",
+      "action": "App\\Http\\Controllers\\OrganizationController@edit",
+      "guide": "current/administration/organizations"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/organizations/{organization}/members",
+      "name": "organizations.members.index",
+      "action": "App\\Http\\Controllers\\OrganizationMemberController@index",
+      "guide": "current/administration/organizations"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/parents",
+      "name": "parents.index",
+      "action": "App\\Http\\Controllers\\ParentController@index",
+      "guide": "current/people/guardians"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/parents/create",
+      "name": "parents.create",
+      "action": "App\\Http\\Controllers\\ParentController@create",
+      "guide": "current/people/guardians"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/parents/{parent}",
+      "name": "parents.show",
+      "action": "App\\Http\\Controllers\\ParentController@show",
+      "guide": "current/people/guardians"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/parents/{parent}/assign-student-to-parent",
+      "name": "parents.assign-student",
+      "action": "App\\Http\\Controllers\\ParentController@assignStudentsView",
+      "guide": "current/people/guardians"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/parents/{parent}/edit",
+      "name": "parents.edit",
+      "action": "App\\Http\\Controllers\\ParentController@edit",
+      "guide": "current/people/guardians"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal-requests",
+      "name": "portal-requests.index",
+      "action": "App\\Http\\Controllers\\PortalRequestController@inbox",
+      "guide": "current/family/requests"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/attendance",
+      "name": "portal.attendance.show",
+      "action": "App\\Http\\Controllers\\PortalAttendanceController@show",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/boarding",
+      "name": "portal.boarding.index",
+      "action": "App\\Http\\Controllers\\PortalBoardingController@index",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/calendar",
+      "name": "portal.calendar.index",
+      "action": "App\\Http\\Controllers\\PortalCalendarController@index",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/documents",
+      "name": "portal.documents.index",
+      "action": "App\\Http\\Controllers\\PortalDocumentsController@index",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/documents/report-cards/{reportCardSnapshot}",
+      "name": "portal.documents.report-cards.download",
+      "action": "App\\Http\\Controllers\\PortalDocumentsController@downloadReportCard",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/documents/transcripts/{transcriptSnapshot}",
+      "name": "portal.documents.transcripts.download",
+      "action": "App\\Http\\Controllers\\PortalDocumentsController@downloadTranscript",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/graduation",
+      "name": "portal.graduation.show",
+      "action": "App\\Http\\Controllers\\PortalGraduationController@show",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/invoices",
+      "name": "portal.invoices.index",
+      "action": "App\\Http\\Controllers\\PortalInvoicesController@index",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/library",
+      "name": "portal.library.index",
+      "action": "App\\Http\\Controllers\\PortalLibraryController@index",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/notices",
+      "name": "portal.notices.index",
+      "action": "App\\Http\\Controllers\\PortalNoticeController@index",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/programmes",
+      "name": "portal.programmes.index",
+      "action": "App\\Http\\Controllers\\PortalProgramController@index",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/requests",
+      "name": "portal.requests.index",
+      "action": "App\\Http\\Controllers\\PortalRequestController@index",
+      "guide": "current/family/requests"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/syllabi",
+      "name": "portal.syllabi.index",
+      "action": "App\\Http\\Controllers\\PortalSyllabusController@index",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/notification-preferences",
+      "name": "portal.notification-preferences.edit",
+      "action": "App\\Http\\Controllers\\NoticeNotificationPreferenceController@portalEdit",
+      "guide": "current/operations/notices"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/overview",
+      "name": "portal.overview",
+      "action": "App\\Http\\Controllers\\PortalOverviewController@index",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/programs",
+      "name": "programs.index",
+      "action": "App\\Http\\Controllers\\ProgramController@index",
+      "guide": "current/operations/groups-programmes"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/programs/create",
+      "name": "programs.create",
+      "action": "App\\Http\\Controllers\\ProgramController@create",
+      "guide": "current/operations/groups-programmes"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/programs/{program}",
+      "name": "programs.show",
+      "action": "App\\Http\\Controllers\\ProgramController@show",
+      "guide": "current/operations/groups-programmes"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/rankings",
+      "name": "rankings.index",
+      "action": "App\\Http\\Controllers\\RankingController@index",
+      "guide": "current/academics/results"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/report-cards",
+      "name": "report-cards.index",
+      "action": "App\\Http\\Controllers\\ReportCardController@index",
+      "guide": "current/academics/results"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/report-cards/{reportCardSnapshot}",
+      "name": "report-cards.show",
+      "action": "App\\Http\\Controllers\\ReportCardController@show",
+      "guide": "current/academics/results"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/reports",
+      "name": "reports.index",
+      "action": "App\\Http\\Controllers\\ReportController@index",
+      "guide": "current/operations/reports"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/reports/{reportRun}/download",
+      "name": "reports.download",
+      "action": "App\\Http\\Controllers\\ReportController@download",
+      "guide": "current/operations/reports"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/roles",
+      "name": "roles.index",
+      "action": "App\\Http\\Controllers\\CampusRoleController@index",
+      "guide": "current/administration/permissions"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/roles/create",
+      "name": "roles.create",
+      "action": "App\\Http\\Controllers\\CampusRoleController@create",
+      "guide": "current/administration/permissions"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/roles/{role}/edit",
+      "name": "roles.edit",
+      "action": "App\\Http\\Controllers\\CampusRoleController@edit",
+      "guide": "current/administration/permissions"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/schools",
+      "name": "schools.index",
+      "action": "App\\Http\\Controllers\\SchoolController@index",
+      "guide": "current/administration/campuses"
+    },
+    {
+      "method": "POST",
+      "uri": "dashboard/schools",
+      "name": "schools.store",
+      "action": "App\\Http\\Controllers\\SchoolController@store",
+      "guide": "current/administration/campuses"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/schools/create",
+      "name": "schools.create",
+      "action": "App\\Http\\Controllers\\SchoolController@create",
+      "guide": "current/administration/campuses"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/schools/features",
+      "name": "schools.features.edit",
+      "action": "Illuminate\\Routing\\ViewController",
+      "guide": "current/administration/features"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/schools/operating-profile",
+      "name": "schools.operating-profile.edit",
+      "action": "Illuminate\\Routing\\ViewController",
+      "guide": "current/administration/features"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/schools/settings",
+      "name": "schools.settings",
+      "action": "App\\Http\\Controllers\\SchoolController@settings",
+      "guide": "current/administration/campuses"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/schools/{school}",
+      "name": "schools.show",
+      "action": "App\\Http\\Controllers\\SchoolController@show",
+      "guide": "current/administration/campuses"
+    },
+    {
+      "method": "PUT|PATCH",
+      "uri": "dashboard/schools/{school}",
+      "name": "schools.update",
+      "action": "App\\Http\\Controllers\\SchoolController@update",
+      "guide": "current/administration/campuses"
+    },
+    {
+      "method": "DELETE",
+      "uri": "dashboard/schools/{school}",
+      "name": "schools.destroy",
+      "action": "App\\Http\\Controllers\\SchoolController@destroy",
+      "guide": "current/administration/campuses"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/schools/{school}/edit",
+      "name": "schools.edit",
+      "action": "App\\Http\\Controllers\\SchoolController@edit",
+      "guide": "current/administration/campuses"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/schools/{school}/setup/{step?}",
+      "name": "schools.setup",
+      "action": "App\\Http\\Controllers\\SchoolSetupController@show",
+      "guide": "current/administration/campuses"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/staff-leave",
+      "name": "staff-leave.index",
+      "action": "App\\Http\\Controllers\\StaffLeaveRequestController@index",
+      "guide": "current/operations/staff"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/staff-profiles",
+      "name": "staff-profiles.index",
+      "action": "App\\Http\\Controllers\\StaffProfileController@index",
+      "guide": "current/operations/staff"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/staff-profiles/create",
+      "name": "staff-profiles.create",
+      "action": "App\\Http\\Controllers\\StaffProfileController@create",
+      "guide": "current/operations/staff"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/staff-profiles/{staffProfile}",
+      "name": "staff-profiles.show",
+      "action": "App\\Http\\Controllers\\StaffProfileController@show",
+      "guide": "current/operations/staff"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/students",
+      "name": "students.index",
+      "action": "App\\Http\\Controllers\\StudentController@index",
+      "guide": "current/people/students"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/students/campus-moves",
+      "name": "campus-moves.index",
+      "action": "App\\Http\\Controllers\\CampusMoveRequestController@index",
+      "guide": "current/people/moves"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/students/create",
+      "name": "students.create",
+      "action": "App\\Http\\Controllers\\StudentController@create",
+      "guide": "current/people/students"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/students/graduate",
+      "name": "students.graduate",
+      "action": "App\\Http\\Controllers\\GraduationController@graduateView",
+      "guide": "current/academics/progression"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/students/graduations",
+      "name": "students.graduations",
+      "action": "App\\Http\\Controllers\\GraduationController@index",
+      "guide": "current/academics/progression"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/students/promote",
+      "name": "students.promote",
+      "action": "App\\Http\\Controllers\\PromotionController@promoteView",
+      "guide": "current/academics/progression"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/students/promotions",
+      "name": "students.promotions",
+      "action": "App\\Http\\Controllers\\PromotionController@index",
+      "guide": "current/academics/progression"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/students/promotions/{promotion}",
+      "name": "students.promotions.show",
+      "action": "App\\Http\\Controllers\\PromotionController@show",
+      "guide": "current/academics/progression"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/students/{student}",
+      "name": "students.show",
+      "action": "App\\Http\\Controllers\\StudentController@show",
+      "guide": "current/people/students"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/students/{student}/edit",
+      "name": "students.edit",
+      "action": "App\\Http\\Controllers\\StudentController@edit",
+      "guide": "current/people/students"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/students/{student}/print",
+      "name": "students.print-profile",
+      "action": "App\\Http\\Controllers\\StudentController@printProfile",
+      "guide": "current/people/students"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/subjects",
+      "name": "subjects.index",
+      "action": "App\\Http\\Controllers\\SubjectController@index",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/subjects/create",
+      "name": "subjects.create",
+      "action": "App\\Http\\Controllers\\SubjectController@create",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/subjects/{subject}",
+      "name": "subjects.show",
+      "action": "App\\Http\\Controllers\\SubjectController@show",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/subjects/{subject}/edit",
+      "name": "subjects.edit",
+      "action": "App\\Http\\Controllers\\SubjectController@edit",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/support-plans",
+      "name": "support-plans.index",
+      "action": "App\\Http\\Controllers\\SupportPlanController@index",
+      "guide": "current/operations/wellbeing"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/support-plans/create",
+      "name": "support-plans.create",
+      "action": "App\\Http\\Controllers\\SupportPlanController@create",
+      "guide": "current/operations/wellbeing"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/support-plans/{supportPlan}",
+      "name": "support-plans.show",
+      "action": "App\\Http\\Controllers\\SupportPlanController@show",
+      "guide": "current/operations/wellbeing"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/syllabi",
+      "name": "syllabi.index",
+      "action": "App\\Http\\Controllers\\SyllabusController@index",
+      "guide": "current/academics/syllabi"
+    },
+    {
+      "method": "POST",
+      "uri": "dashboard/syllabi",
+      "name": "syllabi.store",
+      "action": "App\\Http\\Controllers\\SyllabusController@store",
+      "guide": "current/academics/syllabi"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/syllabi/coverage",
+      "name": "syllabi.coverage",
+      "action": "App\\Http\\Controllers\\SyllabusController@coverage",
+      "guide": "current/academics/syllabi"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/syllabi/create",
+      "name": "syllabi.create",
+      "action": "App\\Http\\Controllers\\SyllabusController@create",
+      "guide": "current/academics/syllabi"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/syllabi/library",
+      "name": "syllabi.library",
+      "action": "App\\Http\\Controllers\\SyllabusController@library",
+      "guide": "current/academics/syllabi"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/syllabi/{syllabus}",
+      "name": "syllabi.show",
+      "action": "App\\Http\\Controllers\\SyllabusController@show",
+      "guide": "current/academics/syllabi"
+    },
+    {
+      "method": "PUT|PATCH",
+      "uri": "dashboard/syllabi/{syllabus}",
+      "name": "syllabi.update",
+      "action": "App\\Http\\Controllers\\SyllabusController@update",
+      "guide": "current/academics/syllabi"
+    },
+    {
+      "method": "DELETE",
+      "uri": "dashboard/syllabi/{syllabus}",
+      "name": "syllabi.destroy",
+      "action": "App\\Http\\Controllers\\SyllabusController@destroy",
+      "guide": "current/academics/syllabi"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/syllabi/{syllabus}/edit",
+      "name": "syllabi.edit",
+      "action": "App\\Http\\Controllers\\SyllabusController@edit",
+      "guide": "current/academics/syllabi"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/syllabi/{syllabus}/lesson-notes",
+      "name": "syllabi.lesson-notes",
+      "action": "App\\Http\\Controllers\\SyllabusController@lessonNotes",
+      "guide": "current/academics/syllabi"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/syllabi/{syllabus}/print",
+      "name": "syllabi.print",
+      "action": "App\\Http\\Controllers\\SyllabusController@print",
+      "guide": "current/academics/syllabi"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/teachers",
+      "name": "teachers.index",
+      "action": "App\\Http\\Controllers\\TeacherController@index",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/teachers/create",
+      "name": "teachers.create",
+      "action": "App\\Http\\Controllers\\TeacherController@create",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/teachers/{teacher}",
+      "name": "teachers.show",
+      "action": "App\\Http\\Controllers\\TeacherController@show",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/teachers/{teacher}/edit",
+      "name": "teachers.edit",
+      "action": "App\\Http\\Controllers\\TeacherController@edit",
+      "guide": "current/academics/offerings"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/timetables",
+      "name": "timetables.index",
+      "action": "App\\Http\\Controllers\\TimetableController@index",
+      "guide": "current/academics/timetables"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/timetables/create",
+      "name": "timetables.create",
+      "action": "App\\Http\\Controllers\\TimetableController@create",
+      "guide": "current/academics/timetables"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/timetables/{timetable}",
+      "name": "timetables.show",
+      "action": "App\\Http\\Controllers\\TimetableController@show",
+      "guide": "current/academics/timetables"
+    },
+    {
+      "method": "DELETE",
+      "uri": "dashboard/timetables/{timetable}",
+      "name": "timetables.destroy",
+      "action": "App\\Http\\Controllers\\TimetableController@destroy",
+      "guide": "current/academics/timetables"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/timetables/{timetable}/edit",
+      "name": "timetables.edit",
+      "action": "App\\Http\\Controllers\\TimetableController@edit",
+      "guide": "current/academics/timetables"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/timetables/{timetable}/manage",
+      "name": "timetables.manage",
+      "action": "App\\Http\\Controllers\\TimetableController@manage",
+      "guide": "current/academics/timetables"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/timetables/{timetable}/print",
+      "name": "timetables.print",
+      "action": "App\\Http\\Controllers\\TimetableController@print",
+      "guide": "current/academics/timetables"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/transcripts",
+      "name": "transcripts.index",
+      "action": "App\\Http\\Controllers\\TranscriptController@index",
+      "guide": "current/academics/results"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/users/invitations",
+      "name": "users.invitations.index",
+      "action": "App\\Http\\Controllers\\AccountInvitationController@index",
+      "guide": "current/people/accounts"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "health",
+      "name": "health",
+      "action": "App\\Http\\Controllers\\HealthController",
+      "guide": "current/operations"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "home",
+      "name": null,
+      "action": "Closure",
+      "guide": "current/using/workspace"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "install",
+      "name": "install.index",
+      "action": "App\\Http\\Controllers\\InstallationController@index",
+      "guide": "current/getting-started/installation"
+    },
+    {
+      "method": "POST",
+      "uri": "install",
+      "name": "install.store",
+      "action": "App\\Http\\Controllers\\InstallationController@store",
+      "guide": "current/getting-started/installation"
+    },
+    {
+      "method": "POST",
+      "uri": "install/database/setup",
+      "name": "install.database.setup",
+      "action": "App\\Http\\Controllers\\InstallationController@setupDatabase",
+      "guide": "current/getting-started/installation"
+    },
+    {
+      "method": "POST",
+      "uri": "install/database/test",
+      "name": "install.database.test",
+      "action": "App\\Http\\Controllers\\InstallationController@testDatabase",
+      "guide": "current/getting-started/installation"
+    },
+    {
+      "method": "POST",
+      "uri": "install/key",
+      "name": "install.key",
+      "action": "App\\Http\\Controllers\\InstallationController@generateKey",
+      "guide": "current/getting-started/installation"
+    },
+    {
+      "method": "POST",
+      "uri": "install/world/setup",
+      "name": "install.world.setup",
+      "action": "App\\Http\\Controllers\\InstallationController@setupWorldData",
+      "guide": "current/getting-started/installation"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "invitations/{token}",
+      "name": "invitations.show",
+      "action": "App\\Http\\Controllers\\AccountInvitationController@show",
+      "guide": "current/people/accounts"
+    },
+    {
+      "method": "POST",
+      "uri": "invitations/{token}",
+      "name": "invitations.accept",
+      "action": "App\\Http\\Controllers\\AccountInvitationController@accept",
+      "guide": "current/people/accounts"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "locations/cities",
+      "name": "locations.cities",
+      "action": "App\\Http\\Controllers\\LocationController@cities",
+      "guide": "current/getting-started/installation"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "locations/states",
+      "name": "locations.states",
+      "action": "App\\Http\\Controllers\\LocationController@states",
+      "guide": "current/getting-started/installation"
+    }
+  ],
+  "features": {
+    "attendance": "current/academics/attendance",
+    "portal": "current/family/portal",
+    "discipline": "current/operations/cases",
+    "wellbeing": "current/operations/wellbeing",
+    "staff_operations": "current/operations/staff",
+    "events": "current/operations/calendar",
+    "ranking": "current/academics/results",
+    "imports": "current/operations/imports",
+    "boarding": "current/operations/boarding",
+    "library": "current/operations/library",
+    "graduation_plans": "current/academics/progression",
+    "programmes": "current/operations/groups-programmes"
+  },
+  "reports": {
+    "class-list": {
+      "guide": "current/operations/reports",
+      "permission": "read student"
+    },
+    "student-balances": {
+      "guide": "current/operations/reports",
+      "permission": "read fee invoice"
+    },
+    "balance-sheet": {
+      "guide": "current/operations/reports",
+      "permission": "read financial period"
+    },
+    "budget-variance": {
+      "guide": "current/operations/reports",
+      "permission": "read budget"
+    },
+    "cash-and-bank": {
+      "guide": "current/operations/reports",
+      "permission": "read cash deposit"
+    },
+    "expenses": {
+      "guide": "current/operations/reports",
+      "permission": "read expense"
+    },
+    "general-ledger": {
+      "guide": "current/operations/reports",
+      "permission": "read financial period"
+    },
+    "income-by-fee-type": {
+      "guide": "current/operations/reports",
+      "permission": "read fee invoice"
+    },
+    "income-statement": {
+      "guide": "current/operations/reports",
+      "permission": "read financial period"
+    },
+    "student-aging": {
+      "guide": "current/operations/reports",
+      "permission": "read fee invoice"
+    },
+    "trial-balance": {
+      "guide": "current/operations/reports",
+      "permission": "read financial period"
+    },
+    "report-cards": {
+      "guide": "current/operations/reports",
+      "permission": "read report"
+    },
+    "transcripts": {
+      "guide": "current/operations/reports",
+      "permission": "read report"
+    }
+  },
+  "imports": {
+    "students": {
+      "guide": "current/operations/imports",
+      "requiredColumns": [
+        "name",
+        "email",
+        "birthday",
+        "level",
+        "section"
+      ],
+      "optionalColumns": [
+        "source_id",
+        "gender",
+        "admission_number",
+        "admission_date",
+        "address",
+        "city",
+        "state",
+        "nationality",
+        "phone"
+      ]
+    },
+    "staff": {
+      "guide": "current/operations/imports",
+      "requiredColumns": [
+        "name",
+        "email"
+      ],
+      "optionalColumns": [
+        "source_id",
+        "staff_number",
+        "job_title",
+        "department",
+        "employment_type",
+        "joined_on",
+        "address",
+        "city",
+        "state",
+        "nationality",
+        "phone"
+      ]
+    }
+  },
+  "commands": {
+    "skuul:prune-expired-invitations": "current/reference/commands",
+    "skuul:process-notices": "current/reference/commands",
+    "skuul:init": "current/reference/commands",
+    "skuul:advance-academic-calendar": "current/reference/commands",
+    "skuul:generate-upcoming-cycles": "current/reference/commands",
+    "skuul:send-academic-calendar-reminders": "current/reference/commands",
+    "skuul:create-super-admin": "current/reference/commands",
+    "skuul:check-backup": "current/reference/commands",
+    "skuul:backup": "current/reference/commands",
+    "skuul:rehearse-restore": "current/reference/commands",
+    "skuul:process-library-holds": "current/reference/commands",
+    "skuul:release-readiness": "current/reference/commands",
+    "skuul:send-syllabus-behind-reminders": "current/reference/commands",
+    "skuul:end-leavers-access": "current/reference/commands",
+    "skuul:bring-invoices-into-books": "current/reference/commands",
+    "skuul:update": "current/reference/commands"
+  },
+  "actions": {
+    "app/Actions/Academic/ChangeAcademicPeriodDates.php": "current/academics/calendars",
+    "app/Actions/Academic/ChangeAcademicPeriodStatus.php": "current/academics/calendars",
+    "app/Actions/Academic/PublishAcademicCalendar.php": "current/academics/calendars",
+    "app/Actions/Academic/RollForwardAcademicYearSetup.php": "current/academics/calendars",
+    "app/Actions/Academic/SaveAcademicCalendar.php": "current/academics/calendars",
+    "app/Actions/Admissions/AcceptWaitlistEntry.php": "current/people/admissions",
+    "app/Actions/Admissions/DeclineWaitlistEntry.php": "current/people/admissions",
+    "app/Actions/Admissions/JoinWaitlist.php": "current/people/admissions",
+    "app/Actions/Admissions/OfferNextWaitlistEntry.php": "current/people/admissions",
+    "app/Actions/Attendance/RecordAttendance.php": "current/academics/attendance",
+    "app/Actions/Audit/RecordAuditEvent.php": "current/reference/security",
+    "app/Actions/Authorization/AssignCampusRole.php": "current/administration/permissions",
+    "app/Actions/Authorization/GrantSystemRole.php": "current/administration/permissions",
+    "app/Actions/Authorization/RevokeSystemRole.php": "current/administration/permissions",
+    "app/Actions/Authorization/WriteCampusRole.php": "current/administration/permissions",
+    "app/Actions/Boarding/AssignBoardingPlace.php": "current/operations/boarding",
+    "app/Actions/Boarding/AssignBoardingSupervisor.php": "current/operations/boarding",
+    "app/Actions/Boarding/AttachDormitoryToBoardingResidence.php": "current/operations/boarding",
+    "app/Actions/Boarding/CreateBoardingResidence.php": "current/operations/boarding",
+    "app/Actions/Boarding/DecideOvernightLeave.php": "current/operations/boarding",
+    "app/Actions/Boarding/LinkSchoolToBoardingResidence.php": "current/operations/boarding",
+    "app/Actions/Boarding/ManageBoardingHouse.php": "current/operations/boarding",
+    "app/Actions/Boarding/ManageBoardingRooms.php": "current/operations/boarding",
+    "app/Actions/Boarding/RecordBoardingRoll.php": "current/operations/boarding",
+    "app/Actions/Boarding/RequestOvernightLeave.php": "current/operations/boarding",
+    "app/Actions/Boarding/StartBoardingRoll.php": "current/operations/boarding",
+    "app/Actions/Calendar/GenerateAcademicCycle.php": "current/academics/calendars",
+    "app/Actions/Calendar/SaveCalendarTemplate.php": "current/academics/calendars",
+    "app/Actions/Calendar/SetCampusCalendarTemplate.php": "current/academics/calendars",
+    "app/Actions/Cohort/ChangeCohortMembership.php": "current/operations/groups-programmes",
+    "app/Actions/Cohort/ChangeProgramParticipation.php": "current/operations/groups-programmes",
+    "app/Actions/Cohort/SaveCohort.php": "current/operations/groups-programmes",
+    "app/Actions/Cohort/SaveProgram.php": "current/operations/groups-programmes",
+    "app/Actions/Curriculum/AssignTeacher.php": "current/academics/offerings",
+    "app/Actions/Curriculum/ChangeAcademicCycleSectionStatus.php": "current/academics/offerings",
+    "app/Actions/Curriculum/ChangeAcademicLevelStatus.php": "current/academics/offerings",
+    "app/Actions/Curriculum/ChangeCourseOfferingStatus.php": "current/academics/offerings",
+    "app/Actions/Curriculum/CreateAcademicCycleSection.php": "current/academics/offerings",
+    "app/Actions/Curriculum/CreateAcademicLevel.php": "current/academics/offerings",
+    "app/Actions/Curriculum/CreateCourseOffering.php": "current/academics/offerings",
+    "app/Actions/Curriculum/CreateCourseOfferingsForLevels.php": "current/academics/offerings",
+    "app/Actions/Curriculum/CreateCourseOfferingsForSections.php": "current/academics/offerings",
+    "app/Actions/Curriculum/DeleteAcademicLevel.php": "current/academics/offerings",
+    "app/Actions/Curriculum/GrantOfferingException.php": "current/academics/offerings",
+    "app/Actions/Curriculum/MigrateInstructionalModel.php": "current/academics/offerings",
+    "app/Actions/Curriculum/MoveAcademicCycleSection.php": "current/academics/offerings",
+    "app/Actions/Curriculum/MoveAcademicLevel.php": "current/academics/offerings",
+    "app/Actions/Curriculum/RollForwardAcademicCycleSections.php": "current/academics/offerings",
+    "app/Actions/Curriculum/RollForwardCourseOfferings.php": "current/academics/offerings",
+    "app/Actions/Curriculum/SetInstructionalModel.php": "current/academics/offerings",
+    "app/Actions/Curriculum/UpdateAcademicCycleSection.php": "current/academics/offerings",
+    "app/Actions/Curriculum/UpdateAcademicLevel.php": "current/academics/offerings",
+    "app/Actions/Curriculum/UpdateCourseOfferingRoster.php": "current/academics/offerings",
+    "app/Actions/Discipline/AddIncidentNote.php": "current/operations/cases",
+    "app/Actions/Discipline/ReportIncident.php": "current/operations/cases",
+    "app/Actions/Enrollment/ChangeEnrollmentPlacement.php": "current/people/students",
+    "app/Actions/Enrollment/ChangeEnrollmentStatus.php": "current/people/students",
+    "app/Actions/Enrollment/MoveEnrollmentBetweenCampuses.php": "current/people/students",
+    "app/Actions/Enrollment/RequestCampusMove.php": "current/people/students",
+    "app/Actions/Enrollment/TransferEnrollment.php": "current/people/students",
+    "app/Actions/Exam/SaveExam.php": "current/academics/exams",
+    "app/Actions/Facility/BookFacility.php": "current/operations/facilities",
+    "app/Actions/Facility/ManageFacility.php": "current/operations/facilities",
+    "app/Actions/Finance/ApplyStudentCredit.php": "current/finance/ledger",
+    "app/Actions/Finance/BringInvoiceIntoTheBooks.php": "current/finance/ledger",
+    "app/Actions/Finance/CarryBalanceToCampus.php": "current/finance/ledger",
+    "app/Actions/Finance/ChangeFinancialPeriodStatus.php": "current/finance/ledger",
+    "app/Actions/Finance/ChargeStudent.php": "current/finance/ledger",
+    "app/Actions/Finance/PostLedgerTransaction.php": "current/finance/ledger",
+    "app/Actions/Finance/ReceivePayment.php": "current/finance/ledger",
+    "app/Actions/Finance/RecordCashDeposit.php": "current/finance/ledger",
+    "app/Actions/Finance/RecordExpense.php": "current/finance/ledger",
+    "app/Actions/Finance/RecordStudentPayment.php": "current/finance/ledger",
+    "app/Actions/Finance/RefundStudent.php": "current/finance/ledger",
+    "app/Actions/Finance/RelieveStudentFees.php": "current/finance/ledger",
+    "app/Actions/Finance/ReverseLedgerTransaction.php": "current/finance/ledger",
+    "app/Actions/Finance/ReversePayment.php": "current/finance/ledger",
+    "app/Actions/Finance/SetBudget.php": "current/finance/ledger",
+    "app/Actions/Fortify/PasswordValidationRules.php": "current/people/accounts",
+    "app/Actions/Fortify/ResetUserPassword.php": "current/people/accounts",
+    "app/Actions/Fortify/UpdateUserPassword.php": "current/people/accounts",
+    "app/Actions/Fortify/UpdateUserProfileInformation.php": "current/people/accounts",
+    "app/Actions/Gradebook/ApplyAssessmentTemplate.php": "current/academics/gradebooks",
+    "app/Actions/Gradebook/ApproveResult.php": "current/academics/gradebooks",
+    "app/Actions/Gradebook/CreateAssessmentTemplateFromGradebook.php": "current/academics/gradebooks",
+    "app/Actions/Gradebook/PublishResult.php": "current/academics/gradebooks",
+    "app/Actions/Gradebook/RecordGrade.php": "current/academics/gradebooks",
+    "app/Actions/Gradebook/RejectResult.php": "current/academics/gradebooks",
+    "app/Actions/Gradebook/SaveGradingScale.php": "current/academics/gradebooks",
+    "app/Actions/Graduation/ManageGraduationPlan.php": "current/academics/progression",
+    "app/Actions/Identity/AcceptAccountInvitation.php": "current/people/accounts",
+    "app/Actions/Identity/ChangeAccountStatus.php": "current/people/accounts",
+    "app/Actions/Identity/ChangeGuardianLink.php": "current/people/accounts",
+    "app/Actions/Identity/ProvisionAccount.php": "current/people/accounts",
+    "app/Actions/Identity/RevokeAccountInvitation.php": "current/people/accounts",
+    "app/Actions/Identity/SendAccountInvitation.php": "current/people/accounts",
+    "app/Actions/Identity/SetAccountPassword.php": "current/people/accounts",
+    "app/Actions/Installation/CompleteExistingInstallation.php": "current/getting-started/installation",
+    "app/Actions/Installation/ConfigureDatabase.php": "current/getting-started/installation",
+    "app/Actions/Installation/GenerateApplicationKey.php": "current/getting-started/installation",
+    "app/Actions/Installation/InstallApplication.php": "current/getting-started/installation",
+    "app/Actions/Installation/SeedWorldData.php": "current/getting-started/installation",
+    "app/Actions/Jetstream/DeleteUser.php": "current/people/accounts",
+    "app/Actions/Library/CloseReservation.php": "current/operations/library",
+    "app/Actions/Library/HoldCopyForNextInQueue.php": "current/operations/library",
+    "app/Actions/Library/IssueLoan.php": "current/operations/library",
+    "app/Actions/Library/IssueTitleToSection.php": "current/operations/library",
+    "app/Actions/Library/RenewLoan.php": "current/operations/library",
+    "app/Actions/Library/ReserveTitle.php": "current/operations/library",
+    "app/Actions/Library/ReturnLoan.php": "current/operations/library",
+    "app/Actions/Library/ShelveLibraryCopies.php": "current/operations/library",
+    "app/Actions/Library/WithdrawLibraryCopy.php": "current/operations/library",
+    "app/Actions/Notice/PublishNotice.php": "current/operations/notices",
+    "app/Actions/Notice/ReviseNotice.php": "current/operations/notices",
+    "app/Actions/Organization/AddSchoolDomain.php": "current/administration/organizations",
+    "app/Actions/Organization/AssignSchoolToOrganization.php": "current/administration/organizations",
+    "app/Actions/Organization/CreateOrganization.php": "current/administration/organizations",
+    "app/Actions/Organization/GrantOrganizationMembership.php": "current/administration/organizations",
+    "app/Actions/Organization/ManageBillingGroups.php": "current/administration/organizations",
+    "app/Actions/Organization/RemoveSchoolDomain.php": "current/administration/organizations",
+    "app/Actions/Organization/RevokeOrganizationMembership.php": "current/administration/organizations",
+    "app/Actions/Organization/SetOrganizationMemberPermissions.php": "current/administration/organizations",
+    "app/Actions/Organization/UpdateOrganization.php": "current/administration/organizations",
+    "app/Actions/Organization/VerifySchoolDomain.php": "current/administration/organizations",
+    "app/Actions/Portal/SubmitPortalRequest.php": "current/family/requests",
+    "app/Actions/Portal/UpdatePortalNotificationPreferences.php": "current/family/requests",
+    "app/Actions/Report/PublishReportCard.php": "current/academics/results",
+    "app/Actions/Report/PublishTranscript.php": "current/academics/results",
+    "app/Actions/Report/RequestReport.php": "current/academics/results",
+    "app/Actions/School/EndSchoolMembership.php": "current/administration/campuses",
+    "app/Actions/School/GrantSchoolMembership.php": "current/administration/campuses",
+    "app/Actions/School/OpenCampus.php": "current/administration/campuses",
+    "app/Actions/Sharing/FulfilDataSharingRequest.php": "current/people/sharing",
+    "app/Actions/Sharing/RequestDataSharing.php": "current/people/sharing",
+    "app/Actions/Staff/ManageStaffLeave.php": "current/operations/staff",
+    "app/Actions/Staff/ManageStaffProfile.php": "current/operations/staff",
+    "app/Actions/Syllabus/PublishSyllabus.php": "current/academics/syllabi",
+    "app/Actions/Syllabus/ReturnSyllabus.php": "current/academics/syllabi",
+    "app/Actions/Syllabus/ReviseSyllabus.php": "current/academics/syllabi",
+    "app/Actions/Syllabus/SubmitSyllabus.php": "current/academics/syllabi",
+    "app/Actions/Timetable/CreateSectionTimetableOverride.php": "current/academics/timetables",
+    "app/Actions/Timetable/CreateTimetableSubstitution.php": "current/academics/timetables",
+    "app/Actions/Timetable/PublishTimetable.php": "current/academics/timetables",
+    "app/Actions/Timetable/ReviseTimetable.php": "current/academics/timetables",
+    "app/Actions/Timetable/SaveCustomTimetableItem.php": "current/academics/timetables",
+    "app/Actions/Wellbeing/ManageSupportPlan.php": "current/operations/wellbeing",
+    "app/Actions/Wellbeing/RecordHealthInformation.php": "current/operations/wellbeing"
+  },
+  "livewireFiles": {
+    "app/Livewire/AcademicCalendarForm.php": "current/academics/calendars",
+    "app/Livewire/AcademicCycleSectionForm.php": "current/academics/structure",
+    "app/Livewire/AcademicLevelForm.php": "current/academics/structure",
+    "app/Livewire/AcademicPeriodStatusControl.php": "current/academics/calendars",
+    "app/Livewire/AcademicStructureStatusControl.php": "current/academics/structure",
+    "app/Livewire/AcademicYearStructureTree.php": "current/academics/structure",
+    "app/Livewire/AcademicYearSubjectAssignmentsTable.php": "current/academics/offerings",
+    "app/Livewire/AdmissionWaitlistBoard.php": "current/people/admissions",
+    "app/Livewire/AssignStudentsToParent.php": "current/people/guardians",
+    "app/Livewire/AttendanceRegister.php": "current/academics/attendance",
+    "app/Livewire/Auth/AcceptInvitationForm.php": "current/people/accounts",
+    "app/Livewire/Auth/ConfirmPasswordForm.php": "current/people/accounts",
+    "app/Livewire/Auth/ForgotPasswordForm.php": "current/people/accounts",
+    "app/Livewire/Auth/LoginForm.php": "current/people/accounts",
+    "app/Livewire/Auth/ResetPasswordForm.php": "current/people/accounts",
+    "app/Livewire/Auth/TwoFactorChallengeForm.php": "current/people/accounts",
+    "app/Livewire/Auth/VerifyEmailForm.php": "current/people/accounts",
+    "app/Livewire/BoardingRollBoard.php": "current/operations/boarding",
+    "app/Livewire/BoardingRollSheet.php": "current/operations/boarding",
+    "app/Livewire/BudgetPlanner.php": "current/finance/ledger",
+    "app/Livewire/CalendarEventDirectory.php": "current/operations/calendar",
+    "app/Livewire/CalendarEventEditor.php": "current/operations/calendar",
+    "app/Livewire/CalendarTemplateCampuses.php": "current/academics/calendars",
+    "app/Livewire/CalendarTemplateForm.php": "current/academics/calendars",
+    "app/Livewire/CampusRoleRecord.php": "current/administration/permissions",
+    "app/Livewire/CohortDirectory.php": "current/operations/groups-programmes",
+    "app/Livewire/CohortRecord.php": "current/operations/groups-programmes",
+    "app/Livewire/Concerns/DispatchesStatusNotifications.php": "current/reference/architecture",
+    "app/Livewire/Concerns/EditsPersonDetails.php": "current/reference/architecture",
+    "app/Livewire/Concerns/EditsSchoolDetails.php": "current/reference/architecture",
+    "app/Livewire/Concerns/InteractsWithAprilTable.php": "current/reference/architecture",
+    "app/Livewire/Concerns/RecordsOnce.php": "current/reference/architecture",
+    "app/Livewire/CourseOfferingDirectory.php": "current/academics/offerings",
+    "app/Livewire/CreateAdminForm.php": "current/people/accounts",
+    "app/Livewire/CreateCampusRoleForm.php": "current/administration/permissions",
+    "app/Livewire/CreateCohortForm.php": "current/operations/groups-programmes",
+    "app/Livewire/CreateCourseOffering.php": "current/academics/offerings",
+    "app/Livewire/CreateCustomTimetableItemForm.php": "current/academics/timetables",
+    "app/Livewire/CreateDataSharingRequestForm.php": "current/people/sharing",
+    "app/Livewire/CreateExamForm.php": "current/academics/exams",
+    "app/Livewire/CreateFeeCategoryForm.php": "current/finance/invoices",
+    "app/Livewire/CreateFeeForm.php": "current/finance/invoices",
+    "app/Livewire/CreateFeeInvoiceForm.php": "current/finance/invoices",
+    "app/Livewire/CreateGraduationPlanForm.php": "current/academics/progression",
+    "app/Livewire/CreateIncident.php": "current/operations/cases",
+    "app/Livewire/CreateNoticeForm.php": "current/operations/notices",
+    "app/Livewire/CreateParentForm.php": "current/people/guardians",
+    "app/Livewire/CreateProgramForm.php": "current/operations/groups-programmes",
+    "app/Livewire/CreateSchoolForm.php": "current/administration/campuses",
+    "app/Livewire/CreateStaffProfileForm.php": "current/operations/staff",
+    "app/Livewire/CreateStudentForm.php": "current/people/students",
+    "app/Livewire/CreateSubjectForm.php": "current/academics/offerings",
+    "app/Livewire/CreateSupportPlan.php": "current/operations/wellbeing",
+    "app/Livewire/CreateSyllabusForm.php": "current/academics/syllabi",
+    "app/Livewire/CreateTeacherForm.php": "current/academics/offerings",
+    "app/Livewire/CreateTimetableForm.php": "current/academics/timetables",
+    "app/Livewire/CurriculumLibrary.php": "current/academics/syllabi",
+    "app/Livewire/DashboardDataCards.php": "current/using/workspace",
+    "app/Livewire/DashboardTrends.php": "current/using/workspace",
+    "app/Livewire/DisplayStatus.php": "current/using/workspace",
+    "app/Livewire/DormitoryForm.php": "current/operations/boarding",
+    "app/Livewire/EditAcademicPeriodForm.php": "current/academics/calendars",
+    "app/Livewire/EditAdminForm.php": "current/people/accounts",
+    "app/Livewire/EditCourseOfferingRoster.php": "current/academics/offerings",
+    "app/Livewire/EditCustomTimetableItemForm.php": "current/academics/timetables",
+    "app/Livewire/EditExamForm.php": "current/academics/exams",
+    "app/Livewire/EditFeeCategoryForm.php": "current/finance/invoices",
+    "app/Livewire/EditFeeForm.php": "current/finance/invoices",
+    "app/Livewire/EditFeeInvoiceForm.php": "current/finance/invoices",
+    "app/Livewire/EditParentForm.php": "current/people/guardians",
+    "app/Livewire/EditSchoolForm.php": "current/administration/campuses",
+    "app/Livewire/EditSchoolLanguage.php": "current/administration/campuses",
+    "app/Livewire/EditStudentForm.php": "current/people/students",
+    "app/Livewire/EditSubjectForm.php": "current/academics/offerings",
+    "app/Livewire/EditTeacherForm.php": "current/academics/offerings",
+    "app/Livewire/EditTimetableForm.php": "current/academics/timetables",
+    "app/Livewire/FacilityBoard.php": "current/operations/facilities",
+    "app/Livewire/GradebookDirectory.php": "current/academics/gradebooks",
+    "app/Livewire/GradebookMarkSheet.php": "current/academics/gradebooks",
+    "app/Livewire/GradebookSetup.php": "current/academics/gradebooks",
+    "app/Livewire/GradingScaleManager.php": "current/academics/gradebooks",
+    "app/Livewire/GraduateStudents.php": "current/academics/progression",
+    "app/Livewire/GraduationPlanRecord.php": "current/academics/progression",
+    "app/Livewire/HealthRecordForm.php": "current/operations/wellbeing",
+    "app/Livewire/ImportBatchActions.php": "current/operations/imports",
+    "app/Livewire/ImportBatchDirectory.php": "current/operations/imports",
+    "app/Livewire/ImportFileForm.php": "current/operations/imports",
+    "app/Livewire/ImportRowDirectory.php": "current/operations/imports",
+    "app/Livewire/IncidentDirectory.php": "current/operations/cases",
+    "app/Livewire/Layouts/Header.php": "current/using/workspace",
+    "app/Livewire/Layouts/Menu.php": "current/using/workspace",
+    "app/Livewire/LessonNoteBook.php": "current/academics/syllabi",
+    "app/Livewire/LibraryCopyCatalog.php": "current/operations/library",
+    "app/Livewire/LibraryLendingDesk.php": "current/operations/library",
+    "app/Livewire/LibraryLendingRulesForm.php": "current/operations/library",
+    "app/Livewire/LibraryReservationQueue.php": "current/operations/library",
+    "app/Livewire/LibraryShelvingForm.php": "current/operations/library",
+    "app/Livewire/ListAcademicYearsTable.php": "current/academics/calendars",
+    "app/Livewire/ListAccountInvitations.php": "current/people/accounts",
+    "app/Livewire/ListAdminsTable.php": "current/people/accounts",
+    "app/Livewire/ListCampusMoveRequests.php": "current/people/moves",
+    "app/Livewire/ListCustomTimetableItemsTable.php": "current/academics/timetables",
+    "app/Livewire/ListExamsTable.php": "current/academics/exams",
+    "app/Livewire/ListFeeCategoriesTable.php": "current/finance/invoices",
+    "app/Livewire/ListFeeInvoicesTable.php": "current/finance/invoices",
+    "app/Livewire/ListFeesTable.php": "current/finance/invoices",
+    "app/Livewire/ListGraduationsTable.php": "current/academics/progression",
+    "app/Livewire/ListNoticesTable.php": "current/operations/notices",
+    "app/Livewire/ListParentsTable.php": "current/people/guardians",
+    "app/Livewire/ListPromotionsTable.php": "current/academics/progression",
+    "app/Livewire/ListSchoolsTable.php": "current/administration/campuses",
+    "app/Livewire/ListStudentFeeInvoices.php": "current/finance/invoices",
+    "app/Livewire/ListStudentsTable.php": "current/people/students",
+    "app/Livewire/ListSubjectsTable.php": "current/academics/offerings",
+    "app/Livewire/ListSyllabiTable.php": "current/academics/syllabi",
+    "app/Livewire/ListTeachersTable.php": "current/academics/offerings",
+    "app/Livewire/ListTimetablesTable.php": "current/academics/timetables",
+    "app/Livewire/ManageAccountAccess.php": "current/people/accounts",
+    "app/Livewire/ManageAccountPassword.php": "current/people/accounts",
+    "app/Livewire/ManageFinancialPeriods.php": "current/finance/ledger",
+    "app/Livewire/ManageInstructionalModel.php": "current/academics/structure",
+    "app/Livewire/ManageSchoolFeatures.php": "current/administration/features",
+    "app/Livewire/ManageTimetable.php": "current/academics/timetables",
+    "app/Livewire/NationalityAndStateInputFields.php": "current/people/accounts",
+    "app/Livewire/NoticeEmailPreferences.php": "current/operations/notices",
+    "app/Livewire/OrganizationBillingGroups.php": "current/administration/organizations",
+    "app/Livewire/OrganizationBoardingResidences.php": "current/operations/boarding",
+    "app/Livewire/OrganizationDashboard.php": "current/administration/organizations",
+    "app/Livewire/OrganizationDomains.php": "current/administration/organizations",
+    "app/Livewire/OrganizationForm.php": "current/administration/organizations",
+    "app/Livewire/OrganizationMembers.php": "current/administration/organizations",
+    "app/Livewire/OvernightLeaveDesk.php": "current/operations/boarding",
+    "app/Livewire/PortalRequestInbox.php": "current/family/requests",
+    "app/Livewire/PortalRequests.php": "current/family/requests",
+    "app/Livewire/ProgramDirectory.php": "current/operations/groups-programmes",
+    "app/Livewire/ProgramRecord.php": "current/operations/groups-programmes",
+    "app/Livewire/PromoteStudents.php": "current/academics/progression",
+    "app/Livewire/PublishAcademicYear.php": "current/academics/calendars",
+    "app/Livewire/RankingFilters.php": "current/academics/results",
+    "app/Livewire/RecordCashDepositForm.php": "current/finance/ledger",
+    "app/Livewire/RecordExpenseForm.php": "current/finance/ledger",
+    "app/Livewire/ReportCardDirectory.php": "current/academics/results",
+    "app/Livewire/ReportDesk.php": "current/operations/reports",
+    "app/Livewire/RollForwardSections.php": "current/academics/calendars",
+    "app/Livewire/RollOverSubjects.php": "current/academics/calendars",
+    "app/Livewire/SaveSyllabusToLibrary.php": "current/operations/library",
+    "app/Livewire/SectionDirectory.php": "current/academics/structure",
+    "app/Livewire/SetAcademicPeriod.php": "current/academics/calendars",
+    "app/Livewire/SetSchool.php": "current/using/workspace",
+    "app/Livewire/SetUpSubjectAcrossLevels.php": "current/academics/offerings",
+    "app/Livewire/ShowAcademicYear.php": "current/academics/calendars",
+    "app/Livewire/ShowAdminProfile.php": "current/people/accounts",
+    "app/Livewire/ShowDataSharingRequest.php": "current/people/sharing",
+    "app/Livewire/ShowDormitory.php": "current/operations/boarding",
+    "app/Livewire/ShowFeeInvoice.php": "current/finance/invoices",
+    "app/Livewire/ShowIncident.php": "current/operations/cases",
+    "app/Livewire/ShowNotice.php": "current/operations/notices",
+    "app/Livewire/ShowParentProfile.php": "current/people/guardians",
+    "app/Livewire/ShowPromotion.php": "current/academics/progression",
+    "app/Livewire/ShowSchool.php": "current/administration/campuses",
+    "app/Livewire/ShowStudentAccount.php": "current/people/accounts",
+    "app/Livewire/ShowStudentProfile.php": "current/people/students",
+    "app/Livewire/ShowSupportPlan.php": "current/operations/wellbeing",
+    "app/Livewire/ShowSyllabus.php": "current/academics/syllabi",
+    "app/Livewire/ShowTeacherProfile.php": "current/academics/offerings",
+    "app/Livewire/ShowTimetable.php": "current/academics/timetables",
+    "app/Livewire/ShowUserProfile.php": "current/people/accounts",
+    "app/Livewire/StaffLeaveBoard.php": "current/operations/staff",
+    "app/Livewire/StaffProfileDirectory.php": "current/operations/staff",
+    "app/Livewire/StaffProfileRecord.php": "current/operations/staff",
+    "app/Livewire/StudentHealthRecordDirectory.php": "current/operations/wellbeing",
+    "app/Livewire/SupportPlanDirectory.php": "current/operations/wellbeing",
+    "app/Livewire/SyllabusAssessmentPlan.php": "current/academics/syllabi",
+    "app/Livewire/SyllabusCoverageReport.php": "current/academics/syllabi",
+    "app/Livewire/SyllabusCoverageTracker.php": "current/academics/syllabi",
+    "app/Livewire/SyllabusTopicImporter.php": "current/academics/syllabi",
+    "app/Livewire/SyllabusTopicsEditor.php": "current/academics/syllabi",
+    "app/Livewire/SyllabusWorkflowControl.php": "current/academics/syllabi",
+    "app/Livewire/TakeInvoicePayment.php": "current/finance/payments",
+    "app/Livewire/TimetableCoverPanel.php": "current/academics/timetables",
+    "app/Livewire/TimetableStatusControl.php": "current/academics/timetables",
+    "app/Livewire/TranscriptDirectory.php": "current/academics/results"
+  }
+}

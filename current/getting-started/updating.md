@@ -55,6 +55,18 @@ while changing the schema.
 Stop if any command fails. Keep the site in maintenance mode until the failure
 is resolved or the previous release is restored.
 
+## Retain removed V2 data
+
+The current development migrations archive selected removed V2 course, exam, grading, and gradebook rows.
+`LegacyDataArchive` writes JSON Lines files under `storage/app/legacy-v2` before the relevant removal.
+A fresh installation with no affected rows creates no archive files.
+Repeated runs append rather than replace those files.
+
+Include this private archive folder in the recovery and retention process.
+The archive is not a conversion into current gradebooks, results, or family documents.
+It has no automatic re-import workflow.
+A database backup remains necessary for recovery of the original schema and relationships.
+
 ## Use the current release updater
 
 Use `skuul:update` only on a release-tag Git installation. It finds the current

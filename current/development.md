@@ -53,13 +53,43 @@ Fix new static analysis errors instead of adding them to the baseline.
 
 ## Documentation changes
 
-The Pages site lives in
-[yungifez/skuul.org](https://github.com/yungifez/skuul.org), separately from the
-application repository. Keep current development instructions separate from
-V2 release instructions. Check command names and options against the code.
-Build the site before submitting a documentation change:
+The Pages site lives in [yungifez/skuul.org](https://github.com/yungifez/skuul.org), separately from the application repository.
+Keep current development instructions separate from V2 release instructions.
+Use simple technical English, short active sentences, and direct procedure steps.
+Check command names, state transitions, permissions, and button labels against the implementation.
+
+The site uses VitePress. Current guides live under `current/`.
+Navigation lives in `.vitepress/config.ts`.
+`public/reference/application-coverage.json` records reviewed routes, action files, Livewire files, features, reports, imports, and commands.
+Update the guide, navigation, and inventory together when adding an application area.
+
+From the documentation checkout, build and test the site:
 
 ```sh
 npm ci
 npm run docs:build
+npm run docs:check
 ```
+
+When the docs checkout is inside this project's mounted `tmp` directory, run these Node commands through Sail.
+The checks verify built page links, assets, anchors, navigation, and inventory targets.
+They also check report and import details recorded in the guides.
+
+For source comparison, first export the current application routes from the application checkout:
+
+```sh
+vendor/bin/sail artisan route:list --json --except-vendor > tmp/skuul-documentation-routes.json
+```
+
+Then run the documentation checks with both paths set in the docs runtime:
+
+```sh
+SKUUL_SOURCE_PATH=/var/www/html SKUUL_ROUTES_FILE=/var/www/html/tmp/skuul-documentation-routes.json npm run docs:check
+```
+
+Use the paths visible to that runtime. The examples above use Sail's mounted application path.
+Source comparison detects added or removed routes, actions, Livewire files, features, reports, import columns, and application commands.
+It does not execute domain operations or replace the application test suite.
+
+Pull requests build and check the site. The Pages deployment runs after a merge to the documentation repository's `master` branch.
+The separate [architecture](./reference/architecture), [data model](./reference/data-model), [security](./reference/security), and [extension](./reference/extensions) guides explain the main code boundaries.

@@ -30,8 +30,10 @@ jobs:
           cache: npm
       - name: Install locked dependencies
         run: npm ci
-      - name: Build documentation and check links
+      - name: Build documentation
         run: npm run docs:build
+      - name: Check documentation coverage and built links
+        run: npm run docs:check
       - name: Set up Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
