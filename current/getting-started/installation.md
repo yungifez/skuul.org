@@ -75,12 +75,22 @@ code. Use [deployment](./deployment) for a production environment.
 
 ## Complete the browser installer
 
-1. Check that each installation requirement passes.
+1. Check that each installation requirement passes. If a check fails, use its
+   action or follow its message, then reload the page.
+
+   ![The installer lists its checks. The countries and states check failed and offers an install button.](/images/current/install-checks-light-desktop.webp)
+
+   A failed check shows its cause and, where possible, an action to fix it.
+
 2. Enter your administrator name, email, and password.
 3. Enter the organization and first campus details.
 4. Choose the interface language and school terminology.
 5. Leave demo data disabled unless this is a disposable evaluation database.
 6. Submit the installer and sign in with the credentials you chose.
+
+![The completed installer form for a fictional school district and its first elementary campus.](/images/current/install-form-light-desktop.webp)
+
+All checks pass and the form holds the administrator, organization, and first campus.
 
 The installer loads the required roles and permissions and records completion.
 It requires an empty application database. Do not run the default database
@@ -91,6 +101,10 @@ and campus. Follow [updating](./updating) for existing data; do not try to repla
 it with a fresh installation.
 
 ## Complete school setup
+
+![Quick setup opens on the school details step after the first sign-in.](/images/current/school-setup-start-light-desktop.webp)
+
+Quick setup guides you from school details to the first academic year.
 
 Follow the setup checklist after signing in. Review the campus details and
 time zone. Create or select the current school year, reporting periods,

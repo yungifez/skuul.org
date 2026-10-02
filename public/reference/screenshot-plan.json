@@ -20,6 +20,51 @@
   "data": "Use fictional records in a disposable local installation.",
   "shots": [
     {
+      "id": "install-checks",
+      "guide": "current/getting-started/installation",
+      "section": "Complete the browser installer",
+      "routeName": "install.index",
+      "additionalRouteNames": [
+        "install.world.setup"
+      ],
+      "priority": "essential",
+      "path": "/images/current/install-checks-light-desktop.webp",
+      "alt": "The installer lists its checks. The countries and states check failed and offers an install button.",
+      "caption": "A failed check shows its cause and, where possible, an action to fix it.",
+      "requiredState": "Fresh migrated database without country reference data.",
+      "routeParameters": []
+    },
+    {
+      "id": "install-form",
+      "guide": "current/getting-started/installation",
+      "section": "Complete the browser installer",
+      "routeName": "install.index",
+      "additionalRouteNames": [
+        "install.store"
+      ],
+      "priority": "essential",
+      "path": "/images/current/install-form-light-desktop.webp",
+      "alt": "The completed installer form for a fictional school district and its first elementary campus.",
+      "caption": "All checks pass and the form holds the administrator, organization, and first campus.",
+      "requiredState": "All checks pass; form filled with fictional administrator and campus details; demo notice off.",
+      "routeParameters": []
+    },
+    {
+      "id": "school-setup-start",
+      "guide": "current/getting-started/installation",
+      "section": "Complete school setup",
+      "routeName": "schools.setup",
+      "priority": "essential",
+      "path": "/images/current/school-setup-start-light-desktop.webp",
+      "alt": "Quick setup opens on the school details step after the first sign-in.",
+      "caption": "Quick setup guides you from school details to the first academic year.",
+      "requiredState": "First sign-in after installation.",
+      "routeParameters": [
+        "school",
+        "step"
+      ]
+    },
+    {
       "id": "workspace",
       "guide": "current/using/workspace",
       "section": "Choose the working context",
