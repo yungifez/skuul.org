@@ -56,6 +56,14 @@ The [screenshot capture brief](./screenshots) defines the planned images and the
 | `PortalRequestController` | [Family requests and the staff inbox](/current/family/requests) |
 | `HealthController` | [Backups and monitoring](/current/operations) |
 
+## Role-specific instructions
+
+The [role index](../using/roles) links instructions for every seeded role and delegated specialist responsibilities.
+The [role inventory](/reference/role-guide-coverage.json) records eight installation templates and their permission sets.
+Local assignments and migration history can differ from those templates.
+Role checks compare the documented role list and permission snapshot with the source seeders when a checkout is available.
+Job duties remain campus-defined permission sets, rather than invented seeded roles.
+
 ## Review procedure quality
 
 Route coverage is a discovery aid. A mapped guide still needs an executable procedure.

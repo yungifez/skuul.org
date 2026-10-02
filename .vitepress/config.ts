@@ -41,6 +41,52 @@ export default defineConfig({
           ]
         },
         {
+          "text": "Instructions by role",
+          "collapsed": false,
+          "items": [
+            {
+              "text": "Choose your role",
+              "link": "/current/using/roles"
+            },
+            {
+              "text": "Platform administrator",
+              "link": "/current/using/platform-administrator"
+            },
+            {
+              "text": "Organization administrator",
+              "link": "/current/using/organization-administrator"
+            },
+            {
+              "text": "Campus administrator",
+              "link": "/current/using/campus-administrator"
+            },
+            {
+              "text": "Teacher",
+              "link": "/current/using/teacher"
+            },
+            {
+              "text": "Accountant",
+              "link": "/current/using/accountant"
+            },
+            {
+              "text": "Librarian",
+              "link": "/current/using/librarian"
+            },
+            {
+              "text": "Student",
+              "link": "/current/using/student"
+            },
+            {
+              "text": "Parent or guardian",
+              "link": "/current/using/parent"
+            },
+            {
+              "text": "Delegated staff responsibilities",
+              "link": "/current/using/delegated-staff"
+            }
+          ]
+        },
+        {
           "text": "Install and operate",
           "collapsed": true,
           "items": [

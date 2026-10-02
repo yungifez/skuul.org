@@ -29,6 +29,7 @@ Check the [release notes](https://github.com/yungifez/skuul/releases) before upg
 | --- | --- |
 | Evaluate or install Skuul | [Requirements](./getting-started/requirements) and [installation](./getting-started/installation). |
 | Set up an organization or campus | [Organizations](./administration/organizations) and [campus setup](./administration/campuses). |
+| Follow your role's daily tasks | [Instructions by role](./using/roles), including specialist staff duties. |
 | Manage access | [Accounts](./people/accounts) and [roles](./administration/permissions). |
 | Enroll learners | [Students](./people/students), [admissions](./people/admissions), and [guardians](./people/guardians). |
 | Plan teaching | [Calendars](./academics/calendars), [structure](./academics/structure), and [offerings](./academics/offerings). |

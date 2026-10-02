@@ -22,6 +22,17 @@ Use valid, coherent dates for calendars, marks, invoices, and requests.
 Use synthetic descriptions for health and safeguarding examples.
 Do not capture live personal data, real financial records, tokens, passwords, mail credentials, or recovery codes.
 
+## Capture with the intended role
+
+Use the role recorded in each capture-plan entry, with its required campus or organization membership.
+Follow [instructions by role](../using/roles) when preparing that account.
+Grant only the additional permissions listed for the capture and the specific workflow.
+Use the teacher account for marks and attendance, the accountant for collections, and the librarian for lending.
+Use a guardian account for family views.
+Use a separate authorized reviewer for result approval.
+Do not use platform administrator access as evidence that another role has a working control.
+A multi-stage screenshot can require different staff and family accounts; keep the learner and record identifiers consistent.
+
 ## Prepare task states for the essential images
 
 Follow the [worked campus exercise](../getting-started/first-campus) for coherent setup and example records.

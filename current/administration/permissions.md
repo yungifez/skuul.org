@@ -3,6 +3,8 @@
 Use **Roles** to manage campus roles. Use a person's access controls to assign them.
 You need role management permission and authority over the target campus.
 
+Read [instructions by role](../using/roles) for the eight seeded roles and delegated specialist duties.
+
 ## Understand the access layers
 
 | Layer | What it controls |

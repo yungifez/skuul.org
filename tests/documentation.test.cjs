@@ -285,3 +285,88 @@ test('worked examples explain calculated results and financial input units', () 
     assert(exercise.includes(checkpoint), `Worked exercise omits ${checkpoint}`);
   }
 });
+
+test('each seeded role and delegated duty has usable role instructions', () => {
+  const roles = JSON.parse(read('public/reference/role-guide-coverage.json'));
+  const index = read('current/using/roles.md');
+  assert(Object.keys(roles.roles).length > 0, 'Role inventory is empty');
+  for (const [name, role] of Object.entries(roles.roles)) {
+    guideExists(role.guide);
+    assert(index.includes('`' + name + '`'), `Role index omits ${name}`);
+    const text = read(role.guide + '.md');
+    assert(text.includes('`' + name + '`'), `Role guide omits its actual role name: ${name}`);
+    assert(/^\d+\. /m.test(text), `Role guide has no task procedure: ${name}`);
+    assert(text.includes('| Problem | Action |'), `Role guide omits blocked-action instructions: ${name}`);
+    assert(/\]\(\.\.\//.test(text), `Role guide does not link detailed task instructions: ${name}`);
+    for (const permission of role.excludedDefaultPermissions ?? []) {
+      assert(!role.defaultPermissions.includes(permission), `Excluded permission is present in template: ${name}: ${permission}`);
+      assert(text.includes('`' + permission + '`'), `Role guide omits default permission limit: ${name}: ${permission}`);
+    }
+  }
+  const captures = JSON.parse(read('public/reference/screenshot-plan.json'));
+  for (const shot of captures.shots) {
+    assert(roles.roles[shot.captureRole], `Unknown screenshot role: ${shot.id}: ${shot.captureRole}`);
+    for (const [route, name] of Object.entries(shot.additionalCaptureRoles ?? {})) {
+      assert(roles.roles[name], `Unknown additional screenshot role: ${shot.id}: ${name}`);
+      assert((shot.additionalRouteNames ?? []).includes(route), `Screenshot role names an unplanned route: ${shot.id}: ${route}`);
+    }
+  }
+  assert(Object.keys(roles.duties).length > 0, 'Delegated duty inventory is empty');
+  for (const duty of Object.values(roles.duties)) {
+    guideExists(duty.guide);
+    const guide = read(duty.guide + '.md');
+    const start = guide.indexOf('## ' + duty.title + '\n');
+    assert(start >= 0, `Delegated duty section is absent: ${duty.title}`);
+    const end = guide.indexOf('\n## ', start + 1);
+    const section = guide.slice(start, end < 0 ? undefined : end);
+    assert(/^\d+\. /m.test(section), `Duty lacks a task procedure: ${duty.title}`);
+    for (const permission of duty.permissions) {
+      assert(section.includes('`' + permission + '`'), `Duty permission is absent: ${duty.title}: ${permission}`);
+    }
+    const html = read('.vitepress/dist/' + duty.guide + '.html');
+    assert(html.includes('id="' + duty.anchor + '"'), `Duty anchor is absent: ${duty.anchor}`);
+  }
+});
+
+test('optional source comparison detects undocumented seeded roles and changed defaults', (t) => {
+  const source = process.env.SKUUL_SOURCE_PATH;
+  if (!source) return t.skip('Set SKUUL_SOURCE_PATH for seeded role and permission comparison');
+  const inventory = JSON.parse(read('public/reference/role-guide-coverage.json'));
+  const sourceRead = file => fs.readFileSync(path.join(source, file), 'utf8');
+  const roleEnum = Object.fromEntries([...sourceRead('app/Enums/Role.php').matchAll(/case (\w+) = '([^']+)';/g)].map(match => [match[1], match[2]]));
+  const roleSeeder = sourceRead('database/seeders/RoleSeeder.php');
+  const seeded = [...roleSeeder.matchAll(/'name'\s*=>\s*(?:'([^']+)'|RoleName::(\w+))/g)].map(match => match[1] ?? roleEnum[match[2]]);
+  assert(seeded.every(Boolean), 'A seeded role could not be resolved');
+  assert.deepEqual(sorted(Object.keys(inventory.roles)), sorted(new Set(seeded)), 'Add instructions when a seeded role changes');
+  const seeder = sourceRead('database/seeders/PermissionSeeder.php');
+  const quoted = block => sorted(new Set([...block.matchAll(/'([^']+)'/g)].map(match => match[1])));
+  for (const name of ['admin', 'teacher', 'student', 'parent']) {
+    const block = seeder.match(new RegExp('\\$' + name + '->syncPermissions\\(\\[([\\s\\S]*?)\\]\\)'));
+    assert(block, `Cannot find seeded permissions: ${name}`);
+    assert.deepEqual(inventory.roles[name].defaultPermissions, quoted(block[1]), `Review ${name} instructions after template changes`);
+  }
+  for (const name of ['accountant', 'librarian']) {
+    const constant = name.toUpperCase() + '_PERMISSIONS';
+    const block = seeder.match(new RegExp('public const ' + constant + ' = \\[([\\s\\S]*?)\\];'));
+    assert(block, `Cannot find permission constant: ${constant}`);
+    assert.deepEqual(inventory.roles[name].defaultPermissions, quoted(block[1]), `Review ${name} instructions after template changes`);
+    assert(seeder.includes('syncPermissions(self::' + constant + ')'), `Role assignment no longer uses ${constant}`);
+  }
+  const organizationPermissions = [...sourceRead('app/Enums/OrganizationPermission.php').matchAll(/case \w+ = '([^']+)';/g)].map(match => match[1]);
+  assert.deepEqual(inventory.roles['organization-admin'].defaultPermissions, sorted(organizationPermissions));
+  assert(seeder.includes('$organizationAdmin->syncPermissions(OrganizationPermission::all())'));
+  assert.equal(inventory.roles['platform-admin'].defaultPermissionMode, 'all_created_permissions');
+  assert(seeder.includes("$platformAdmin->syncPermissions(Permission::query()->pluck('name')->all())"));
+  const defined = new Set([...seeder.matchAll(/'name'\s*=>\s*'([^']+)'/g)].map(match => match[1]));
+  const captures = JSON.parse(read('public/reference/screenshot-plan.json'));
+  for (const shot of captures.shots) {
+    for (const permission of shot.additionalPermissions ?? []) {
+      assert(defined.has(permission), `Unknown additional screenshot permission: ${shot.id}: ${permission}`);
+    }
+  }
+  for (const duty of Object.values(inventory.duties)) {
+    for (const permission of duty.permissions) {
+      assert(defined.has(permission), `Delegated duty names an unknown permission: ${duty.title}: ${permission}`);
+    }
+  }
+});

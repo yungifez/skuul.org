@@ -3,6 +3,8 @@
 Sign in with the email address attached to your account. There is no public registration.
 Use the invitation from your administrator to set your first password.
 
+Choose your [role guide](./roles) for daily tasks, review duties, and permission limits.
+
 ## Choose the working context
 
 <!-- screenshot: workspace
