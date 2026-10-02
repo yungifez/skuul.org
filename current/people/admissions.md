@@ -8,7 +8,7 @@ You need admission management access.
 
 1. Confirm that the section belongs to the selected cycle.
 2. Confirm that the section is full and the cycle is not closed.
-3. Select or create the candidate's account.
+3. Select the candidate's existing account.
 4. Add the candidate to the section's waitlist.
 5. Review the queue order.
 
@@ -37,6 +37,31 @@ Declining finishes that offer.
 
 Before archiving a section, resolve its waiting candidates and active offers.
 Move current learners before removing the section from use.
+## Use the queue controls
+
+Read access requires `read admission waitlist`.
+Adding candidates, offering seats, accepting, and declining require `manage admission waitlist`.
+
+1. Select **Section** on the waitlist board.
+2. Select a known person in **Candidate**.
+3. Set **Priority** where the campus uses priority ordering.
+4. Select **Add to waitlist**.
+5. Review the candidate's queue row and section capacity.
+
+The board selects existing eligible people. It has no inline new-account form.
+Ask the operator to prepare an eligible account before returning to the board.
+The board does not provide candidate account provisioning. Do not admit a duplicate learner to bypass a full section.
+When a place becomes available, select **Offer place** on the eligible queue entry.
+Select **Accept and enrol** after confirmed acceptance, or **Decline** after confirmed refusal.
+Do not create a separate enrollment while an offer already reserves the seat.
+
+| Problem | Action |
+| --- | --- |
+| Section cannot use a waitlist | Configure a capacity limit and verify that the section is full. |
+| Candidate is absent | Check existing account visibility and incompatible enrollment or staff status. |
+| Acceptance fails after an offer | Recheck capacity, cycle status, and the person's current enrollment. |
+| Section cannot be archived | Resolve its waiting and offered entries before archiving. |
+
 ## Check the result
 
 - Check the candidate state and section capacity after offering a place.

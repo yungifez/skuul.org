@@ -56,6 +56,15 @@ The [screenshot capture brief](./screenshots) defines the planned images and the
 | `PortalRequestController` | [Family requests and the staff inbox](/current/family/requests) |
 | `HealthController` | [Backups and monitoring](/current/operations) |
 
+## Review procedure quality
+
+Route coverage is a discovery aid. A mapped guide still needs an executable procedure.
+For each workflow, review prerequisites, permission scope, exact controls, input rules, saved state, correction steps, and blocked actions.
+Compare the instructions with the current forms, policies, actions, and relevant tests.
+The [worked exercise](../getting-started/first-campus) gives a manual acceptance sequence with expected outcomes.
+It does not substitute for running that exercise or testing the application.
+Planned screenshots remain pending until real captures are added and reviewed.
+
 ## Review and maintain the inventory
 
 The [machine-readable inventory](/reference/application-coverage.json) maps each route and source file to its guide.

@@ -2,7 +2,7 @@
 
 Enable Discipline and use **Operations → Cases**.
 Behaviour and safeguarding records have different access requirements.
-Safeguarding permission is required for safeguarding cases.
+Restricted access also permits the assigned handler or the person who reported the case.
 
 ## Record a case
 
@@ -34,6 +34,33 @@ Reopen it through the authorized workflow before adding further notes or actions
 These records do not automatically appear in the family portal.
 A campus move does not provide unrestricted access to the source campus's cases.
 Use explicit sharing with the applicable restricted-data authority.
+
+## Enter the case and follow-up work
+
+Reading ordinary cases requires `read incident`; creating requires `create incident`; updating requires `update incident`.
+Restricted case reading permits `read safeguarding case`, the assigned handler, or the person who reported it.
+Updating still requires `update incident` and visibility of that case.
+
+1. Enter **Summary**, **Kind of case**, **When**, **Where**, and **What happened**.
+2. Select **Handled by** when a responsible campus worker is known.
+3. Select **Add a person** for each participant.
+4. Choose the learner, **Why they appear**, and optional participant note.
+5. Select **Record the case**.
+
+Summary and location accept up to 255 characters; description accepts up to 5000.
+When cannot be in the future. Participant notes accept up to 255 characters.
+At the case record, select **Move the case to**, enter **Why**, then select **Move the case**.
+Use **What kind**, **What has to happen**, **Who**, and **Due** to create an action with **Add action**.
+Action text accepts up to 1000 characters.
+Use **Add note** for progress; note text accepts up to 5000.
+Select **Private to the case handlers** for a restricted note.
+
+| Problem | Action |
+| --- | --- |
+| Case is absent from a general list | Check restricted visibility and the working campus. |
+| Update controls are absent | Check `update incident` and permission to read this case. |
+| New action or note is blocked | Check Closed status and the authorized reopening workflow. |
+| Participant is absent | Check that the enrollment belongs to the working campus. |
 
 ## Check the result
 

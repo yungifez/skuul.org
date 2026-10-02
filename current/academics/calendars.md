@@ -60,6 +60,54 @@ Select a different target cycle in the same campus.
 Copying teaching structure does not promote learners or publish new results.
 Complete [promotion](./progression) separately.
 
+## Enter calendar dates
+
+Creating a cycle requires `create academic year`; editing and publishing require `update academic year`.
+Period creation and editing use `create academic period` and `update academic period`.
+Closing requires `close academic period`; reopening requires `reopen academic period`.
+Changing the working context uses `set academic year` and `set academic period`.
+
+In the calendar editor, enter **Starts on**, **Ends on**, and **Reporting structure**.
+Use **Split evenly** to generate an initial set of periods.
+Review each period's **Name**, **Type**, **Starts**, and **Ends** before saving.
+Use **Add period** for another row.
+The editor requires between one and eight period rows, with names up to 100 characters.
+Select **Create draft school year** for a new cycle, using the campus term.
+Select **Save draft**, or **Save and continue** during setup, to save an existing cycle.
+After reviewing the setup, select **Publish and finish setup** where that setup control appears.
+Generated equal intervals are a starting point; they do not know local holiday or examination policy.
+
+Example: a cycle runs from 2026-09-01 to 2027-07-31.
+Set Term 1 from 2026-09-01 to 2026-12-18.
+Every child period must fit within its parent, and every top-level period must fit within the cycle.
+Use the separate school-calendar workflow for holidays and closure days.
+When existing records fall outside changed dates, review the date-impact warning before confirming.
+
+## Perform closure and reopening
+
+1. Open the cycle and find the intended period.
+2. Select **Start closing** to restrict the period to correction work.
+3. Finish or correct the outstanding records.
+4. Select **Close** and read the readiness review.
+5. Resolve blocking work or review the explicit force-close option with the authorized decision maker.
+6. Enter the closure note if needed and confirm **Close**.
+
+**Close with this work still open** deliberately overrides reviewed outstanding work.
+Do not select it merely to make the warning disappear.
+Read the individual blocking and warning items before confirmation.
+To correct a Closed period, select **Reopen**, enter **Why it is reopening**, and confirm **Reopen**.
+The reopening reason is required and accepts up to 500 characters.
+Open the parent first when a parent closure blocks reopening.
+Archived periods have no reopening transition.
+
+| Problem | Action |
+| --- | --- |
+| Publication is blocked | Check cycle dates and at least one valid dated period. |
+| Generated dates are unsuitable | Edit each generated interval before publishing. |
+| Ordinary work is read-only | Check whether the period is Draft, Closed, or Archived. |
+| Closure reports unfinished marks | Review unentered and incomplete entries in each named gradebook. |
+| Next cycle has no learners | Copying setup does not promote or place learners. Review enrollment separately. |
+
 ## Check the result
 
 - Confirm cycle and period dates after publication.

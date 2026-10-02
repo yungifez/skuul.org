@@ -48,6 +48,34 @@ A programme does not grant a learner or staff member new campus permissions.
 Families see eligible participation when Programmes and the Programmes portal area are enabled.
 Financial budgets can optionally refer to a campus programme.
 
+## Use group controls
+
+Use `read cohort`, `create cohort`, and `update cohort` for corresponding group tasks.
+Restricted watchlists also require `read restricted cohort`.
+Enter **Name**, **Kind of group**, and optional description, then select **Make the group**.
+At the group record, choose **Learner** and **Joined on**, then select **Add**.
+Select **Take out** to end membership while retaining its earlier place in the group.
+
+## Use programme controls
+
+Use `read program`, `create program`, and `update program` for corresponding programme tasks.
+The permission names use `program`, although the interface uses programme.
+Enter **Name**, **Kind**, and optional description, then select **Open the programme**.
+At the record, choose **Learner**, **Starts on**, optional **When it runs**, and optional **Run by**.
+Select **Give a place**, then check the saved participation state.
+Use the row's **Mark as [state]** action for a permitted transition.
+Programme and group names accept 100 characters; descriptions accept 1000.
+
+Closing a programme blocks new places while existing places keep running.
+Closing a group blocks new members and retains membership history.
+
+| Problem | Action |
+| --- | --- |
+| Watchlist is hidden | Check restricted-cohort authority. |
+| Programme rejects another place | Review the learner's existing running participation. |
+| No new learner can join | Check whether the group or programme is still open. |
+| Programme shows no capacity queue | Capacity and waitlist enforcement are not implemented for programmes. |
+
 ## Check the result
 
 - Check the participation state, start date, schedule, and responsible staff.

@@ -43,6 +43,29 @@ Remove those assignments separately when revoking access.
 Platform permissions and organization permissions use their own scope.
 A teacher assignment, staff employment record, guardian link, or learner placement is not a substitute for permission.
 
+## Use role controls and revoke an assignment
+
+Read roles with `read role`; creating, changing, archiving, and assigning require `manage role`.
+For a new role, enter **Name**, **What it is for (optional)**, and selected permissions.
+Select **Write the role**.
+Name accepts up to 100 characters; description accepts 255.
+To copy a role, open its record, enter **Name of the copy**, and select **Copy**.
+
+At the role record, select **Person who works here**, then select **Give**.
+Check that person under **Who holds it here**.
+To revoke this assignment, select **Take it away** beside the intended person and confirm.
+Review their other roles because another role may grant the same permission.
+**Stop offering it** prevents new assignments; existing holders keep the role.
+Use **Offer it again** to make the role assignable again.
+
+| Problem | Action |
+| --- | --- |
+| Built-in role cannot be edited | Copy the protected role into a campus role. |
+| Permission cannot be granted | Check whether you hold that permission yourself. |
+| Removing permissions is refused | Check the last available role-manager restriction. |
+| Archived role holder still performs actions | Remove the existing assignment and review other roles. |
+| Role exists in another campus only | Create or assign the intended role in the working campus. |
+
 ## Check the result
 
 - Check the role name and permissions after saving.

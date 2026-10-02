@@ -216,3 +216,72 @@ test('optional fresh route export matches documented application routes', { skip
   const identity = route => JSON.stringify([route.method, route.uri, route.name, route.action]);
   assert.deepEqual(sorted(routes.map(identity)), sorted(coverage.routes.map(identity)), 'Update route coverage from a fresh route export');
 });
+
+test('task guides retain controls tied to reviewed application screens', (t) => {
+  const source = process.env.SKUUL_SOURCE_PATH;
+  if (!source) return t.skip('Set SKUUL_SOURCE_PATH for application control checks');
+  const controls = [
+    ['current/people/students.md', 'resources/views/livewire/create-student-form.blade.php', ['Admit learner']],
+    ['current/academics/calendars.md', 'resources/views/livewire/academic-calendar-form.blade.php', ['Save draft', 'Save and continue']],
+    ['current/people/students.md', 'resources/views/livewire/show-student-profile.blade.php', ['Change the enrollment', 'Change placement', 'Save placement', 'Change status', 'Save status']],
+    ['current/people/guardians.md', 'resources/views/livewire/assign-students-to-parent.blade.php', ['Link learner', 'Unlink']],
+    ['current/people/accounts.md', 'resources/views/livewire/manage-account-password.blade.php', ['Set password', 'New password', 'Confirm password', 'Change it at next sign-in']],
+    ['current/academics/attendance.md', 'resources/views/livewire/attendance-register.blade.php', ['Save register', 'Mark everybody present', 'Mark everybody absent']],
+    ['current/academics/gradebooks.md', 'resources/views/livewire/gradebook-mark-sheet.blade.php', ['Save marks', 'Put back']],
+    ['current/academics/results.md', 'resources/views/livewire/gradebook-mark-sheet.blade.php', ['Send for approval', 'Send a new revision', 'Approve', 'Send back']],
+    ['current/academics/results.md', 'resources/views/livewire/report-card-directory.blade.php', ['Reason for a revision', 'Publish']],
+    ['current/academics/results.md', 'resources/views/livewire/transcript-directory.blade.php', ['Issue transcript']],
+    ['current/finance/payments.md', 'resources/views/livewire/take-invoice-payment.blade.php', ['Record payment', 'Split across fees']],
+    ['current/operations/imports.md', 'resources/views/livewire/import-file-form.blade.php', ['What the file holds', 'CSV file', 'Check the file']],
+    ['current/operations/reports.md', 'resources/views/livewire/report-desk.blade.php', ['Report', 'Shape', 'Financial period', 'Build it']],
+    ['current/family/requests.md', 'resources/views/livewire/portal-request-inbox.blade.php', ['Move to', 'Response', 'Update request']],
+    ['current/academics/progression.md', 'resources/views/livewire/list-promotions-table.blade.php', ['Reset promotion']],
+    ['current/people/moves.md', 'resources/views/livewire/show-student-profile.blade.php', ['Move to another campus', 'Ask the other campus', 'Move campus']],
+  ];
+  for (const [guide, view, labels] of controls) {
+    const sourceText = fs.readFileSync(path.join(source, view), 'utf8');
+    const guideText = read(guide);
+    for (const label of labels) {
+      assert(sourceText.includes(label), `Application control changed: ${view}: ${label}`);
+      assert(guideText.includes(label), `Guide omits reviewed control: ${guide}: ${label}`);
+    }
+  }
+  const moneyCast = fs.readFileSync(path.join(source, 'app/Casts/Money.php'), 'utf8');
+  assert(moneyCast.includes('BrickMoney::of($value,') && moneyCast.includes('getMinorAmount()'), 'Review documented finance input units when the Money cast changes');
+  const invoiceForm = fs.readFileSync(path.join(source, 'app/Livewire/CreateFeeInvoiceForm.php'), 'utf8');
+  assert(invoiceForm.includes("'lines.*.amount' => ['required', 'integer'"), 'Review the documented whole-amount restriction when invoice validation changes');
+  const permissions = [
+    ['current/academics/gradebooks.md', 'app/Policies/CourseOfferingPolicy.php', ['read gradebook', 'manage gradebook', 'publish result', 'approve result', 'update subject']],
+    ['current/operations/imports.md', 'app/Policies/ImportBatchPolicy.php', ['read import', 'create import', 'apply import']],
+    ['current/family/requests.md', 'app/Policies/PortalRequestPolicy.php', ['read portal request', 'answer portal request']],
+    ['current/finance/payments.md', 'app/Livewire/ShowStudentAccount.php', ['update fee invoice', 'refund student payment']],
+  ];
+  for (const [guide, file, required] of permissions) {
+    const sourceText = fs.readFileSync(path.join(source, file), 'utf8');
+    for (const permission of required) {
+      assert(sourceText.includes(permission), `Application permission changed: ${file}: ${permission}`);
+      assert(read(guide).includes(permission), `Guide omits permission: ${guide}: ${permission}`);
+    }
+  }
+});
+
+test('worked examples explain calculated results and financial input units', () => {
+  const gradebook = read('current/academics/gradebooks.md');
+  const percentage = (points, maximum) => points / maximum * 100;
+  const quiz = percentage(8, 10);
+  const exam = percentage(60, 100);
+  assert(gradebook.includes(`${(quiz + exam * 3) / 4}%`));
+  assert(gradebook.includes(`${(quiz + exam) / 2}%`));
+  assert(gradebook.includes(`${Math.max(quiz, exam)}%`));
+  assert(gradebook.includes(`${percentage(68, 110).toFixed(2)}%`));
+  assert(gradebook.includes(`${(quiz + 0 * 3) / 4}%`));
+  const invoice = read('current/finance/invoices.md');
+  assert(invoice.includes('integer major-unit amounts'));
+  assert(invoice.includes('decimal major-unit amounts'));
+  assert(invoice.includes('`1000`'));
+  assert(invoice.includes(`₦${(1000 - 100 + 50).toFixed(2)}`));
+  const exercise = read('current/getting-started/first-campus.md');
+  for (const checkpoint of ['65%', '80%', '₦200.00', 'Save register', 'Send for approval', 'Create invoice', 'Record payment', 'Publish']) {
+    assert(exercise.includes(checkpoint), `Worked exercise omits ${checkpoint}`);
+  }
+});

@@ -41,6 +41,29 @@ Some forms detect changes made by another person. Review the current value befor
 A closed period, archived record, or published revision can prevent editing.
 Use the workflow for correction or revision instead of creating a duplicate.
 
+## Return to an earlier record safely
+
+Select the record's owning campus before correcting historical records.
+For academic records, also select its cycle and period.
+A learner's later campus or placement does not change ownership of earlier attendance or ledger entries.
+Open the existing record rather than creating a replacement identity.
+Read its publication or closure state before selecting an edit action.
+For published academic records, follow the revision and approval procedure.
+For posted finance records, follow the correction or reversal procedure.
+
+If a save fails, preserve the displayed error and record identifier.
+Reload to confirm whether any part of the operation succeeded before submitting another request.
+Gradebook rows and import rows can succeed separately.
+Do not treat a timeout as proof that nothing changed.
+
+Start with the [worked campus exercise](../getting-started/first-campus) when learning the normal task sequence.
+
+| Problem | Action |
+| --- | --- |
+| Historical record is missing | Select its owning campus, cycle, and period. |
+| Edit control is absent | Check permission, record state, and publication or closure. |
+| Save times out | Reload the record and verify what succeeded before retrying. |
+
 ## Check the result
 
 - Confirm the intended campus appears in the workspace.

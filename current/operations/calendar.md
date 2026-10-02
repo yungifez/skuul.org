@@ -36,6 +36,35 @@ Families can read the calendar when Events and the Calendar portal area are enab
 Check the event scope when an expected event does not appear.
 Calendar reminders depend on the running scheduler and configured email delivery.
 
+## Enter the event fields and publish
+
+Read events with `read calendar event`; create with `create calendar event`; edit with `update calendar event`.
+Publication requires `publish calendar event`.
+Saving a draft does not publish a closure day.
+
+1. Enter **Title** and select **Kind of day**.
+2. Choose **All day**, or enter start and end times.
+3. Enter **Starts**, **Ends**, and optional **Where**.
+4. Enter **What it is (optional)** and select **Who it is for**.
+5. Save the draft, then open its saved record.
+6. Select **Publish** and confirm it is **On the calendar**.
+
+Title and location accept up to 255 characters; description accepts up to 2000.
+Ends cannot precede Starts; an event cannot span more than one year.
+An all-day event covers each selected day through its end.
+Select sections or named campus people where the audience needs restriction.
+For a published closure, attendance and timetable checks use the closure's actual scope.
+
+Use **Make it a draft again** in the event menu to withdraw publication with the required authority.
+Review existing operational records before changing a closure interval.
+A draft closure has no published closure effect.
+
+| Problem | Action |
+| --- | --- |
+| Family cannot see an event | Check publication, audience, Events, and the Calendar portal area. |
+| Attendance still opens on a closure date | Check that the closure is published and includes the intended section. |
+| Date range is rejected | Correct reversed dates or an unintended year-long interval. |
+
 ## Check the result
 
 - Check the event date, type, and scope in the calendar.

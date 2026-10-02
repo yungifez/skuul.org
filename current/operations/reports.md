@@ -13,7 +13,7 @@ Caption: Download a report after the build reaches Ready.
 -->
 
 1. Choose the report type.
-2. Select the applicable cycle, period, dates, or learner filters.
+2. Select the financial period when applicable.
 3. Choose CSV, XLSX, or PDF.
 4. Submit the request.
 5. Wait for the request to become Ready.
@@ -45,6 +45,33 @@ An export reflects the data used for that build. Rebuild it after relevant recor
 
 Report-card and transcript exports use their published academic records.
 Publishing an official document is a separate workflow.
+## Use the report desk controls
+
+The directory requires `read report`; requesting an export also requires `create report`.
+The report's underlying data permission is an additional requirement.
+
+1. Select **Report** in **Ask for a report**.
+2. Select **Shape**: CSV, XLSX, or PDF.
+3. Select **Financial period** where that filter applies.
+4. Select **Build it** and note the reported request number.
+5. Find that number under **What has been asked for**.
+6. Wait for Ready, then select **Download**.
+
+The current form exposes report, format, and financial-period controls.
+It does not provide a general cycle, learner, date-range, or class filter editor.
+Report-specific scope also comes from the report implementation and current campus.
+Inspect downloaded headings and sample rows before sharing the file.
+The live application state at build time supplies the data; the request is not an immediate frozen snapshot.
+
+| Problem | Action |
+| --- | --- |
+| Desired report is absent | Check its data permission in the table above. |
+| Build control is absent | Check `create report` and whether any permitted report exists. |
+| Request remains Queued | Ask the operator to check the configured queue worker. |
+| Request becomes Failed | Read the recorded error and correct its cause before requesting another build. |
+| Download is refused | Recheck current authorization and campus; access is checked again at download. |
+| Result still contains old data | Request a fresh export after the underlying correction. |
+
 ## Check the result
 
 - Check that the report reached Ready and reports the expected row count.

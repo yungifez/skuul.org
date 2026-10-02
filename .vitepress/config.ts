@@ -27,6 +27,10 @@ export default defineConfig({
               "link": "/current/using/workspace"
             },
             {
+              "text": "Worked campus exercise",
+              "link": "/current/getting-started/first-campus"
+            },
+            {
               "text": "Application terms",
               "link": "/current/using/glossary"
             },

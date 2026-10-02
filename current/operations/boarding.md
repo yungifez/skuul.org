@@ -52,6 +52,41 @@ Record the learner's return through the leave workflow.
 Ending boarding can cancel leave that has not begun.
 
 Families see eligible placements and leave through the Boarding portal area.
+## Enter houses and bed placements
+
+Read boarding with `read boarding`; change houses and placements with `manage boarding`.
+Deciding nights away requires the separate `decide overnight leave` permission.
+
+Enter house **Name**, **What this school calls it**, **Rooms**, and **Beds in each room**.
+Select **Open the house**.
+Initial room count accepts 1 to 200; beds per room accepts 1 to 40.
+At the house record, use **Add room** and **Add bed** to extend the stock.
+Select **Learner**, **Bed**, and optional **Note**, then select **Give the bed**.
+Check that the learner occupies exactly the intended bed.
+Use **End placement** with **Why they are leaving** to release a place.
+The reason requires 3 to 255 characters.
+
+## Finish a roll and record a night away
+
+On the roll sheet, enter each boarder's status, optional location, and note.
+Location accepts 150 characters; note accepts 1000.
+Select **Save**, then **Complete roll** when every required entry is present.
+**Put back** discards unsaved roll edits. A completed roll rejects further edits.
+
+For nights away, enter **Boarder**, **Leaves on**, **Comes back on**, and **Where they are going**.
+Add the optional contact and reason, then select **Ask for the night away**.
+The return date must be on or after departure.
+Destination accepts 150 characters; contact accepts 100; reason accepts 1000.
+The reviewer selects **Approve** or **Refuse** with a reason for refusal.
+Select **Back in** after the learner returns. Use **Call off** to cancel an eligible request.
+
+| Problem | Action |
+| --- | --- |
+| Bed is rejected | Check occupancy, bed status, room availability, and learner eligibility. |
+| Roll cannot complete | Record every required boarder entry first. |
+| Leave overlaps another request | Resolve the existing applicable nights-away interval. |
+| Suspension has not freed a bed | End the boarding placement explicitly when the learner must leave it. |
+
 ## Check the result
 
 - Check bed occupancy and placement history.

@@ -44,6 +44,8 @@ The sidebar contains the remaining campus-service guides, including notices, stu
 
 ## First campus workflow
 
+Follow the [worked campus exercise](./getting-started/first-campus) for sample inputs and expected results.
+
 1. Install Skuul and create the first platform administrator, organization, and campus.
 2. Complete campus settings, terminology, time zone, and feature choices.
 3. Create the academic calendar, levels, sections, and teaching model.

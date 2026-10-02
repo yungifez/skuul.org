@@ -1,9 +1,29 @@
-# Parents and guardian links
+# Guardians and learner links
 
-Use **People → Parents** to manage guardian accounts and links.
-Select the campus and use the appropriate parent and student permissions.
+Use **People → Parents** in the learner's campus.
+A parent account and a guardian link are separate records.
+Creating an account does not grant access to a learner until the link exists.
 
-## Link a guardian
+## Before you start
+
+Use `create parent` to add a parent account, `read parent` to read it, and `update parent` to edit links.
+Prepare the learner's enrollment and active section in the working cycle.
+Confirm the guardian's identity and authority using the campus's approved process.
+The application does not verify legal guardianship from a shared surname or email domain.
+
+## Add a guardian account
+
+1. Open the parent creation page.
+2. Enter the guardian's own name and email address.
+3. Complete their contact details.
+4. Select **Add parent**.
+5. Review the resulting account and invitation notification.
+
+Use the guardian's existing email to reuse an eligible account.
+Do not enter the learner's email as the guardian's identity.
+See [account invitations](./accounts) if the guardian needs another sign-in link.
+
+## Link a learner
 
 <!-- screenshot: guardian-links
 Path: /images/current/guardian-links-light-desktop.webp
@@ -11,32 +31,36 @@ Alt: The guardian directory leads to a fictional guardian with linked learners.
 Caption: Guardian links control which learners the family can read.
 -->
 
-1. Create or select the guardian's account.
-2. Open the parent record.
-3. Select the learner from the campus.
-4. Save the guardian link.
-5. Invite the guardian to activate their account.
-6. Check the learner list in the family portal.
+1. Open the parent's learner-assignment page.
+2. Select the learner's **Section**.
+3. Select **Learner** and check the admission number.
+4. Select **Link learner**.
+5. Confirm that the learner appears under **Linked learners**.
+6. Sign in as the guardian and verify the intended learner in the family portal.
 
-A guardian can have more than one linked learner.
-A learner can have more than one guardian link.
-The link grants family access to that learner's permitted portal areas.
-It does not grant staff access or expose unrelated learners.
+The section list contains active sections from the working cycle.
+The linked list in this staff view shows learners belonging to the working campus.
+A guardian's links to learners elsewhere do not grant this operator access to those campuses.
+Repeat the operation for each sibling. Keep one guardian account for the same person.
 
-## Correct a link
+## Correct or remove a link
 
-Check the learner and guardian identities before unlinking.
-Removing a guardian link removes the corresponding family access.
-It also cancels open requests from that guardian for that learner.
-Retained school records and published results are not deleted by unlinking.
+1. Find the learner under **Linked learners**.
+2. Select **Unlink** and read the confirmation.
+3. Confirm removal only after checking the guardian and learner.
+4. Verify that the guardian no longer reads that learner's records.
+5. Add the correct link if the original selection was wrong.
 
-A guardian account's sign-in status is separate from the link.
-Suspending the account blocks application access even when a link remains.
-A disabled campus portal or portal area can also hide records.
+Unlinking also cancels open portal requests for that guardian and learner.
+It retains the person accounts and the learner's school records.
+Creating another guardian account is not required to correct a link.
 
-## Check the result
+| Problem | Action |
+| --- | --- |
+| Section is absent | Select the intended cycle and activate its section. |
+| Learner is absent | Check the learner's placement and working campus. |
+| Link controls are absent | Check `update parent` for this campus and parent record. |
+| Guardian signs in but sees no learner | Check the link, enrollment eligibility, Portal feature, and relevant portal area. |
+| Guardian sees an unintended learner | Unlink immediately and review the affected request history. |
 
-- Sign in as the test guardian and confirm the correct learner list.
-- Verify that an unrelated learner does not appear.
-
-See [family portal](../family/portal), [family requests](../family/requests), and [account access](./accounts).
+See [family portal access](../family/portal) and [family requests](../family/requests).

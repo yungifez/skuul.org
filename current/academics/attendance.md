@@ -1,10 +1,18 @@
 # Attendance registers
 
-Enable Attendance and select an open teaching period.
-Use the attendance page for the required section or offering.
-You need attendance read or record permission.
+Enable Attendance and open the attendance register in the intended campus.
+Use `read attendance` to open the register and `take attendance` to record or correct it.
+The current register screen records daily section attendance.
+Lesson attendance exists in the underlying attendance service, but this screen has no lesson-register selector.
 
-## Record a register
+## Before you start
+
+Select the working academic cycle and check the teaching period's status.
+The section and date must resolve valid enrollment and placement history.
+Future dates, published closure days, and Closed periods prevent ordinary attendance writes.
+The campus's detailed attendance configuration can also disable daily registers.
+
+## Save the daily register
 
 <!-- screenshot: attendance-register
 Path: /images/current/attendance-register-light-desktop.webp
@@ -12,39 +20,57 @@ Alt: A daily register shows fictional learners and mixed attendance states.
 Caption: Use explicit attendance states and review unrecorded entries.
 -->
 
-1. Select the date and daily or lesson register.
-2. For a lesson register, select the subject context.
-3. Check the learner list and historical placements.
-4. Enter the attendance state for each learner.
-5. Save the register and review the result.
+1. Select **Section** and check the displayed level and section name.
+2. Select **Day**, using today or an earlier valid date.
+3. Review the learners against their placement on that date.
+4. Select each learner's attendance state.
+5. Review the attendance totals and unrecorded count.
+6. Select **Save register**.
+7. Read the save result, then reload the same section and date.
 
-A campus can disable daily or lesson registers separately.
-A future date cannot be recorded.
-A school closure day prevents a normal register.
-The date must match valid enrollment and placement history.
-Closed periods prevent changes.
+**Today** restores the current campus date.
+The arrow controls move one day backward or forward.
+**Mark everybody present** and **Mark everybody absent** set every displayed learner to that state.
+After using either bulk control, correct exceptions before saving.
+Selecting a state changes the form; **Save register** records it.
 
-States are Present, Absent, Late, Excused, Left early, Remote, School activity, and Not recorded.
-Use the state that describes the learner's actual attendance.
-A missing register is not automatically treated as an absence.
-Present, Late, Left early, Remote, and School activity count as present in rate calculations.
-Only Not recorded is excluded from the rate denominator. Excused still counts in that denominator.
+| State | Use | Counts as present |
+| --- | --- | --- |
+| Present | Attended normally. | Yes |
+| Absent | Did not attend. | No |
+| Late | Arrived late. | Yes |
+| Excused | Authorized absence. | No |
+| Left early | Attended and departed early. | Yes |
+| Remote | Attended remotely. | Yes |
+| School activity | Attended an eligible school activity. | Yes |
+| Not recorded | No attendance decision entered. | Excluded |
 
-## Correct attendance
+Only Not recorded is excluded from the rate denominator.
+Excused remains in that denominator.
+Example: Present, Late, Absent, Excused, and Not recorded give two present entries out of four recorded entries: 50%.
+An absent register does not automatically record every learner as Absent.
+Check register coverage alongside the percentage.
 
-Open the existing register and change the incorrect entry.
-The application records the change history.
-Only the campus that owns the attendance record can correct it.
-A learner's later campus move does not give the destination ownership of old registers.
+## Correct a saved entry
 
-Review totals alongside the register coverage.
-A rate can be misleading when many dates remain unrecorded.
-Families see attendance only when their campus enables the corresponding portal area.
+1. Open the same section and original attendance date.
+2. Check the learner identity and historical placement.
+3. Change the incorrect state.
+4. Select **Save register**.
+5. Reload and confirm the corrected state.
 
-## Check the result
+The application retains attendance change history.
+The original campus owns its registers after a learner moves elsewhere.
+Work in that owning campus with the required permission to correct the old record.
 
-- Check the date, register kind, and saved entries.
-- Review the change history after a correction.
-- Compare totals with the number of recorded registers.
+| Problem | Action |
+| --- | --- |
+| Save register is absent | Check `take attendance` and the period's writable state. |
+| No learners appear | Check section, date, current cycle, and eligible placement history. |
+| Day is refused | Correct a future date or check the published closure calendar. |
+| Percentage seems too low | Remember that Excused remains in the denominator. |
+| Percentage seems too high | Review unrecorded learners and missing registers. |
+| Lesson-register selector is absent | The current screen exposes daily attendance only. |
 
-See [calendar closures](../operations/calendar), [campus moves](../people/moves), and [family portal](../family/portal).
+Families read eligible attendance when Attendance and the Attendance portal area are enabled.
+See [closure days](../operations/calendar), [campus moves](../people/moves), and [family portal](../family/portal).

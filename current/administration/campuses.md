@@ -39,6 +39,26 @@ Archive or close records through their own workflows.
 A feature switch hides an area and prevents its operations. It does not erase its records.
 A change to labels or settings does not replace existing placements or published results.
 
+## Review setup before admitting learners
+
+Open the campus and select **Edit school details**.
+Check the organization, name, contacts, and time zone, then select **Save changes**.
+In setup, use **Save and continue** to return to the checklist.
+On the language and terminology page, select the preset or permitted label values.
+Select **Save**, or **Save and continue to classes** in setup.
+
+Then complete the calendar, levels, sections, subjects, and teaching model for the intended cycle.
+Publish the dated calendar and activate sections before testing student creation.
+Assign teachers to offerings before testing gradebook editing.
+Test with an authorized campus staff account rather than relying only on platform access.
+
+| Problem | Action |
+| --- | --- |
+| Today differs from the operator's expected date | Check the campus time zone and server time configuration. |
+| Labels changed but roster choices did not | Terminology and teaching model are separate settings. |
+| Setup appears complete but student admission has no section | Check the working cycle and section Active state. |
+| Family area remains unavailable | Check Portal, the stored area flag, and any related feature. |
+
 ## Check the result
 
 - Review the campus name, organization, terminology, and time zone after saving.

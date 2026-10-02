@@ -70,6 +70,26 @@ Calendar and structure copying remain separate from learner placement.
 Programme participation has state and duplicate checks, but no capacity or admission queue.
 Use the separate section admission queue for section capacity management.
 
+## Amount entry and unexposed workflows
+
+Invoice line Amount, Waiver, and Fine fields accept whole major-unit amounts.
+Payment, expense, and refund forms accept decimal major units.
+For NGN, invoice `1000` and payment `1000.00` represent the same money.
+The invoice editor currently rejects fractional inputs such as `1000.50`.
+The Money cast converts major units to stored minor units; do not enter raw database amounts into the form.
+Review the formatted totals before posting.
+See [invoice instructions](../finance/invoices).
+
+The attendance screen exposes daily section registers only.
+The underlying lesson-attendance service has no corresponding selector in this screen.
+The backend interorganization transfer action also has no current routed staff form.
+The same-organization campus move screen does not perform that transfer.
+See [attendance](../academics/attendance) and [campus moves](../people/moves).
+
+The report desk exposes report, format, and financial-period controls.
+It has no general learner, class, cycle, or date-range filter editor.
+See [report exports](../operations/reports).
+
 ## Documentation scope
 
 The guides cover implemented application areas, their main procedures, and developer entry points.

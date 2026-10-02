@@ -38,6 +38,32 @@ Completed history cannot be changed as if it were a future booking.
 The booking does not rewrite a published timetable.
 Use the timetable revision or dated override workflow for teaching schedule changes.
 
+## Use facility and booking controls
+
+Read with `read facility`, change resources with `manage facility`, and book with `book facility`.
+Select **Share something new** to enter **Name**, **Kind**, capacity, and notes.
+Select **Add it**. Use **Change** and **Save** to edit the resource.
+Name must be unique in the campus and accepts 120 characters.
+Capacity accepts integers from 1 to 100000; notes accept 1000 characters.
+
+1. Select **Book** beside the intended resource.
+2. Verify **What**, then enter **From** and **Until**.
+3. Enter **What it is for**, up to 255 characters.
+4. Select **Book it**.
+5. Review the saved interval under **Booked next**.
+
+Until must follow From, and a new booking must not finish in the past.
+Use **Give it up** to cancel an eligible future booking.
+Enter the optional cancellation reason, then confirm **Give it up**.
+Select **Bring back into use** when an unavailable resource becomes available again.
+
+| Problem | Action |
+| --- | --- |
+| Booking overlaps a lesson | Review the published timetable's room use. |
+| Booking overlaps another reservation | Change the interval or have the authorized holder cancel that reservation. |
+| Resource is unavailable | Check its in-use state before selecting another room. |
+| Old booking cannot be cancelled | Historical completed use is not a future reservation. |
+
 ## Check the result
 
 - Check the resource, booking interval, and saved purpose.

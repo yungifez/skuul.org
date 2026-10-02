@@ -45,6 +45,44 @@ These exceptions do not rewrite the published repeating schedule.
 A closure day can prevent a lesson or cover assignment.
 
 Families see published schedules when the timetable portal area is enabled.
+## Enter and publish the schedule
+
+Use `read timetable` to read, `create timetable` to create, and `update timetable` to build or publish.
+School-wide creation also requires `create schoolwide timetable`.
+
+Enter **Timetable name**, **Academic period**, **Schedule for**, and the required **Section**.
+For a slot, enter **Starts** and **Ends** as times; Ends must follow Starts.
+Choose **Repeat**: weekly, monthly, or one occurrence.
+A single occurrence requires **Date**.
+A recurring slot requires **Starts on** and **Repeats every**, from 1 to 52.
+Weekly recurrence also requires at least one weekday.
+
+In the builder, select **Add time slot**, then place the subject or custom item.
+Use **Where** for the applicable room.
+Use **Leave it empty** to remove the slot's assigned item without deleting the slot.
+The slot's **Remove** action removes the time slot and everything placed in it.
+Select **Publish** only after resolving the listed conflicts.
+Use **New revision** on a published schedule to obtain an editable draft.
+
+## Record dated cover
+
+1. Open the cover panel for the published schedule.
+2. Select **Scheduled lesson** and **Covering teacher**.
+3. Enter **Date** and **Reason**, up to 1000 characters.
+4. Select **Record cover**.
+5. Check that date's teacher assignment.
+
+Use **Withdraw** to remove eligible recorded cover and restore the usual teacher for that date.
+For a section-specific revision, select **Section** under **Give a section its own version**.
+Select **Start the draft**, review its scope, then publish the intended replacement.
+
+| Problem | Action |
+| --- | --- |
+| Published schedule cannot be edited | Select New revision. |
+| Teacher conflict names another campus | Resolve the teacher's cross-campus appointment. |
+| Room is unavailable | Check facility bookings and whether the room is out of use. |
+| Cover teacher is rejected | Review approved leave, working hours, closure days, and conflicting lessons. |
+
 ## Check the result
 
 - Confirm the published revision and applicable section and period.

@@ -22,6 +22,28 @@ Use valid, coherent dates for calendars, marks, invoices, and requests.
 Use synthetic descriptions for health and safeguarding examples.
 Do not capture live personal data, real financial records, tokens, passwords, mail credentials, or recovery codes.
 
+## Prepare task states for the essential images
+
+Follow the [worked campus exercise](../getting-started/first-campus) for coherent setup and example records.
+Keep one identity and enrollment for Sam across related teaching, finance, and family images.
+
+| Image | Prepare and show | Reader's decision |
+| --- | --- | --- |
+| Student enrollment | Active section, generated admission number, and saved learner placement. | Confirm the intended enrollment. |
+| Gradebook | Quiz 8/10, Exam 60/100, item weights 1 and 3, and the calculated 65%. | Distinguish raw totals from weighted results. |
+| Result review | A waiting revision with another reviewer's approval controls. | Explain submission versus approval. |
+| Family overview | Alex's linked Sam, with an approved result available. | Select the correct child and published data. |
+| Fee invoice | Whole major-unit amount input and the formatted issued total. | Distinguish whole invoice input from fractional payment input. |
+| Student payment | Decimal amount, channel, reference, and visible allocation controls. | Confirm actual money received and its allocation. |
+| Checked import | At least one valid row and one invalid row with a readable message. | Decide whether to correct the file before applying. |
+| Family request | Submitted request and a staff response in coherent states. | Separate a request from the underlying correction. |
+
+For a multi-stage task, add a focused second image when one image cannot explain the critical change.
+Use separate descriptive filenames and captions for before and after states.
+Keep both captures next to the steps they illustrate.
+Show the invoice's input rule explicitly; a formatted invoice alone does not explain its whole-amount restriction.
+Show the reviewer account's actual controls rather than the submitter's disabled approval action.
+
 ## Capture a real screen
 
 Use a real browser render of the application.

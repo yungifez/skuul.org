@@ -45,6 +45,42 @@ Preview section copying into the next cycle.
 Check the destination names, capacity, and teacher assignments.
 The copy action is for structure. Use the enrollment workflow to move learners.
 
+## Enter level and section details
+
+Create a level with its name, optional **Short code**, and **Display order**.
+Use **Level group (optional)** to place a teaching level inside a group.
+Names and supplied short codes must be unique within the campus.
+A group is a grouping node, rather than an ordinary learner placement.
+
+1. Open section creation for the intended school year.
+2. Select the class or academic level.
+3. Enter the section name and optional class teacher.
+4. Enter optional room, stream, shift, language, and display label details.
+5. Enter **Capacity** if seats require a limit.
+6. Select **Create draft section**, using the campus's section term.
+7. Review the saved section, then select **Activate** when it is ready.
+
+Section names are unique within their level and cycle.
+Capacity accepts integers from 1 to 999; blank means no configured seat limit.
+Display order accepts integers from 0 to 9999.
+A room label describes placement; facility bookings have separate availability controls.
+
+## Change the teaching model safely
+
+Use **Save teaching setup** when configuring an eligible future cycle.
+For a running cycle, use **Move this cycle** and enter **Why the cycle is moving**.
+That reason requires 15 to 500 characters.
+Existing arrangements remain; new work uses the selected model.
+To permit a subject exception, select **Subject**, **How it is taught**, and optional **Level**.
+Enter **Why**, using 10 to 500 characters, then select **Add exception**.
+
+| Problem | Action |
+| --- | --- |
+| Learner cannot select a section | Check section Active state and selected cycle. |
+| New section name is rejected | Check other sections within the same level and cycle. |
+| Archiving is blocked | Move current learners and resolve waiting candidates and offers first. |
+| Separate roster is unavailable | Review the teaching model or create an authorized subject exception. |
+
 ## Check the result
 
 - Check that every section belongs to the correct level and cycle.

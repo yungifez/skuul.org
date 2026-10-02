@@ -46,6 +46,20 @@ Re-enable a feature to use its retained records, subject to normal permissions a
 3. Change the required switch and wait for the save result.
 4. Reload the page and check its saved state.
 
+## Diagnose a missing feature page
+
+1. Select the campus containing the records.
+2. Reload the feature profile and confirm the saved switch.
+3. Check the account's permission for the intended operation.
+4. Check the record's enrollment, teaching assignment, or ownership requirement.
+5. Ask the operator to inspect detailed flags when the whole feature is enabled.
+
+Example: enabling Library does not give every teacher `lend library item`.
+Enabling Portal does not create a guardian link.
+Enabling Attendance does not reopen a Closed academic period.
+Disable a feature only after reviewing its outstanding operational work.
+Its records remain stored and resume under normal state and permission rules when re-enabled.
+
 ## Check the result
 
 - Reload the page and confirm that each saved switch retains its state.

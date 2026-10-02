@@ -44,6 +44,35 @@ A group must contain only campuses from its own organization.
 Changing a group's membership does not move existing ledger entries.
 An empty group can be removed.
 
+## Enter organization and membership details
+
+Enter **Name**, optional **Code**, contact details, and address, then select **Create the organization**.
+Name accepts 255 characters. Code accepts up to 50 letters, numbers, dashes, and underscores and must be unique.
+When editing, Code is required. Select **Save** after changes.
+
+On the member page, enter the known person's email and select **Give scope**.
+Open **Permissions** to review and restrict organization authority, then select **Save permissions**.
+A stored null permission list means full organization authority; an explicit list limits it.
+The person also needs the active organization membership and global organization-admin role.
+Use **Remove scope** and **Confirm removal** to revoke organization authority.
+Their existing campus memberships remain separate.
+
+## Verify an address and configure balance sharing
+
+On **Addresses**, enter **Address**, select **Opens**, and select **Claim it**.
+Create the displayed DNS TXT record, then select **Prove it** after propagation.
+Use **Give it up** to remove the domain mapping when it is no longer authorized.
+On billing groups, enter **Name of the new group** and select **Start a group**.
+Assign the intended same-organization campuses before planning a balance-carrying move.
+Changing a billing group does not migrate existing entries.
+
+| Problem | Action |
+| --- | --- |
+| Organization admin cannot operate a campus | Grant the required active campus membership and campus permissions. |
+| Domain proof fails | Check the exact TXT hostname, token, and authoritative DNS propagation. |
+| Verified domain has no HTTPS | Configure web routing and certificates separately. |
+| Balance did not carry during a move | Check whether both campuses belonged to the same billing group. |
+
 ## Check the result
 
 - Confirm that each campus belongs to the intended organization.
