@@ -24,11 +24,9 @@ Future effective dates are not accepted by the profile form.
 
 ## Request or perform an internal move
 
-<!-- screenshot: campus-move
-Path: /images/current/campus-move-light-desktop.webp
-Alt: A pending move lists the source, destination, and decision state.
-Caption: Review the destination and approval state before completing a move.
--->
+![A request from Maple Grove Middle School to move a learner into Grade 9 waits for this campus to approve or reject it.](/images/current/campus-move-light-desktop.webp)
+
+Review the destination and approval state before completing a move.
 
 1. Open the learner's profile at the source campus.
 2. Open **Change the enrollment** beside **Enrollment**.

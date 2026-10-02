@@ -17,11 +17,9 @@ A room's capacity does not replace section enrollment capacity.
 
 ## Book a resource
 
-<!-- screenshot: facility-booking
-Path: /images/current/facility-booking-light-desktop.webp
-Alt: The facility page shows availability and a dated booking.
-Caption: Facility bookings share availability checks with published timetables.
--->
+![The facilities page lists the next bookings and the rooms and equipment the campus shares.](/images/current/facility-booking-light-desktop.webp)
+
+Facility bookings share availability checks with published timetables.
 
 1. Select the facility.
 2. Enter the purpose, start time, and end time.

@@ -18,11 +18,9 @@ Use [admissions](./admissions) when the intended section is full.
 
 ## Admit a learner
 
-<!-- screenshot: student-enrollment
-Path: /images/current/student-enrollment-light-desktop.webp
-Alt: The student list shows fictional learners with admission and placement details.
-Caption: Review the learner identity and placement after enrollment.
--->
+![The student list shows fictional learners with email, admission number, class, section, and enrollment state.](/images/current/student-enrollment-light-desktop.webp)
+
+Review the learner identity and placement after enrollment.
 
 1. Open the student creation page from **Students**.
 2. Enter the learner's name and email address.

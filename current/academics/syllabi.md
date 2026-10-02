@@ -21,11 +21,9 @@ Use the print view for a printable copy.
 
 ## Track delivery
 
-<!-- screenshot: syllabus-coverage
-Path: /images/current/syllabus-coverage-light-desktop.webp
-Alt: Topic coverage distinguishes covered, partial, and outstanding work.
-Caption: A published outline and recorded coverage are separate.
--->
+![Syllabus coverage lists each subject and grade with topics covered and topics behind plan.](/images/current/syllabus-coverage-light-desktop.webp)
+
+A published outline and recorded coverage are separate.
 
 Record topic coverage for the relevant section.
 Use Covered, Partial, or Skipped as appropriate.

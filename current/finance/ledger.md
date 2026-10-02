@@ -6,11 +6,9 @@ You need financial-period management permission to open or close them.
 
 ## Control financial posting
 
-<!-- screenshot: financial-periods
-Path: /images/current/financial-periods-light-desktop.webp
-Alt: Financial-period controls distinguish open and closed periods.
-Caption: Financial periods control ledger posting independently of teaching.
--->
+![Below the invoices, one financial period is open and the previous one is closed.](/images/current/financial-periods-light-desktop.webp)
+
+Financial periods control ledger posting independently of teaching.
 
 Create the period with its name, start date, and end date.
 Check the date interval before saving.

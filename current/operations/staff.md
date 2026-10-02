@@ -21,11 +21,9 @@ The current staff profile includes credentials and availability; it has no appra
 
 ## Process leave
 
-<!-- screenshot: staff-leave
-Path: /images/current/staff-leave-light-desktop.webp
-Alt: The leave board shows fictional requests and their decision state.
-Caption: Approved leave affects teaching availability.
--->
+![The staff leave board shows who is away today and a form to ask for days away.](/images/current/staff-leave-light-desktop.webp)
+
+Approved leave affects teaching availability.
 
 Open **Staff → Staff leave**.
 Submit a request with its leave type, dates, and reason.

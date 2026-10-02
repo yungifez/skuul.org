@@ -30,11 +30,9 @@ Shared residence configuration does not grant unrestricted access to other campu
 
 ## Take a roll
 
-<!-- screenshot: boarding-roll
-Path: /images/current/boarding-roll-light-desktop.webp
-Alt: The roll sheet shows fictional boarders and recorded states.
-Caption: Complete the roll after recording every required entry.
--->
+![A morning roll for Cedar House shows five boarders, three answered and two not recorded.](/images/current/boarding-roll-light-desktop.webp)
+
+Complete the roll after recording every required entry.
 
 Open the house's boarding roll workflow.
 Select the date and roll type, then start the roll for its boarders.

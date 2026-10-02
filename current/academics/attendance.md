@@ -14,11 +14,9 @@ The campus's detailed attendance configuration can also disable daily registers.
 
 ## Save the daily register
 
-<!-- screenshot: attendance-register
-Path: /images/current/attendance-register-light-desktop.webp
-Alt: A daily register shows fictional learners and mixed attendance states.
-Caption: Use explicit attendance states and review unrecorded entries.
--->
+![A Grade 10 register shows fictional learners with present, absent, late, and excused states.](/images/current/attendance-register-light-desktop.webp)
+
+Use explicit attendance states and review unrecorded entries.
 
 1. Select **Section** and check the displayed level and section name.
 2. Select **Day**, using today or an earlier valid date.

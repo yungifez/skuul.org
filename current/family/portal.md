@@ -6,11 +6,9 @@ The campus must enable Portal and the relevant portal area.
 
 ## Open a learner's records
 
-<!-- screenshot: family-overview
-Path: /images/current/family-overview-light-desktop.webp
-Alt: The family overview shows only fictional linked learners and available areas.
-Caption: Choose the learner before opening family records.
--->
+![The family overview shows one linked learner at Riverside High School and the areas the family can open.](/images/current/family-overview-light-desktop.webp)
+
+Choose the learner before opening family records.
 
 1. Check the learner name and campus on the overview.
 2. Select the required area.

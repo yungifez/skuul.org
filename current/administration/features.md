@@ -5,11 +5,9 @@ Each switch saves when you change it.
 A disabled feature removes its menu entries and blocks its routes and writes.
 Existing records remain stored.
 
-<!-- screenshot: features
-Path: /images/current/features-light-desktop.webp
-Alt: Feature switches show Attendance enabled and Library disabled.
-Caption: A feature switch controls the whole application area.
--->
+![Feature switches list the tools the school uses, grouped by area, with 11 of 12 turned on.](/images/current/features-light-desktop.webp)
+
+A feature switch controls the whole application area.
 
 | Feature | Default | Purpose |
 | --- | --- | --- |

@@ -6,11 +6,9 @@ You need exam read or management permission.
 
 ## Plan an exam
 
-<!-- screenshot: exam-schedule
-Path: /images/current/exam-schedule-light-desktop.webp
-Alt: The exam list shows an assessment window inside a teaching period.
-Caption: Exam dates describe the assessment window.
--->
+![The exam list for Fall semester shows the midterm and final exam windows.](/images/current/exam-schedule-light-desktop.webp)
+
+Exam dates describe the assessment window.
 
 1. Create an exam with a clear name.
 2. Select its academic period.

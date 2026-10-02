@@ -6,11 +6,9 @@ The menu label can follow the campus terminology profile.
 
 ## Create an offering
 
-<!-- screenshot: course-roster
-Path: /images/current/course-roster-light-desktop.webp
-Alt: Offerings show the subject, level, period, and active state.
-Caption: An offering defines the teaching context and learner roster.
--->
+![Subjects being taught list each subject with its grade, year, term, section, teacher, and status.](/images/current/course-roster-light-desktop.webp)
+
+An offering defines the teaching context and learner roster.
 
 1. Select the campus and academic cycle.
 2. Choose the subject and applicable period.

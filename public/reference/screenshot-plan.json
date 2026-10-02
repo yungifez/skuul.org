@@ -71,8 +71,8 @@
       "routeName": "dashboard",
       "priority": "essential",
       "path": "/images/current/workspace-light-desktop.webp",
-      "alt": "Working campus and academic context selectors are visible.",
-      "caption": "The workspace shows the selected campus, cycle, and period.",
+      "alt": "The dashboard for Riverside High School shows the working year and semester, setup progress, attendance today, the next seven days, and trends.",
+      "caption": "The working bar names the school year and term that every screen uses.",
       "requiredState": "Working campus and academic context selectors are visible.",
       "routeParameters": []
     },
@@ -83,8 +83,8 @@
       "routeName": "schools.settings",
       "priority": "essential",
       "path": "/images/current/campus-setup-light-desktop.webp",
-      "alt": "Campus setup details and terminology are visible.",
-      "caption": "Review campus settings before adding operational records.",
+      "alt": "The school setup checklist groups its steps and marks each one done or open.",
+      "caption": "Each open step says why it is open and links to the screen that finishes it.",
       "requiredState": "Campus setup details and terminology are visible.",
       "routeParameters": []
     },
@@ -95,7 +95,7 @@
       "routeName": "schools.features.edit",
       "priority": "essential",
       "path": "/images/current/features-light-desktop.webp",
-      "alt": "Feature switches show Attendance enabled and Library disabled.",
+      "alt": "Feature switches list the tools the school uses, grouped by area, with 11 of 12 turned on.",
       "caption": "A feature switch controls the whole application area.",
       "requiredState": "Feature switches show Attendance enabled and Library disabled.",
       "routeParameters": []
@@ -107,7 +107,7 @@
       "routeName": "roles.create",
       "priority": "extended",
       "path": "/images/current/campus-role-light-desktop.webp",
-      "alt": "A custom role form shows a selected set of permissions.",
+      "alt": "The role form has a name field and permission check boxes grouped by area.",
       "caption": "Select only the permissions required for the job.",
       "requiredState": "A custom role form shows a selected set of permissions.",
       "routeParameters": []
@@ -119,7 +119,7 @@
       "routeName": "organizations.index",
       "priority": "extended",
       "path": "/images/current/organizations-light-desktop.webp",
-      "alt": "The organization list contains two fictional campuses in one organization.",
+      "alt": "The organization list shows Riverside Unified School District with two campuses.",
       "caption": "Organization ownership and campus access are separate.",
       "requiredState": "The organization list contains two fictional campuses in one organization.",
       "routeParameters": []
@@ -131,7 +131,7 @@
       "routeName": "users.invitations.index",
       "priority": "essential",
       "path": "/images/current/account-invitations-light-desktop.webp",
-      "alt": "The invitation list shows an unused invitation and its expiry.",
+      "alt": "The invitation list shows one pending invitation with its expiry and its resend and revoke actions.",
       "caption": "A new invitation replaces earlier unused links.",
       "requiredState": "The invitation list shows an unused invitation and its expiry.",
       "routeParameters": []
@@ -143,7 +143,7 @@
       "routeName": "students.index",
       "priority": "essential",
       "path": "/images/current/student-enrollment-light-desktop.webp",
-      "alt": "The student list shows fictional learners with admission and placement details.",
+      "alt": "The student list shows fictional learners with email, admission number, class, section, and enrollment state.",
       "caption": "Review the learner identity and placement after enrollment.",
       "requiredState": "The student list shows fictional learners with admission and placement details.",
       "routeParameters": []
@@ -155,7 +155,7 @@
       "routeName": "admissions.waitlist.index",
       "priority": "extended",
       "path": "/images/current/admission-queue-light-desktop.webp",
-      "alt": "The queue shows a waiting candidate and an offered seat.",
+      "alt": "The waitlist for a full section shows one candidate with an open offer and one candidate still waiting.",
       "caption": "An open offer reserves a section seat.",
       "requiredState": "The queue shows a waiting candidate and an offered seat.",
       "routeParameters": []
@@ -167,8 +167,8 @@
       "routeName": "parents.index",
       "priority": "extended",
       "path": "/images/current/guardian-links-light-desktop.webp",
-      "alt": "The guardian directory leads to a fictional guardian with linked learners.",
-      "caption": "Guardian links control which learners the family can read.",
+      "alt": "The parent list shows fictional guardians with their email and account state.",
+      "caption": "Open a parent to see and change the learners linked to them.",
       "requiredState": "The guardian directory leads to a fictional guardian with linked learners.",
       "routeParameters": []
     },
@@ -179,7 +179,7 @@
       "routeName": "campus-moves.index",
       "priority": "extended",
       "path": "/images/current/campus-move-light-desktop.webp",
-      "alt": "A pending move lists the source, destination, and decision state.",
+      "alt": "A request from Maple Grove Middle School to move a learner into Grade 9 waits for this campus to approve or reject it.",
       "caption": "Review the destination and approval state before completing a move.",
       "requiredState": "A pending move lists the source, destination, and decision state.",
       "routeParameters": []
@@ -191,7 +191,7 @@
       "routeName": "data-sharing-requests.index",
       "priority": "extended",
       "path": "/images/current/record-sharing-light-desktop.webp",
-      "alt": "A sharing request displays selected categories and its current state.",
+      "alt": "Record sharing lists the requests asked of this school and by this school, each with its state.",
       "caption": "Approval and receipt are separate record-sharing steps.",
       "requiredState": "A sharing request displays selected categories and its current state.",
       "routeParameters": []
@@ -203,7 +203,7 @@
       "routeName": "academic-years.index",
       "priority": "essential",
       "path": "/images/current/academic-calendar-light-desktop.webp",
-      "alt": "A fictional academic cycle lists dated periods and their statuses.",
+      "alt": "The academic year list shows the 2026–27 year with its dates, two semesters, and Open status.",
       "caption": "Check period dates and status before operational work.",
       "requiredState": "A fictional academic cycle lists dated periods and their statuses.",
       "routeParameters": []
@@ -215,7 +215,7 @@
       "routeName": "academic-cycle-sections.index",
       "priority": "extended",
       "path": "/images/current/section-structure-light-desktop.webp",
-      "alt": "Sections show their levels, cycle, and capacity.",
+      "alt": "Sections are grouped by grade and show their room, capacity, homeroom teacher, and status.",
       "caption": "Section capacity includes suspended enrollments and open offers.",
       "requiredState": "Sections show their levels, cycle, and capacity.",
       "routeParameters": []
@@ -227,7 +227,7 @@
       "routeName": "course-offerings.index",
       "priority": "extended",
       "path": "/images/current/course-roster-light-desktop.webp",
-      "alt": "Offerings show the subject, level, period, and active state.",
+      "alt": "Subjects being taught list each subject with its grade, year, term, section, teacher, and status.",
       "caption": "An offering defines the teaching context and learner roster.",
       "requiredState": "Offerings show the subject, level, period, and active state.",
       "routeParameters": []
@@ -239,7 +239,7 @@
       "routeName": "attendance.register",
       "priority": "essential",
       "path": "/images/current/attendance-register-light-desktop.webp",
-      "alt": "A daily register shows fictional learners and mixed attendance states.",
+      "alt": "A Grade 10 register shows fictional learners with present, absent, late, and excused states.",
       "caption": "Use explicit attendance states and review unrecorded entries.",
       "requiredState": "A daily register shows fictional learners and mixed attendance states.",
       "routeParameters": []
@@ -251,7 +251,7 @@
       "routeName": "timetables.index",
       "priority": "extended",
       "path": "/images/current/timetable-light-desktop.webp",
-      "alt": "The timetable list distinguishes draft and published revisions.",
+      "alt": "The 10A timetable has a published revision and a draft revision that is not published.",
       "caption": "Publish only after reviewing timetable conflicts.",
       "requiredState": "The timetable list distinguishes draft and published revisions.",
       "routeParameters": []
@@ -263,7 +263,7 @@
       "routeName": "syllabi.coverage",
       "priority": "extended",
       "path": "/images/current/syllabus-coverage-light-desktop.webp",
-      "alt": "Topic coverage distinguishes covered, partial, and outstanding work.",
+      "alt": "Syllabus coverage lists each subject and grade with topics covered and topics behind plan.",
       "caption": "A published outline and recorded coverage are separate.",
       "requiredState": "Topic coverage distinguishes covered, partial, and outstanding work.",
       "routeParameters": []
@@ -275,7 +275,7 @@
       "routeName": "exams.index",
       "priority": "extended",
       "path": "/images/current/exam-schedule-light-desktop.webp",
-      "alt": "The exam list shows an assessment window inside a teaching period.",
+      "alt": "The exam list for Fall semester shows the midterm and final exam windows.",
       "caption": "Exam dates describe the assessment window.",
       "requiredState": "The exam list shows an assessment window inside a teaching period.",
       "routeParameters": []
@@ -287,7 +287,7 @@
       "routeName": "course-offerings.gradebook.show",
       "priority": "essential",
       "path": "/images/current/gradebook-light-desktop.webp",
-      "alt": "The selected gradebook marksheet shows numeric marks and explicit entry states.",
+      "alt": "The marksheet for one assessment shows marks for each learner and an Absent entry state.",
       "caption": "Review marks and entry states before submitting results.",
       "requiredState": "The selected gradebook marksheet shows numeric marks and explicit entry states.",
       "routeParameters": [
@@ -301,7 +301,7 @@
       "routeName": "course-offerings.gradebook.show",
       "priority": "essential",
       "path": "/images/current/result-review-light-desktop.webp",
-      "alt": "The selected academic record shows approved publication data and its revision.",
+      "alt": "Approved results list each learner's percentage, revision, and approval date.",
       "caption": "Families read approved publication revisions.",
       "requiredState": "The selected academic record shows approved publication data and its revision.",
       "routeParameters": [
@@ -315,7 +315,7 @@
       "routeName": "graduation-plans.index",
       "priority": "extended",
       "path": "/images/current/graduation-plan-light-desktop.webp",
-      "alt": "A plan shows requirements, credits, and learner progress.",
+      "alt": "Two graduation plans show their credits, requirement count, and who they apply to.",
       "caption": "Graduation progress uses approved subject results.",
       "requiredState": "A plan shows requirements, credits, and learner progress.",
       "routeParameters": []
@@ -327,7 +327,7 @@
       "routeName": "calendar-events.index",
       "priority": "extended",
       "path": "/images/current/calendar-events-light-desktop.webp",
-      "alt": "A calendar shows a fictional event and a closure day.",
+      "alt": "The October calendar shows school events and a staff development day when the school is shut.",
       "caption": "A closure day differs from closing an academic period.",
       "requiredState": "A calendar shows a fictional event and a closure day.",
       "routeParameters": []
@@ -339,7 +339,7 @@
       "routeName": "notices.index",
       "priority": "extended",
       "path": "/images/current/notices-light-desktop.webp",
-      "alt": "The notice list shows scheduled and published messages.",
+      "alt": "The notice list shows each notice with its start and stop dates.",
       "caption": "The scheduler controls due publication and expiry.",
       "requiredState": "The notice list shows scheduled and published messages.",
       "routeParameters": []
@@ -351,7 +351,7 @@
       "routeName": "incidents.index",
       "priority": "extended",
       "path": "/images/current/student-case-light-desktop.webp",
-      "alt": "The case list uses fictional facts and shows category and status.",
+      "alt": "The case list shows two fictional behaviour cases with their kind, state, date, and handler.",
       "caption": "Case category affects access to its records.",
       "requiredState": "The case list uses fictional facts and shows category and status.",
       "routeParameters": []
@@ -363,7 +363,7 @@
       "routeName": "support-plans.index",
       "priority": "extended",
       "path": "/images/current/student-support-light-desktop.webp",
-      "alt": "A fictional support plan shows its category, review date, and progress.",
+      "alt": "The support plan list shows two fictional plans with their learner, kind, state, and review date.",
       "caption": "Confidential support requires its specific access permission.",
       "requiredState": "A fictional support plan shows its category, review date, and progress.",
       "routeParameters": []
@@ -375,7 +375,7 @@
       "routeName": "staff-leave.index",
       "priority": "extended",
       "path": "/images/current/staff-leave-light-desktop.webp",
-      "alt": "The leave board shows fictional requests and their decision state.",
+      "alt": "The staff leave board shows who is away today and a form to ask for days away.",
       "caption": "Approved leave affects teaching availability.",
       "requiredState": "The leave board shows fictional requests and their decision state.",
       "routeParameters": []
@@ -387,7 +387,7 @@
       "routeName": "programs.index",
       "priority": "extended",
       "path": "/images/current/programme-participation-light-desktop.webp",
-      "alt": "A programme record shows fictional learners and participation states.",
+      "alt": "The programme list shows a special programme and a club, each with the number of learners taking part.",
       "caption": "Programme participation does not change class placement.",
       "requiredState": "A programme record shows fictional learners and participation states.",
       "routeParameters": []
@@ -399,7 +399,7 @@
       "routeName": "facilities.index",
       "priority": "extended",
       "path": "/images/current/facility-booking-light-desktop.webp",
-      "alt": "The facility page shows availability and a dated booking.",
+      "alt": "The facilities page lists the next bookings and the rooms and equipment the campus shares.",
       "caption": "Facility bookings share availability checks with published timetables.",
       "requiredState": "The facility page shows availability and a dated booking.",
       "routeParameters": []
@@ -411,7 +411,7 @@
       "routeName": "boarding-rolls.index",
       "priority": "extended",
       "path": "/images/current/boarding-roll-light-desktop.webp",
-      "alt": "The roll sheet shows fictional boarders and recorded states.",
+      "alt": "A morning roll for Cedar House shows five boarders, three answered and two not recorded.",
       "caption": "Complete the roll after recording every required entry.",
       "requiredState": "The roll sheet shows fictional boarders and recorded states.",
       "routeParameters": []
@@ -423,7 +423,7 @@
       "routeName": "library-loans.index",
       "priority": "extended",
       "path": "/images/current/library-loan-light-desktop.webp",
-      "alt": "The lending desk shows copy identifiers, due dates, and active loans.",
+      "alt": "The lending desk shows books out now with barcodes and due dates, two of them late.",
       "caption": "A loan belongs to a physical copy and an eligible borrower.",
       "requiredState": "The lending desk shows copy identifiers, due dates, and active loans.",
       "routeParameters": []
@@ -435,7 +435,7 @@
       "routeName": "imports.index",
       "priority": "essential",
       "path": "/images/current/checked-import-light-desktop.webp",
-      "alt": "An import batch shows valid rows, invalid rows, and row error messages.",
+      "alt": "A checked import shows five rows read, three ready, two with errors, and the message for each error.",
       "caption": "Checking a file does not apply its rows.",
       "requiredState": "An import batch shows valid rows, invalid rows, and row error messages.",
       "routeParameters": []
@@ -447,7 +447,7 @@
       "routeName": "reports.index",
       "priority": "extended",
       "path": "/images/current/report-export-light-desktop.webp",
-      "alt": "The report desk shows one Ready export and its download action.",
+      "alt": "The report desk shows one Ready class list and its download action.",
       "caption": "Download a report after the build reaches Ready.",
       "requiredState": "The report desk shows one Ready export and its download action.",
       "routeParameters": []
@@ -459,7 +459,7 @@
       "routeName": "fee-invoices.index",
       "priority": "essential",
       "path": "/images/current/fee-invoice-light-desktop.webp",
-      "alt": "An invoice lists fee lines, amount due, and payment actions.",
+      "alt": "The finance page shows amounts owed and received and the invoice list for the 2026–27 school year.",
       "caption": "Review issued fee lines before taking money.",
       "requiredState": "An invoice lists fee lines, amount due, and payment actions.",
       "routeParameters": []
@@ -471,7 +471,7 @@
       "routeName": "fee-invoices.pay",
       "priority": "essential",
       "path": "/images/current/student-payment-light-desktop.webp",
-      "alt": "The invoice payment form shows method, amount, reference, and allocation.",
+      "alt": "The payment form shows what the learner owes, the amount, date, method, reference, and note fields.",
       "caption": "Record money received and review any credit left unallocated.",
       "requiredState": "The invoice payment form shows method, amount, reference, and allocation.",
       "routeParameters": [
@@ -485,7 +485,7 @@
       "routeName": "fee-invoices.index",
       "priority": "extended",
       "path": "/images/current/financial-periods-light-desktop.webp",
-      "alt": "Financial-period controls distinguish open and closed periods.",
+      "alt": "Below the invoices, one financial period is open and the previous one is closed.",
       "caption": "Financial periods control ledger posting independently of teaching.",
       "requiredState": "Financial-period controls distinguish open and closed periods.",
       "routeParameters": []
@@ -497,7 +497,7 @@
       "routeName": "portal.overview",
       "priority": "essential",
       "path": "/images/current/family-overview-light-desktop.webp",
-      "alt": "The family overview shows only fictional linked learners and available areas.",
+      "alt": "The family overview shows one linked learner at Riverside High School and the areas the family can open.",
       "caption": "Choose the learner before opening family records.",
       "requiredState": "The family overview shows only fictional linked learners and available areas.",
       "routeParameters": []
@@ -509,7 +509,7 @@
       "routeName": "portal.requests.index",
       "priority": "extended",
       "path": "/images/current/family-request-light-desktop.webp",
-      "alt": "The family request and staff inbox show the submitted state and response.",
+      "alt": "A parent's request form sits above earlier requests, one of them answered by the school.",
       "caption": "A request response does not directly change the underlying record.",
       "requiredState": "The family request and staff inbox show the submitted state and response.",
       "additionalRouteNames": [

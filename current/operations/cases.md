@@ -18,11 +18,9 @@ A normal behaviour permission does not expose safeguarding records.
 
 ## Review and finish a case
 
-<!-- screenshot: student-case
-Path: /images/current/student-case-light-desktop.webp
-Alt: The case list uses fictional facts and shows category and status.
-Caption: Case category affects access to its records.
--->
+![The case list shows two fictional behaviour cases with their kind, state, date, and handler.](/images/current/student-case-light-desktop.webp)
+
+Case category affects access to its records.
 
 Add review notes and actions through the case record.
 Update its status as the work progresses.

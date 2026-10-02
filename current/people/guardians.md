@@ -25,11 +25,9 @@ See [account invitations](./accounts) if the guardian needs another sign-in link
 
 ## Link a learner
 
-<!-- screenshot: guardian-links
-Path: /images/current/guardian-links-light-desktop.webp
-Alt: The guardian directory leads to a fictional guardian with linked learners.
-Caption: Guardian links control which learners the family can read.
--->
+![The parent list shows fictional guardians with their email and account state.](/images/current/guardian-links-light-desktop.webp)
+
+Open a parent to see and change the learners linked to them.
 
 1. Open the parent's learner-assignment page.
 2. Select the learner's **Section**.

@@ -6,11 +6,9 @@ You need the relevant school management permissions.
 
 ## Complete campus setup
 
-<!-- screenshot: campus-setup
-Path: /images/current/campus-setup-light-desktop.webp
-Alt: Campus setup details and terminology are visible.
-Caption: Review campus settings before adding operational records.
--->
+![The school setup checklist groups its steps and marks each one done or open.](/images/current/campus-setup-light-desktop.webp)
+
+Each open step says why it is open and links to the screen that finishes it.
 
 1. Check the campus name, contact details, and organization.
 2. Select the terminology profile and campus time zone.

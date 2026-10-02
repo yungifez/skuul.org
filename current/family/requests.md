@@ -5,11 +5,9 @@ Requests belong to a learner and the family member who sent them.
 
 ## Send a request
 
-<!-- screenshot: family-request
-Path: /images/current/family-request-light-desktop.webp
-Alt: The family request and staff inbox show the submitted state and response.
-Caption: A request response does not directly change the underlying record.
--->
+![A parent's request form sits above earlier requests, one of them answered by the school.](/images/current/family-request-light-desktop.webp)
+
+A request response does not directly change the underlying record.
 
 1. Open the learner in **Everything of mine**.
 2. Open Requests.

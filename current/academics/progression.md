@@ -23,11 +23,9 @@ Do not duplicate learner accounts to begin another cycle.
 
 ## Define graduation requirements
 
-<!-- screenshot: graduation-plan
-Path: /images/current/graduation-plan-light-desktop.webp
-Alt: A plan shows requirements, credits, and learner progress.
-Caption: Graduation progress uses approved subject results.
--->
+![Two graduation plans show their credits, requirement count, and who they apply to.](/images/current/graduation-plan-light-desktop.webp)
+
+Graduation progress uses approved subject results.
 
 Enable Graduation plans and open **People → Graduation plans**.
 Create a plan and add its subject requirements.

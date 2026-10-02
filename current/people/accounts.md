@@ -5,11 +5,9 @@ The administrator provisions an account and sends an invitation. There is no pub
 
 ## Invite a person
 
-<!-- screenshot: account-invitations
-Path: /images/current/account-invitations-light-desktop.webp
-Alt: The invitation list shows an unused invitation and its expiry.
-Caption: A new invitation replaces earlier unused links.
--->
+![The invitation list shows one pending invitation with its expiry and its resend and revoke actions.](/images/current/account-invitations-light-desktop.webp)
+
+A new invitation replaces earlier unused links.
 
 1. Enter the person's name and valid email address.
 2. Add the required campus membership and role.

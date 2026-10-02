@@ -17,11 +17,9 @@ A copy on loan cannot be withdrawn as available stock.
 
 ## Lend and return a copy
 
-<!-- screenshot: library-loan
-Path: /images/current/library-loan-light-desktop.webp
-Alt: The lending desk shows copy identifiers, due dates, and active loans.
-Caption: A loan belongs to a physical copy and an eligible borrower.
--->
+![The lending desk shows books out now with barcodes and due dates, two of them late.](/images/current/library-loan-light-desktop.webp)
+
+A loan belongs to a physical copy and an eligible borrower.
 
 Select the available copy and an eligible campus borrower.
 Check the due date and issue the loan.
