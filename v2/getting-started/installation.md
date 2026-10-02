@@ -101,7 +101,8 @@ To Install this application without docker.
 
 ## Next Steps
 
-If the installation was successful, you can log in with the following credentials
+Use the credentials you chose during installation. These accounts exist only
+when the V2 demo seeders run. Use them only in a disposable evaluation database.
 
 Super Admin
 
@@ -115,7 +116,7 @@ Admin
 
 Teacher
 
-    Email: teacher@teaher.com
+    Email: teacher@teacher.com
     Password: password
 
 Student
