@@ -100,3 +100,5 @@ Use the person's self-service password reset for ordinary forgotten-password rec
 - Confirm the person can sign in with their active account after acceptance.
 
 See [troubleshooting](../using/troubleshooting) for blocked sign-in and expired links.
+
+Follow [staff access review](./access-review) when a person joins, changes duties, leaves, or returns.

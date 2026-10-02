@@ -1,16 +1,18 @@
 # Documentation coverage
 
 This inventory was checked against the development workspace on 2 October 2026.
-It includes the workspace changes present during review, based on commit `3ebc155e`.
+It includes the workspace changes present during review, based on commit `ade94a22`.
 The current development guides are separate from the V2 release guides.
 
 The reviewed surface contains 221 registered non-vendor routes, 147 domain action files, and 182 Livewire files.
-The guides cover all 12 optional features, 13 report types, 2 import types, and 16 application commands.
+The guides cover all 12 optional features, 13 report types, 2 import types, and 17 application commands.
 Livewire file coverage includes authentication, layouts, and reusable concerns.
 These counts describe documentation coverage, not application test coverage.
 
 Each main workflow guide now includes a result check.
 The [screenshot capture brief](./screenshots) defines the planned images and the checks required before using them.
+
+The [demo guide](../getting-started/demo) covers the new destructive hourly reset and isolated evaluation setup.
 
 ## Workflow entry points
 
@@ -63,6 +65,22 @@ The [role inventory](/reference/role-guide-coverage.json) records eight installa
 Local assignments and migration history can differ from those templates.
 Role checks compare the documented role list and permission snapshot with the source seeders when a checkout is available.
 Job duties remain campus-defined permission sets, rather than invented seeded roles.
+
+## Procedures across application areas
+
+The task guides also connect through these procedures:
+
+| Procedure | Coordinates |
+| --- | --- |
+| [Daily campus checks](../using/daily-checks) | Teaching, office services, finance review, and shift handover. |
+| [Staff access review](../people/access-review) | Account, membership, roles, employment, departure, and return. |
+| [Academic handover](../academics/year-end) | Marks, approval, documents, closure, copied setup, and learner placement. |
+| [Finance reconciliation](../finance/reconciliation) | Receipt evidence, allocations, held credit, cash, bank, report scope, and closure. |
+| [Service recovery](../operations/recovery) | Health checks, queues, scheduler, email, files, and suspected data loss. |
+
+These are staff and operator procedures, not new automatic application workflows.
+Worked financial totals are expected rehearsal results.
+They do not claim a completed browser rehearsal.
 
 ## Review procedure quality
 

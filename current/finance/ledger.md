@@ -95,3 +95,5 @@ Use **Revise** to change the plan, or **Remove** to remove the budget without re
 - Confirm debit and credit totals balance in the trial balance.
 
 See [report catalogue](../operations/reports) and [campus moves](../people/moves).
+
+Follow [finance reconciliation](./reconciliation) before closing a financial period.

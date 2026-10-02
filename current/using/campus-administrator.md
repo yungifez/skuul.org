@@ -81,3 +81,5 @@ Use [reports](../operations/reports) to inspect authorized exports.
 | Scheduled or queued work stalls | Give the operator its request number, state, and time. |
 
 Use the [platform administrator](./platform-administrator) for platform scope and the [organization administrator](./organization-administrator) for organization scope.
+
+Coordinate [daily checks](./daily-checks), [staff access review](../people/access-review), and [academic handover](../academics/year-end).

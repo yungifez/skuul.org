@@ -43,6 +43,14 @@ Check the [release notes](https://github.com/yungifez/skuul/releases) before upg
 The sidebar contains the remaining campus-service guides, including notices, student care, staff, facilities, boarding, library, imports, and reports.
 [Application terms](./using/glossary) explains names used across the guides.
 
+## Routine work and handover
+
+Follow [daily campus checks](./using/daily-checks) for teaching, office, services, and unfinished work.
+Use [staff access review](./people/access-review) for joiners, duty changes, leavers, and returning staff.
+Use [academic handover](./academics/year-end) at period closure and before the next cycle.
+Use [finance reconciliation](./finance/reconciliation) before financial closure.
+Use [service recovery](./operations/recovery) when deployment components fail.
+
 ## First campus workflow
 
 Follow the [worked campus exercise](./getting-started/first-campus) for sample inputs and expected results.

@@ -1,7 +1,7 @@
 {
   "reviewedAt": "2026-10-02",
   "sourceRepository": "yungifez/skuul",
-  "sourceRevision": "3ebc155e3a6ef5030f09c3a19440678ff8178a35",
+  "sourceRevision": "ade94a229a203fdce48957a8a666ac871d99e136",
   "sourceIncludesWorkingChanges": true,
   "pages": [
     "current/academics/attendance",
@@ -14,6 +14,7 @@
     "current/academics/structure",
     "current/academics/syllabi",
     "current/academics/timetables",
+    "current/academics/year-end",
     "current/administration/campuses",
     "current/administration/features",
     "current/administration/organizations",
@@ -24,6 +25,8 @@
     "current/finance/invoices",
     "current/finance/ledger",
     "current/finance/payments",
+    "current/finance/reconciliation",
+    "current/getting-started/demo",
     "current/getting-started/deployment",
     "current/getting-started/first-campus",
     "current/getting-started/installation",
@@ -39,9 +42,11 @@
     "current/operations/imports",
     "current/operations/library",
     "current/operations/notices",
+    "current/operations/recovery",
     "current/operations/reports",
     "current/operations/staff",
     "current/operations/wellbeing",
+    "current/people/access-review",
     "current/people/accounts",
     "current/people/admissions",
     "current/people/guardians",
@@ -60,6 +65,7 @@
     "current/reference/security",
     "current/using/accountant",
     "current/using/campus-administrator",
+    "current/using/daily-checks",
     "current/using/delegated-staff",
     "current/using/glossary",
     "current/using/librarian",
@@ -1748,7 +1754,8 @@
     "skuul:send-syllabus-behind-reminders": "current/reference/commands",
     "skuul:end-leavers-access": "current/reference/commands",
     "skuul:bring-invoices-into-books": "current/reference/commands",
-    "skuul:update": "current/reference/commands"
+    "skuul:update": "current/reference/commands",
+    "skuul:refresh-demo": "current/getting-started/demo"
   },
   "actions": {
     "app/Actions/Academic/ChangeAcademicPeriodDates.php": "current/academics/calendars",

@@ -79,3 +79,5 @@ Review the decision state before arranging teaching cover.
 - After a last day passes, verify the campus membership ends through the scheduled process.
 
 See [accounts](../people/accounts), [course assignments](../academics/offerings), and [timetable cover](../academics/timetables).
+
+Use [staff access review](../people/access-review) to coordinate employment changes, replacement duties, and retained roles.

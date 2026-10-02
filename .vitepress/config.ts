@@ -27,6 +27,10 @@ export default defineConfig({
               "link": "/current/using/workspace"
             },
             {
+              "text": "Daily campus checks",
+              "link": "/current/using/daily-checks"
+            },
+            {
               "text": "Worked campus exercise",
               "link": "/current/getting-started/first-campus"
             },
@@ -99,6 +103,10 @@ export default defineConfig({
               "link": "/current/getting-started/installation"
             },
             {
+              "text": "Evaluate a disposable demo",
+              "link": "/current/getting-started/demo"
+            },
+            {
               "text": "Deployment",
               "link": "/current/getting-started/deployment"
             },
@@ -109,6 +117,10 @@ export default defineConfig({
             {
               "text": "Backups and monitoring",
               "link": "/current/operations"
+            },
+            {
+              "text": "Service failure and recovery",
+              "link": "/current/operations/recovery"
             }
           ]
         },
@@ -143,6 +155,10 @@ export default defineConfig({
               "link": "/current/people/accounts"
             },
             {
+              "text": "Review and end staff access",
+              "link": "/current/people/access-review"
+            },
+            {
               "text": "Students and enrollment",
               "link": "/current/people/students"
             },
@@ -171,6 +187,10 @@ export default defineConfig({
             {
               "text": "Academic calendars and closure",
               "link": "/current/academics/calendars"
+            },
+            {
+              "text": "Period closure and next-cycle handover",
+              "link": "/current/academics/year-end"
             },
             {
               "text": "Levels, sections, and teaching models",
@@ -275,6 +295,10 @@ export default defineConfig({
             {
               "text": "Financial periods, expenses, deposits, and budgets",
               "link": "/current/finance/ledger"
+            },
+            {
+              "text": "Reconcile collections and close finance",
+              "link": "/current/finance/reconciliation"
             }
           ]
         },

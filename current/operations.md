@@ -149,3 +149,5 @@ Record its version in `RELEASE_RETENTION_POLICY_VERSION`.
 The configured defaults are an RPO of 24 hours and an RTO of 240 minutes.
 RPO is the acceptable amount of lost work, measured in time. RTO is the
 acceptable recovery time. Verify both through a measured recovery exercise.
+
+Use [service failure and recovery](./operations/recovery) to diagnose health checks, reports, scheduler, mail, and file failures.

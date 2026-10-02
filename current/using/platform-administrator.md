@@ -86,3 +86,5 @@ Use [the worked exercise](../getting-started/first-campus) for teacher, reviewer
 | Organization administrator cannot enter a campus | Add the required separate campus membership and operational role. |
 | Workflow rejects a closed record | Follow its reopening, revision, or correction procedure. |
 | Backup lacks uploaded files | Resolve the documented file-backup configuration limit before relying on it. |
+
+Follow [service recovery](../operations/recovery) when deployment components fail.

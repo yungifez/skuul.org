@@ -28,6 +28,7 @@ commands, see [installation](./installation).
    ```txt
    APP_ENV=production
    APP_DEBUG=false
+   DEMO_MODE=false
    APP_URL=https://school.example.org
    DB_CONNECTION=mysql
    DB_DATABASE=skuul
@@ -49,6 +50,10 @@ commands, see [installation](./installation).
 
 Use a production runtime with PHP-FPM or a managed Laravel runtime. The
 committed Sail configuration is for local development.
+
+Demo mode resets application data hourly when its scheduler is active.
+Keep `DEMO_MODE=false` for every environment holding real records.
+See [demo isolation](./demo) before configuring an evaluation environment.
 
 ## Install a fresh application
 

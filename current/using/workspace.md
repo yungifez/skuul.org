@@ -72,3 +72,5 @@ Start with the [worked campus exercise](../getting-started/first-campus) when le
 - Confirm the selected cycle and period match the records you will change.
 
 See [account access](../people/accounts), [campus settings](../administration/campuses), and [troubleshooting](./troubleshooting).
+
+Use [daily campus checks](./daily-checks) to coordinate attendance, office work, services, and shift handover.

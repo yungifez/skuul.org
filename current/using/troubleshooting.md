@@ -42,3 +42,5 @@ Retry failed work only after checking whether it already changed records.
 A repeated payment, import, or notification can have a different effect from a repeated page request.
 
 See [known limits](../reference/limitations), [deployment](../getting-started/deployment), and [backup recovery](../operations).
+
+Use [service failure and recovery](../operations/recovery) for ordered diagnosis, targeted recovery, and result checks.

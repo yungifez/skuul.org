@@ -377,3 +377,87 @@ test('optional source comparison detects undocumented seeded roles and changed d
     }
   }
 });
+
+
+test('reconciliation example keeps cash, bank, debt, and held credit distinct', () => {
+  const guide = read('current/finance/reconciliation.md');
+  const values = [...guide.matchAll(/^\| (Before payment|After payment|After expense|After deposit|After refund) \| ([\d.]+) \| ([\d.]+) \| ([\d.]+) \| ([\d.]+) \|$/gm)]
+    .map(match => [match[1], ...match.slice(2).map(Number)]);
+  assert.equal(values.length, 5, 'Worked reconciliation must retain all review checkpoints');
+  const opening = [0, 0, 300, 0];
+  const payment = [opening[0] + 350, opening[1], opening[2] - 300, 350 - 300];
+  const expense = [payment[0] - 40, payment[1], payment[2], payment[3]];
+  const deposit = [expense[0] - 200, expense[1] + 200, expense[2], expense[3]];
+  const refund = [deposit[0] - deposit[3], deposit[1], deposit[2], 0];
+  assert.deepEqual(values.map(row => row.slice(1)), [opening, payment, expense, deposit, refund]);
+  assert.equal(deposit[0] + deposit[1], expense[0] + expense[1], 'Cash deposit must not add income');
+  assert(guide.includes((refund[0] + refund[1]).toFixed(2)), 'Guide omits the reconciled combined balance');
+  for (const boundary of ['whole major-unit amount', 'expected results', 'create report', 'manage financial period']) {
+    assert(guide.includes(boundary), `Reconciliation omits a critical boundary: ${boundary}`);
+  }
+});
+
+test('optional source comparison verifies closure, report scope, health, and leaver instructions', t => {
+  const source = process.env.SKUUL_SOURCE_PATH;
+  if (!source) return t.skip('Set SKUUL_SOURCE_PATH to compare operational boundaries');
+  const sourceRead = file => fs.readFileSync(path.join(source, file), 'utf8');
+  const closure = sourceRead('app/Services/Calendar/ClosureReadinessCheck.php');
+  for (const finding of ['draft_timetables', 'ungraded_entries', 'open_periods']) {
+    assert(closure.includes("key: '" + finding + "'"), `Review handover when closure checks change: ${finding}`);
+  }
+  const handover = read('current/academics/year-end.md');
+  assert(handover.includes('do not verify every result approval or official document'));
+  assert(handover.includes('no destination-cycle selector'));
+  const card = sourceRead('app/Actions/Report/PublishReportCard.php');
+  assert(card.includes('[AcademicPeriodStatus::Closing, AcademicPeriodStatus::Closed, AcademicPeriodStatus::Archived]'));
+  assert(handover.includes('Closing, Closed, or Archived state'));
+  assert(sourceRead('app/Actions/Curriculum/RollForwardAcademicCycleSections.php').includes('AcademicStructureStatus::Draft'));
+  assert(sourceRead('app/Actions/Curriculum/RollForwardCourseOfferings.php').includes('Learners and teachers stay in the source year'));
+  const reports = read('current/operations/reports.md');
+  for (const file of ['StudentBalancesReport.php', 'StudentAgingReport.php']) {
+    const report = sourceRead('app/Reports/' + file);
+    assert(report.includes("$parameters['only_attending'] ?? true"), `Review default learner scope: ${file}`);
+    assert(report.includes('EnrollmentStatus::Active'), `Review active-learner selection: ${file}`);
+    assert(!report.includes('$this->window($parameters)'), `Review new financial-window support: ${file}`);
+  }
+  assert(reports.includes('no historical period balance'));
+  assert(reports.includes('current invoice balances'));
+  const income = sourceRead('app/Reports/IncomeByFeeTypeReport.php');
+  assert(income.includes("where('issue_date', '>='"));
+  assert(reports.includes('invoice issue date'));
+  const health = sourceRead('app/Http/Controllers/HealthController.php');
+  const recovery = read('current/operations/recovery.md');
+  for (const key of ['database', 'cache', 'queue', 'storage', 'scheduler']) {
+    assert(health.includes("'" + key + "' => $this->check"), `Review health response: ${key}`);
+    assert(recovery.includes('"' + key + '": "ok"'), `Health example omits ${key}`);
+  }
+  assert(health.includes('FRESH_MINUTES = 5'), 'Review heartbeat freshness instructions');
+  const staff = sourceRead('app/Actions/Staff/ManageStaffProfile.php');
+  assert(staff.includes('GrantSchoolMembership') || staff.includes('$this->grantSchoolMembership->grant'));
+  assert(staff.includes('$leftOn->copy()->addDay()'), 'Review last-day access instructions');
+  assert(read('current/people/access-review.md').includes('membership with retained roles'));
+});
+
+
+test('demo documentation puts destructive scope before the reset command', () => {
+  const guide = read('current/getting-started/demo.md');
+  const warning = guide.indexOf('::: danger');
+  const warningEnd = guide.indexOf('\n:::', warning);
+  const reset = guide.indexOf('vendor/bin/sail artisan skuul:refresh-demo');
+  assert(warning >= 0 && warningEnd > warning && reset > warningEnd);
+  for (const boundary of ['every campus', 'hourly', 'backup', 'isolated', 'no application undo']) {
+    assert(guide.slice(warning, warningEnd).includes(boundary), `Demo warning omits ${boundary}`);
+  }
+  assert(read('current/getting-started/deployment.md').includes('DEMO_MODE=false'));
+  if (application) {
+    const command = source('app/Console/Commands/RefreshDemoData.php');
+    assert(command.includes("!config('demo.enabled')"), 'Review the demo reset guard');
+    const schedule = source('routes/console.php');
+    assert(schedule.includes('Schedule::command(RefreshDemoData::class)->hourly()->when'), 'Review the demo reset schedule');
+    const config = source('config/demo.php');
+    assert(config.includes("env('DEMO_MODE', false)"), 'Review demo mode defaults');
+    const login = source('resources/views/livewire/auth/login-form.blade.php');
+    assert(login.includes('Try the demo as'));
+    assert(login.includes("config('demo.password')"));
+  }
+});
