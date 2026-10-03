@@ -254,9 +254,55 @@
       "priority": "extended",
       "path": "/images/current/guardian-links-light-desktop.webp",
       "alt": "The parent list shows fictional guardians with their email and account state.",
-      "caption": "Open a parent to see and change the learners linked to them.",
+      "caption": "The parent list. Open a parent to see the learners linked to them.",
       "requiredState": "The guardian directory leads to a fictional guardian with linked learners.",
       "routeParameters": [],
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
+      "id": "guardian-create",
+      "guide": "current/people/guardians",
+      "section": "Add a guardian account",
+      "routeName": "parents.create",
+      "priority": "essential",
+      "path": "/images/current/guardian-create-light-desktop.webp",
+      "alt": "The Create parent form shows the person's name, email, contact and address fields, and the Add parent button.",
+      "caption": "The parent form. A new guardian gets an email link to set a password.",
+      "requiredState": "The empty form.",
+      "routeParameters": [],
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
+      "id": "guardian-profile",
+      "guide": "current/people/guardians",
+      "section": "Link a learner",
+      "routeName": "parents.show",
+      "priority": "essential",
+      "path": "/images/current/guardian-profile-light-desktop.webp",
+      "alt": "A parent's profile shows contact details, Sign-in, and a Linked learners section with the Change linked learners button.",
+      "caption": "The **Linked learners** section of the parent's profile lists learners at this campus.",
+      "requiredState": "A guardian linked to one learner here.",
+      "routeParameters": [
+        "parent"
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
+      "id": "guardian-assign",
+      "guide": "current/people/guardians",
+      "section": "Link a learner",
+      "routeName": "parents.assign-student",
+      "priority": "essential",
+      "path": "/images/current/guardian-assign-light-desktop.webp",
+      "alt": "The assignment page shows Section and Learner lists, the Link learner button, and the linked learners with an Unlink button each.",
+      "caption": "The assignment page. Each linked learner has its own **Unlink** button.",
+      "requiredState": "A guardian linked to one learner here.",
+      "routeParameters": [
+        "parent"
+      ],
       "captureRole": "admin",
       "additionalPermissions": []
     },
