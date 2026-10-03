@@ -144,9 +144,63 @@
       "priority": "essential",
       "path": "/images/current/student-enrollment-light-desktop.webp",
       "alt": "The student list shows fictional learners with email, admission number, class, section, and enrollment state.",
-      "caption": "Review the learner identity and placement after enrollment.",
+      "caption": "The student list. Open **Create student** from here.",
       "requiredState": "The student list shows fictional learners with admission and placement details.",
       "routeParameters": []
+    },
+    {
+      "id": "student-admit-form",
+      "guide": "current/people/students",
+      "section": "Admit a learner",
+      "routeName": "students.create",
+      "priority": "essential",
+      "path": "/images/current/student-admit-form-light-desktop.webp",
+      "alt": "The Create student form shows the person's details, then an Admission group with Section, Admission number and Date of admission, and the Admit learner button.",
+      "caption": "The admission form. Section is the only admission field you must choose. The admission number is made for you when left blank.",
+      "requiredState": "The full form, with an active section available.",
+      "routeParameters": []
+    },
+    {
+      "id": "student-profile-enrollment",
+      "guide": "current/people/students",
+      "section": "Admit a learner",
+      "routeName": "students.show",
+      "priority": "essential",
+      "path": "/images/current/student-profile-enrollment-light-desktop.webp",
+      "alt": "A learner's profile shows the Enrollment section with its status, admission number, admission date, class and section, then status and placement history.",
+      "caption": "The **Enrollment** section of the profile. The ellipsis on its right opens **Change the enrollment**.",
+      "requiredState": "An active learner with one placement.",
+      "routeParameters": [
+        "student"
+      ]
+    },
+    {
+      "id": "student-placement",
+      "guide": "current/people/students",
+      "section": "Change a placement",
+      "routeName": "students.show",
+      "priority": "essential",
+      "path": "/images/current/student-placement-light-desktop.webp",
+      "alt": "The Change placement form under Enrollment shows the destination section, the effective date, the optional reason, and Save placement.",
+      "caption": "The placement form opens inside the **Enrollment** section.",
+      "requiredState": "Change the enrollment → Change placement is open for an active learner.",
+      "routeParameters": [
+        "student"
+      ]
+    },
+    {
+      "id": "student-status",
+      "guide": "current/people/students",
+      "section": "Change enrollment status",
+      "routeName": "students.show",
+      "priority": "essential",
+      "path": "/images/current/student-status-light-desktop.webp",
+      "alt": "The Change enrollment status form shows the status list, the effective date, the optional reason, and Save status.",
+      "caption": "The status form opens inside the **Enrollment** section.",
+      "requiredState": "Change the enrollment → Change status is open for an active learner.",
+      "routeParameters": [
+        "student"
+      ]
     },
     {
       "id": "admission-queue",
