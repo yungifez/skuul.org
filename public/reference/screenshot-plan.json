@@ -157,6 +157,38 @@
       "additionalPermissions": []
     },
     {
+      "id": "account-menu",
+      "guide": "current/people/accounts",
+      "section": "Suspend, archive, or reinstate an account",
+      "routeName": "teachers.show",
+      "priority": "essential",
+      "path": "/images/current/account-menu-light-desktop.webp",
+      "alt": "The Sign-in section of a teacher's profile, with the account menu open on Send invitation, Suspend account, and Archive account.",
+      "caption": "The account menu sits beside the account status in **Sign-in**.",
+      "requiredState": "An active teacher at this campus, with the account menu open.",
+      "routeParameters": [
+        "teacher"
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
+      "id": "account-set-password",
+      "guide": "current/people/accounts",
+      "section": "Set a password for another person",
+      "routeName": "teachers.show",
+      "priority": "essential",
+      "path": "/images/current/account-set-password-light-desktop.webp",
+      "alt": "The Set password form shows New password, Confirm password, and the Change it at next sign-in checkbox.",
+      "caption": "The form opens in place, under **Sign-in**.",
+      "requiredState": "An active teacher at this campus, with the Set password form open.",
+      "routeParameters": [
+        "teacher"
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
       "id": "student-enrollment",
       "guide": "current/people/students",
       "section": "Enroll a learner",
