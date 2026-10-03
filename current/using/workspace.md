@@ -7,11 +7,9 @@ Choose your [role guide](./roles) for daily tasks, review duties, and permission
 
 ## Choose the working context
 
-<!-- screenshot: workspace
-Path: /images/current/workspace-light-desktop.webp
-Alt: Working campus and academic context selectors are visible.
-Caption: The workspace shows the selected campus, cycle, and period.
--->
+![The dashboard for Riverside High School shows the working year and semester, setup progress, attendance today, the next seven days, and trends.](/images/current/workspace-light-desktop.webp)
+
+The working bar names the school year and term that every screen uses.
 
 1. Open the dashboard.
 2. Select the campus where you need to work.

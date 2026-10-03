@@ -6,11 +6,9 @@ You need calendar management access. Closure and reopening require their own aut
 
 ## Prepare a cycle
 
-<!-- screenshot: academic-calendar
-Path: /images/current/academic-calendar-light-desktop.webp
-Alt: A fictional academic cycle lists dated periods and their statuses.
-Caption: Check period dates and status before operational work.
--->
+![The academic year list shows the 2026–27 year with its dates, two semesters, and Open status.](/images/current/academic-calendar-light-desktop.webp)
+
+Check period dates and status before operational work.
 
 1. Create the cycle with its start and end dates.
 2. Add dated teaching periods.

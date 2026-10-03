@@ -5,11 +5,9 @@ You need notice read, create, or publication permission for the action.
 
 ## Prepare a notice
 
-<!-- screenshot: notices
-Path: /images/current/notices-light-desktop.webp
-Alt: The notice list shows scheduled and published messages.
-Caption: The scheduler controls due publication and expiry.
--->
+![The notice list shows each notice with its start and stop dates.](/images/current/notices-light-desktop.webp)
+
+The scheduler controls due publication and expiry.
 
 1. Create a notice with a clear title and message.
 2. Set its start and end dates.

@@ -73,11 +73,9 @@ Do not divide displayed totals to reproduce a weighted percentage.
 
 ## Record and correct marks
 
-<!-- screenshot: gradebook
-Path: /images/current/gradebook-light-desktop.webp
-Alt: The selected gradebook marksheet shows numeric marks and explicit entry states.
-Caption: Review marks and entry states before submitting results.
--->
+![The marksheet for one assessment shows marks for each learner and an Absent entry state.](/images/current/gradebook-light-desktop.webp)
+
+Review marks and entry states before submitting results.
 
 1. Select the assessment in **Assessment**.
 2. Select each learner's entry state.

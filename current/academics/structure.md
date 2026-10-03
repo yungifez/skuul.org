@@ -5,11 +5,9 @@ A level is reusable. A section belongs to a level and one cycle.
 
 ## Create the structure
 
-<!-- screenshot: section-structure
-Path: /images/current/section-structure-light-desktop.webp
-Alt: Sections show their levels, cycle, and capacity.
-Caption: Section capacity includes suspended enrollments and open offers.
--->
+![Sections are grouped by grade and show their room, capacity, homeroom teacher, and status.](/images/current/section-structure-light-desktop.webp)
+
+Section capacity includes suspended enrollments and open offers.
 
 1. Create the academic levels used by the campus.
 2. Set valid parent levels where the structure needs a hierarchy.

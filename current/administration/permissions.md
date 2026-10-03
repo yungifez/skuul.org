@@ -23,11 +23,9 @@ Other seeded roles, such as accountant or librarian, are not protected by this l
 
 ## Create a campus role
 
-<!-- screenshot: campus-role
-Path: /images/current/campus-role-light-desktop.webp
-Alt: A custom role form shows a selected set of permissions.
-Caption: Select only the permissions required for the job.
--->
+![The role form has a name field and permission check boxes grouped by area.](/images/current/campus-role-light-desktop.webp)
+
+Select only the permissions required for the job.
 
 1. Select the campus.
 2. Duplicate a suitable role or create a new one.

@@ -17,11 +17,9 @@ Invoice creation requires whole major-unit amounts instead. See [invoice amount 
 
 ## Record a payment
 
-<!-- screenshot: student-payment
-Path: /images/current/student-payment-light-desktop.webp
-Alt: The invoice payment form shows method, amount, reference, and allocation.
-Caption: Record money received and review any credit left unallocated.
--->
+![The payment form shows what the learner owes, the amount, date, method, reference, and note fields.](/images/current/student-payment-light-desktop.webp)
+
+Record money received and review any credit left unallocated.
 
 1. Verify the learner and invoice against the receipt or bank confirmation.
 2. Enter **Amount** and **Received on**.

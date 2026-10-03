@@ -32,11 +32,9 @@ Check the formatted total before issuing or collecting money.
 
 ## Issue an invoice
 
-<!-- screenshot: fee-invoice
-Path: /images/current/fee-invoice-light-desktop.webp
-Alt: An invoice lists fee lines, amount due, and payment actions.
-Caption: Review issued fee lines before taking money.
--->
+![The finance page shows amounts owed and received and the invoice list for the 2026–27 school year.](/images/current/fee-invoice-light-desktop.webp)
+
+Review issued fee lines before taking money.
 
 1. Open the invoice creation page.
 2. Enter **Issued** and **Due** dates.

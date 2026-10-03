@@ -5,11 +5,9 @@ Record sharing requires source approval. Organization membership alone does not 
 
 ## Request and receive records
 
-<!-- screenshot: record-sharing
-Path: /images/current/record-sharing-light-desktop.webp
-Alt: A sharing request displays selected categories and its current state.
-Caption: Approval and receipt are separate record-sharing steps.
--->
+![Record sharing lists the requests asked of this school and by this school, each with its state.](/images/current/record-sharing-light-desktop.webp)
+
+Approval and receipt are separate record-sharing steps.
 
 1. Select the holding campus and enter its learner admission number.
 2. Select the required data categories.

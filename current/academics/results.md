@@ -15,11 +15,9 @@ Issuing these documents requires `create report`.
 
 ## Submit one learner's result
 
-<!-- screenshot: result-review
-Path: /images/current/result-review-light-desktop.webp
-Alt: The selected academic record shows approved publication data and its revision.
-Caption: Families read approved publication revisions.
--->
+![Approved results list each learner's percentage, revision, and approval date.](/images/current/result-review-light-desktop.webp)
+
+Families read approved publication revisions.
 
 1. Open the offering's gradebook.
 2. Save all intended marks using **Save marks**.

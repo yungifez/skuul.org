@@ -5,11 +5,9 @@ Prepare subjects, course offerings, teachers, and rooms first.
 
 ## Build a timetable
 
-<!-- screenshot: timetable
-Path: /images/current/timetable-light-desktop.webp
-Alt: The timetable list distinguishes draft and published revisions.
-Caption: Publish only after reviewing timetable conflicts.
--->
+![The 10A timetable has a published revision and a draft revision that is not published.](/images/current/timetable-light-desktop.webp)
+
+Publish only after reviewing timetable conflicts.
 
 1. Create the timetable for the section and period.
 2. Add time slots with the required recurrence and date range.

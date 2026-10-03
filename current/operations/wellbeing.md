@@ -5,11 +5,9 @@ Support plans and health records require their own read and management permissio
 
 ## Create a support plan
 
-<!-- screenshot: student-support
-Path: /images/current/student-support-light-desktop.webp
-Alt: A fictional support plan shows its category, review date, and progress.
-Caption: Confidential support requires its specific access permission.
--->
+![The support plan list shows two fictional plans with their learner, kind, state, and review date.](/images/current/student-support-light-desktop.webp)
+
+Confidential support requires its specific access permission.
 
 1. Select the learner's eligible campus enrollment.
 2. Choose the support category.

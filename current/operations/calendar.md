@@ -6,11 +6,9 @@ You need event management permission to make changes.
 
 ## Add an event
 
-<!-- screenshot: calendar-events
-Path: /images/current/calendar-events-light-desktop.webp
-Alt: A calendar shows a fictional event and a closure day.
-Caption: A closure day differs from closing an academic period.
--->
+![The October calendar shows school events and a staff development day when the school is shut.](/images/current/calendar-events-light-desktop.webp)
+
+A closure day differs from closing an academic period.
 
 1. Select the campus and calendar context.
 2. Enter the event title, type, and dates.

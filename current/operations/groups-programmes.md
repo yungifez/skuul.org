@@ -26,11 +26,9 @@ Keep the programme active while it accepts new participation.
 
 ## Give a learner a place
 
-<!-- screenshot: programme-participation
-Path: /images/current/programme-participation-light-desktop.webp
-Alt: A programme record shows fictional learners and participation states.
-Caption: Programme participation does not change class placement.
--->
+![The programme list shows a special programme and a club, each with the number of learners taking part.](/images/current/programme-participation-light-desktop.webp)
+
+Programme participation does not change class placement.
 
 1. Open the programme record.
 2. Select the learner and participation start date.

@@ -6,11 +6,9 @@ Platform administrators can manage the platform scope.
 
 ## Set up an organization
 
-<!-- screenshot: organizations
-Path: /images/current/organizations-light-desktop.webp
-Alt: The organization list contains two fictional campuses in one organization.
-Caption: Organization ownership and campus access are separate.
--->
+![The organization list shows Riverside Unified School District with two campuses.](/images/current/organizations-light-desktop.webp)
+
+Organization ownership and campus access are separate.
 
 1. Create the organization and enter its details.
 2. Create or attach its campuses.
