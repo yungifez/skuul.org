@@ -180,7 +180,9 @@
       "alt": "The Create student form shows the person's details, then an Admission group with Section, Admission number and Date of admission, and the Admit learner button.",
       "caption": "The admission form. Section is the only admission field you must choose. The admission number is made for you when left blank.",
       "requiredState": "The full form, with an active section available.",
-      "routeParameters": []
+      "routeParameters": [],
+      "captureRole": "admin",
+      "additionalPermissions": []
     },
     {
       "id": "student-profile-enrollment",
@@ -194,7 +196,9 @@
       "requiredState": "An active learner with one placement.",
       "routeParameters": [
         "student"
-      ]
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
     },
     {
       "id": "student-placement",
@@ -208,7 +212,9 @@
       "requiredState": "Change the enrollment → Change placement is open for an active learner.",
       "routeParameters": [
         "student"
-      ]
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
     },
     {
       "id": "student-status",
@@ -222,7 +228,9 @@
       "requiredState": "Change the enrollment → Change status is open for an active learner.",
       "routeParameters": [
         "student"
-      ]
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
     },
     {
       "id": "admission-queue",
