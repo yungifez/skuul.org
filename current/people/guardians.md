@@ -19,6 +19,10 @@ The application does not verify legal guardianship from a shared surname or emai
 4. Select **Add parent**.
 5. Review the resulting account and invitation notification.
 
+![The Create parent form shows the person's name, email, contact and address fields, and the Add parent button.](/images/current/guardian-create-light-desktop.webp)
+
+The parent form. A new guardian gets an email link to set a password.
+
 Use the guardian's existing email to reuse an eligible account.
 Do not enter the learner's email as the guardian's identity.
 See [account invitations](./accounts) if the guardian needs another sign-in link.
@@ -27,13 +31,21 @@ See [account invitations](./accounts) if the guardian needs another sign-in link
 
 ![The parent list shows fictional guardians with their email and account state.](/images/current/guardian-links-light-desktop.webp)
 
-Open a parent to see and change the learners linked to them.
+The parent list. Open a parent to see the learners linked to them.
 
-1. Open the parent's learner-assignment page.
+![A parent's profile shows contact details, Sign-in, and a Linked learners section with the Change linked learners button.](/images/current/guardian-profile-light-desktop.webp)
+
+The **Linked learners** section of the parent's profile lists learners at this campus.
+
+1. Open the parent's profile and select **Change linked learners**.
 2. Select the learner's **Section**.
 3. Select **Learner** and check the admission number.
 4. Select **Link learner**.
 5. Confirm that the learner appears under **Linked learners**.
+
+![The assignment page shows Section and Learner lists, the Link learner button, and the linked learners with an Unlink button each.](/images/current/guardian-assign-light-desktop.webp)
+
+The assignment page. Each linked learner has its own **Unlink** button.
 6. Sign in as the guardian and verify the intended learner in the family portal.
 
 The section list contains active sections from the working cycle.
@@ -44,7 +56,7 @@ Repeat the operation for each sibling. Keep one guardian account for the same pe
 ## Correct or remove a link
 
 1. Find the learner under **Linked learners**.
-2. Select **Unlink** and read the confirmation.
+2. Select **Unlink** and read the confirmation. The browser asks you to confirm, and names the learner and the guardian.
 3. Confirm removal only after checking the guardian and learner.
 4. Verify that the guardian no longer reads that learner's records.
 5. Add the correct link if the original selection was wrong.

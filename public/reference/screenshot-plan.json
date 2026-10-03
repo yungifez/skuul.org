@@ -157,6 +157,38 @@
       "additionalPermissions": []
     },
     {
+      "id": "account-menu",
+      "guide": "current/people/accounts",
+      "section": "Suspend, archive, or reinstate an account",
+      "routeName": "teachers.show",
+      "priority": "essential",
+      "path": "/images/current/account-menu-light-desktop.webp",
+      "alt": "The Sign-in section of a teacher's profile, with the account menu open on Send invitation, Suspend account, and Archive account.",
+      "caption": "The account menu sits beside the account status in **Sign-in**.",
+      "requiredState": "An active teacher at this campus, with the account menu open.",
+      "routeParameters": [
+        "teacher"
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
+      "id": "account-set-password",
+      "guide": "current/people/accounts",
+      "section": "Set a password for another person",
+      "routeName": "teachers.show",
+      "priority": "essential",
+      "path": "/images/current/account-set-password-light-desktop.webp",
+      "alt": "The Set password form shows New password, Confirm password, and the Change it at next sign-in checkbox.",
+      "caption": "The form opens in place, under **Sign-in**.",
+      "requiredState": "An active teacher at this campus, with the Set password form open.",
+      "routeParameters": [
+        "teacher"
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
       "id": "student-enrollment",
       "guide": "current/people/students",
       "section": "Enroll a learner",
@@ -180,7 +212,9 @@
       "alt": "The Create student form shows the person's details, then an Admission group with Section, Admission number and Date of admission, and the Admit learner button.",
       "caption": "The admission form. Section is the only admission field you must choose. The admission number is made for you when left blank.",
       "requiredState": "The full form, with an active section available.",
-      "routeParameters": []
+      "routeParameters": [],
+      "captureRole": "admin",
+      "additionalPermissions": []
     },
     {
       "id": "student-profile-enrollment",
@@ -194,7 +228,9 @@
       "requiredState": "An active learner with one placement.",
       "routeParameters": [
         "student"
-      ]
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
     },
     {
       "id": "student-placement",
@@ -208,7 +244,9 @@
       "requiredState": "Change the enrollment → Change placement is open for an active learner.",
       "routeParameters": [
         "student"
-      ]
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
     },
     {
       "id": "student-status",
@@ -222,7 +260,9 @@
       "requiredState": "Change the enrollment → Change status is open for an active learner.",
       "routeParameters": [
         "student"
-      ]
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
     },
     {
       "id": "admission-queue",
@@ -246,9 +286,55 @@
       "priority": "extended",
       "path": "/images/current/guardian-links-light-desktop.webp",
       "alt": "The parent list shows fictional guardians with their email and account state.",
-      "caption": "Open a parent to see and change the learners linked to them.",
+      "caption": "The parent list. Open a parent to see the learners linked to them.",
       "requiredState": "The guardian directory leads to a fictional guardian with linked learners.",
       "routeParameters": [],
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
+      "id": "guardian-create",
+      "guide": "current/people/guardians",
+      "section": "Add a guardian account",
+      "routeName": "parents.create",
+      "priority": "essential",
+      "path": "/images/current/guardian-create-light-desktop.webp",
+      "alt": "The Create parent form shows the person's name, email, contact and address fields, and the Add parent button.",
+      "caption": "The parent form. A new guardian gets an email link to set a password.",
+      "requiredState": "The empty form.",
+      "routeParameters": [],
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
+      "id": "guardian-profile",
+      "guide": "current/people/guardians",
+      "section": "Link a learner",
+      "routeName": "parents.show",
+      "priority": "essential",
+      "path": "/images/current/guardian-profile-light-desktop.webp",
+      "alt": "A parent's profile shows contact details, Sign-in, and a Linked learners section with the Change linked learners button.",
+      "caption": "The **Linked learners** section of the parent's profile lists learners at this campus.",
+      "requiredState": "A guardian linked to one learner here.",
+      "routeParameters": [
+        "parent"
+      ],
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
+      "id": "guardian-assign",
+      "guide": "current/people/guardians",
+      "section": "Link a learner",
+      "routeName": "parents.assign-student",
+      "priority": "essential",
+      "path": "/images/current/guardian-assign-light-desktop.webp",
+      "alt": "The assignment page shows Section and Learner lists, the Link learner button, and the linked learners with an Unlink button each.",
+      "caption": "The assignment page. Each linked learner has its own **Unlink** button.",
+      "requiredState": "A guardian linked to one learner here.",
+      "routeParameters": [
+        "parent"
+      ],
       "captureRole": "admin",
       "additionalPermissions": []
     },
