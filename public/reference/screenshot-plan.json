@@ -267,13 +267,13 @@
     {
       "id": "admission-queue",
       "guide": "current/people/admissions",
-      "section": "Offer and fill a place",
+      "section": "Admission queues",
       "routeName": "admissions.waitlist.index",
       "priority": "extended",
       "path": "/images/current/admission-queue-light-desktop.webp",
-      "alt": "The waitlist for a full section shows one candidate with an open offer and one candidate still waiting.",
-      "caption": "An open offer reserves a section seat.",
-      "requiredState": "The queue shows a waiting candidate and an offered seat.",
+      "alt": "The waitlist board has the Add a candidate form above the queue. One candidate is placed, and one candidate is still pending with only a Decline button.",
+      "caption": "The section is full again, so the pending candidate has no **Offer place** button.",
+      "requiredState": "A full section with one placed candidate and one pending candidate.",
       "routeParameters": [],
       "captureRole": "admin",
       "additionalPermissions": []

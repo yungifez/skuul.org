@@ -1,68 +1,75 @@
 # Admission queues
 
-Use the admission waitlist for a section with a capacity limit.
-Select the campus, cycle, level, and section.
-You need admission management access.
+Use the admission waitlist when a section with a capacity limit is full.
+Open **Admissions waitlist** in the sidebar, under **Students**.
+You need `read admission waitlist` to see the board.
+Adding candidates, offering places, accepting, and declining need `manage admission waitlist`.
+
+![The waitlist board has the Add a candidate form above the queue. One candidate is placed, and one candidate is still pending with only a Decline button.](/images/current/admission-queue-light-desktop.webp)
+
+The section is full again, so the pending candidate has no **Offer place** button.
 
 ## Add a candidate
 
-1. Confirm that the section belongs to the selected cycle.
-2. Confirm that the section is full and the cycle is not closed.
-3. Select the candidate's existing account.
-4. Add the candidate to the section's waitlist.
-5. Review the queue order.
+1. In **Section**, select the full section.
+2. In **Candidate**, select the person.
+3. Set **Priority**. A higher number is offered first.
+4. Select **Add to waitlist**.
+5. Find the candidate's row in **Queue**.
 
-A candidate cannot already be an enrolled learner or campus staff.
-The queue is for a known person and a particular destination section.
-It does not create a second enrollment.
+**Section** lists only sections that are active, full, and in an open cycle.
+If a section has a free seat, admit the learner instead of waitlisting them.
+
+**Candidate** lists people with an active membership at this campus.
+It leaves out learners enrolled here and people who work as staff.
+The board does not create accounts. Create the person first, for example as a parent, then return.
+
+Adding the same person to the same section again keeps the one entry.
+Within the same priority, the queue keeps the order in which people were added.
 
 ## Offer and fill a place
 
-![The waitlist for a full section shows one candidate with an open offer and one candidate still waiting.](/images/current/admission-queue-light-desktop.webp)
+When a seat becomes free, the next candidate of that section shows **Offer place**.
+Only that row has the button, and only while the section has a free seat.
 
-An open offer reserves a section seat.
+1. Select **Offer place** on the next candidate's row.
+2. Read the message. It names the person who received the offer.
+3. When the family accepts, select **Accept and enrol**.
+4. When the family refuses, select **Decline** and confirm.
+5. After acceptance, open the learner's profile and check the enrollment and placement.
 
-1. Review the section's available capacity.
-2. Offer the next available place from the queue.
-3. Record acceptance or decline.
-4. After acceptance, review the learner's enrollment and placement.
+An offer holds its seat until it is accepted or declined.
+Normal placement counts that held seat, so the seat cannot be filled another way.
 
-An open offer reserves a seat. Normal placement checks count that reservation.
-Acceptance requires an offered place and a still-eligible candidate.
-Acceptance can reinstate an eligible earlier enrollment.
-It cannot bypass a closed terminal enrollment or enrollment at another campus.
-Declining finishes that offer.
+If the next candidate was enrolled here another way while waiting, the offer skips them.
+Their entry is withdrawn, and the offer goes to the next person.
 
-Before archiving a section, resolve its waiting candidates and active offers.
-Move current learners before removing the section from use.
-## Use the queue controls
+Acceptance creates the learner's enrollment in the offered section.
+A learner who left this campus earlier returns to their own enrollment, with its history and admission number.
+Acceptance is refused when:
 
-Read access requires `read admission waitlist`.
-Adding candidates, offering seats, accepting, and declining require `manage admission waitlist`.
+- the candidate already attends this campus
+- their earlier enrollment here is Archived or Transferred, which cannot be reopened
+- they attend another campus or school (ask that school to move or transfer them)
+- they work as staff
 
-1. Select **Section** on the waitlist board.
-2. Select a known person in **Candidate**.
-3. Set **Priority** where the campus uses priority ordering.
-4. Select **Add to waitlist**.
-5. Review the candidate's queue row and section capacity.
+## Archive a section with a queue
 
-The board selects existing eligible people. It has no inline new-account form.
-Ask the operator to prepare an eligible account before returning to the board.
-The board does not provide candidate account provisioning. Do not admit a duplicate learner to bypass a full section.
-When a place becomes available, select **Offer place** on the eligible queue entry.
-Select **Accept and enrol** after confirmed acceptance, or **Decline** after confirmed refusal.
-Do not create a separate enrollment while an offer already reserves the seat.
+Decide every open entry before you archive the section.
+The archive is refused while the section has waiting candidates or open offers.
+Move current learners before you remove the section from use.
 
 | Problem | Action |
 | --- | --- |
-| Section cannot use a waitlist | Configure a capacity limit and verify that the section is full. |
-| Candidate is absent | Check existing account visibility and incompatible enrollment or staff status. |
-| Acceptance fails after an offer | Recheck capacity, cycle status, and the person's current enrollment. |
-| Section cannot be archived | Resolve its waiting and offered entries before archiving. |
+| The section is not in **Section** | Check that it is active, has a capacity limit, is full, and that its cycle is not closed. |
+| The person is not in **Candidate** | Check their active campus membership. Learners enrolled here and staff are not listed. |
+| No **Offer place** button | The section has no free seat, or an earlier offer still holds it. |
+| Acceptance fails | Read the message. Check the person's enrollments here and at other campuses. |
+| The section cannot be archived | Decline or accept its open entries first. |
 
 ## Check the result
 
-- Check the candidate state and section capacity after offering a place.
-- After acceptance, confirm the learner has the intended enrollment and placement.
+- After an offer, check that the right person shows **Offer made**.
+- After acceptance, check that the row shows **Placed** and the learner is in the section.
 
 See [academic structure](../academics/structure) for capacity and section history.
