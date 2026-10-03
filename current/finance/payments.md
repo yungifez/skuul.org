@@ -1,113 +1,133 @@
 # Payments, credit, refunds, and corrections
 
-Record money only after the office confirms receipt.
-Open **Finance → Fee invoices**, select the invoice, then select **Take payment**.
-Use **Student account** for credit, reversals, refunds, waivers, and write-offs.
+Record money only after the office confirms that it arrived.
+Take a payment from the invoice.
+Use the learner's **Student account** for credit, refunds, take-backs, waivers, and write-offs.
 
 ## Access and amount rules
 
-Reading invoices requires `read fee invoice`.
-Taking payment and applying held credit require `update fee invoice`.
-Reversals, refunds, waivers, and write-offs require `refund student payment`.
-The relevant record must belong to the authorized billing campus.
+| Task | Campus permission |
+| --- | --- |
+| Read invoices and accounts | `read fee invoice` |
+| Take a payment, or use held credit | `update fee invoice` |
+| Take back a payment, give money back, waive, or write off | `refund student payment` |
 
-Payment and adjustment fields use decimal major units.
-For NGN, enter `1250.50` for ₦1,250.50.
-Invoice creation requires whole major-unit amounts instead. See [invoice amount rules](./invoices).
+Payment and adjustment amounts accept two decimal places, such as `1250.50`.
+Invoice amounts are whole numbers. See [invoice amount rules](./invoices).
 
 ## Record a payment
 
-![The payment form shows what the learner owes, the amount, date, method, reference, and note fields.](/images/current/student-payment-light-desktop.webp)
+![The Take payment form shows who pays, what is paid and owed, then Amount, Received on, Paid by, Reference, Note, and Record payment.](/images/current/student-payment-light-desktop.webp)
 
 Record money received and review any credit left unallocated.
 
-1. Verify the learner and invoice against the receipt or bank confirmation.
-2. Enter **Amount** and **Received on**.
-3. Select the method under **Paid by**.
-4. Enter **Reference** and an optional **Note**.
-5. Review allocation or select **Split across fees**.
-6. Select **Record payment**.
-7. Review the confirmation, invoice balance, and payment history.
+1. Open the invoice and select **Take payment**.
+2. Check the learner under **From**, and what is **Owed**.
+3. Enter **Amount**.
+4. Check **Received on**. It shows today. A future date is refused.
+5. Under **Paid by**, select how the money came.
+6. Enter **Reference**. It is required for every method except **Cash**.
+7. Enter an optional **Note**.
+8. Select **Record payment**.
+
+The invoice opens with the message **Payment recorded.**
+Money above what the invoice owes is held as credit, and the message names the amount.
+The invoice's **Payments** list shows the part of each payment used on this invoice.
+Select **Receipt** to print a receipt.
 
 | Field | Requirement |
 | --- | --- |
-| Amount | From 0.01 to 100000000, with at most two decimal places. |
-| Received on | Defaults to campus today. Future dates fail. |
-| Paid by | Available channel in this installation. |
-| Reference | Required for noncash office channels. Maximum 100 characters. |
-| Note | Optional. Maximum 1000 characters. |
-| Split amounts | Nonnegative, with at most two decimal places. |
+| Amount | From 0.01 to 100000000, with up to two decimal places. |
+| Received on | Today or earlier. |
+| Paid by | Cash, Bank transfer, Cheque, Card machine, or Mobile money. |
+| Reference | Required except for Cash. Up to 100 characters. |
+| Note | Optional. Up to 1000 characters. |
 
-Cash posts to the cash account.
-Bank transfer, Cheque, Card machine, and Mobile money post to the bank account.
-A manually recorded channel is evidence entered by the cashier; it does not verify settlement with a provider.
-The current family portal does not provide checkout.
-The Stripe extension does not supply a complete checkout and callback workflow.
+Cash goes to the cash account. The other methods go to the bank account.
+The method is what the cashier records. The app does not check it with a bank or provider.
+The family portal has no online payment.
 
-## Allocate or hold credit
+A reference already used for a payment of this learner is refused, unless that payment was taken back.
+Letter case does not matter: `ach-240104` matches `ACH-240104`.
+The message names the date of the earlier payment. Check it before you try again.
 
-Automatic allocation clears the invoice's oldest eligible fees first.
-**Split across fees** appears when more than one fee remains outstanding.
-Enter the intended allocation for each fee; blank fields allocate nothing to that fee.
-The total split must not exceed the payment.
-Each split must not exceed that fee's outstanding amount.
-Unallocated money remains held credit on the learner's account.
+## Split a payment across fees
+
+**Split across fees** shows when the invoice owes more than one fee.
+Without a split, the payment clears the oldest fees first.
+
+1. Select **Split across fees**.
+2. Enter the amount for each fee. A blank fee gets nothing.
+3. Select **Record payment**.
+
+The split cannot be more than the payment, or more than a fee owes.
+What the split leaves over is held as credit.
 
 Example: an invoice owes 70.00 tuition and 30.00 materials.
-A payment of 120.00 allocates 100.00 and leaves 20.00 held credit.
-If a split allocates only 70.00, the remaining 50.00 stays held credit.
-Held credit is not additional income when later allocated.
+A payment of 120.00 without a split pays both and holds 20.00 as credit.
+With a split of 70.00 to tuition, 50.00 is held as credit.
 
-Open **Student account** and select **Use credit against fees** to allocate available credit to eligible outstanding fees.
-Review the new allocations and remaining credit.
-The action records no new cash or bank receipt.
+## Use held credit
 
-## Correct a payment
+![The Student account shows what the learner owes and the credit held, their invoices, and their payments, with a reversal and a payment taken back.](/images/current/student-account-light-desktop.webp)
+
+Open the invoice's ellipsis and select **Student account**.
+The account shows **Owed**, **Credit held**, the invoices, and the payments.
+
+When the learner holds credit and owes money, select **Use credit against fees**.
+The message names the amount used.
+Using credit records no new money received.
+
+## Take back a payment
+
+Take back a payment that was recorded by mistake, or that the bank returned.
 
 1. Open the learner's **Student account**.
-2. Find the incorrect payment in its history.
-3. Open the payment's reversal control.
-4. Enter a reason of 5 to 500 characters.
-5. Confirm the reversal.
-6. Check the reversed history and restored outstanding fees.
-7. Record a replacement payment only if money was received correctly.
+2. Open the ellipsis of the payment and select **Take back**.
+3. In **Reason**, enter 5 to 500 characters.
+4. Select **Take back**.
 
-The reversal preserves the original payment and posts correcting entries.
-A payment already reversed cannot be reversed again.
-A reversal corrects the record; it does not itself prove money was returned to a family.
+The payment stays in the list, struck through and marked **Taken back**.
+A **Reversal** row shows the reason, and the fees are owed again.
+A payment can be taken back once.
+Taking back a payment does not give money to the family. Use **Give money back** for that.
 
-A reference already used for an unreversed payment to this learner is rejected in the billing campus.
-The comparison ignores letter case.
-Review the existing payment before retrying. Reverse it first only when it is incorrect.
+## Give money back
 
-## Refund held credit
+You can give back held credit only.
 
-Open the refund form in **Student account**.
-Enter **Amount**, **Paid out by**, any required **Reference**, and **Reason**.
-Use a reason of 5 to 500 characters.
-Select **Record the refund** and confirm.
-The amount must not exceed available held credit.
-Allocated money must be corrected through the appropriate operation before it becomes refundable credit.
-Review the payout method, resulting credit, and account history.
+1. On the **Student account**, select **Give money back**.
+2. Enter **Amount**. The heading shows the most you can give back.
+3. Select **Paid out by**, and enter **Reference** when the method needs one.
+4. In **Reason**, enter 5 to 500 characters.
+5. Select **Record the refund**, then confirm.
 
-## Reduce a fee obligation
+To give back money already used on fees, take back that payment first. Its money then becomes credit.
 
-Use the account's fee-relief form for the intended invoice line.
-Choose **Waiver or scholarship** or the write-off option.
-Enter the amount and supporting reason, then confirm the adjustment.
-The amount cannot exceed the eligible fee and account balance.
-A waiver or write-off reduces debt; it does not record received money.
+## Waive or write off a fee
 
-## Resolve a blocked payment or adjustment
+1. On the **Student account**, open the ellipsis of the invoice.
+2. Select **Waive or write off**.
+3. In **Fee**, select the fee. Each fee shows what it still owes.
+4. Enter **Amount**.
+5. In **Kind**, select **Waiver or scholarship**, or **Write-off, cannot collect**.
+6. In **Reason**, enter 5 to 500 characters.
+7. Select **Take it off**, then confirm.
+
+The amount cannot be more than the fee still owes.
+The invoice shows the new waiver, and the learner owes less.
+A waiver or write-off is not money received.
+
+## Problems
 
 | Problem | Action |
 | --- | --- |
-| Invoice is paid in full | Review Student account for held credit. The invoice form has no open fee to collect. |
-| Reference is required | Copy the cheque, transfer, card, or mobile transaction reference. |
-| Split is rejected | Reduce allocations to the payment total and each outstanding fee. |
-| Duplicate reference | Open the existing payment; do not change the reference to bypass the check. |
-| Financial period is closed | Ask the authorized finance operator to review the posting date and period. |
-| Refund exceeds credit | Review existing allocations and prior refunds. |
+| The invoice has no **Take payment** | It is paid. Check the **Student account** for held credit. |
+| The reference is required | Enter the cheque number or the transfer, card, or mobile money reference. |
+| The reference was already used | Open the earlier payment. Do not change the reference to get past the check. |
+| The split is refused | Make the split no more than the payment, and no more than each fee owes. |
+| The date is refused | Use today or an earlier date in an open financial period. |
+| The refund is refused | Give back no more than the credit held. |
 
-After every correction, reconcile the invoice, learner account, and [ledger reports](../operations/reports).
-See [payment extensions](../reference/extensions) before enabling provider settings.
+After each correction, check the invoice, the learner's account, and the [ledger reports](../operations/reports).
+See [payment extensions](../reference/extensions) before you turn on a provider.

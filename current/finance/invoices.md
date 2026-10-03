@@ -1,8 +1,13 @@
 # Fees and invoices
 
-Use **Finance → Fee invoices** in the billing campus.
 An invoice charges a learner's account. A payment records money received against that charge.
-Prepare a financial period covering the invoice's issue date before issuing it.
+Open **Finance → Fee invoices** at the campus that bills the learner.
+An open financial period must cover the invoice's issue date.
+
+![The Finance page shows what is owed, received, and spent this school year, and the invoice list with its period and status filters.](/images/current/fee-invoice-light-desktop.webp)
+
+The Finance page lists the campus's invoices.
+Filter by **Financial period** and status, or search the rows.
 
 ## Access and setup
 
@@ -10,93 +15,88 @@ Prepare a financial period covering the invoice's issue date before issuing it.
 | --- | --- |
 | Read invoices | `read fee invoice` |
 | Create invoices | `create fee invoice` |
-| Edit invoice details or take payment | `update fee invoice` |
+| Change an invoice or take payment | `update fee invoice` |
 | Create fee categories | `create fee category` |
 | Create fees | `create fee` |
 
-Select the working cycle for learner selection.
-Only Active and Suspended enrollments are eligible for the creation form.
-Use the fee category and fee pages to create catalogue names and descriptions.
-The invoice form supplies the amounts; the catalogue is not a price list.
-Set the application currency before entering live records. NGN is the default.
-Changing the currency does not convert existing amounts.
+Before the first invoice, create the fees you charge:
 
-::: warning Current invoice input requires whole amounts
-Invoice **Amount**, **Waiver**, and **Fine** fields accept integer major-unit amounts.
-For NGN, enter `1000` for ₦1,000.00.
-Payment forms accept decimal major-unit amounts: enter `1000.00` for the same money.
-The invoice form currently rejects fractional inputs such as `1000.50`.
-Do not enter stored minor-unit amounts into this form.
-Check the formatted total before issuing or collecting money.
+1. On the Finance page, open the ellipsis (**More finance pages**).
+2. Select **Fee categories** and create a category, such as Tuition.
+3. Select **Fees** and create the fees in that category.
+
+A fee is a name only. You enter its amount on each invoice.
+
+The currency comes from the installation setting. NGN is the default.
+Set it before you enter live records. Changing it does not convert existing amounts.
+
+::: warning Invoice amounts are whole numbers
+**Amount**, **Waiver**, and **Fine** on an invoice accept integer major-unit amounts: whole naira, dollars, and so on.
+Under NGN, enter `1000` for ₦1,000.00. The form refuses `1000.50`.
+Payments accept decimal major-unit amounts, with up to two decimal places.
 :::
 
 ## Issue an invoice
 
-![The finance page shows amounts owed and received and the invoice list for the 2026–27 school year.](/images/current/fee-invoice-light-desktop.webp)
+![The Create fee invoice form has six students of section 9B and one fee of 40. The total reads 6 invoices · $40.00 each, and the button reads Create 6 invoices.](/images/current/fee-invoice-create-light-desktop.webp)
 
-Review issued fee lines before taking money.
+1. On the Finance page, select **Add invoice**.
+2. Enter **Issued** and **Due**. **Note** is optional.
+3. Under **Students**, select the class and section.
+4. Select one student, or keep **All students**, then select **Add**.
+5. Repeat for other sections. Remove a student with their **×**.
+6. Under **Fees**, select the fee category and fee, or keep **All fees in this category**, then select **Add**.
+7. Enter **Amount**, **Waiver**, and **Fine** for each fee.
+8. Check the total under the form, such as **6 invoices · $40.00 each**.
+9. Select **Create invoice**, or **Create 6 invoices** for six students.
 
-1. Open the invoice creation page.
-2. Enter **Issued** and **Due** dates.
-3. Enter an optional **Note**.
-4. Select the class, section, and student in **Students**.
-5. Select **Add** in the student section.
-6. Repeat for additional students and review the selected list.
-7. Select **Fee category** and **Fee** in **Fees**.
-8. Select **Add** in the fee section.
-9. Enter each line's **Amount**, **Waiver**, and **Fine** in whole major units.
-10. Review the total and student count.
-11. Select **Create invoice**, or **Create N invoices** for multiple students.
-12. Open each resulting invoice and verify its formatted amount due.
-
-Selecting all students or all fees adds every eligible item in the chosen scope.
-Review the added list before submitting.
-Use a row's remove control to exclude an unintended person or fee.
-**Clear** removes the selected students from this form.
-Multiple students receive separate invoices with the same fee lines.
-The application generates the invoice number; there is no invoice-name input.
+The Finance page opens with the message **Invoice created.** or **6 invoices created.**
+Each student gets a separate invoice with the same fees.
+The app gives each invoice its number.
 
 | Field | Requirement |
 | --- | --- |
-| Issued | Required date. An open financial period must cover it. |
-| Due | Required date on or after Issued. |
-| Note | Optional. Maximum 10000 characters. |
-| Students | At least one eligible enrollment in the billing campus. |
-| Fees | At least one fee from this campus. |
-| Amount | Integer major units, from 1 to 100000000. |
-| Waiver | Nonnegative integer major units, no greater than Amount. |
-| Fine | Nonnegative integer major units, up to 100000000. |
+| Issued | Required. An open financial period must cover it. |
+| Due | Required. On or after Issued. |
+| Note | Optional. Up to 10000 characters. |
+| Students | At least one Active or Suspended learner of this campus. |
+| Fees | At least one fee of this campus. |
+| Amount | Whole number from 1 to 100000000. |
+| Waiver | Whole number from 0. Not more than Amount. |
+| Fine | Whole number from 0 to 100000000. |
 
-Each line charges `Amount - Waiver + Fine`.
-Example: `1000` amount, `100` waiver, and `50` fine charge ₦950.00 under NGN.
-Two selected learners each receive ₦950.00; the batch total is ₦1,900.00.
-Creation posts an eligible charge to the learner's account.
-A repeated submission of the same form uses the same batch identifier to avoid duplicate invoices.
+Each fee charges `Amount − Waiver + Fine`.
+Example: amount `1000`, waiver `100`, and fine `50` charge ₦950.00 under NGN.
+Two students each get an invoice of ₦950.00.
+If you select **Create invoice** twice, the app creates the invoices once.
 
 ## View and print
 
-Open the invoice and review **Fees**, **Payments**, and the amount owed.
-Use **Print invoice** for the issued document.
-Use **Student account** to review charges, payment allocations, and held credit.
-Use **Take payment** for money already received.
-Review [payment procedures](./payments) before entering an amount.
+![The invoice shows the learner, its status, the issue and due dates, the amount charged and owed, the fees, and the payments.](/images/current/fee-invoice-view-light-desktop.webp)
+
+Select an invoice number to open it.
+The status is **Not paid**, **Part paid**, or **Paid**.
+The ellipsis beside **Take payment** has **Print invoice**, **Edit**, and **Student account**.
+Use **Take payment** for money received. See [payments](./payments).
 
 ## Correct an invoice
 
 Select **Edit** to change **Due** or **Note**, then select **Save**.
-The issue date is part of the posted charge and cannot change after posting.
-Line changes depend on posting state and the permitted adjustment operation.
-Do not change invoice fields to represent received money or a cash refund.
-Use the student account's waiver, write-off, reversal, and credit procedures for financial corrections.
+The issue date cannot change.
+
+The fees of an invoice are locked when it is in the books. The edit page marks them **Posted**.
+To reduce what the learner owes, use **Waive or write off** on the **Student account**. See [payments](./payments).
+To charge more, create another invoice.
+Do not change an invoice to record money received or returned.
 
 | Problem | Action |
 | --- | --- |
-| No learners appear | Select the working cycle and section. Check Active or Suspended enrollment. |
-| No fees appear | Create a fee category and fee in this campus. |
-| Due date is rejected | Use a date on or after Issued. |
-| Posting is refused | Check that an open financial period covers Issued. |
-| Fractional amount is rejected | The current invoice form accepts whole major units only. Ask the operator to review fractional billing support. |
-| Batch contains an unintended learner | Remove the learner before creation. After posting, use the authorized correction workflow. |
+| No students in the list | Select the class and section of the working school year. Only Active and Suspended learners are listed. |
+| No fees in the list | Create a fee category and fees at this campus. |
+| The due date is refused | Use a date on or after **Issued**. |
+| The issue date is refused | An open financial period must cover it. See [financial periods](./ledger). |
+| A decimal amount is refused | Invoice amounts are whole numbers. |
+| A wrong student is in the list | Remove them before you create the invoices. After that, waive or write off their fee. |
 
-Academic closure does not close the financial period.
-See [financial periods and accounting](./ledger) for posting and closure.
+Closing a school year does not close its financial period.
+See [financial periods and accounting](./ledger).
