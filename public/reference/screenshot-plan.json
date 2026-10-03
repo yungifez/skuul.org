@@ -339,15 +339,47 @@
       "additionalPermissions": []
     },
     {
+      "id": "campus-move-request",
+      "section": "Ask for a move",
+      "path": "/images/current/campus-move-request-light-desktop.webp",
+      "alt": "The Move to another campus form under Enrollment has the campus and section, the effective date, a reason, and Ask the other campus.",
+      "caption": "**Campus and section** lists the active sections of the other campuses in the organization.",
+      "requiredState": "Change the enrollment → Move to another campus is open for an active learner.",
+      "routeParameters": [
+        "student"
+      ],
+      "guide": "current/people/moves",
+      "routeName": "students.show",
+      "priority": "extended",
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
+      "id": "campus-move-waiting",
+      "section": "Ask for a move",
+      "path": "/images/current/campus-move-waiting-light-desktop.webp",
+      "alt": "The profile shows that the learner is waiting for Maple Grove Middle School, section 8A, with Take the request back beside it.",
+      "caption": "Asking does not move the learner.",
+      "requiredState": "The learner has a waiting campus move request.",
+      "routeParameters": [
+        "student"
+      ],
+      "guide": "current/people/moves",
+      "routeName": "students.show",
+      "priority": "extended",
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
       "id": "campus-move",
       "guide": "current/people/moves",
-      "section": "Move within the organization",
+      "section": "Decide a request",
       "routeName": "campus-moves.index",
       "priority": "extended",
       "path": "/images/current/campus-move-light-desktop.webp",
-      "alt": "A request from Maple Grove Middle School to move a learner into Grade 9 waits for this campus to approve or reject it.",
-      "caption": "Review the destination and approval state before completing a move.",
-      "requiredState": "A pending move lists the source, destination, and decision state.",
+      "alt": "Campus moves lists one student another campus wants to send here, with a note, Approve and move, and Reject. Below, one student this campus asked to send away has Take back.",
+      "caption": "Approval moves the learner at once.",
+      "requiredState": "One incoming request and one outgoing request are waiting.",
       "routeParameters": [],
       "captureRole": "admin",
       "additionalPermissions": []
