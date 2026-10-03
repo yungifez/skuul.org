@@ -18,16 +18,27 @@ Use [admissions](./admissions) when the intended section is full.
 
 ## Admit a learner
 
+Review the learner identity and placement after enrollment.
+
 ![The student list shows fictional learners with email, admission number, class, section, and enrollment state.](/images/current/student-enrollment-light-desktop.webp)
 
-Review the learner identity and placement after enrollment.
+The student list. Open **Create student** from here.
 
 1. Open the student creation page from **Students**.
 2. Enter the learner's name and email address.
 3. Complete the required and optional fields below.
 4. Select the section shown with its academic level.
 5. Select **Admit learner**.
+
+![The Create student form shows the person's details, then an Admission group with Section, Admission number and Date of admission, and the Admit learner button.](/images/current/student-admit-form-light-desktop.webp)
+
+The admission form. Section is the only admission field you must choose. The admission number is made for you when left blank.
+
 6. Open the resulting profile and review its **Enrollment** section.
+
+![A learner's profile shows the Enrollment section with its status, admission number, admission date, class and section, then status and placement history.](/images/current/student-profile-enrollment-light-desktop.webp)
+
+The **Enrollment** section of the profile. The ellipsis on its right opens **Change the enrollment**.
 
 | Field | Requirement |
 | --- | --- |
@@ -59,9 +70,13 @@ Do not send another invitation unless the first link requires replacement.
 2. Open the ellipsis beside **Enrollment**, labelled **Change the enrollment**.
 3. Select **Change placement**.
 4. Select the destination section in the working cycle.
-5. Enter **Effective on**, using today or an earlier valid date.
-6. Enter the reason, if required by campus policy.
+5. Enter the effective date, using today or an earlier valid date.
+6. Optionally enter the reason in **Why (optional)**.
 7. Select **Save placement**.
+
+![The Change placement form under Enrollment shows the destination section, the effective date, the optional reason, and Save placement.](/images/current/student-placement-light-desktop.webp)
+
+The placement form opens inside the **Enrollment** section.
 8. Reload the profile and check the destination section and placement history.
 
 The reason accepts up to 1000 characters.
@@ -71,8 +86,12 @@ Withdrawn, Transferred, Graduated, and Archived enrollments reject ordinary plac
 ## Change enrollment status
 
 Open the same menu and select **Change status**.
-Choose **New status**, **Effective on**, and an optional **Reason**. Select **Save status**.
-The menu only offers permitted transitions.
+Choose the new status, the effective date, and an optional reason. Select **Save status**.
+The list only offers permitted transitions.
+
+![The Change enrollment status form shows the status list, the effective date, the optional reason, and Save status.](/images/current/student-status-light-desktop.webp)
+
+The status form opens inside the **Enrollment** section.
 
 | Current status | Available next statuses |
 | --- | --- |
@@ -99,6 +118,7 @@ Use the documented move operation when changing campus ownership.
 | Admission number exists | Open the existing learner. Correct the number only when it belongs to another person. |
 | Learner already enrolled elsewhere | Request a campus move. Do not create another identity. |
 | Profile moved while this page was open | Reload and work in the receiving campus. |
-| Placement is disabled | Check the working cycle and enrollment status. |
+| **Change placement** is missing from the menu | The enrollment is Withdrawn, Transferred, Graduated, or Archived. Reactivate it first, where the status table allows. |
+| The **Change the enrollment** menu is missing | The enrollment is Archived, so no change is possible. |
 
 After admission, [link guardians](./guardians) and verify [family access](../family/portal).
