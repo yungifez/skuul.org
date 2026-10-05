@@ -83,18 +83,17 @@ Read the report definition before comparing its totals with another export.
 | Expenses | Expense records within the financial window. |
 | Income by fee type | Invoice lines selected by invoice issue date, with current allocations and balances. |
 | Student balances | Current learner ledger balance and unapplied credit; no historical period balance. |
-| Student aging | Current invoice balances, aged at build time by default. Financial period does not filter those balances. |
+| Student balances by age | Current invoice balances, aged at build time by default. Financial period does not filter those balances. |
 | Budget variance | Budget comparison for the request's academic cycle. |
 
 For window-based reports, a selected financial period supplies the start and end dates.
 Without it, the report uses the request's academic cycle dates where available.
 The report desk does not expose a general date-range or learner-status filter.
 
-Student balances and Student aging default to active learners still attached to the campus.
-They also include applicable moved-away learners with balances or credit held here.
-Other local statuses, including Suspended and Graduated, can be absent from the default local selection.
-Review those accounts directly before using the export as a complete debtor list.
-Student aging uses current invoice balances, rather than reconstructing a historical balance at its aging date.
+Student balances lists every Active learner of the campus.
+It also lists a learner of any other status, or one who moved away, who owes money or holds credit here.
+Student balances by age lists each learner who still owes on an invoice of this campus.
+Student balances by age uses current invoice balances, rather than reconstructing a historical balance at its aging date.
 Income by fee type's Collected column reflects allocations to the selected invoice lines.
 It does not mean cash received during the selected window.
 

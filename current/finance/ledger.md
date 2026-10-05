@@ -8,6 +8,7 @@ Each campus keeps its own ledger.
 | Add, close, or reopen a financial period | `manage financial period` |
 | See the financial periods | `read fee invoice` |
 | Read or record expenses | `read expense`, `create expense` |
+| Read or record cash deposits | `read cash deposit`, `create cash deposit` |
 | Read budgets | `read budget` |
 | Save, revise, or remove a plan | `manage budget` |
 
