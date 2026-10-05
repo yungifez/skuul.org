@@ -19,8 +19,8 @@ Do not enter its sample transactions into a live campus.
 | Request exports | `read report`, `create report`, and each report's data permission. |
 | Close or reopen finance | `manage financial period`. |
 
-The seeded accountant role does not include `create report` or `manage financial period`.
-Assign the required delegated authority through the normal role process.
+The built-in accountant role can build reports. It cannot close or reopen a financial period.
+An admin closes the period, or gives `manage financial period` through a role.
 Review [payment instructions](./payments), [ledger controls](./ledger), and [report exports](../operations/reports).
 
 ## Reconcile receipts and learner accounts
@@ -58,14 +58,14 @@ Do not post an invented receipt or expense merely to make the count agree.
 ## Rehearse a worked reconciliation
 
 This example assumes NGN, zero opening cash and bank, one open financial period, and no unrelated transactions.
-The values below are expected results for a rehearsal, not evidence of an executed browser test.
+The table shows the expected results. The app's automated tests run this example and check them.
 
 1. Create one invoice line with **Amount** `300`, no waiver, and no fine.
-2. Record cash payment `350.00`, allocating `300.00` to that invoice.
-3. Review the paid invoice and held credit of `50.00`.
+2. Take a cash payment of `350.00` on that invoice.
+3. Check that the invoice is **Paid** and the account holds `50.00` credit.
 4. Record an actual cash expense of `40.00` through the expense workflow.
-5. Record a cash deposit of `200.00` after confirming the deposit.
-6. Refund the held `50.00` through **Record the refund**, selecting cash and a supporting reason.
+5. Record a cash deposit of `200.00`. The cash box holds `310.00`, so no confirmation shows.
+6. On the **Student account**, select **Give money back**. Give back `50.00` in cash with a reason.
 7. Build fresh learner and cash-and-bank reports.
 
 | Step | Cash | Bank | Fee owed | Held credit |
@@ -90,15 +90,15 @@ Do not enter stored minor-unit values into those fields.
 | Balance sheet | Cumulative ledger values through the window's ending date. |
 | Income by fee type | Invoice issue dates within the window, with their current allocations. It is not a receipt-date cash report. |
 | Student balances | Current ledger balances and unapplied credit; not a historical financial-period snapshot. |
-| Student aging | Current invoice balances grouped by age at build time by default. The financial-period selection does not limit those balances. |
+| Student balances by age | Current invoice balances grouped by age at build time by default. The financial-period selection does not limit those balances. |
 | Budget variance | The selected academic cycle's budget comparisons; not a generic financial-period filter. |
 
 Without a financial period, window-based reports fall back to the working cycle's dates.
 The report desk has no general date-range or learner-status editor.
-Student balances and aging default to active local enrollments.
-They also include applicable moved-away learners whose money remains in this campus.
-Suspended, withdrawn, or graduated learners still attached here can be absent from that default local selection.
-Review those accounts separately before treating the export as a complete debtor list.
+Student balances lists every Active learner of the campus.
+It also lists a suspended, withdrawn, or graduated learner who still owes money or holds credit here.
+It also lists a learner who moved to another campus and left money here. Their status reads **Moved to** and the campus name.
+Student balances by age lists each learner who still owes on an invoice of this campus.
 See [report scope](../operations/reports#understand-dates-and-learner-selection).
 
 ## Close and retain the review
@@ -122,7 +122,7 @@ Do not assume that period closure performs these reconciliation steps automatica
 | --- | --- |
 | Cash count differs from Closing | Match receipts, payouts, deposits, opening balance, and posting dates. |
 | Fee income differs from bank receipts | Compare report definitions, invoice dates, held credit, allocations, and settlement timing. |
-| Learner disappears from Student balances | Check status and campus movement, then review their account directly. |
+| Learner is missing from Student balances | They owe nothing and hold no credit here. Check their **Student account**. |
 | New posting is rejected | Check its date and the applicable open financial period. |
 | Report still shows the old total | Build a new export after the correction. |
 

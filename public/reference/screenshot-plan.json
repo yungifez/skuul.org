@@ -707,29 +707,75 @@
     {
       "id": "fee-invoice",
       "guide": "current/finance/invoices",
-      "section": "Create an invoice",
+      "section": "Fees and invoices",
       "routeName": "fee-invoices.index",
       "priority": "essential",
       "path": "/images/current/fee-invoice-light-desktop.webp",
-      "alt": "The finance page shows amounts owed and received and the invoice list for the 2026–27 school year.",
-      "caption": "Review issued fee lines before taking money.",
-      "requiredState": "An invoice lists fee lines, amount due, and payment actions.",
+      "alt": "The Finance page shows what is owed, received, and spent this school year, and the invoice list with its period and status filters.",
+      "caption": "The Finance page lists the campus's invoices.",
+      "requiredState": "The campus has invoices in its open financial period.",
       "routeParameters": [],
+      "captureRole": "accountant",
+      "additionalPermissions": []
+    },
+    {
+      "id": "fee-invoice-create",
+      "section": "Issue an invoice",
+      "routeName": "fee-invoices.create",
+      "path": "/images/current/fee-invoice-create-light-desktop.webp",
+      "alt": "The Create fee invoice form has six students of section 9B and one fee of 40. The total reads 6 invoices · $40.00 each, and the button reads Create 6 invoices.",
+      "caption": "Each student gets a separate invoice with the same fees.",
+      "requiredState": "A section with active learners and a fee category with fees; students and one fee are added.",
+      "routeParameters": [],
+      "guide": "current/finance/invoices",
+      "priority": "essential",
+      "captureRole": "accountant",
+      "additionalPermissions": []
+    },
+    {
+      "id": "fee-invoice-view",
+      "section": "View and print",
+      "routeName": "fee-invoices.show",
+      "path": "/images/current/fee-invoice-view-light-desktop.webp",
+      "alt": "The invoice shows the learner, its status, the issue and due dates, the amount charged and owed, the fees, and the payments.",
+      "caption": "Select an invoice number to open it.",
+      "requiredState": "An invoice with one fee, a waiver, and a payment that was taken back.",
+      "routeParameters": [
+        "fee_invoice"
+      ],
+      "guide": "current/finance/invoices",
+      "priority": "essential",
       "captureRole": "accountant",
       "additionalPermissions": []
     },
     {
       "id": "student-payment",
       "guide": "current/finance/payments",
-      "section": "Record received money",
+      "section": "Record a payment",
       "routeName": "fee-invoices.pay",
       "priority": "essential",
       "path": "/images/current/student-payment-light-desktop.webp",
-      "alt": "The payment form shows what the learner owes, the amount, date, method, reference, and note fields.",
+      "alt": "The Take payment form shows who pays, what is paid and owed, then Amount, Received on, Paid by, Reference, Note, and Record payment.",
       "caption": "Record money received and review any credit left unallocated.",
-      "requiredState": "The invoice payment form shows method, amount, reference, and allocation.",
+      "requiredState": "An invoice that still owes money; the Take payment form is open.",
       "routeParameters": [
         "fee_invoice"
+      ],
+      "captureRole": "accountant",
+      "additionalPermissions": []
+    },
+    {
+      "id": "student-account",
+      "guide": "current/finance/payments",
+      "section": "Use held credit",
+      "routeName": "student-accounts.show",
+      "priority": "essential",
+      "path": "/images/current/student-account-light-desktop.webp",
+      "alt": "The Student account shows what the learner owes and the credit held, their invoices, and their payments, with a reversal and a payment taken back.",
+      "caption": "The account shows **Owed**, **Credit held**, the invoices, and the payments.",
+      "requiredState": "A learner with two invoices, one paid, and a payment that was taken back.",
+      "routeParameters": [
+        "student_record"
       ],
       "captureRole": "accountant",
       "additionalPermissions": []
@@ -742,7 +788,7 @@
       "priority": "extended",
       "path": "/images/current/financial-periods-light-desktop.webp",
       "alt": "Below the invoices, one financial period is open and the previous one is closed.",
-      "caption": "Financial periods control ledger posting independently of teaching.",
+      "caption": "A financial period controls posting. It does not control teaching.",
       "requiredState": "Financial-period controls distinguish open and closed periods.",
       "routeParameters": [],
       "captureRole": "admin",
