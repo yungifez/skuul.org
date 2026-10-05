@@ -58,7 +58,7 @@ Do not post an invented receipt or expense merely to make the count agree.
 ## Rehearse a worked reconciliation
 
 This example assumes NGN, zero opening cash and bank, one open financial period, and no unrelated transactions.
-The app's automated tests run this example and check the final cash and bank.
+The table shows the expected results. The app's automated tests run this example and check them.
 
 1. Create one invoice line with **Amount** `300`, no waiver, and no fine.
 2. Take a cash payment of `350.00` on that invoice.
