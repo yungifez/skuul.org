@@ -802,7 +802,7 @@
       "priority": "essential",
       "path": "/images/current/family-overview-light-desktop.webp",
       "alt": "The family overview shows one linked learner at Riverside High School and the areas the family can open.",
-      "caption": "Choose the learner before opening family records.",
+      "caption": "A guardian sees each learner that the school linked to them.",
       "requiredState": "The family overview shows only fictional linked learners and available areas.",
       "routeParameters": [],
       "captureRole": "parent",
