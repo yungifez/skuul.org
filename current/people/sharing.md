@@ -1,70 +1,117 @@
 # Share student records between campuses
 
 Use **People → Record sharing**.
-Record sharing requires source approval. Organization membership alone does not grant all student records.
+One campus asks for a learner's records. The campus that holds them decides.
+Organization membership alone does not give one campus the records of another.
 
-## Request and receive records
+## How a request moves
 
 ![Record sharing lists the requests asked of this school and by this school, each with its state.](/images/current/record-sharing-light-desktop.webp)
 
 Approval and receipt are separate record-sharing steps.
 
-1. Select the holding campus and enter its learner admission number.
-2. Select the required data categories.
-3. Enter the purpose and optional permission expiry.
-4. Submit the request.
-5. Ask the source campus to approve or decline it.
-6. After approval, the source campus fulfils the request.
-7. The destination receives the prepared package into the eligible learner record.
+1. The asking campus sends the request.
+2. The holding campus selects **Approve** or **Decline**.
+3. The holding campus selects **Hand the records over**. This builds a copy of the approved categories.
+4. The asking campus selects **Take the records in**. Then it can read the copy.
 
-Approval and fulfilment are separate steps.
-Approval does not immediately import source records.
-A request for the same learner and campus pair cannot duplicate an existing open request.
-The destination must have an eligible enrollment when receiving records.
-A received package cannot be imported again as a duplicate.
+Approval does not send anything. Handing over does not put the records in the asking campus's own screens.
+The copy shows only on the request page.
 
-## Select the minimum data
+| State | Meaning |
+| --- | --- |
+| Asked for | The holding campus has not answered. |
+| Approved | The holding campus agreed. Nothing was handed over yet. |
+| Handed over | The copy is ready for the asking campus. |
+| Declined | The holding campus said no. |
+| Expired | The holding campus marked the permission as run out. |
+| Taken back | The holding campus took the permission back. |
 
-Ordinary categories cover identity, guardians, enrollment, academic results, and attendance.
-Restricted categories cover health, discipline, safeguarding, wellbeing, and finance.
-Restricted information needs the specific sharing authority and approval.
-A general academic request does not include these categories.
+## Permissions
 
-Review the request's expiry before processing it.
-Revocation or expiry ends the authority to continue the workflow.
-The package and audit history record the request and its decisions.
-Do not use a campus move as a substitute for permission to share restricted records.
+| Task | Campus permission |
+| --- | --- |
+| Ask, and take the records in | `request data sharing` |
+| Approve, decline, or take the permission back | `approve data sharing` |
+| Hand the records over | `fulfil data sharing` |
 
-## Complete a sharing request
+Any of the three opens **Record sharing**.
 
-Requesting requires `request data sharing`; approving requires `approve data sharing`.
-Handing over the approved package requires `fulfil data sharing` at the holding campus.
-Restricted categories have additional authority checks.
+## Restricted categories
 
-1. At the requesting campus, select **School that holds the records**.
-2. Enter **Their admission number there**, up to 50 characters.
-3. Select the required categories under **What you are asking for**.
-4. Enter **Why you need them**, up to 500 characters.
-5. Enter **Permission ends on (optional)**, using today or a later date.
-6. Select **Send the request**.
+Ordinary categories are **Identity**, **Guardians**, **Enrollment**, **Published results**, and **Attendance**.
+Restricted categories need one more permission.
+A person must be able to read a restricted category at their own campus to ask for it, approve it, hand it over, or read the copy.
 
-The form identifies the source learner by admission number; it has no general cross-campus learner picker.
-At the holding campus, open the request and select **Approve** or **Decline**.
-After approval, review the categories and select **Hand the records over**.
-At the requesting campus, review the package and select **Take the records in** when eligible.
+| Category | Extra permission |
+| --- | --- |
+| Health | `read health record` |
+| Discipline | `read incident` |
+| Safeguarding | `read safeguarding case` |
+| Support and wellbeing | `read confidential support plan` |
+| Detailed finance | `read fee invoice` |
+
+Without it, the request page says, for example, **You cannot approve Safeguarding. You need the permission to read them at this campus.**
+At the asking campus, a person without it sees the other categories. The page says, for example, **Health is hidden. You need the permission to read it at this campus.**
+Do not use a campus move instead of a request for restricted records.
+
+## Ask for records
+
+1. Open **Record sharing**, then **Ask another school**.
+2. Select **School that holds the records**.
+3. Enter **Their admission number there**, up to 50 characters.
+4. Under **What you are asking for**, select the categories. Ask for the least you need.
+5. Enter **Why you need them**, up to 500 characters.
+6. Enter **Permission ends on (optional)**, today or a later date.
+7. Select **Send the request**.
+
+The form finds the learner by admission number only. You cannot browse another school's learners.
+If the school or the number is wrong, the form says **That school holds no learner with that admission number.**
+After ten wrong numbers, the form stops you for up to one hour.
+
+Your campus can have one open request for each learner of another campus.
+A second request is refused until the first is declined, taken back, handed over, or runs out.
+
+## Answer a request
+
+1. At the holding campus, open the request from **Asked of this school**.
+2. Check the learner, the reason, the categories, and **Runs out**.
+3. Enter a **Note**, if needed. The asking campus sees it.
+4. Select **Approve** or **Decline**.
+5. When you are ready to send the copy, select **Hand the records over**.
+
+The ellipsis menu has **Mark as run out** and **Take permission back**.
+You can take the permission back until the asking campus takes the records in.
+
+Approval is refused after the end date. The other school must ask again.
+If the learner moved to another campus, approval and hand-over are refused. The asking school must ask the learner's current campus.
+
+## Take the records in
+
+1. At the asking campus, open the request from **Asked by this school**.
+2. Select **Take the records in**.
+3. Read each category under **Records**.
+
+Taking in is refused if the holding campus took the permission back, or the end date passed.
+A copy can be taken in once.
+
+## Problems
 
 | Problem | Action |
 | --- | --- |
-| Learner cannot be found | Check the holding campus and its exact admission number. |
-| Another request is already open | Review that request instead of submitting a duplicate. |
-| Restricted category is blocked | Obtain its explicit sharing authority and approval. |
-| Approved request contains no received package | The holding campus must hand the records over first. |
-| Receipt is refused | Check destination enrollment, expiry, revocation, and prior receipt. |
+| The learner is not found | Check the school and its exact admission number. |
+| Another request is already open | Wait for the answer to that request. |
+| A restricted category is refused | Ask your admin for the read permission of that category. |
+| **Hand the records over** is missing | Check that the request is approved, not run out, and the learner still attends your campus. |
+| **Take the records in** is missing | The holding campus must hand the records over first. |
+| Taking in is refused | Check for **Taken back**, the end date, and an earlier take-in. |
+| A category is hidden after taking in | Ask your admin for the read permission of that category. |
 
 ## Check the result
 
-- Check the approved categories, source, destination, and expiry.
-- Confirm receipt only after the source fulfils the request.
-- Verify that restricted categories were not included without their specific approval.
+- Check the categories, both campuses, and the end date.
+- Take the records in only after the holding campus hands them over.
+- Check that restricted categories were approved by a person who can read them.
 
+The audit log records each request, answer, hand-over, and take-in.
 See [security design](../reference/security) and [campus moves](./moves).
