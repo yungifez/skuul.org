@@ -788,7 +788,7 @@
       "priority": "extended",
       "path": "/images/current/financial-periods-light-desktop.webp",
       "alt": "Below the invoices, one financial period is open and the previous one is closed.",
-      "caption": "Financial periods control ledger posting independently of teaching.",
+      "caption": "A financial period controls posting. It does not control teaching.",
       "requiredState": "Financial-period controls distinguish open and closed periods.",
       "routeParameters": [],
       "captureRole": "admin",
