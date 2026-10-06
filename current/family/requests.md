@@ -1,79 +1,92 @@
 # Family requests and the staff inbox
 
-The campus must enable the Requests portal area for new family submissions.
-Requests belong to a learner and the family member who sent them.
+A family asks the school for something through **Requests**.
+Staff answer in **Family requests**.
+A request is a message. It does not change a mark, invoice, attendance entry, or guardian link.
 
 ## Send a request
 
 ![A parent's request form sits above earlier requests, one of them answered by the school.](/images/current/family-request-light-desktop.webp)
 
-A request response does not directly change the underlying record.
+1. Open **Everything of mine**, find the learner, and select **Requests**.
+2. Under **Ask the school**, enter **What you need**.
+3. Select **Kind of request**: **Document request**, **Correction request**, **Appointment request**, or **Acknowledgement**.
+4. Enter **More detail (optional)**.
+5. Select **Send**.
 
-1. Open the learner in **Everything of mine**.
-2. Open Requests.
-3. Choose Document, Correction, Appointment, or Acknowledgement.
-4. Enter a clear subject and message.
-5. Send the request.
-6. Review its state and the staff response.
+The message **Your request was sent to the school.** shows.
+The request appears under **What you have asked for**, with its kind, date, and state.
 
-Include the record and correction needed in the message.
-An appointment request does not automatically create a calendar booking.
-A document request does not automatically publish a report card or transcript.
-Use the withdrawal action when an open request is no longer needed.
-A family member cannot answer their own request as staff.
+| Field | Requirement |
+| --- | --- |
+| What you need | Required. Up to 255 characters. |
+| Kind of request | Required. |
+| More detail | Optional. Up to 2000 characters. |
 
-## Process the staff inbox
+You cannot send the same **What you need** again while the first request is open.
+The form says **You already asked for this. The school has not answered yet.**
 
-Use **Operations → Family requests** with the relevant request permission.
-Filter requests by type or status.
-Review the learner, sender, message, and current state.
-Move the request through the allowed status transition and enter the response.
+For a correction, name the record, the date or term, what is wrong, and what is right.
+Example: "Term 1 attendance on 14 Sep 2026 shows Absent. Please check the signed register."
 
-States are Submitted, In review, Answered, Declined, and Cancelled.
-Check the offered transitions before changing a finished request.
-Staff access to the inbox remains available when the campus disables new family requests.
-This allows authorized staff to finish existing work.
+On the **School calendar**, **Request this time** opens the form with an appointment request filled in.
+An appointment request does not book the time. A document request does not issue a document.
 
-Removing a guardian link cancels that guardian's open requests for the learner.
-It also ends their related family access.
-A response does not by itself change enrollment, gradebook, invoice, or health records.
-Complete any requested record change through its authorized workflow.
+Each family member sees only the requests they sent.
+A learner does not see their guardian's requests, and one guardian does not see another's.
 
-## Submit and take back a request
+## Take back a request
 
-1. Open **Everything of mine** and choose the learner.
-2. Open **Requests**.
-3. Enter **What you need**, up to 255 characters.
-4. Select **Kind of request**.
-5. Enter **More detail (optional)**, up to 2000 characters.
-6. Select **Send**.
-7. Review the request's state and the school's later response.
+1. Under **What you have asked for**, open the ellipsis of the request.
+2. Select **Take back**, then confirm.
 
-Use **Take back** and confirm to cancel an eligible request.
-A request is a message; it does not edit a mark, invoice, attendance entry, or guardian link.
-For a correction, describe the record, period or date, incorrect value, and requested correction.
-For example: “Term 1 attendance on 2026-09-14 shows Absent. Please review the signed register.”
-The school reviews the evidence and uses the appropriate staff correction workflow.
+You can take back a request only while it is **Sent** or **Being looked at**.
+Only the person who sent it can take it back.
+
+## Request states
+
+| State | Meaning |
+| --- | --- |
+| Sent | The school has not opened it. |
+| Being looked at | Staff are working on it. |
+| Answered | The school answered. The answer shows under the request. |
+| Declined | The school will not do it. |
+| Withdrawn | The family took it back, or the guardian link ended. |
+
+Answered, Declined, and Withdrawn are final.
+When the school ends a guardian link, that guardian's open requests for the learner become **Withdrawn**.
 
 ## Answer a request as staff
 
-Read the staff inbox with `read portal request`; changing requests requires `answer portal request`.
-Filter by **Status** and **Request type**.
-Select **Move to** and enter **Response**, up to 2000 characters, then select **Update request**.
-An Answered decision requires a response. Explain declined requests even though that state does not require a response.
-Check both the saved decision and the family-visible response.
-Staff retain inbox access when new family submission is disabled.
+| Task | Campus permission |
+| --- | --- |
+| Read the inbox | `read portal request` |
+| Change a request | `answer portal request` |
+
+1. Open **Operations → Family requests**.
+2. Filter by **Status** or **Request type**, if needed.
+3. Read the student, the family member, and the message.
+4. In **Move to**, select the next state.
+5. For **Answered**, enter **Response**, up to 2000 characters.
+6. Select **Update request**.
+
+**Answered** needs a response. **Declined** does not, but explain the decision.
+The family sees the response on their **Requests** page.
+
+If the family took the request back first, the inbox says **The family took this request back. It cannot change now.**
+If another staff member closed it first, the inbox says, for example, **This request is already answered. It cannot change now.**
+The first answer stays. Read it before you contact the family.
+
+The inbox shows only requests for this campus.
+It stays open when the campus hides **Requests** from families, so staff can finish open requests.
+
+## Problems
 
 | Problem | Action |
 | --- | --- |
-| Family cannot open Requests | Check guardian link, enrollment eligibility, Portal, and Requests area. |
-| Requested correction has not changed the record | Staff must make that correction in the relevant application workflow. |
-| Request cannot be taken back | Review whether it has already reached a terminal state. |
-| Staff response is rejected | Supply the required response and use a permitted status transition. |
-
-## Check the result
-
-- Check the request status and saved response.
-- Verify any requested data change in its separate workflow.
+| The family has no **Requests** button | Check the guardian link, the **Student and guardian portal** tool, and the **Requests** family page. |
+| The record did not change after an answer | Make the change in its own screen, such as attendance or the gradebook. |
+| **Take back** is missing | The request is final. |
+| The answer is refused | Enter a response for **Answered**. |
 
 See [guardian links](../people/guardians), [official documents](../academics/results), and [portal access](./portal).

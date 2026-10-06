@@ -802,7 +802,7 @@
       "priority": "essential",
       "path": "/images/current/family-overview-light-desktop.webp",
       "alt": "The family overview shows one linked learner at Riverside High School and the areas the family can open.",
-      "caption": "Choose the learner before opening family records.",
+      "caption": "A guardian sees each learner that the school linked to them.",
       "requiredState": "The family overview shows only fictional linked learners and available areas.",
       "routeParameters": [],
       "captureRole": "parent",
@@ -816,7 +816,7 @@
       "priority": "extended",
       "path": "/images/current/family-request-light-desktop.webp",
       "alt": "A parent's request form sits above earlier requests, one of them answered by the school.",
-      "caption": "A request response does not directly change the underlying record.",
+      "caption": "Each family member sees only the requests they sent.",
       "requiredState": "The family request and staff inbox show the submitted state and response.",
       "additionalRouteNames": [
         "portal-requests.index"

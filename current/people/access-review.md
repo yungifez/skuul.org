@@ -7,13 +7,15 @@ Account status, employment, organization membership, campus membership, and role
 
 Confirm the person's identity, email address, campuses, duties, and effective dates.
 Use [accounts](./accounts), [campus roles](../administration/permissions), and [staff employment](../operations/staff) for their exact controls.
-Account changes require `manage account access` and authority over the target person.
-Role assignments require `manage role`; reading roles requires `read role`.
+Account changes and invitations require `manage account access`.
+A campus manager can change only a person who holds no more than they do, and who has no staff role at another campus.
+The role list requires `read role`. Opening a role and giving or taking it away require `manage role`.
 Staff record changes require `update staff profile`.
-Organization membership changes require the separate organization authority.
+Organization membership changes require `manage organization members` in that organization.
 
 The application protects the last available role manager and organization member manager.
 Grant a replacement before ending that manager's access.
+An invited person who has not signed in yet counts as a manager. Check that the replacement can sign in.
 A campus administrator cannot suspend or archive a platform administrator.
 
 ## Prepare a new staff member
@@ -38,13 +40,13 @@ The role editor grants only permissions already held by its authorized manager.
 1. Select the campus where the duties are changing.
 2. Review every role held by the person in that campus.
 3. Add the required new role through **Give** on its role record.
-4. Remove obsolete assignments through **Take it away**.
+4. Remove obsolete assignments. Open the ellipsis of the holder, then select **Take it away**.
 5. Review other roles that still grant the removed permissions.
 6. Update teaching assignments, employment details, and assigned operational work separately.
 7. Verify a permitted action and a refused action with the affected account.
 
-**Stop offering it** archives a role for new assignments.
-It does not remove existing holders.
+**Stop offering it**, in the ellipsis of a custom role, archives the role for new assignments.
+It does not remove existing holders. They keep its permissions.
 Remove the assignments themselves when revoking authority.
 A teacher who is also a guardian retains staff scope while staff roles remain assigned.
 Verify family access separately through **Everything of mine**.
@@ -78,12 +80,13 @@ Use this action only when the authorized decision applies to the whole account.
 
 1. Confirm the effect on every campus and organization.
 2. Transfer the last manager's responsibilities before proceeding.
-3. Open **Manage [person]'s account** on the profile.
+3. On the profile, under **Sign-in**, open the ellipsis next to the account state.
 4. Select **Suspend account** or **Archive account** and read the confirmation.
 5. Confirm, then check the resulting account state.
 6. Verify that the person cannot continue normal application access.
 
-These actions block sign-in and revoke unused invitations.
+These actions revoke unused invitations.
+The person is signed out on their next page, and the dashboard and profile settings refuse them.
 **Revoke invitation** alone stops an unused invitation, rather than an active account.
 Record the decision and effective date in the approved access-review record.
 
@@ -99,6 +102,7 @@ Record the decision and effective date in the approved access-review record.
 
 An account without a password returns to Invited when reinstated.
 Changing a departed staff profile back to employment can restore its campus membership with retained roles.
+You cannot take back a person who holds more at the campus than you do.
 Do not assume that retained roles still match the person's new job.
 
 | Problem | Action |
