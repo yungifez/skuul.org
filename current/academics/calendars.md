@@ -90,8 +90,12 @@ It never closes a period.
 1. Open the cycle.
 2. To close the whole cycle, select **Start closing** at the top. To close one period, open the ellipsis of its row and select **Start closing**.
 3. Finish the outstanding work, such as incomplete grade entries.
-4. Select **Close**. Enter an optional **Note**.
-5. Select **Close** again.
+4. Select **Close**. The form lists the outstanding work, or says **Nothing is outstanding.**
+5. Enter an optional **Note**.
+6. Select **Close** again.
+
+Each listed item says **Stops the close.** or **Worth checking. It does not stop the close.**
+For example, **Timetables are still in draft.** does not stop the close.
 
 **Start closing** takes effect at once. It does not ask for confirmation.
 If you started closing by mistake, select **Reopen** on the period.
