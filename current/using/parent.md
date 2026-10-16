@@ -18,10 +18,7 @@ The default sidebar shows these entries:
 | Group | Entries |
 | --- | --- |
 | My school, or the child's name when you have several children | The open pages of one child, **Everything of mine** (only with several children), **Notification settings** |
-| People | **Students** |
-| Operations | **Notices** |
 
-**People → Students** lists only your linked learners.
 Use your own account and mailbox. Do not share a learner's password.
 Ask the school to [review guardian links](../people/guardians) when a learner is absent or incorrectly linked.
 Different campuses can show different portal areas.
@@ -37,7 +34,7 @@ Recheck the learner and campus when you move between siblings. The group header 
 | **Syllabi** | Published teaching outlines. |
 | **Documents** | Published report cards and the issued transcript. |
 | **School calendar** | Eligible school events and closure days. |
-| **Notices** | Published messages addressed to you. |
+| **Notices** | Published messages from the child's campus to the child or to you. |
 
 The guardian link gives learner access without staff working-campus membership.
 Your parent role does not give access to other families' records.

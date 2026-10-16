@@ -18,7 +18,6 @@ The default sidebar shows these entries:
 | --- | --- |
 | My school | The open portal pages, such as **Results**, **Attendance**, and **School calendar**, and **Notification settings** |
 | Teaching | **Syllabi**, **Timetables** |
-| Operations | **Notices** |
 
 Select **Download profile** on the dashboard to print your own student record.
 Use [account recovery and security](../people/accounts) for an expired invitation, forgotten password, or two-factor recovery.

@@ -37,7 +37,7 @@ If a campus closed all its family pages, the learner shows **This campus has clo
 | Attendance | Days present, absent, late, and excused, and the attendance rate. |
 | Timetable | The newest published week of the learner's class, with only the lessons the learner takes. |
 | School calendar | The campus events for families. |
-| Notices | Published notices sent to the learner. |
+| Notices | Published notices the campus sent to the learner. A guardian also sees notices the campus sent to them. |
 | Invoices and payments | What is still owed, credit held, the invoices, and debts left at an earlier campus. |
 | Documents | The latest report card of each term, and the latest transcript. |
 | Requests | Send a request to the school, and withdraw it. |
