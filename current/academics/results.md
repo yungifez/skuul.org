@@ -22,9 +22,9 @@ Families read approved publication revisions.
 1. Open the offering's gradebook.
 2. Save all intended marks using **Save marks**.
 3. Review excluded, missing, absent, incomplete, and unentered items.
-4. Find the learner's result controls.
+4. Under **Results**, open the ellipsis of the learner's row.
 5. Select **Send for approval**.
-6. Confirm that a numbered revision is waiting for approval.
+6. Check the row. It shows, for example, **Revision 1 waiting for approval · 80.00%**.
 
 The submission captures the calculation and assessment data at that time.
 Later mark changes do not change this saved revision.
@@ -34,7 +34,7 @@ The operation applies to the selected learner, rather than approving the whole m
 ## Approve or return a result
 
 1. Sign in as a different authorized reviewer.
-2. Open the offering's gradebook and find the waiting revision.
+2. Open the offering's gradebook. Under **Results**, open the ellipsis of the learner's row.
 3. Check the learner, marks, entry states, and calculated result.
 4. Select **Approve** when the revision is correct.
 5. Confirm the approved revision number and date.
@@ -42,7 +42,7 @@ The operation applies to the selected learner, rather than approving the whole m
 To return a revision, select **Send back**.
 Enter what the teacher must change, using up to 500 characters.
 Confirm **Send back**. The marksheet shows the returned reason.
-The submitter cannot approve their own revision.
+The submitter cannot approve their own revision. Their menu shows only **Send a new revision** and **Send back**.
 A newer revision prevents approval of an older revision.
 
 ## Correct an official result
