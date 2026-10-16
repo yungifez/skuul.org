@@ -61,7 +61,7 @@ The message is: "Nobody at this campus could manage roles after that. Give someb
 
 1. Open the role.
 2. In **Person who works here**, select the person.
-3. Select **Give**. The message is, for example, "Docs reader was given."
+3. Select **Give**. The message is, for example, "Angela Torres now has Docs reader."
 4. Check the person under **Who holds it here**.
 
 You can give a role only when you hold all of its permissions.

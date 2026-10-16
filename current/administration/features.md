@@ -20,7 +20,7 @@ The page shows a count, for example **11 of 12 tools are on**.
 | Families and learners | **Student and guardian portal** | On | Learners and guardians sign in to read their own records. |
 | Care and conduct | **Discipline and safeguarding** | On | Behaviour records, incidents, and safeguarding cases. |
 | Care and conduct | **Student support and wellbeing** | On | Health notes, counselling, and support plans. |
-| Staff and data | **Staff operations** | On | Staff leave, cover for absent teachers, and appraisals. |
+| Staff and data | **Staff operations** | On | Staff leave, qualifications, and cover for absent teachers. |
 | Staff and data | **Imports and integrations** | On | Bulk uploads and links to outside systems. |
 | Reporting | **Rankings** | Off | Positions that compare learners. |
 | Beyond the classroom | **Boarding** | Off | Boarding houses, beds, and nights away. |

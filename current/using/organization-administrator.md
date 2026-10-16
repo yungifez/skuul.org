@@ -19,7 +19,7 @@ On the **Members** page, **Full authority** means every organization permission,
 | `read organization` | Open the organization and its campus list. |
 | `manage organization` | Change settings, web addresses, and calendar templates. |
 | `manage organization members` | Give or remove organization scope and change member permissions. |
-| `manage organization campuses` | Add a campus and move one between organizations. |
+| `manage organization campuses` | Add a campus, edit its details, and manage its academic years. |
 | `move students between campuses` | Move a learner to another campus without waiting for destination approval. |
 | `read organization reports` | Read the campus, enrollment, and staff totals. |
 

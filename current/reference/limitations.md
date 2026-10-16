@@ -49,8 +49,8 @@ See [gradebooks](../academics/gradebooks).
 
 ## Staff appraisals and APIs
 
-The Staff operations feature description mentions appraisals, but the current staff screens do not implement an appraisal workflow.
-The application also has no registered public REST API in the current route configuration.
+The application has no staff appraisal workflow.
+The application has no public REST API.
 Jetstream API tokens are disabled.
 Do not use the old V2 descriptions as evidence that these interfaces exist.
 
