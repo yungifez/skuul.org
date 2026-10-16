@@ -1,16 +1,21 @@
 # Attendance registers
 
-Enable Attendance and open the attendance register in the intended campus.
-Use `read attendance` to open the register and `take attendance` to record or correct it.
-The current register screen records daily section attendance.
-Lesson attendance exists in the underlying attendance service, but this screen has no lesson-register selector.
+The attendance register records daily attendance for one section.
+The campus must have the Attendance feature on.
+
+| Task | Campus permission |
+| --- | --- |
+| Open a register | `read attendance` |
+| Save or correct a register | `take attendance` |
+
+Open the register from **Teaching → Attendance**, or select **Take attendance** on the dashboard.
+The register has no lesson-by-lesson mode. It records one state for each learner each day.
 
 ## Before you start
 
-Select the working academic cycle and check the teaching period's status.
-The section and date must resolve valid enrollment and placement history.
-Future dates, published closure days, and Closed periods prevent ordinary attendance writes.
-The campus's detailed attendance configuration can also disable daily registers.
+Select the working academic cycle. The register lists the active sections of that cycle.
+Check that the period is open. A closed period does not accept attendance.
+You cannot save a register for a future day or a published closure day.
 
 ## Save the daily register
 
@@ -18,19 +23,18 @@ The campus's detailed attendance configuration can also disable daily registers.
 
 Use explicit attendance states and review unrecorded entries.
 
-1. Select **Section** and check the displayed level and section name.
-2. Select **Day**, using today or an earlier valid date.
-3. Review the learners against their placement on that date.
-4. Select each learner's attendance state.
-5. Review the attendance totals and unrecorded count.
-6. Select **Save register**.
-7. Read the save result, then reload the same section and date.
+1. Select **Section**, for example **Grade 10 · 10A**.
+2. Check the day. Use **Previous day**, **Today**, and **Next day** to change it.
+3. Select the state of each learner.
+4. Check the totals: **Present**, **Absent**, **Late**, **Excused**, and **Other**.
+5. Select **Save register**.
 
-**Today** restores the current campus date.
-The arrow controls move one day backward or forward.
-**Mark everybody present** and **Mark everybody absent** set every displayed learner to that state.
-After using either bulk control, correct exceptions before saving.
-Selecting a state changes the form; **Save register** records it.
+The message **Attendance register saved.** shows when the register saves.
+
+Each learner without a saved state starts as **Present**.
+Check every learner before you save. Select **Not recorded** for a learner you did not see.
+**Mark everybody present** and **Mark everybody absent** set every learner to that state. Correct the exceptions before you save.
+A state change has no effect until you select **Save register**.
 
 | State | Use | Counts as present |
 | --- | --- | --- |
@@ -38,37 +42,33 @@ Selecting a state changes the form; **Save register** records it.
 | Absent | Did not attend. | No |
 | Late | Arrived late. | Yes |
 | Excused | Authorized absence. | No |
-| Left early | Attended and departed early. | Yes |
+| Left early | Attended and left early. | Yes |
 | Remote | Attended remotely. | Yes |
-| School activity | Attended an eligible school activity. | Yes |
-| Not recorded | No attendance decision entered. | Excluded |
+| School activity | Attended a school activity. | Yes |
+| Not recorded | No attendance decision. | Not counted |
 
-Only Not recorded is excluded from the rate denominator.
-Excused remains in that denominator.
-Example: Present, Late, Absent, Excused, and Not recorded give two present entries out of four recorded entries: 50%.
-An absent register does not automatically record every learner as Absent.
-Check register coverage alongside the percentage.
+The attendance rate leaves out only **Not recorded**. **Excused** counts as not present.
+Example: Present, Late, Absent, Excused, and Not recorded give 2 present out of 4 recorded: 50%.
+A register that nobody saved gives no entries. Check which registers are missing as well as the rate.
 
 ## Correct a saved entry
 
-1. Open the same section and original attendance date.
-2. Check the learner identity and historical placement.
-3. Change the incorrect state.
-4. Select **Save register**.
-5. Reload and confirm the corrected state.
+1. Open the same section and day.
+2. Change the incorrect state.
+3. Select **Save register**.
+4. Reload the page and check the state.
 
-The application retains attendance change history.
-The original campus owns its registers after a learner moves elsewhere.
-Work in that owning campus with the required permission to correct the old record.
+The application keeps the history of each change.
+After a learner moves to another campus, the old campus keeps its registers.
+Correct an old entry in that campus.
 
 | Problem | Action |
 | --- | --- |
-| Save register is absent | Check `take attendance` and the period's writable state. |
-| No learners appear | Check section, date, current cycle, and eligible placement history. |
-| Day is refused | Correct a future date or check the published closure calendar. |
-| Percentage seems too low | Remember that Excused remains in the denominator. |
-| Percentage seems too high | Review unrecorded learners and missing registers. |
-| Lesson-register selector is absent | The current screen exposes daily attendance only. |
+| **Save register** is not shown | Check `take attendance` and the period status. |
+| No learners appear | Check the section, the day, and the working cycle. |
+| The day is refused | Choose today or an earlier day. Check the [campus calendar](../operations/calendar) for closure days. |
+| The rate seems too low | **Excused** counts as not present. |
+| The rate seems too high | Look for learners marked **Not recorded** and registers nobody saved. |
 
-Families read eligible attendance when Attendance and the Attendance portal area are enabled.
-See [closure days](../operations/calendar), [campus moves](../people/moves), and [family portal](../family/portal).
+Families see attendance when the Attendance feature and the Attendance portal area are on.
+See [campus moves](../people/moves) and [family portal](../family/portal).
