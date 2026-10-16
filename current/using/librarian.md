@@ -61,7 +61,7 @@ Follow the [lending rules](../operations/library) when a renewal is refused.
 
 ## Process reservations and expired holds
 
-Open **Operations → Library → Library queue**. The **Queue** page opens.
+Open **Operations → Library → Library queue**. The **Library queue** page opens.
 Select **Put somebody in the queue**, choose the **Title** and **Who is waiting**, then select **Add to the queue**.
 An available copy can immediately become a held copy.
 Review **Behind the desk** for collection and **In the queue** for waiting borrowers.

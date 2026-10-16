@@ -1,6 +1,6 @@
 # Staff records, availability, and leave
 
-Turn on **Staff operations** under **School settings → School tools** to use the **Staff** menu.
+Turn on **Staff operations** under **School settings → School features** to use the **Staff** menu.
 The menu has two pages: **Staff directory** and **Staff leave**.
 An employment record, account access, and teaching assignments are separate.
 

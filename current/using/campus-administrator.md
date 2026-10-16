@@ -9,7 +9,7 @@ The installation template grants broad campus permissions. It does not grant pla
 1. Activate your account and verify active membership in the campus.
 2. Open **Setup → School settings** and review [campus settings](../administration/campuses), terminology, and time zone.
 3. Review [feature switches](../administration/features).
-4. Open **Setup → Academic cycles** and create and publish the [academic calendar](../academics/calendars).
+4. Open **Setup → Academic years** and create and publish the [academic calendar](../academics/calendars).
 5. Prepare [levels and active sections](../academics/structure) under **Setup**.
 6. In the working bar, select the working year and an open term.
 7. Prepare [subjects, offerings, and teacher assignments](../academics/offerings) under **Teaching**.

@@ -48,7 +48,7 @@ Attendance shows totals only. It counts the days the school took a register.
 
 The campus admin turns the portal and each page on or off.
 
-1. Open **School settings** in the sidebar, then **School tools**.
+1. Open **School settings** in the sidebar, then **School features**.
 2. Turn on **Student and guardian portal**.
 3. Under **Family pages**, turn each page on or off.
 

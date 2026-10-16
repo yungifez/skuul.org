@@ -1,6 +1,6 @@
 # Optional features
 
-Open **Setup → School settings**, then select **School tools** under **Day to day**.
+Open **Setup → School settings**, then select **School features** under **Day to day**.
 The **School features** page opens with the heading **Choose the tools your school uses**.
 You need `update school` or `manage school settings` at the working campus.
 Each switch saves when you change it.
@@ -54,7 +54,7 @@ Staff can still process existing family requests when the Requests page is off.
 ## Change a feature
 
 1. Select the working campus.
-2. Open **Setup → School settings** and select **School tools**.
+2. Open **Setup → School settings** and select **School features**.
 3. Review open work in the tool before you turn it off.
 4. Select the switch. Wait for the message, for example "Rankings turned on."
 5. Reload the page and check the saved state.

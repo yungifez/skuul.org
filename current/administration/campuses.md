@@ -64,7 +64,7 @@ Set the teaching model with the **Teaching approach** step.
 
 ## Configure family access
 
-1. On **Set up your school**, select **School tools**.
+1. On **Set up your school**, select **School features**.
 2. Turn on **Student and guardian portal**.
 3. Under **Family pages**, turn on each page that families must see.
 

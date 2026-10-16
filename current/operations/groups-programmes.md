@@ -2,7 +2,7 @@
 
 Use **People → Groups** for cohorts, such as a graduation year or a scholarship group.
 Use **People → Programmes** for clubs, interventions, and other services.
-Turn on **Programmes** under **School settings → School tools** to show the **Programmes** page.
+Turn on **Programmes** under **School settings → School features** to show the **Programmes** page.
 These records are separate from class placement.
 
 ## Manage a group

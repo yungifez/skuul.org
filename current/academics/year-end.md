@@ -58,7 +58,7 @@ The scheduler opens Scheduled periods when they are due. It does not close perio
 
 ## Close the intended period
 
-1. Open **Setup → Academic cycles**. The page heading is **Academic years**.
+1. Open **Setup → Academic years**.
 2. Open the row actions of the cycle and select **View academic year**.
 3. To close a term, open **Actions for** the term (⋯) and select **Start closing**.
    To close the whole cycle, select **Start closing** at the top of the page.

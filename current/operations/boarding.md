@@ -1,6 +1,6 @@
 # Boarding houses, rolls, and nights away
 
-Turn on **Boarding** under **School settings → School tools** to show the **Boarding** menu.
+Turn on **Boarding** under **School settings → School features** to show the **Boarding** menu.
 The menu has two pages: **Houses** and **Nights away**.
 Open boarding rolls from a house page with **Boarding rolls**.
 Select the working academic year and term first.

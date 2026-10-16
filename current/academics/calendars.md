@@ -1,6 +1,6 @@
 # Academic calendars and closure
 
-Use **Setup → Academic cycles** to prepare a campus calendar.
+Use **Setup → Academic years** to prepare a campus calendar. The menu label follows the campus terms.
 The page title uses the campus term, for example **Academic years**.
 Use **Organization → Calendar templates** for calendars that several campuses reuse.
 

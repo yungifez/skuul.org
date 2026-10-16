@@ -18,7 +18,7 @@ A draft is visible only to users with `update notice` or `delete notice`.
 
 The scheduler controls due publication and expiry.
 
-1. Select **Add notice**. The **Create notice** page opens.
+1. Select **Add notice**. The **Add notice** page opens.
 2. Enter **Title**.
 3. Enter **Message**. Use the toolbar for bold, headings, lists, quotes, and links.
 4. Optionally select a file in **Attachment (optional)**.
