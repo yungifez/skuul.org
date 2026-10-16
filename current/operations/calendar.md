@@ -1,8 +1,17 @@
 # Calendar events and closure days
 
-Enable Events and use **Operations → Calendar**.
-Use **School calendar** for the calendar view available to your account.
-You need event management permission to make changes.
+Turn on **Calendar and events** in [features](../administration/features), then use **Operations → Calendar**.
+The calendar shows one month as a grid, then lists **What is on this month**.
+Families read published days in the portal under **School calendar**.
+
+## Before you start
+
+Use `read calendar event` to open the calendar.
+Use `create calendar event` to add a day and `update calendar event` to change one.
+Use `publish calendar event` to publish a day or make it a draft again.
+Use `delete calendar event` to remove a day.
+A user without `update calendar event` sees a read-only summary of a published day.
+A draft is visible only to its creator and to users with `update calendar event`.
 
 ## Add an event
 
@@ -10,62 +19,82 @@ You need event management permission to make changes.
 
 A closure day differs from closing an academic period.
 
-1. Select the campus and calendar context.
-2. Enter the event title, type, and dates.
-3. Add the description and applicable audience or teaching scope.
-4. Save the event.
-5. Check the calendar view for the selected dates.
+1. Select **Add a day**, or select **+** on a day in the grid.
+2. Enter the title in **Title, e.g. mid-term break**.
+3. Select **Kind of day**.
+4. Optionally enter **Where (optional)**.
+5. Keep **All day** selected, or clear it to enter start and end times.
+6. Enter **Starts** and **Ends**.
+7. Optionally enter **What it is (optional)**.
+8. Under **Who it is for**, select sections or name people. Select nobody to make it for the whole school.
+9. Select **Save as a draft**.
 
-Use the event type that matches the activity.
-Academic cycle dates are managed in the academic calendar, not replaced by an event.
-A calendar event does not by itself publish a notice or change a learner's placement.
+The page opens the saved day and shows **Saved as a draft. Publish it when it is ready.**
+The status line shows **Draft**.
+
+The kinds are **Holiday**, **Closure**, **Special day**, **Assembly**, **Activity**, **Parent meeting**, **Appointment**, **Examination**, and **Event**.
+Only **Holiday** and **Closure** shut the school. The list marks them **— school shut**.
+To name a person, type at least two letters in **Name a person, e.g. for an appointment**. Select the match.
+You can name only active members of the working campus.
+
+Title and location accept up to 255 characters. The description accepts up to 2000.
+If **Ends** is before **Starts**, the form shows **A day on the calendar cannot end before it starts.**
+If the day lasts more than one year, the form shows **A day on the calendar cannot last more than a year. Check the year.**
+An all-day event covers each day from the start day to the end day.
+
+Academic cycle dates belong in the [academic calendar](../academics/calendars), not in an event.
+An event does not publish a notice or change a learner's placement.
+
+## Publish an event
+
+1. Open the day from the grid, or select **Open** in its row.
+2. Check the fields. If you change them, select **Save**.
+3. Select **Publish**.
+
+The page shows **Published. The school can read it now.**
+The status line changes to **On the calendar**.
+
+To withdraw a published day, open the **⋯** menu and select **Make it a draft again**.
+The page shows **A draft again, so nobody else sees it.**
+The same menu holds **Remove** for users with `delete calendar event`.
 
 ## Record a closure day
 
-Use a closure event when the campus or selected teaching context is closed.
-Check the start and end dates and scope before saving.
-Attendance and lesson-cover workflows check closure days.
-A closure day can prevent a new register or lesson substitution.
-This is separate from closing an academic period, which freezes its operational records.
+1. Add a day and select **Holiday — school shut** or **Closure — school shut** in **Kind of day**.
+2. Check **Starts**, **Ends**, and **Who it is for**.
+3. Select **Save as a draft**, then select **Publish**.
 
-## Review visibility
+The form shows **Once published, attendance and the timetable treat these days as shut.**
+A draft closure has no effect. The calendar warns, for example, **2 events are still a draft**.
+Select **Show the drafts** to list them.
 
-Families can read the calendar when Events and the Calendar portal area are enabled.
-Check the event scope when an expected event does not appear.
-Calendar reminders depend on the running scheduler and configured email delivery.
+A published closure blocks a new register for the sections it covers.
+It also blocks lesson cover on those days.
+A closure for the whole school covers every section.
+This is separate from closing an academic period, which freezes its records.
 
-## Enter the event fields and publish
+## Review the calendar
 
-Read events with `read calendar event`; create with `create calendar event`; edit with `update calendar event`.
-Publication requires `publish calendar event`.
-Saving a draft does not publish a closure day.
+The card title shows the month. Its description lists the closure days, for example **The school is shut on 14 Oct.**
+Use the month buttons and **Today** to move between months.
+Use **Kind of day** and **Drafts only** to filter the list. Select **Clear** to remove the filters.
+The **Who it is for** column shows **The whole school**, the sections, or the named people.
 
-1. Enter **Title** and select **Kind of day**.
-2. Choose **All day**, or enter start and end times.
-3. Enter **Starts**, **Ends**, and optional **Where**.
-4. Enter **What it is (optional)** and select **Who it is for**.
-5. Save the draft, then open its saved record.
-6. Select **Publish** and confirm it is **On the calendar**.
-
-Title and location accept up to 255 characters; description accepts up to 2000.
-Ends cannot precede Starts; an event cannot span more than one year.
-An all-day event covers each selected day through its end.
-Select sections or named campus people where the audience needs restriction.
-For a published closure, attendance and timetable checks use the closure's actual scope.
-
-Use **Make it a draft again** in the event menu to withdraw publication with the required authority.
-Review existing operational records before changing a closure interval.
-A draft closure has no published closure effect.
+Families see a published day when it is for the whole school, for the child's section, or names the child.
+The **School calendar** portal area and **Calendar and events** must be on for the child's campus.
+A draft never appears in the portal.
 
 | Problem | Action |
 | --- | --- |
-| Family cannot see an event | Check publication, audience, Events, and the Calendar portal area. |
-| Attendance still opens on a closure date | Check that the closure is published and includes the intended section. |
-| Date range is rejected | Correct reversed dates or an unintended year-long interval. |
+| Family cannot see an event | Check that it is published and that **Who it is for** includes the child. Check the **School calendar** portal area. |
+| Attendance still opens on a closure date | Check that the closure is published and covers the section. |
+| Date range is rejected | Correct reversed dates or a span longer than one year. |
+| Event has no **Publish** button | Check `publish calendar event`. |
 
 ## Check the result
 
-- Check the event date, type, and scope in the calendar.
-- For a closure day, confirm the intended register or cover restriction.
+- Check the date, kind, and audience in **What is on this month**.
+- Check that the status line shows **On the calendar**.
+- For a closure day, check that the register for that day is blocked.
 
-See [academic calendars](../academics/calendars), [attendance](../academics/attendance), and [scheduled work](../reference/commands).
+See [academic calendars](../academics/calendars), [attendance](../academics/attendance), and [family portal](../family/portal).
