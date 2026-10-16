@@ -38,7 +38,7 @@ Payments accept decimal major-unit amounts, with up to two decimal places.
 
 ## Issue an invoice
 
-![The Create fee invoice form has six students of section 9B and one fee of 40. The total reads 6 invoices · $40.00 each, and the button reads Create 6 invoices.](/images/current/fee-invoice-create-light-desktop.webp)
+![The Create fee invoice form has five students of section 9B and one fee of 40. The total reads 5 invoices · $40.00 each, and the button reads Create 5 invoices.](/images/current/fee-invoice-create-light-desktop.webp)
 
 1. On the Finance page, select **Add invoice**.
 2. Enter **Issued** and **Due**. **Note** is optional.

@@ -15,7 +15,7 @@ Use **Organization → Calendar templates** for calendars that several campuses 
 
 ## Prepare a cycle
 
-![The academic year list shows the 2026–27 year with its dates, two semesters, and Open status.](/images/current/academic-calendar-light-desktop.webp)
+![The academic year list shows the 2027–28 year as Scheduled and the 2026–27 year as Open, each with its dates and two semesters.](/images/current/academic-calendar-light-desktop.webp)
 
 The list shows each cycle with its dates, structure, and status.
 Select **Set up academic year**. The setup has five steps:
@@ -31,7 +31,7 @@ The cycle stays a draft. Its page shows **Continue setup** and the next step.
 
 ## Enter calendar dates
 
-![The first setup step shows the cycle dates, two semesters, and their dates.](/images/current/academic-calendar-editor-light-desktop.webp)
+![The first setup step shows the year dates, the Two semesters structure, and the dates of each semester.](/images/current/academic-calendar-editor-light-desktop.webp)
 
 1. Enter **Starts on** and **Ends on**.
 2. Select the **Reporting structure**: **Three terms**, **Two semesters**, **Three trimesters**, **Four quarters**, or **Custom**.
@@ -59,7 +59,7 @@ Read the warning before you confirm.
 
 ## Publish the calendar
 
-![A draft 2027–28 year offers Copy setup from 2026–27, Edit draft, and Publish calendar.](/images/current/academic-calendar-draft-light-desktop.webp)
+![A draft 2028–29 year offers Copy setup from 2027–28, Edit draft, and Publish calendar.](/images/current/academic-calendar-draft-light-desktop.webp)
 
 A draft cycle's page shows **Copy setup from** the previous cycle, **Edit draft**, and **Publish calendar**.
 

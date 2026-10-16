@@ -18,7 +18,7 @@ Grant them on purpose in [permissions](../administration/permissions).
 
 ## Create a support plan
 
-![The support plan list shows two fictional plans with their learner, kind, state, and review date.](/images/current/student-support-light-desktop.webp)
+![The support plan list shows three fictional plans with their learner, kind, state, and review date.](/images/current/student-support-light-desktop.webp)
 
 Confidential support requires its specific access permission.
 

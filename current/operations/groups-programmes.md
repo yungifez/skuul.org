@@ -41,7 +41,7 @@ Keep the programme open while it accepts new places.
 
 ## Give a learner a place
 
-![The programme list shows a special programme and a club, each with the number of learners taking part.](/images/current/programme-participation-light-desktop.webp)
+![The programme list shows a special programme, an intervention, and a club, each with the number of learners taking part.](/images/current/programme-participation-light-desktop.webp)
 
 Programme participation does not change class placement.
 

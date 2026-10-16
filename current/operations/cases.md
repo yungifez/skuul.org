@@ -41,7 +41,7 @@ An empty **Summary** shows **The summary field is required.**
 
 ## Review and finish a case
 
-![The case list shows two fictional behaviour cases with their kind, state, date, and handler.](/images/current/student-case-light-desktop.webp)
+![The case list shows three fictional behaviour cases with their kind, state, date, and handler.](/images/current/student-case-light-desktop.webp)
 
 Case category affects access to its records.
 

@@ -54,7 +54,7 @@ A shared residence does not give access to other campuses.
 
 ## Take a roll
 
-![A morning roll for Cedar House shows five boarders, three answered and two not recorded.](/images/current/boarding-roll-light-desktop.webp)
+![A morning roll for Cedar House shows four boarders, two answered Present and two Not recorded.](/images/current/boarding-roll-light-desktop.webp)
 
 Complete the roll after recording every required entry.
 

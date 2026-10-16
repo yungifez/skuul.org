@@ -101,7 +101,7 @@ it with a fresh installation.
 
 ## Complete school setup
 
-![Quick setup opens on the school details step after the first sign-in.](/images/current/school-setup-start-light-desktop.webp)
+![Quick setup shows the School details step with the Review school details button.](/images/current/school-setup-start-light-desktop.webp)
 
 Quick setup guides you from school details to the first academic year.
 

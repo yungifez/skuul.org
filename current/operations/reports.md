@@ -12,7 +12,7 @@ The **Report** list shows only the reports whose data you can read.
 
 ## Build an export
 
-![The report desk shows one Ready class list and its download action.](/images/current/report-export-light-desktop.webp)
+![The report desk lists ready exports, each with its download action.](/images/current/report-export-light-desktop.webp)
 
 Download a report after the build reaches Ready.
 

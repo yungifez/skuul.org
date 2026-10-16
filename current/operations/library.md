@@ -48,7 +48,7 @@ The copy then shows **Taken out of the library**. Its loan history stays.
 
 ## Lend and return a copy
 
-![The lending desk shows books out now with barcodes and due dates, two of them late.](/images/current/library-loan-light-desktop.webp)
+![The lending desk shows five books out now with barcodes and due dates, all of them late.](/images/current/library-loan-light-desktop.webp)
 
 A loan belongs to a physical copy and an eligible borrower.
 
