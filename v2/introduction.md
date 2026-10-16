@@ -1,8 +1,8 @@
 # Introduction
 
-::: warning V2 release guide
-This section describes older V2 releases. It does not describe the current
-Laravel 13 code. Use [Current development](/current/introduction) for that code.
+::: warning Deprecated: V2
+V2 is deprecated. This section describes V2
+releases only. Use the [V3 guides](/current/introduction) for the Laravel 13 code.
 Check the [release notes](https://github.com/yungifez/skuul/releases) for your tag.
 :::
 

@@ -76,7 +76,8 @@
     "current/using/student",
     "current/using/teacher",
     "current/using/troubleshooting",
-    "current/using/workspace"
+    "current/using/workspace",
+    "current/whats-new"
   ],
   "routes": [
     {
@@ -1047,9 +1048,23 @@
     },
     {
       "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/results",
+      "name": "portal.results.index",
+      "action": "App\\Http\\Controllers\\PortalResultController@index",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
       "uri": "dashboard/portal/enrollments/{studentRecord}/syllabi",
       "name": "portal.syllabi.index",
       "action": "App\\Http\\Controllers\\PortalSyllabusController@index",
+      "guide": "current/family/portal"
+    },
+    {
+      "method": "GET|HEAD",
+      "uri": "dashboard/portal/enrollments/{studentRecord}/timetable",
+      "name": "portal.timetable.show",
+      "action": "App\\Http\\Controllers\\PortalTimetableController@show",
       "guide": "current/family/portal"
     },
     {

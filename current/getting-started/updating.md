@@ -1,7 +1,7 @@
 # Updating
 
 ::: danger Breaking change: data loss
-Moving an existing V2 installation to this development code is a breaking change with data loss in the live database.
+Moving an existing V2 installation to V3 is a breaking change with data loss in the live database.
 The migrations delete legacy academic records and remove schema columns.
 They do not automatically convert all V2 records into the new academic model.
 Selected JSON archives do not prevent this live-data removal and have no automatic restore or re-import workflow.
@@ -11,15 +11,16 @@ Do not run these migrations on a live V2 database as a routine update.
 Test a specific migration plan on an isolated restored copy first.
 Keep a verified full database backup, uploaded files, and the original `APP_KEY` before proceeding.
 See [the upgrade details](/current/getting-started/updating#breaking-upgrade-effects).
+If a migration fails, follow [service failure and recovery](/current/operations/recovery).
 :::
 
-These instructions describe the current development code. Published V2
-releases have an older updater. Read the release notes for your source and
-target versions before choosing an update path.
+These instructions describe V3. Published V2 releases have an older updater.
+Read [What's new in V3](../whats-new) and the release notes for your source and
+target versions before you choose an update path.
 
 ## Breaking upgrade effects
 
-The development migrations remove records that the new application cannot use directly.
+The V3 migrations remove records that the new application cannot use directly.
 Running the migrations succeeds by removing these records, rather than converting all existing history.
 
 | Affected records | Removal |
@@ -148,7 +149,7 @@ is resolved or the previous release is restored.
 
 ## Retain removed V2 data
 
-The current development migrations archive selected removed V2 course, exam, grading, and gradebook rows.
+The V3 migrations archive selected removed V2 course, exam, grading, and gradebook rows.
 `LegacyDataArchive` writes JSON Lines files under `storage/app/legacy-v2` before the relevant removal.
 A fresh installation with no affected rows creates no archive files.
 Repeated runs append rather than replace those files.

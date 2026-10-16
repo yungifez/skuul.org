@@ -298,6 +298,7 @@
         "create fee category",
         "create fee invoice",
         "create fee invoice record",
+        "create report",
         "read budget",
         "read cash deposit",
         "read expense",
@@ -315,7 +316,6 @@
         "update fee invoice record"
       ],
       "excludedDefaultPermissions": [
-        "create report",
         "manage budget",
         "manage financial period"
       ]

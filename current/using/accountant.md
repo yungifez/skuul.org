@@ -63,10 +63,9 @@ Report posting errors to the authorized finance administrator before period clos
 
 ## Use reports within your permission
 
-The accountant template includes `read report` and the relevant financial reading permissions.
-It does not include `create report`.
-Read or download permitted existing reports; ask the administrator to delegate creation when building exports is part of your job.
-Follow [report export instructions](../operations/reports) after that delegation.
+The accountant template includes `read report`, `create report`, and the relevant financial reading permissions.
+You can build and download each report whose underlying data you can read.
+Follow the [report export instructions](../operations/reports) to build an export.
 Budget editing and period closing remain administrator duties unless separately assigned.
 
 | Problem | Action |
@@ -75,7 +74,7 @@ Budget editing and period closing remain administrator duties unless separately 
 | Posting is blocked | Ask the administrator to review the applicable financial period. |
 | Reference was already recorded | Inspect that payment before retrying; do not invent another reference. |
 | Refund exceeds held credit | Review existing allocations and refunds. |
-| Build it is absent | Review the separate `create report` permission. |
+| **Build it** is absent | Ask the administrator to check `create report` and the report's data permission. |
 | Budget or closure controls are absent | Request the authorized administrator's review. |
 
 Complete [finance reconciliation](../finance/reconciliation) to compare receipts, allocations, cash, bank, and export scope.

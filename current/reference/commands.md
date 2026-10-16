@@ -28,7 +28,7 @@ Use `artisan list` and `artisan <command> --help` to check available options.
 
 Review the target records before running a command that changes data.
 The legacy invoice-posting command is an operator task, not a normal payment action.
-An updater invocation can install a different release line. Read [updating](../getting-started/updating) before using it on development code.
+An updater invocation can install a different release line. Read [updating](../getting-started/updating) before you use it.
 
 ## Schedule
 

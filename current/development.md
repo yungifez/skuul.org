@@ -54,7 +54,7 @@ Fix new static analysis errors instead of adding them to the baseline.
 ## Documentation changes
 
 The Pages site lives in [yungifez/skuul.org](https://github.com/yungifez/skuul.org), separately from the application repository.
-Keep current development instructions separate from V2 release instructions.
+Keep V3 instructions separate from V2 release instructions.
 Use simple technical English, short active sentences, and direct procedure steps.
 Check command names, state transitions, permissions, and button labels against the implementation.
 Each workflow guide must state prerequisites, ordered steps, result checks, and applicable limits.

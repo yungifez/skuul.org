@@ -1,13 +1,13 @@
 # Requirements
 
-These requirements apply to the current development code. For published V2
+These requirements apply to V3. For deprecated V2
 releases, use the [V2 requirements](/v2/getting-started/requirements).
 
 | Component | Requirement |
 | --- | --- |
-| PHP | 8.4 or later; Sail and application CI use 8.5 |
+| PHP | 8.4.1 or later; Sail uses 8.5, and application CI tests 8.4 and 8.5 |
 | Composer | Version 2; install from `composer.lock` |
-| Node.js and npm | Use Node.js 24, supplied by Sail, for local builds; application CI currently uses Node.js 20 |
+| Node.js and npm | Node.js 24; Sail and application CI use it |
 | Database | MySQL 8; use separate application and test databases |
 | Queue and cache | Redis for background jobs and shared scheduler locks |
 | Local environment | Docker with Compose; Linux, macOS, or Windows with WSL2 |
