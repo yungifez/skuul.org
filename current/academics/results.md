@@ -28,6 +28,9 @@ Families read approved publication revisions.
 
 The submission captures the calculation and assessment data at that time.
 Later mark changes do not change this saved revision.
+
+**Absent**, **Missing**, **Incomplete**, and unentered marks count as zero in the result.
+Only **Exempt** and **Not applicable** leave the item out. See [gradebooks](./gradebooks).
 An identical waiting revision cannot be submitted twice.
 The operation applies to the selected learner, rather than approving the whole marksheet.
 
