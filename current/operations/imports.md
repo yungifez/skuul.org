@@ -34,14 +34,13 @@ The import page shows **Nothing is written yet** until you write the rows.
 Rows with errors are left alone. They do not stop the rows that are **Ready**.
 Each row is written in its own transaction. A row that fails does not undo earlier rows.
 
-The check does not test everything. The write also checks these items:
+The check tests the level and section names, the dates, and the gender value.
+The write also checks these items:
 
-- The level and section names.
-- The gender value.
 - An admission number that is already in use.
 - A learner who attends another campus, or a person who works as staff.
 
-A row that fails at write time changes to **Has errors** and shows the reason, for example **There is no level called Grade 99.**
+A row that fails at write time changes to **Has errors** and shows the reason, for example **Admission number A-104 is already used in this school.**
 
 An import runs once. After the write, the page shows **Written on 16 Oct 2026. An import runs once.**
 To stop an import, select **Drop this import** and confirm. The import state changes to **Cancelled**.
@@ -69,8 +68,9 @@ A learner who attends another campus needs a transfer or a campus move.
 
 Required: `name`, `email`.
 
-Optional: `source_id`, `staff_number`, `job_title`, `department`, `employment_type`, `joined_on`, `address`, `city`, `state`, `nationality`, `phone`.
+Optional: `source_id`, `birthday`, `gender`, `staff_number`, `job_title`, `department`, `employment_type`, `joined_on`, `address`, `city`, `state`, `nationality`, `phone`.
 
+Write `birthday` and `joined_on` as `YYYY-MM-DD`. Gender values are the same as for students.
 Employment values are `full_time`, `part_time`, `contract`, `volunteer`, or `intern`.
 `staff_number` accepts 30 characters.
 A staff import creates or updates the staff profile and its account.
@@ -99,8 +99,10 @@ Do not assume that no rows were written.
 | Problem | Action |
 | --- | --- |
 | **The CSV file field is required.** | Select a file before you select **Check the file**. |
+| **Choose what the file holds.** | Select **Students** or **Staff** under **What the file holds**. |
 | **The file is missing these columns: birthday, level, section.** | Add the named columns to the first line. |
 | **The email must be a valid email address.** | Correct the address. Make sure the mail domain can receive mail. |
+| **The birthday field must match the format Y-m-d.** | Write the date as `YYYY-MM-DD`, for example `2012-04-01`. |
 | **The birthday must be a date before today.** | Correct the birthday. |
 | **There is no level called Grade 99.** | Use the exact level name on the working campus. |
 | **The level Grade 9 has no section called 9Z in this cycle.** | Use the exact section name. Check the **Working academic year**. |
