@@ -26,7 +26,8 @@ The scheduler controls due publication and expiry.
 6. Under **Who reads it**, select **Whole school**, **Classes / levels**, or **Sections**.
 7. For **Classes / levels** or **Sections**, select at least one item.
 8. Select **Guardians too** only when guardians must also get the notice.
-9. Select **Save the draft**.
+9. Select **Email it too** to also send the notice by email when it is published.
+10. Select **Save the draft**.
 
 The notice page opens with the status **Draft**.
 It shows **The notice was saved as a draft. Read it, then publish it.**
@@ -75,12 +76,14 @@ Do not share its storage address as a public link.
 ## Set email preferences
 
 Families open **Notification settings** in the portal.
+Staff open their **Profile** and select **Open notice email settings**.
 Under **Email me a copy of notices**, each campus has a switch.
 When it is on, the line reads **Emails arrive, and notices stay here too**.
 When it is off, the line reads **Notices only here**.
 The switch saves at once.
 
-A notice from this form does not send email. Recipients read it in the app.
+A notice sends email only when **Email it too** was selected. It sends when the notice is published.
+A reader who turned notice email off gets no email. The notice stays in the app.
 Account and safety messages, such as a password reset, are always sent.
 An email preference does not grant access to a notice or change its audience.
 Families see their notices when the **Notices** portal area is on.
