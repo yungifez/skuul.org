@@ -35,9 +35,9 @@ See [backup operations](../operations).
 
 ## Detailed feature settings
 
-The feature screen controls whole-feature switches.
-Portal-area and attendance-register flags are stored settings without a dedicated editor in the current screen.
-An operator integration must preserve those settings when changing the configuration array.
+**School features** turns whole features on and off. It also turns each family portal page on and off.
+Other stored feature settings have no editor on that screen.
+An operator integration must keep those settings when it changes the configuration array.
 See [configuration](./configuration).
 
 ## Assessment completeness
@@ -46,6 +46,17 @@ The numeric calculator can contribute zero for unentered, missing, absent, or in
 Review the entry states before publishing results.
 The closure checks do not turn a calculated zero into a deliberate grading decision.
 See [gradebooks](../academics/gradebooks).
+
+## Screens planned for later
+
+V3 has no screen for these tasks. They are planned for a later release.
+
+| Area | Missing screen |
+| --- | --- |
+| Boarding | Assign a supervisor to a boarding house. |
+| Staff leave | Cancel approved leave, or mark leave as taken. |
+| Library | Mark a copy **In repair** or **Lost**, and record its condition at return. |
+| Notices | Edit or revise a notice after it is saved. |
 
 ## Staff appraisals and APIs
 
