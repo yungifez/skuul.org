@@ -1,7 +1,7 @@
 # Notices and email preferences
 
 Use **Operations → Notices** to write messages for the campus.
-The list shows each notice with its **Start date** and **Stop date**.
+The list shows each notice with its **From** and **Until** dates.
 
 ## Before you start
 
