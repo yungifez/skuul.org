@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Skuul',
-  base: '/skuul.org/',
+  base: '/',
   description: 'School management documentation',
   themeConfig: {
     nav: [
