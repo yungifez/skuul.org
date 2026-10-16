@@ -473,6 +473,20 @@
       "additionalPermissions": []
     },
     {
+      "id": "teaching-setup",
+      "guide": "current/academics/structure",
+      "section": "Select a teaching model",
+      "routeName": "academic-years.instructional-model.edit",
+      "priority": "extended",
+      "path": "/images/current/teaching-setup-light-desktop.webp",
+      "alt": "The teaching setup asks whether learners stay with one class group through the day.",
+      "caption": "The campus terms do not change the model.",
+      "requiredState": "A running cycle with no subject exceptions.",
+      "routeParameters": [],
+      "captureRole": "admin",
+      "additionalPermissions": []
+    },
+    {
       "id": "course-roster",
       "guide": "current/academics/offerings",
       "section": "Create an offering",
