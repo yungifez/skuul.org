@@ -18,7 +18,7 @@ Each learner shows their name, admission number, and status, with one button for
 2. Select the page, such as **Results** or **Invoices and payments**.
 
 Choose the learner on **My school** before you open a page.
-A guardian with two children sees both on **My school**. Each page shows the learner's name and campus at the top.
+A guardian with two children sees both on **My school**. Each page names the learner.
 If a campus closed all its family pages, the learner shows **This campus has closed the family pages.**
 
 ## Pages
@@ -42,13 +42,15 @@ If a campus closed all its family pages, the learner shows **This campus has clo
 A result that waits for approval is not shown. The family sees the last approved result until the new one is approved.
 A rejected result is never shown.
 Attendance shows totals only. It counts the days the school took a register.
-**Invoices and payments** is read-only. The portal has no online payment. Pay through the school's own process.
+The attendance rate is the days present divided by the days recorded. Late days count as present. Excused days do not.
+**Invoices and payments** is read-only. It lists invoices with their total and balance. It does not list payments or receipts.
+The portal has no online payment. Pay through the school's own process.
 
 ## Choose the pages a campus shows
 
 The campus admin turns the portal and each page on or off.
 
-1. Open **School settings** in the sidebar, then **School tools**.
+1. Open **School settings** in the sidebar, then **School features**.
 2. Turn on **Student and guardian portal**.
 3. Under **Family pages**, turn each page on or off.
 
@@ -59,13 +61,14 @@ Some pages also need a campus tool:
 | Page | Tool |
 | --- | --- |
 | Attendance | Attendance |
-| School calendar | Events |
+| School calendar | Calendar and events |
 | Library | Library |
 | Boarding | Boarding |
-| Graduation progress | Graduation plans |
+| Graduation progress | Graduation planning |
 | Programmes | Programmes |
 
-When the tool is off, the switch shows **Hidden while** and the tool name.
+When the tool is off, the switch shows **Hidden while {tool} is off**, for example **Hidden while Attendance is off**.
+When you turn a page off, its button leaves **My school**. Its address shows **Page not found**.
 
 ## Who can read what
 
@@ -75,7 +78,7 @@ When the tool is off, the switch shows **Hidden while** and the tool name.
 | Withdrawn, Transferred, Graduated | Shown, so the family keeps report cards, transcripts, and any debt |
 | Archived | Not shown |
 
-A graduated learner's own account cannot open the portal pages yet. Their guardian can.
+A graduated learner and their guardian can both open the portal pages.
 Nobody can open the records of a learner they are not linked to.
 
 Use **Notification settings** in the sidebar to choose which notice emails you get.

@@ -52,7 +52,7 @@ To cancel, select **Take the request back**.
 3. Under **Students other campuses want to send here**, read the learner, campus, section, effective date, and reason.
 4. In **Note**, enter an optional note of up to 500 characters.
 5. Select **Approve and move** or **Reject**.
-6. Confirm the decision in the dialog. It names the learner.
+6. Confirm the decision in the browser prompt. It names the learner.
 7. After approval, open the learner's profile and check the section and placement history.
 
 Approval moves the learner at once. There is no approved-but-waiting stage.
@@ -71,6 +71,8 @@ The placement history gets a dated row for the new section.
 The learner becomes a member of the receiving campus.
 The earlier campus membership stays, so the earlier campus keeps access to its own records.
 The earlier campus no longer lists the learner as a current learner.
+Its staff can still open the profile. The **Enrollment** section then says **Not enrolled in this school**.
+The earlier campus keeps its own unpaid bills on that profile.
 
 At the earlier campus, the move also ends:
 

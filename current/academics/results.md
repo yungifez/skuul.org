@@ -22,19 +22,22 @@ Families read approved publication revisions.
 1. Open the offering's gradebook.
 2. Save all intended marks using **Save marks**.
 3. Review excluded, missing, absent, incomplete, and unentered items.
-4. Find the learner's result controls.
+4. Under **Results**, open the ellipsis of the learner's row.
 5. Select **Send for approval**.
-6. Confirm that a numbered revision is waiting for approval.
+6. Check the row. It shows, for example, **Revision 1 waiting for approval · 80.00%**.
 
 The submission captures the calculation and assessment data at that time.
 Later mark changes do not change this saved revision.
+
+**Absent**, **Missing**, **Incomplete**, and unentered marks count as zero in the result.
+Only **Exempt** and **Not applicable** leave the item out. See [gradebooks](./gradebooks).
 An identical waiting revision cannot be submitted twice.
 The operation applies to the selected learner, rather than approving the whole marksheet.
 
 ## Approve or return a result
 
 1. Sign in as a different authorized reviewer.
-2. Open the offering's gradebook and find the waiting revision.
+2. Open the offering's gradebook. Under **Results**, open the ellipsis of the learner's row.
 3. Check the learner, marks, entry states, and calculated result.
 4. Select **Approve** when the revision is correct.
 5. Confirm the approved revision number and date.
@@ -42,7 +45,7 @@ The operation applies to the selected learner, rather than approving the whole m
 To return a revision, select **Send back**.
 Enter what the teacher must change, using up to 500 characters.
 Confirm **Send back**. The marksheet shows the returned reason.
-The submitter cannot approve their own revision.
+The submitter cannot approve their own revision. Their menu shows only **Send a new revision** and **Send back**.
 A newer revision prevents approval of an older revision.
 
 ## Correct an official result
@@ -62,7 +65,7 @@ Previously issued report cards and transcripts remain fixed; reissue them separa
 
 1. Open the report-card directory.
 2. In **Publish a report card**, select **Learner**.
-3. Select the academic period.
+3. Select **Term**.
 4. Enter **Reason for a revision** when reissuing a card.
 5. Select **Publish**.
 6. Open the resulting card and check its learner, period, and revision.
@@ -72,7 +75,7 @@ The period must be Closing, Closed, or Archived.
 At least one approved subject result is required.
 An Open period is not ready for this document workflow.
 Publishing again creates a new fixed revision.
-Use the directory's learner, cycle, and period filters to find older cards.
+Use the directory's **Learner**, **Academic year**, and **Term** filters to find older cards.
 
 ## Issue a transcript
 
@@ -80,7 +83,7 @@ Use the directory's learner, cycle, and period filters to find older cards.
 2. In **Issue a transcript**, select **Learner**.
 3. Enter **Reason for a revision** when reissuing a transcript.
 4. Select **Issue transcript**.
-5. Open the issued revision and review its published subject history.
+5. Under **Issued transcripts**, select **Read subjects** and review its published subject history.
 
 A transcript requires at least one approved result.
 It records the available published history at issuance.

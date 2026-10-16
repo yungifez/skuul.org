@@ -36,7 +36,7 @@ Pass the actor and owning campus explicitly in background operations.
 Do not include passwords, invitation tokens, provider secrets, or unnecessary private text in context.
 
 Operational logs and domain audit events have different purposes.
-The **System Activity logs** area uses the log-viewer package and requires its access controls.
+The **Activity logs** area shows the server logs. Only a person with `manage platform` can open it.
 A log message is not a substitute for a domain audit record.
 
 ## Maintain permissions and history

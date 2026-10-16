@@ -1,7 +1,16 @@
 # Notices and email preferences
 
-Use **Operations → Notices** to prepare campus messages.
-You need notice read, create, or publication permission for the action.
+Use **Operations → Notices** to write messages for the campus.
+The list shows each notice with its **From** and **Until** dates.
+
+## Before you start
+
+Use `read notice` to open the list.
+Use `create notice` to write a draft.
+Use `update notice` to publish a draft.
+Use `delete notice` to delete a notice from the list.
+Parent and student accounts cannot write or publish notices.
+A draft is visible only to users with `update notice` or `delete notice`.
 
 ## Prepare a notice
 
@@ -9,68 +18,87 @@ You need notice read, create, or publication permission for the action.
 
 The scheduler controls due publication and expiry.
 
-1. Create a notice with a clear title and message.
-2. Set its start and end dates.
-3. Select the whole campus, academic levels, or sections as its audience.
-4. Select whether to include guardians.
-5. Add an attachment where needed.
-6. Review the audience and publication settings.
-7. Publish now or schedule publication.
+1. Select **Add notice**. The **Add notice** page opens.
+2. Enter **Title**.
+3. Enter **Message**. Use the toolbar for bold, headings, lists, quotes, and links.
+4. Optionally select a file in **Attachment (optional)**.
+5. Under **When it shows**, enter **From** and **Until**.
+6. Under **Who reads it**, select **Whole school**, **Classes / levels**, or **Sections**.
+7. For **Classes / levels** or **Sections**, select at least one item.
+8. Select **Guardians too** only when guardians must also get the notice.
+9. Select **Email it too** to also send the notice by email when it is published.
+10. Select **Save the draft**.
 
-Publication records the selected recipients.
-An attachment is served through an authorized download route.
-Do not treat its storage address as a public sharing link.
+The notice page opens with the status **Draft**.
+It shows **The notice was saved as a draft. Read it, then publish it.**
 
-States are Draft, Scheduled, Published, Expired, Superseded, and Archived.
-The scheduler publishes due notices and expires finished notices every fifteen minutes.
-A published notice is visible to its authorized audience.
-Create a revision to correct it. The older version remains in the history.
-Revising a notice does not automatically resend its email.
+**Whole school** means active staff and learners who attend this campus.
+**Classes / levels** means every current section of the selected classes or groups.
+**Sections** means only the selected sections.
+With **Guardians too**, the guardians of those learners also get the notice.
+A section notice with **Guardians too** does not become a whole-school notice.
 
-## Review recipient activity
+Title accepts up to 255 characters. The message accepts up to 65000.
+Attachments accept PDF, Word, GIF, JPG, or PNG files up to 10 MB.
+The form shows these errors:
 
-Open the notice to review available recipient and read information.
-Viewed and acknowledged states represent different recipient actions.
-Check the record before treating a message as acknowledged.
+| Input | Message |
+| --- | --- |
+| Empty message | **Write the message.** |
+| **Until** before **From** | **The end date must be a date after or equal to start date.** |
+| **Sections** with no section selected | **Choose at least one section.** |
+| **Classes / levels** with no class selected | **Choose at least one class or level.** |
+
+## Publish a notice
+
+1. Open the notice. In the list, open **Row actions** and select **View notice**.
+2. Read the message and check the attachment.
+3. Select **Publish notice**.
+
+The page shows **Notice published successfully**. The status changes to **Published**.
+Publication fixes the recipients at that moment.
+People who join the audience later do not get the notice.
+
+The statuses are **Draft**, **Scheduled**, **Published**, **Expired**, **Superseded**, and **Archived**.
+The form has no schedule control. **Publish notice** publishes at once.
+Every fifteen minutes, the scheduler publishes due scheduled notices.
+It also expires published notices after their **Until** date.
+A published notice shows on the dashboard from **From** to **Until**.
+
+The notice page does not show the recipients or the dates.
+You cannot edit a notice after you save it.
+To correct a draft, delete it and write a new one.
+
+Select **Download** and the file name on the notice page to get the attachment.
+The download checks that the reader can see the notice.
+Do not share its storage address as a public link.
 
 ## Set email preferences
 
-Open **Notification settings** and choose notice email preferences for the campus.
-Email delivery also depends on the notice's send-email setting, mail configuration, and queue worker.
+Families open **Notification settings** in the portal.
+Staff open their **Profile** and select **Open notice email settings**.
+Under **Email me a copy of notices**, each campus has a switch.
+When it is on, the line reads **Emails arrive, and notices stay here too**.
+When it is off, the line reads **Notices only here**.
+The switch saves at once.
+
+A notice sends email only when **Email it too** was selected. It sends when the notice is published.
+A reader who turned notice email off gets no email. The notice stays in the app.
+Account and safety messages, such as a password reset, are always sent.
 An email preference does not grant access to a notice or change its audience.
-Families see eligible notices when the Notices portal area is enabled.
-
-## Complete the draft form
-
-Use `read notice` to read, `create notice` to create, and `update notice` for permitted changes and publication.
-Staff-only operations reject portal-only accounts.
-
-Enter **Title**, **Message**, **From**, **Until**, and the intended audience.
-Select **Guardians too** only when guardians must receive the notice.
-Select **Save the draft**, then use the notice's publication controls.
-Title accepts up to 255 characters; message accepts up to 65000.
-Until must be on or after From.
-Attachments accept JPG, JPEG, PNG, GIF, PDF, DOC, or DOCX, up to 10240 KB.
-Class and section audiences require selections from the working campus.
-
-Example: a message to one section with **Guardians too** reaches that section's eligible learners and guardians.
-It does not become a whole-campus message.
-Check the saved recipient audience before relying on it for communication.
-Use a revision to correct published content; send another authorized communication if recipients must receive another email.
-Revising alone does not resend mail.
+Families see their notices when the **Notices** portal area is on.
 
 | Problem | Action |
 | --- | --- |
-| Scheduled notice remains pending | Ask the operator to check the scheduler and scheduled dates. |
-| Recipient sees no notice | Check actual publication recipients and current visibility. |
-| Notice is visible but no email arrives | Check the send-email setting, recipient preference, mail delivery, and worker. |
-| Attachment is rejected | Check file type and the 10 MB limit. |
-| Viewed notice is not acknowledged | Check acknowledgement separately from viewing. |
+| Family does not see a notice | Check that it is published and that its audience includes the child. Check the **Notices** portal area. |
+| Notice is missing from the dashboard | Check its **From** and **Until** dates. |
+| Notice shows **Expired** | Its **Until** date has passed. Write a new notice. |
+| Attachment is rejected | Check the file type and the 10 MB limit. |
 
 ## Check the result
 
-- Review the recorded recipient audience.
-- Check the publication state and attachment access.
-- Confirm the test recipient sees the eligible published notice.
+- Check that the notice page shows **Published**.
+- Check that the attachment downloads.
+- Sign in as a test recipient and check that the notice shows.
 
 See [family portal](../family/portal), [account access](../people/accounts), and [queue troubleshooting](../using/troubleshooting).

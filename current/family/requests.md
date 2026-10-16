@@ -2,6 +2,7 @@
 
 A family asks the school for something through **Requests**.
 Staff answer in **Family requests**.
+The **School administrator** role has both permissions below by default. Teachers, accountants, and librarians do not.
 A request is a message. It does not change a mark, invoice, attendance entry, or guardian link.
 
 ## Send a request
@@ -66,7 +67,7 @@ When the school ends a guardian link, that guardian's open requests for the lear
 1. Open **Operations → Family requests**.
 2. Filter by **Status** or **Request type**, if needed.
 3. Read the student, the family member, and the message.
-4. In **Move to**, select the next state.
+4. In **Move to**, select the next state: **Being looked at**, **Answered**, or **Declined**.
 5. For **Answered**, enter **Response**, up to 2000 characters.
 6. Select **Update request**.
 
@@ -87,6 +88,6 @@ It stays open when the campus hides **Requests** from families, so staff can fin
 | The family has no **Requests** button | Check the guardian link, the **Student and guardian portal** tool, and the **Requests** family page. |
 | The record did not change after an answer | Make the change in its own screen, such as attendance or the gradebook. |
 | **Take back** is missing | The request is final. |
-| The answer is refused | Enter a response for **Answered**. |
+| The answer is refused with **An answered request must carry the answer.** | Enter a **Response** for **Answered**. |
 
 See [guardian links](../people/guardians), [official documents](../academics/results), and [portal access](./portal).

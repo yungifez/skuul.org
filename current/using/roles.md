@@ -45,7 +45,7 @@ The [role inventory](/reference/role-guide-coverage.json) records their guides a
 1. Accept your latest account invitation and set your password.
 2. Complete any required email verification or password change.
 3. Read the [profile security instructions](../people/accounts#use-profile-security).
-4. For staff tasks, select the working campus, cycle, and period.
+4. For staff tasks, check the working campus, year, and term.
 5. Open the guide for your assigned duties.
 6. Check the saved record after each operation.
 
@@ -59,9 +59,9 @@ Feature settings, record ownership, teaching assignments, and record states impo
 
 The role guides describe the reviewed installation templates.
 Existing installations can retain different assignments after permission migrations and local role changes.
-Read the person's assigned roles and the permissions shown in **Roles** before delegating a task.
+Read the person's assigned roles and the permissions shown in **Operations → Roles** before you delegate a task.
 Do not rerun PermissionSeeder to restore a missing permission on a live campus.
-Its synchronization replaces assignments on seeded roles.
+Its synchronization replaces the permissions on seeded roles.
 Use the [role editor](../administration/permissions) and the authorized permission-change process.
 
 The protected roles are platform-admin, organization-admin, admin, teacher, student, and parent.
@@ -72,7 +72,7 @@ A custom title does not grant the permissions associated with that job.
 ## People with more than one role
 
 A teacher who is also a guardian keeps their permitted staff access.
-Use **Everything of mine** for the family task and the staff workspace for teaching work.
+Use **My school → Everything of mine** for the family task and the staff pages for teaching work.
 Confirm the learner and campus in both contexts.
 An account with a staff role is not treated as a portal-only account.
 Review all assigned roles when restricting access; removing one role might leave another permission grant.

@@ -1,6 +1,7 @@
 # Gradebooks and grading scales
 
 Use **Assessment → Gradebooks**, then open the intended course offering.
+You can also open **Teaching → Subjects being taught** and select the subject name.
 The offering's roster determines the marksheet learners.
 Check the campus, academic period, subject, and roster before entering marks.
 
@@ -21,13 +22,12 @@ Closed and Archived periods reject these operations.
 
 ## Set up assessments
 
-1. Open the offering's gradebook setup.
-2. Select **Add a category** when assessments need grouping.
-3. Enter **Category name**, **Calculation**, and **Weight**.
-4. Select **Add category**.
-5. Select **Add an assessment**.
-6. Complete the fields below and select **Add assessment**.
-7. Repeat until the structure matches the campus assessment policy.
+1. Open the gradebook. The **Assessments** section is at the top.
+2. Complete the fields below and select **Add assessment**.
+3. To group assessments, open the ellipsis next to **Assessments** and select **Add a category**.
+4. Enter **Category name**, **Calculation**, and **Weight**. Select **Add category**.
+5. Select **Change** on each assessment to put it in a category.
+6. Repeat until the structure matches the campus assessment policy.
 
 | Assessment field | Requirement |
 | --- | --- |
@@ -77,12 +77,12 @@ Do not divide displayed totals to reproduce a weighted percentage.
 
 Review marks and entry states before submitting results.
 
-1. Select the assessment in **Assessment**.
-2. Select each learner's entry state.
-3. Enter the numeric mark or select the scale option for a Graded entry.
+1. Under **Marks**, select the assessment in **Assessment**.
+2. Select each learner's entry state: **Graded**, **Missing**, **Absent**, **Exempt**, **Incomplete**, or **Not applicable**.
+3. Enter the numeric mark or select the scale option for a Graded entry. The browser refuses a mark above **Marked out of**.
 4. Enter a comment when needed. Maximum 5000 characters.
 5. Select **Save marks**.
-6. Read the saved count and any row errors.
+6. Read the count, for example **5 of 5 marked**, and any row errors.
 7. Reload the sheet and confirm the saved marks.
 
 | Entry state | Numeric calculation |

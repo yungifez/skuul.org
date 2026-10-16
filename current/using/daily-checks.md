@@ -6,7 +6,7 @@ This is an office checklist, not an automatic application workflow.
 
 ## Before you start
 
-Select the campus, academic cycle, and teaching period in the [workspace](./workspace).
+Check the working campus, year, and term in the [workspace](./workspace).
 Check the campus date and time zone before entering attendance or dated transactions.
 Review the [role instructions](./roles) for your account.
 Assign an owner for each enabled service and a deputy for absences.
@@ -28,15 +28,15 @@ A notice visible to staff does not prove that a family received its email.
 
 ## Complete teaching records
 
-1. Open the intended section's [attendance register](../academics/attendance).
-2. Confirm the register date and learner roster.
+1. Open **Teaching → Attendance**, or select **Take attendance** on the dashboard. The [attendance register](../academics/attendance) opens.
+2. Select the **Section** and confirm the **Day** and the learner roster.
 3. Record the attendance states, then select **Save register**.
-4. Reload the register and confirm that the saved states remain.
+4. Wait for "Attendance register saved.", then reload and confirm that the saved states remain.
 5. Review due assessments and unresolved gradebook entry errors.
 6. Submit result revisions only after checking marks, weights, and the roster.
 7. Ask the separate authorized reviewer to handle submitted results.
 
-The teacher's default role does not approve or publish results.
+The default teacher role does not submit, approve, or publish results.
 If you lack `publish result`, hand the checked marks to the authorized publisher.
 A gradebook save can report separate row failures.
 Check each failed row before submitting the entire result revision.

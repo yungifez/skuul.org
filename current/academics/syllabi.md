@@ -5,19 +5,20 @@ A syllabus is the teaching outline. Its publication and coverage are separate re
 
 ## Prepare and publish a syllabus
 
-1. Create a draft for the course offering.
-2. Add topics in teaching order.
-3. Set the planned week, objectives, and resources.
-4. Review the outline or use a reusable curriculum-library outline.
-5. Submit the draft for review.
-6. The reviewer publishes it or returns it with a reason.
+1. Select **Add syllabus** and choose the course offering. The draft opens.
+2. Under **Add a topic**, add each topic in teaching order.
+3. To start from an existing plan, use **Start from an existing plan**.
+4. Under **When the plan is ready**, select **Send for review**.
+5. The reviewer selects **Approve and publish**, or sends it back with a reason.
+
+A person with `approve syllabus` sees **Publish** on the draft and publishes it without review.
 
 States are Draft, Awaiting review, Published, Superseded, and Archived.
 Only published syllabi appear as published teaching material.
 Withdraw a submitted draft when it needs more work.
 Create a revision to change a published syllabus.
 Publishing a revision preserves the previous outline as history.
-Use the print view for a printable copy.
+Select **Print scheme of work** for a printable copy.
 
 ## Track delivery
 
@@ -26,9 +27,9 @@ Use the print view for a printable copy.
 A published outline and recorded coverage are separate.
 
 Record topic coverage for the relevant section.
-Use Covered, Partial, or Skipped as appropriate.
-A topic without a coverage record remains outstanding.
-Covered and Skipped are settled states; a partial topic still needs review.
+Set each topic to **Covered**, **Partly covered**, or **Skipped**.
+A topic stays **Not yet taught** until you record coverage.
+Covered and Skipped are settled. A partly covered topic still needs work.
 The coverage page compares planned delivery with recorded progress.
 Scheduled reminders can notify teachers about classes behind their plan.
 
@@ -54,9 +55,10 @@ Use `read syllabus` to read and `create syllabus` to create an offering's draft.
 Editing and coverage also check teaching responsibility or the applicable syllabus management authority.
 Review and publication require `approve syllabus`.
 
-For each topic, enter **Title**, optional **Week** from 1 to 60, objectives, content, and resources.
+For each topic, enter **Topic** and an optional **Week**, from 1 to 60.
+Enter optional **Learning objectives**, **Content and activities**, and **Resources**.
 Select **Add topic**. Use **Edit** and **Save topic** for corrections.
-Title accepts up to 255 characters; objectives and resources accept 5000 each; content accepts 10000.
+Topic accepts up to 255 characters. Objectives and resources accept 5000 each. Content accepts 10000.
 Select **Send for review** when the complete outline is ready.
 Use **Take back to edit** before making further draft corrections.
 A reviewer uses **Send back** with a required review note when changes are needed.

@@ -69,9 +69,9 @@ Do not send another invitation unless the first link requires replacement.
 1. Open the learner's profile.
 2. Open the ellipsis beside **Enrollment**, labelled **Change the enrollment**.
 3. Select **Change placement**.
-4. Select the destination section in the working cycle.
-5. Enter the effective date, using today or an earlier valid date.
-6. Optionally enter the reason in **Why (optional)**.
+4. In **Section**, select the destination section in the working cycle.
+5. In **Effective on**, enter today or an earlier valid date.
+6. Optionally enter the reason in **Reason**.
 7. Select **Save placement**.
 
 ![The Change placement form under Enrollment shows the destination section, the effective date, the optional reason, and Save placement.](/images/current/student-placement-light-desktop.webp)
@@ -79,15 +79,15 @@ Do not send another invitation unless the first link requires replacement.
 The placement form opens inside the **Enrollment** section.
 8. Reload the profile and check the destination section and placement history.
 
-The reason accepts up to 1000 characters.
+**Reason** accepts up to 500 characters.
 The application records a dated placement; editing identity details does not change placement.
 Withdrawn, Transferred, Graduated, and Archived enrollments reject ordinary placement changes.
 
 ## Change enrollment status
 
 Open the same menu and select **Change status**.
-Choose the new status, the effective date, and an optional reason. Select **Save status**.
-The list only offers permitted transitions.
+In **New status**, choose the status. In **Effective on**, enter the date. **Reason** is optional. Select **Save status**.
+The list shows the current status first, then only the permitted transitions.
 
 ![The Change enrollment status form shows the status list, the effective date, the optional reason, and Save status.](/images/current/student-status-light-desktop.webp)
 

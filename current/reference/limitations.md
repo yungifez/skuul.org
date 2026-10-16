@@ -16,14 +16,6 @@ See [the upgrade details](/current/getting-started/updating#breaking-upgrade-eff
 These guides describe V3. This page lists its known limits.
 The V2 guides remain separate because their runtime and workflows differ.
 
-## Family access after graduation
-
-The portal access service permits eligible graduated enrollment records.
-However, `PreventGraduatedStudent` also wraps dashboard portal routes.
-It redirects a graduated student-role account to the dashboard before the portal controller runs.
-Do not promise graduate self-service access until this route behavior is corrected and tested.
-Guardian access follows its own account and link checks.
-
 ## Online payment integration
 
 The current portal invoice page is read-only.
@@ -43,9 +35,9 @@ See [backup operations](../operations).
 
 ## Detailed feature settings
 
-The feature screen controls whole-feature switches.
-Portal-area and attendance-register flags are stored settings without a dedicated editor in the current screen.
-An operator integration must preserve those settings when changing the configuration array.
+**School features** turns whole features on and off. It also turns each family portal page on and off.
+Other stored feature settings have no editor on that screen.
+An operator integration must keep those settings when it changes the configuration array.
 See [configuration](./configuration).
 
 ## Assessment completeness
@@ -55,10 +47,21 @@ Review the entry states before publishing results.
 The closure checks do not turn a calculated zero into a deliberate grading decision.
 See [gradebooks](../academics/gradebooks).
 
+## Screens planned for later
+
+V3 has no screen for these tasks. They are planned for a later release.
+
+| Area | Missing screen |
+| --- | --- |
+| Boarding | Assign a supervisor to a boarding house. |
+| Staff leave | Cancel approved leave, or mark leave as taken. |
+| Library | Mark a copy **In repair** or **Lost**, and record its condition at return. |
+| Notices | Edit or revise a notice after it is saved. |
+
 ## Staff appraisals and APIs
 
-The Staff operations feature description mentions appraisals, but the current staff screens do not implement an appraisal workflow.
-The application also has no registered public REST API in the current route configuration.
+The application has no staff appraisal workflow.
+The application has no public REST API.
 Jetstream API tokens are disabled.
 Do not use the old V2 descriptions as evidence that these interfaces exist.
 

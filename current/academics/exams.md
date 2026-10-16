@@ -1,8 +1,7 @@
 # Exam schedules
 
-Use **Assessment → Exam schedules**.
-Select the campus, academic cycle, and relevant period.
-You need exam read or management permission.
+Use **Assessment → Exam schedules**. The page shows the exams of the working term.
+Select the working academic cycle and term first.
 
 ## Plan an exam
 
@@ -10,14 +9,15 @@ You need exam read or management permission.
 
 Exam dates describe the assessment window.
 
-1. Create an exam with a clear name.
-2. Select its academic period.
-3. Enter the description, start date, and end date.
-4. Check that both dates fit within the period.
-5. Save and review the exam schedule.
+1. Select **Add exam**.
+2. Enter **Name**. Select **Reporting period**.
+3. Enter **Starts on** and **Ends on**. Both dates must be inside the term.
+4. Enter an optional **What it covers (optional)**.
+5. Select **Plan the exam**.
 
-The end date cannot precede the start date.
-The exam name must be unique in its required context, ignoring letter case.
+The exam name must be unique in its term, ignoring letter case.
+If not, the form says, for example, **Fall semester already has an exam with that name.**
+A date outside the term gives, for example, **The exam ends after Fall semester ends on 18 Dec 2026.**
 Draft periods can support planning.
 Closing or finished teaching context restricts further changes.
 
@@ -41,14 +41,9 @@ Families see approved results through the results portal area.
 Use `read exam`, `create exam`, and `update exam` for the corresponding tasks.
 The selected academic period must belong to the exam's cycle.
 
-1. Open exam creation from the selected cycle or exam list.
-2. Enter the name and optional description.
-3. Select the reporting period.
-4. Enter the start and end dates inside that period.
-5. Select **Plan the exam**.
-6. Open the saved exam and verify its interval and period.
-
+Open **Add exam** from the exam list or from the cycle page.
 Name accepts up to 255 characters.
+After you save, check the dates and the term in the exam list.
 Use the edit form to correct the name, dates, or period within the same year.
 Review both old and new teaching contexts before moving an exam between periods.
 Do not enter grades into an exam schedule; create the gradebook assessment items separately.

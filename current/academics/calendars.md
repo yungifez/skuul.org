@@ -1,6 +1,6 @@
 # Academic calendars and closure
 
-Use **Setup → Academic cycles** to prepare a campus calendar.
+Use **Setup → Academic years** to prepare a campus calendar. The menu label follows the campus terms.
 The page title uses the campus term, for example **Academic years**.
 Use **Organization → Calendar templates** for calendars that several campuses reuse.
 
@@ -15,7 +15,7 @@ Use **Organization → Calendar templates** for calendars that several campuses 
 
 ## Prepare a cycle
 
-![The academic year list shows the 2026–27 year with its dates, two semesters, and Open status.](/images/current/academic-calendar-light-desktop.webp)
+![The academic year list shows the 2027–28 year as Scheduled and the 2026–27 year as Open, each with its dates and two semesters.](/images/current/academic-calendar-light-desktop.webp)
 
 The list shows each cycle with its dates, structure, and status.
 Select **Set up academic year**. The setup has five steps:
@@ -31,7 +31,7 @@ The cycle stays a draft. Its page shows **Continue setup** and the next step.
 
 ## Enter calendar dates
 
-![The first setup step shows the cycle dates, two semesters, and their dates.](/images/current/academic-calendar-editor-light-desktop.webp)
+![The first setup step shows the year dates, the Two semesters structure, and the dates of each semester.](/images/current/academic-calendar-editor-light-desktop.webp)
 
 1. Enter **Starts on** and **Ends on**.
 2. Select the **Reporting structure**: **Three terms**, **Two semesters**, **Three trimesters**, **Four quarters**, or **Custom**.
@@ -59,7 +59,7 @@ Read the warning before you confirm.
 
 ## Publish the calendar
 
-![A draft 2027–28 year offers Copy setup from 2026–27, Edit draft, and Publish calendar.](/images/current/academic-calendar-draft-light-desktop.webp)
+![A draft 2028–29 year offers Copy setup from 2027–28, Edit draft, and Publish calendar.](/images/current/academic-calendar-draft-light-desktop.webp)
 
 A draft cycle's page shows **Copy setup from** the previous cycle, **Edit draft**, and **Publish calendar**.
 
@@ -90,8 +90,12 @@ It never closes a period.
 1. Open the cycle.
 2. To close the whole cycle, select **Start closing** at the top. To close one period, open the ellipsis of its row and select **Start closing**.
 3. Finish the outstanding work, such as incomplete grade entries.
-4. Select **Close**. Enter an optional **Note**.
-5. Select **Close** again.
+4. Select **Close**. The form lists the outstanding work, or says **Nothing is outstanding.**
+5. Enter an optional **Note**.
+6. Select **Close** again.
+
+Each listed item says **Stops the close.** or **Worth checking. It does not stop the close.**
+For example, **Timetables are still in draft.** does not stop the close.
 
 **Start closing** takes effect at once. It does not ask for confirmation.
 If you started closing by mistake, select **Reopen** on the period.
