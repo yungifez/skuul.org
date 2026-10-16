@@ -52,7 +52,8 @@ Staff pages stay closed to a graduate account.
 
 ## Use promotion and graduation controls
 
-1. Open promotion and select **Current section** and **Destination section**.
+1. Open **People → Promotions** and select **Promote learners**.
+   Select **Current section** and **Destination section**.
 2. Select **Review learners**.
 3. Select the intended learners and check their admission numbers.
 4. Select **Move selected learners**.
@@ -64,7 +65,8 @@ The details page itself has no reset button.
 Reset skips learners who no longer have the recorded destination placement or eligible enrollment state.
 Inspect each resulting placement after reset.
 
-For graduation, select the section, then **Review learners**.
+For graduation, open **People → Graduations** and select **Graduate learners**.
+Select the section, then **Review learners**.
 Choose learners, enter an optional **Note for the record**, and select **Graduate selected learners**.
 The note accepts up to 255 characters.
 This action requires `graduate student`; plan completion alone does not perform graduation.

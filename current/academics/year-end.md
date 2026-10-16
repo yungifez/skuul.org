@@ -41,12 +41,16 @@ Later mark changes do not change a document that is already published.
 
 ## Review what closure actually checks
 
-The close action blocks a term with roster grades that are not entered or are still Incomplete.
-The message is **This period is not ready to close. Grade entries are still incomplete.**
-The app also records two warnings with the closure, but the close form does not show them:
+The close form lists the outstanding work before you close.
+Each item ends with **Stops the close.** or **Worth checking. It does not stop the close.**
+The form shows **Nothing is outstanding.** when the checks find nothing.
 
-- Timetables of the term are still in draft.
-- Closing a cycle also closes the periods that are still open in it.
+- **Grade entries are still incomplete.** **Stops the close.** A learner has no grade, or an Incomplete grade, on an assessment.
+- **Timetables are still in draft.** **Worth checking. It does not stop the close.**
+- **Closing this cycle will also close the periods still open in it.** **Worth checking. It does not stop the close.** This item shows only when you close a whole cycle.
+
+If you select **Close** while an item stops the close, the form says **This period is not ready to close. Grade entries are still incomplete.**
+It then shows **Close with this work still open**.
 
 The close action does not check result approval or official documents.
 It does not check attendance or finance.
@@ -81,8 +85,7 @@ An Open period is not eligible, even when its subject results are approved.
 For an Open period, the app shows **Report cards can be published only while an academic period is closing or finished.**
 The publisher needs `create report` and access to the learner's academic records.
 
-The **Report cards** and **Transcripts** pages are not in the menu.
-Open them at `/dashboard/report-cards` and `/dashboard/transcripts`.
+Open **Assessment → Report cards** and **Assessment → Transcripts**.
 
 1. Check that the period is in an eligible state.
 2. Open **Report cards**. Under **Publish a report card**, select the **Learner** and the term.

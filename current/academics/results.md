@@ -62,7 +62,7 @@ Previously issued report cards and transcripts remain fixed; reissue them separa
 
 1. Open the report-card directory.
 2. In **Publish a report card**, select **Learner**.
-3. Select the academic period.
+3. Select **Term**.
 4. Enter **Reason for a revision** when reissuing a card.
 5. Select **Publish**.
 6. Open the resulting card and check its learner, period, and revision.
@@ -72,7 +72,7 @@ The period must be Closing, Closed, or Archived.
 At least one approved subject result is required.
 An Open period is not ready for this document workflow.
 Publishing again creates a new fixed revision.
-Use the directory's learner, cycle, and period filters to find older cards.
+Use the directory's **Learner**, **Academic year**, and **Term** filters to find older cards.
 
 ## Issue a transcript
 
@@ -80,7 +80,7 @@ Use the directory's learner, cycle, and period filters to find older cards.
 2. In **Issue a transcript**, select **Learner**.
 3. Enter **Reason for a revision** when reissuing a transcript.
 4. Select **Issue transcript**.
-5. Open the issued revision and review its published subject history.
+5. Under **Issued transcripts**, select **Read subjects** and review its published subject history.
 
 A transcript requires at least one approved result.
 It records the available published history at issuance.
