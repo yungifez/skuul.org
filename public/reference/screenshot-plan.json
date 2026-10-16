@@ -83,7 +83,7 @@
       "caption": "The working bar names the school year and term that every screen uses.",
       "requiredState": "Working campus and academic context selectors are visible.",
       "routeParameters": [],
-      "captureRole": "teacher",
+      "captureRole": "admin",
       "additionalPermissions": []
     },
     {
