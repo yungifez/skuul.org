@@ -88,7 +88,7 @@ test('report permissions, import columns, feature keys, and command names appear
 });
 
 test('built local links, assets, and anchors resolve under the Pages base path', () => {
-  const base = '/skuul.org/';
+  const base = '/';
   const failures = [];
   let checked = 0;
   for (const file of files(dist).filter(file => file.endsWith('.html'))) {
