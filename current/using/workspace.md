@@ -36,9 +36,10 @@ Select **Search** or press Ctrl K to open the command menu. It lists the same pe
 A missing menu entry can mean that a feature is disabled or that your role lacks permission.
 Changing the address does not grant access. A page you cannot open shows "Not open to you".
 
-**Everything of mine** opens the family portal. **Notification settings** controls notice email preferences.
-**School calendar** opens the calendar of the learner's campus.
-These **My school** entries appear for student and parent accounts.
+The **My school** group lists each open portal page of one learner, such as **Results** and **School calendar**.
+**Notification settings** controls notice email preferences.
+**Everything of mine** opens the family portal overview. It shows only for a person who can read more than one learner. That person sees the learner's name as the group header.
+These entries appear for student and parent accounts.
 
 ## Save and review changes
 

@@ -1,7 +1,8 @@
 # Family portal
 
 A learner and their guardians read the learner's school records in the portal.
-Sign in, then select **Everything of mine** in the sidebar. The page is called **My school**.
+Sign in. The sidebar lists the open portal pages of one learner under the **My school** group.
+A person who can read more than one learner also sees **Everything of mine** in that group.
 
 A guardian sees each learner that the school linked to them.
 A learner sees their own enrollments.
@@ -9,16 +10,23 @@ The portal does not use staff permissions. It checks the learner's own account o
 
 ## Open a learner's records
 
-![The family overview shows one linked learner at Riverside High School and the areas the family can open.](/images/current/family-overview-light-desktop.webp)
+![The My school page lists one linked learner at Riverside High School with a button for each open page. The sidebar lists the same pages.](/images/current/family-overview-light-desktop.webp)
 
-**My school** groups the learners by campus.
+The sidebar shows every open page of one learner. A student selects a page directly, such as **Results** or **Invoices and payments**.
+The pages show in this order: **Results**, **Attendance**, **Timetable**, **School calendar**, **Notices**, **Invoices and payments**, **Documents**, **Requests**, **Library**, **Boarding**, **Graduation progress**, **Programmes**, **Syllabi**.
+Only the pages that the campus has open show.
+
+**Everything of mine** opens the **My school** page. It groups the learners by campus.
 Each learner shows their name, admission number, and status, with one button for each open page.
 
-1. Find the learner and check their campus.
-2. Select the page, such as **Results** or **Invoices and payments**.
+A guardian with two children chooses a child in one of two ways:
 
-Choose the learner on **My school** before you open a page.
-A guardian with two children sees both on **My school**. Each page names the learner.
+1. Select **Everything of mine**, find the child, and select a page button.
+2. Open any page of the other child.
+
+The sidebar then follows that child. The school remembers the choice for the next page.
+When a person can read more than one learner, the group header shows the learner's name instead of **My school**. The header stays **My school** when the learner is the person who signed in.
+Each page names the learner.
 If a campus closed all its family pages, the learner shows **This campus has closed the family pages.**
 
 ## Pages
@@ -68,7 +76,7 @@ Some pages also need a campus tool:
 | Programmes | Programmes |
 
 When the tool is off, the switch shows **Hidden while {tool} is off**, for example **Hidden while Attendance is off**.
-When you turn a page off, its button leaves **My school**. Its address shows **Page not found**.
+When you turn a page off, its link leaves the sidebar and its button leaves **My school**. Its address shows **Page not found**.
 
 ## Who can read what
 
@@ -88,7 +96,7 @@ It shows only when a campus of the learner has Notices open.
 
 | Problem | Action |
 | --- | --- |
-| **Everything of mine** is not in the sidebar | Ask the school to link you to the learner. A guardian with no linked learner has no portal. |
+| The **My school** group is not in the sidebar | Ask the school to link you to the learner. A guardian with no linked learner has no portal. |
 | A learner is missing | Ask the school to check the guardian link and that the enrollment is not archived. |
 | A page is missing | Ask the campus to check **Family pages** and the tool the page needs. |
 | A result is older than expected | The new result waits for approval. |

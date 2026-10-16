@@ -1,7 +1,7 @@
 # Student
 
 The `student` role gives you access to your eligible published learner records.
-Use **Everything of mine** for your own portal records.
+Use the **My school** group in the sidebar for your own portal records.
 The school controls publication and which portal areas are available.
 
 ## Activate your account
@@ -9,15 +9,14 @@ The school controls publication and which portal areas are available.
 1. Open the latest invitation sent to your own email address.
 2. Set your password and complete the required sign-in steps.
 3. Sign in. The dashboard shows **Notices** and **Your profile**.
-4. In the sidebar, under **My school**, select **Everything of mine**.
-5. On the **My school** page, check your name, admission number, status, and campus.
-6. Select the required area.
+4. In the sidebar, find the **My school** group.
+5. Select the required page, such as **Results** or **Attendance**.
 
 The default sidebar shows these entries:
 
 | Group | Entries |
 | --- | --- |
-| My school | **Everything of mine**, **Notification settings**, **School calendar** |
+| My school | The open portal pages, such as **Results**, **Attendance**, and **School calendar**, and **Notification settings** |
 | Teaching | **Syllabi**, **Timetables** |
 | Operations | **Notices** |
 
@@ -59,7 +58,7 @@ An absent area means that its campus feature, area setting, or eligibility needs
 
 ## Ask the school to review a record
 
-1. Open **Requests** for your learner record.
+1. Select **Requests** in the sidebar.
 2. Under **Ask the school**, enter **What you need**.
 3. Select the **Kind of request**.
 4. In **More detail (optional)**, explain the record, date or period, and help you need.
