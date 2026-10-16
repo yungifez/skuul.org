@@ -2,7 +2,7 @@
 
 The `platform-admin` role manages the platform across organizations and campuses.
 Use it for platform duties and delegated access management.
-Check the working campus before changing an operational record.
+Check the working campus before you change an operational record.
 
 ## Before you start
 
@@ -11,6 +11,12 @@ The reviewed template receives all permissions created by the permission seeder.
 Global scope includes `access all schools`, `access all organizations`, and `manage platform`.
 Record ownership, state, and feature restrictions still apply to workflows.
 A role name alone does not replace assigned global permissions.
+
+The sidebar shows every entry that the campus features allow.
+The **Organization** group has **Organizations**, **Schools**, and **Calendar templates**.
+To change the working campus, use the **Working school** list at the top of the sidebar.
+You can also open **Organization → Schools**, select the **School branch**, and select **Set working school**.
+The header shows the campus that you work in.
 
 ## Create a platform administrator account
 
@@ -30,10 +36,10 @@ Organization scope is managed separately through the organization membership wor
 
 ## Prepare organizations and campus access
 
-1. Open **Organization → Organizations**.
+1. Open **Organization → Organizations** and select **Add organization**.
 2. Follow [organization creation](../administration/organizations) for the intended organization.
-3. Create its campuses with the correct organization owner.
-4. Add organization administrators and review their permitted operations.
+3. On the organization page, select **Add campus** to create its campuses.
+4. On the **Members** page, add organization administrators and review their permitted operations.
 5. Arrange campus memberships and roles for the campus staff.
 6. Ask each administrator to verify access with their own account.
 
@@ -49,7 +55,7 @@ For custom duties, follow [delegated staff instructions](./delegated-staff).
 | Campus settings and features | Review [campus setup](../administration/campuses) and [feature switches](../administration/features). |
 | Global and campus authority | Review [access layers](../administration/permissions) and each person's assigned scope. |
 | Invitations and account recovery | Use [account controls](../people/accounts) for the intended person. |
-| Domain claims | Verify DNS and configure routing using [domain instructions](../administration/organizations#add-a-custom-domain). |
+| Domain claims | Verify DNS and configure routing using [domain instructions](../administration/organizations#add-a-web-address). |
 | Records shared between campuses | Follow [explicit sharing](../people/sharing), including restricted-category authority. |
 
 A domain claim identifies a context; it does not grant a person's record access.

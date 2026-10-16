@@ -10,7 +10,8 @@ Exclude passwords, invitation tokens, and private learner information from publi
 | Sign-in is blocked | Check account status, email verification, required password change, and two-factor authentication. |
 | Campus is missing | Check active campus membership and the selected account. Organization membership alone is insufficient. |
 | Menu entry is missing | Check campus permissions and the optional feature switch. |
-| Page needs a period | Select the working cycle and teaching period. |
+| Page shows "Not open to you" | Your account lacks the permission or record access. Ask the campus administrator. |
+| Page needs a period | Select the working year and term in the working bar. |
 | Save is refused after closure | Check academic or financial period status for that workflow. |
 | Grade cannot be published | Check roster, missing entries, pending revisions, and the reviewer's authority. |
 | Family sees an old result | The newer revision may still need approval. The portal shows the latest approved revision. |
