@@ -16,14 +16,6 @@ See [the upgrade details](/current/getting-started/updating#breaking-upgrade-eff
 These guides describe V3. This page lists its known limits.
 The V2 guides remain separate because their runtime and workflows differ.
 
-## Family access after graduation
-
-The portal access service permits eligible graduated enrollment records.
-However, `PreventGraduatedStudent` also wraps dashboard portal routes.
-It redirects a graduated student-role account to the dashboard before the portal controller runs.
-Do not promise graduate self-service access until this route behavior is corrected and tested.
-Guardian access follows its own account and link checks.
-
 ## Online payment integration
 
 The current portal invoice page is read-only.

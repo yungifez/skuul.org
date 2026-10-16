@@ -47,8 +47,8 @@ Review the learner and applicable requirements before confirming graduation.
 The graduation workflow changes enrollment status and retains a graduation record.
 Plan completion alone does not replace that confirmation.
 Graduated learners cannot continue normal staff-style student operations.
-The current middleware can also redirect graduated student-role accounts away from portal routes.
-See the [known limits](../reference/limitations) before promising graduate portal access.
+A graduate keeps their own portal access. They can open the portal and download their official documents.
+Staff pages stay closed to a graduate account.
 
 ## Use promotion and graduation controls
 

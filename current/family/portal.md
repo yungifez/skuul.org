@@ -75,7 +75,7 @@ When the tool is off, the switch shows **Hidden while** and the tool name.
 | Withdrawn, Transferred, Graduated | Shown, so the family keeps report cards, transcripts, and any debt |
 | Archived | Not shown |
 
-A graduated learner's own account cannot open the portal pages yet. Their guardian can.
+A graduated learner and their guardian can both open the portal pages.
 Nobody can open the records of a learner they are not linked to.
 
 Use **Notification settings** in the sidebar to choose which notice emails you get.
