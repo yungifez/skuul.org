@@ -6,10 +6,10 @@ Use this guide for a new, disposable installation of V3. Use [deployment](./depl
 
 1. Install Git, Docker with Compose, and a PHP runtime compatible with the
    locked Composer packages. Use PHP 8.4.1 or later and Composer 2 for the first install.
-2. Clone the development branch and enter its directory:
+2. Clone the v3.0.0 release and enter its directory:
 
    ```sh
-   git clone --branch modernization/domain-slices https://github.com/yungifez/skuul.git skuul
+   git clone --branch v3.0.0 https://github.com/yungifez/skuul.git skuul
    cd skuul
    ```
 
