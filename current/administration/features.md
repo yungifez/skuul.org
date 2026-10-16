@@ -1,64 +1,82 @@
 # Optional features
 
-Open the campus feature profile with school management access.
+Open **Setup → School settings**, then select **School tools** under **Day to day**.
+The **School features** page opens with the heading **Choose the tools your school uses**.
+You need `update school` or `manage school settings` at the working campus.
 Each switch saves when you change it.
-A disabled feature removes its menu entries and blocks its routes and writes.
-Existing records remain stored.
+A tool that is off loses its menu entries, and its pages and changes are blocked.
+Existing records stay stored.
 
 ![Feature switches list the tools the school uses, grouped by area, with 11 of 12 turned on.](/images/current/features-light-desktop.webp)
 
 A feature switch controls the whole application area.
 
-| Feature | Default | Purpose |
-| --- | --- | --- |
-| Attendance | On | Daily and lesson registers. |
-| Portal | On | Family views and requests. |
-| Discipline | On | Behaviour and safeguarding cases. |
-| Wellbeing | On | Support plans and learner health information. |
-| Staff operations | On | Employment details, credentials, availability, and leave. |
-| Events | On | Calendar events and closure days. |
-| Ranking | Off | Comparisons of learner results. |
-| Imports | On | Checked student and staff CSV imports. |
-| Boarding | Off | Houses, rooms, beds, rolls, and nights away. |
-| Library | Off | Catalogue, copies, loans, and reservations. |
-| Graduation plans | On | Requirements and completion progress. |
-| Programmes | On | Clubs and other participation records. |
+The page shows a count, for example **11 of 12 tools are on**.
+
+| Group | Tool | Default | Purpose |
+| --- | --- | --- | --- |
+| Daily operations | **Attendance** | On | Daily and lesson registers, and the attendance a family reads. |
+| Daily operations | **Calendar and events** | On | The school calendar and its events. |
+| Families and learners | **Student and guardian portal** | On | Learners and guardians sign in to read their own records. |
+| Care and conduct | **Discipline and safeguarding** | On | Behaviour records, incidents, and safeguarding cases. |
+| Care and conduct | **Student support and wellbeing** | On | Health notes, counselling, and support plans. |
+| Staff and data | **Staff operations** | On | Staff leave, cover for absent teachers, and appraisals. |
+| Staff and data | **Imports and integrations** | On | Bulk uploads and links to outside systems. |
+| Reporting | **Rankings** | Off | Positions that compare learners. |
+| Beyond the classroom | **Boarding** | Off | Boarding houses, beds, and nights away. |
+| Beyond the classroom | **Library** | Off | Catalogue, loans, and due dates. |
+| Beyond the classroom | **Programmes** | On | Clubs and activities outside the timetable. |
+| Learner pathways | **Graduation planning** | On | Graduation requirements and learner progress in **Graduation plans**. |
 
 Identity, authorization, audit records, and enrollment history are core functions.
-They cannot be disabled with these switches.
-A switch does not grant permission. Users still need access to the relevant records and actions.
+You cannot turn them off with these switches.
+A switch does not give permission. Users still need access to the records and actions.
 
-Attendance can also restrict daily or lesson registers.
-Portal areas have separate stored configuration flags.
-The current feature screen does not edit these detailed flags.
-Ask the operator to check them when a feature is enabled but a page remains unavailable.
+## Choose family pages
 
-Before disabling an area, finish or review its open work.
-Staff can still process existing family requests when family submission is disabled.
-Re-enable a feature to use its retained records, subject to normal permissions and period status.
+When **Student and guardian portal** is on, the page shows **Family pages** below it.
+Each family page has its own switch.
+The family pages are Results, Attendance, Timetable, School calendar, Notices, Invoices and payments, Documents, Requests, Library, Boarding, Graduation progress, Programmes, and Syllabi.
+
+Some family pages also need their tool. The page says, for example, "Hidden while Library is off".
+
+| Family page | Tool it needs |
+| --- | --- |
+| Attendance | **Attendance** |
+| School calendar | **Calendar and events** |
+| Library | **Library** |
+| Boarding | **Boarding** |
+| Graduation progress | **Graduation planning** |
+| Programmes | **Programmes** |
+
+Staff can still process existing family requests when the Requests page is off.
 
 ## Change a feature
 
-1. Select the campus and open its feature profile.
-2. Review existing work in the feature before disabling it.
-3. Change the required switch and wait for the save result.
-4. Reload the page and check its saved state.
+1. Select the working campus.
+2. Open **Setup → School settings** and select **School tools**.
+3. Review open work in the tool before you turn it off.
+4. Select the switch. Wait for the message, for example "Rankings turned on."
+5. Reload the page and check the saved state.
+
+A family page switch shows a message such as "Results is hidden from families."
+Turn a tool on again to use its stored records. Normal permissions and period status apply.
 
 ## Diagnose a missing feature page
 
-1. Select the campus containing the records.
-2. Reload the feature profile and confirm the saved switch.
-3. Check the account's permission for the intended operation.
-4. Check the record's enrollment, teaching assignment, or ownership requirement.
-5. Ask the operator to inspect detailed flags when the whole feature is enabled.
+1. Select the campus that holds the records.
+2. Reload **School features** and check the switch.
+3. For a family page, check its switch under **Family pages** and its related tool.
+4. Check the account's permission for the action.
+5. Check the record's enrollment, teaching assignment, or ownership requirement.
 
-Example: enabling Library does not give every teacher `lend library item`.
-Enabling Portal does not create a guardian link.
-Enabling Attendance does not reopen a Closed academic period.
-Disable a feature only after reviewing its outstanding operational work.
-Its records remain stored and resume under normal state and permission rules when re-enabled.
+Example: turning on **Library** does not give every teacher `lend library item`.
+Turning on **Student and guardian portal** does not create a guardian link.
+Turning on **Attendance** does not reopen a Closed academic period.
+Attendance also has stored settings for daily and lesson registers. This page does not show them.
+Ask the operator to check them when a register is blocked but **Attendance** is on.
 
 ## Check the result
 
-- Reload the page and confirm that each saved switch retains its state.
-- Confirm enabled menu entries appear for an authorized role.
+- Reload the page and confirm that each switch keeps its state.
+- Confirm that the menu entries of each tool that is on appear for an authorized role.

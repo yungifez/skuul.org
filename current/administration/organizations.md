@@ -1,8 +1,8 @@
 # Organizations and domains
 
 Use **Organization → Organizations** to manage organizations.
-You need organization access and the permission for the operation.
-Platform administrators can manage the platform scope.
+A platform administrator creates organizations. This needs the `access all organizations` permission.
+Organization members work with the organization permissions on their membership.
 
 ## Set up an organization
 
@@ -10,70 +10,130 @@ Platform administrators can manage the platform scope.
 
 Organization ownership and campus access are separate.
 
-1. Create the organization and enter its details.
-2. Create or attach its campuses.
-3. Add organization members.
-4. Set each member's organization role and allowed operations.
-5. Open the organization dashboard to review its campuses.
+1. Select **Add organization**.
+2. Enter the organization details and select **Create the organization**.
+3. On the organization page, select **Add campus** to create each campus.
+4. Open **Members** and give organization scope to each organization administrator.
+5. Select **Permissions** to limit what each member can do.
+6. Open **Organization overview** to review the campuses.
+
+The organization page has these tabs: **Organization overview**, **Members**, **Web addresses**, **Billing groups**, **Shared residences**, **Calendar templates**, and **Organization settings**.
 
 Organization membership and campus membership are separate.
+Organization scope opens the organization screens only. It does not open campus records.
 Give operational staff access to each campus where they must work.
-An organization member's permission list can restrict organization actions.
-Removing or suspending that membership removes its organization authority.
+Removing organization scope does not change the person's campus memberships.
 
-## Add a custom domain
+## Enter organization details
 
-1. Add the hostname to the organization's domain list.
-2. Select a campus if the hostname must open a particular campus.
-3. Copy the verification token shown by the application.
-4. Add a DNS TXT record at `_skuul-verification.<hostname>` with that token.
-5. Run the domain verification action after DNS propagation.
-6. Configure the web server, routing, and HTTPS for the hostname.
+1. Enter **Name**. Name accepts 255 characters.
+2. Enter **Code (optional)**. Leave it empty to get a generated code.
+3. Enter **Address (optional)**, **Email (optional)**, and **Phone (optional)**.
+4. Select **Create the organization**.
 
-Skuul uses verified domains to resolve the organization context.
-An unverified domain does not establish that context.
-Domain verification does not create an HTTPS certificate or grant record access.
-Enter a hostname without a path. The application normalizes case, ports, and trailing dots.
+Code accepts up to 50 letters, numbers, dashes, and underscores. Each code must be unique.
+If the code has other characters, the form shows: "The code must only contain letters, numbers, dashes and underscores."
+If another organization uses the code, the form shows: "Another organization already uses this code."
+
+To change the details, open **Organization settings**, change the fields, and select **Save**.
+On this page, **Code** is required.
+
+## Add a campus
+
+1. On the organization page, select **Add campus**.
+2. Select the **Organization**.
+3. Enter **School name**, **Address**, **Country**, **State / Province**, **City**, and **Postal / ZIP code**.
+4. Optional: enter **Short name**, **Phone number**, **School email**, and **Time zone**.
+5. Select **Create school**.
+
+The application then opens the guided setup for the new campus.
+You select the organization when you create the campus. The school edit form does not change it.
+See [campus settings](./campuses) for the next steps.
+
+## Give organization scope
+
+1. Open **Members**.
+2. Enter the person's email address and select **Give scope**.
+3. Find the person under **Organization administrators**.
+
+The person must already be known to the organization. For example, the person has a membership at one of its campuses.
+Otherwise the form shows: "Nobody at this organization uses that email address."
+Giving scope also gives the person the global organization administrator role.
+
+A new member has full authority. The badge shows **Organization Administrator**.
+To limit a member:
+
+1. Select **Permissions** on the member's card.
+2. Clear **Full authority**.
+3. Clear each permission that the member must not have.
+4. Select **Save permissions**.
+
+A limited member shows the **Delegated** badge.
+Every member keeps **Read organization**, so the organization screens still open.
+You can give or remove only the permissions that you hold yourself.
+
+| Permission | What it allows |
+| --- | --- |
+| **Manage organization settings** (`manage organization`) | Change organization details, web addresses, billing groups, and calendar templates. |
+| **Manage organization members** (`manage organization members`) | Give and remove organization scope. |
+| **Manage campuses** (`manage organization campuses`) | Add a campus and edit its details. |
+| **Move students between campuses** (`move students between campuses`) | Move a student without approval from the receiving campus. |
+| **Read organization reports** (`read organization reports`) | Open the **Organization overview** totals. |
+
+To remove organization scope, select **Remove scope**, then **Confirm removal**.
+The person moves to **Past administrators**. Their campus memberships stay.
+The organization must keep at least one member who can manage members.
+The application refuses a change that removes the last one.
+The message says that the organization "would be left with nobody who can manage its members".
+
+## Add a web address
+
+1. Open **Web addresses**.
+2. Enter the hostname in **Address**.
+3. In **Opens**, select a campus, or **The organization, no campus**.
+4. Optional: select **The main address**.
+5. Select **Claim it**.
+6. Add the TXT record that the page shows under the address.
+7. After DNS propagation, select **Prove it**.
+8. Configure the web server, routing, and HTTPS for the hostname.
+
+The TXT record name is `_skuul-verification.<hostname>`. Its value is the token on the page.
+Enter a hostname without a path. The application changes it to lower case and removes ports and trailing dots.
+An invalid entry shows: "[https://bad host/x] is not a web address this application can answer on."
+If the record is missing, **Prove it** shows: "The record was not found yet. Add it at _skuul-verification.example.org and try again in a few minutes."
+
+An address that is not proved does nothing.
+Membership still controls what each person sees.
+A proved address does not create an HTTPS certificate or give access to records.
+If two organizations claim the same address, the first to prove it keeps it.
+Select **Give it up** in the address menu to remove an address.
 
 ## Set up billing groups
 
-Create a billing group within the organization. Assign campuses that should carry learner balances during campus moves.
-A group must contain only campuses from its own organization.
-Changing a group's membership does not move existing ledger entries.
-An empty group can be removed.
+Campuses in one billing group bill a family as one school.
+A learner who moves between them takes the balance along.
+A campus that is not in a group keeps what it is owed.
 
-## Enter organization and membership details
+1. Open **Billing groups**.
+2. Enter **Name of the new group** and select **Start a group**.
+3. Under **Campuses**, select the group for each campus. **Bills on its own** means no group.
 
-Enter **Name**, optional **Code**, contact details, and address, then select **Create the organization**.
-Name accepts 255 characters. Code accepts up to 50 letters, numbers, dashes, and underscores and must be unique.
-When editing, Code is required. Select **Save** after changes.
-
-On the member page, enter the known person's email and select **Give scope**.
-Open **Permissions** to review and restrict organization authority, then select **Save permissions**.
-A stored null permission list means full organization authority; an explicit list limits it.
-The person also needs the active organization membership and global organization-admin role.
-Use **Remove scope** and **Confirm removal** to revoke organization authority.
-Their existing campus memberships remain separate.
-
-## Verify an address and configure balance sharing
-
-On **Addresses**, enter **Address**, select **Opens**, and select **Claim it**.
-Create the displayed DNS TXT record, then select **Prove it** after propagation.
-Use **Give it up** to remove the domain mapping when it is no longer authorized.
-On billing groups, enter **Name of the new group** and select **Start a group**.
-Assign the intended same-organization campuses before planning a balance-carrying move.
-Changing a billing group does not migrate existing entries.
+Group names must be unique in the organization. Names accept 100 characters.
+A group contains only campuses of its own organization.
+Changing a group does not move entries that are already in the books.
+To remove an empty group, select **Delete** in its menu.
 
 | Problem | Action |
 | --- | --- |
-| Organization admin cannot operate a campus | Grant the required active campus membership and campus permissions. |
-| Domain proof fails | Check the exact TXT hostname, token, and authoritative DNS propagation. |
-| Verified domain has no HTTPS | Configure web routing and certificates separately. |
-| Balance did not carry during a move | Check whether both campuses belonged to the same billing group. |
+| Organization administrator cannot open campus records | Give an active campus membership and a campus role. |
+| **Give scope** says nobody uses that email | Give the person a campus membership in this organization first. |
+| **Prove it** fails | Check the TXT record name, its value, and DNS propagation. |
+| Proved address has no HTTPS | Configure web routing and certificates separately. |
+| Balance did not carry during a move | Check that both campuses are in the same billing group. |
 
 ## Check the result
 
-- Confirm that each campus belongs to the intended organization.
+- Confirm that each campus belongs to the correct organization.
 - Check organization membership separately from campus membership.
 
 See [campus moves](../people/moves) for approval and balance carry rules.
