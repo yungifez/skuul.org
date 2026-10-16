@@ -36,7 +36,7 @@ The copy shows only on the request page.
 | Hand the records over | `fulfil data sharing` |
 
 Any of the three opens **Record sharing**.
-The default **School administrator** role has none of the three, so it sees no **Record sharing** menu item.
+The default **School administrator** role has all three.
 
 ## Restricted categories
 
@@ -54,7 +54,8 @@ A person must be able to read a restricted category at their own campus to ask f
 
 Without it, the request page says, for example, **You cannot approve Safeguarding. You need the permission to read them at this campus.**
 At the asking campus, a person without it sees the other categories. The page says, for example, **Health is hidden. You need the permission to read it at this campus.**
-**Detailed finance** also lists the balance owed to each campus of the organization.
+**Detailed finance** holds only the balance and credit at the campus that hands the records over.
+It does not show what the learner owes at other campuses of the organization.
 Do not use a campus move instead of a request for restricted records.
 
 ## Ask for records
