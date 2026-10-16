@@ -1,8 +1,18 @@
 # Subjects, course offerings, and teachers
 
-Use **Teaching → Subjects** for the campus subject catalogue.
-Use the teaching-offering list to define who studies each subject.
-The menu label can follow the campus terminology profile.
+A subject is an entry in the campus catalogue, for example **Algebra**. Manage it in **Teaching → Subjects**.
+A course offering is a subject taught to a roster in one cycle. Manage offerings in **Teaching → Subjects being taught**.
+The menu labels follow the campus terms.
+
+Gradebooks and syllabi belong to an offering. A subject alone has no roster.
+
+| Task | Campus permission |
+| --- | --- |
+| See offerings | `read subject` |
+| Add offerings | `create subject` |
+| Change a roster or add a teacher | `update subject` |
+
+These permissions do not replace an active campus membership.
 
 ## Create an offering
 
@@ -10,77 +20,71 @@ The menu label can follow the campus terminology profile.
 
 An offering defines the teaching context and learner roster.
 
-1. Select the campus and academic cycle.
-2. Choose the subject and applicable period.
-3. Select the academic level and roster method.
-4. Select sections or individual learners where that method requires them.
-5. Review the resolved learner roster.
-6. Activate the offering when the period and roster are ready.
+1. Open **Teaching → Subjects being taught** and select **Add subject**.
+2. Select **Subject**, **Academic year**, **Class**, and **Term**. **All terms in the academic year** makes one offering for each term.
+3. Select **Who attends**, for example **One section** or **Whole class**.
+4. For **One section**, select the section.
+5. Enter an optional **Periods a week** and **Capacity**.
+6. Select **Add subject**. The offering is a draft.
+7. Select **Activate** on the offering row.
 
-A subject alone does not establish a class roster.
-An offering combines the subject, teaching context, and roster.
-Gradebooks and syllabi use this offering.
-Activation checks the period, valid roster, and duplicate active offerings.
-Named learners must attend the selected campus and level.
-The roster method must match the cycle's teaching model or an allowed exception.
+| Field | Requirement |
+| --- | --- |
+| Term | Must belong to the selected year. |
+| Periods a week | A whole number from 1 to 80. |
+| Capacity | A whole number from 1 to 5000. |
 
-## Assign teaching responsibility
+The **Who attends** options follow the [teaching model](./structure) of the cycle.
+Combined sections and named learners need a model that allows them, or a subject exception.
+Named learners must attend the selected campus and class.
 
-Open the offering's teaching assignments.
-Choose an active campus teacher and their lead or supporting responsibility.
-When assigning a section, select one included in the offering.
-An inactive campus account or an unrelated section cannot receive that assignment.
-A closed cycle prevents assignment changes.
+Activation checks the term, the roster, and duplicate active offerings.
 
-A teacher's account role and teaching assignment are separate.
-Give the teacher the required campus role, then assign the offerings they teach.
-A staff employment record alone does not assign subjects.
+### Add a subject to several classes
+
+1. Open the ellipsis on **Subjects being taught** and select **Set up across levels**.
+2. Select **Subject** and **Term**.
+3. Under **Who takes it**, select each class and its roster.
+4. Select **Add subject**.
+
+Check the rows it creates. Each class has its own roster.
+
+## Assign a teacher
+
+1. Open the actions of the offering row and select **Add teacher**.
+2. Select **Teacher** and **Role**: **Lead teacher** or **Supporting teacher**.
+3. Select **Add teacher**.
+
+The teacher shows on the offering row.
+Only an active campus teacher can be assigned. A section must be part of the offering.
+A closed cycle does not accept assignment changes.
+
+An account role and a teaching assignment are separate.
+Give the teacher the campus role first. Then assign the offerings.
+A staff record alone does not assign subjects.
 
 ## Change or retire an offering
 
-Review the roster before making changes.
-Existing class ownership cannot be changed through a normal roster update.
-Archived offerings are retained and cannot accept ordinary changes.
-Do not replace an offering to hide its previous grades or published results.
+1. Open the actions of the offering row and select **Edit roster**.
+2. Change **Who attends** and the selected sections or learners.
+3. Select **Save roster**.
+4. Select **Gradebook** and check the learners.
 
-## Complete the offering form
+Archived offerings stay in the history and do not accept normal changes.
+Do not replace an offering to hide its grades or published results.
 
-Reading offerings requires `read subject`; adding them requires `create subject`.
-Updating rosters and teaching assignments requires `update subject`.
-These permissions do not replace an active campus membership.
-
-1. Select **Subject**, **School year**, and **Class**, using the campus's terms.
-2. Select the academic period, or all periods when that option is appropriate.
-3. Select **Who attends**.
-4. Select the required sections or learners.
-5. Enter optional **Periods a week** and **Capacity**.
-6. Select **Add subject**.
-7. Open the offering directory and select **Activate** for the intended draft.
-
-Periods a week accepts integers from 1 to 80.
-Offering capacity accepts integers from 1 to 5000.
-The academic period must belong to the selected year.
-When setting up a subject across levels, check each level's separate roster configuration.
-Selecting all periods creates the intended period-specific setup; review the resulting rows.
-
-## Assign a teacher and correct a roster
-
-In the offering directory, select **Add teacher**.
-Choose **Teacher** and **Role**, then confirm **Add teacher**.
-Select **Edit roster** to change **Who attends** and its selected sections or learners.
-Select **Save roster**, then open **Gradebook** and verify its resolved learners.
+To copy offerings into the next cycle, open the ellipsis and select **Roll over subjects**.
 
 | Problem | Action |
 | --- | --- |
-| Subject catalogue exists but gradebook roster is empty | Create and activate the offering with an eligible roster. |
-| Teacher cannot edit marks | Check gradebook permission and the unended teaching assignment. |
-| Activation is refused | Review period status, roster eligibility, and duplicate active offerings. |
-| Named learner is rejected | Check active attendance in the offering's campus and level. |
+| The subject exists but the gradebook has no learners | Create and activate an offering with a roster. |
+| A teacher cannot edit marks | Check the gradebook permission and the teaching assignment. |
+| Activation is refused | Check the term status, the roster, and duplicate active offerings. |
+| A named learner is rejected | Check that the learner attends the campus and class of the offering. |
 
 ## Check the result
 
-- Review the resolved roster before activation.
-- Check the responsible teacher and included sections.
-- Confirm the gradebook uses that offering.
+- The offering row shows **Active** and the teacher.
+- The gradebook lists the expected learners.
 
 See [gradebooks](./gradebooks), [syllabi](./syllabi), and [teaching models](./structure).

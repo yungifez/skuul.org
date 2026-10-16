@@ -76,7 +76,7 @@ Use [reports](../operations/reports) to inspect authorized exports.
 | --- | --- |
 | Restricted record is unavailable | Check specific authority and assigned-handler visibility. |
 | Teacher cannot submit results | Review `publish result`; the teacher template does not include it. |
-| Accountant cannot build a report | Review `create report`; the accountant template does not include it. |
+| Accountant cannot build a report | Check `create report` and the report's data permission; the accountant template includes both for financial reports. |
 | Staff access survives role removal | Review other roles and the active campus membership. |
 | Scheduled or queued work stalls | Give the operator its request number, state, and time. |
 

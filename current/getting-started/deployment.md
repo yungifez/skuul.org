@@ -1,7 +1,7 @@
 # Deployment
 
 ::: danger Breaking change: data loss
-Moving an existing V2 installation to this development code is a breaking change with data loss in the live database.
+Moving an existing V2 installation to V3 is a breaking change with data loss in the live database.
 The migrations delete legacy academic records and remove schema columns.
 They do not automatically convert all V2 records into the new academic model.
 Selected JSON archives do not prevent this live-data removal and have no automatic restore or re-import workflow.
@@ -14,7 +14,7 @@ See [the upgrade details](/current/getting-started/updating#breaking-upgrade-eff
 :::
 
 
-This guide covers the current development code. Test the exact release and
+This guide covers V3. Test the exact release and
 its migration path before using live data. See [requirements](./requirements).
 
 Commands below run in the production application runtime. For local Sail

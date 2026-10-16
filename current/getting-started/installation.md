@@ -1,16 +1,15 @@
 # Local installation
 
-Use this guide for a new, disposable installation of the current development
-code. Use [deployment](./deployment) for a production environment.
+Use this guide for a new, disposable installation of V3. Use [deployment](./deployment) for a production environment.
 
 ## Prepare the checkout
 
 1. Install Git, Docker with Compose, and a PHP runtime compatible with the
-   locked Composer packages. Use PHP 8.5 and Composer 2 for the first install.
-2. Clone the application and enter its directory:
+   locked Composer packages. Use PHP 8.4.1 or later and Composer 2 for the first install.
+2. Clone the development branch and enter its directory:
 
    ```sh
-   git clone https://github.com/yungifez/skuul.git skuul
+   git clone --branch modernization/domain-slices https://github.com/yungifez/skuul.git skuul
    cd skuul
    ```
 
@@ -29,10 +28,10 @@ code. Use [deployment](./deployment) for a production environment.
    cp .env.example .env
    ```
 
-5. Set `DB_DATABASE=skuul` in `.env` before starting a new database volume.
+5. Keep `DB_DATABASE=skuul` from the example in `.env`.
    Keep `DB_HOST=mysql`, `REDIS_HOST=redis`, and `QUEUE_CONNECTION=redis`.
-   The example uses `testing`, but the test suite can replace data there.
-   Use `skuul` for local application data and `testing` for tests.
+   The test suite uses the separate `testing` database and can replace data there.
+   Do not use `testing` for local application data.
 
    If a database volume already exists, changing `DB_DATABASE` does not create
    a database or grant access. Create the database and grant the application

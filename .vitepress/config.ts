@@ -7,10 +7,10 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Current development', link: '/current/introduction' },
+      { text: 'V3', link: '/current/introduction' },
       { text: 'User guides', link: '/current/using/workspace' },
       { text: 'Developers', link: '/current/development' },
-      { text: 'V2 releases', link: '/v2/introduction' }
+      { text: 'V2 (deprecated)', link: '/v2/introduction' }
     ],
     sidebar: {
       '/current/': [
@@ -19,8 +19,12 @@ export default defineConfig({
           "collapsed": false,
           "items": [
             {
-              "text": "Current development",
+              "text": "Skuul V3",
               "link": "/current/introduction"
+            },
+            {
+              "text": "What's new in V3",
+              "link": "/current/whats-new"
             },
             {
               "text": "Use the workspace",

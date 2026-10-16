@@ -2,7 +2,7 @@
 
 This inventory was checked against the development workspace on 2 October 2026.
 It includes the workspace changes present during review, based on commit `ade94a22`.
-The current development guides are separate from the V2 release guides.
+The V3 guides are separate from the V2 release guides.
 
 The reviewed surface contains 221 registered non-vendor routes, 147 domain action files, and 182 Livewire files.
 The guides cover all 12 optional features, 13 report types, 2 import types, and 17 application commands.

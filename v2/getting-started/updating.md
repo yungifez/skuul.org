@@ -1,7 +1,7 @@
 # Updating V2
 
 ::: danger Breaking change: data loss
-Moving an existing V2 installation to this development code is a breaking change with data loss in the live database.
+Moving an existing V2 installation to V3 is a breaking change with data loss in the live database.
 The migrations delete legacy academic records and remove schema columns.
 They do not automatically convert all V2 records into the new academic model.
 Selected JSON archives do not prevent this live-data removal and have no automatic restore or re-import workflow.
@@ -16,7 +16,7 @@ See [the upgrade details](/current/getting-started/updating#breaking-upgrade-eff
 ::: warning V2 release guide
 Published V2 releases have an older update command. The
 [current updater guide](/current/getting-started/updating) describes the
-Laravel 13 development code, not the command in an older installation.
+Laravel 13 V3 code, not the command in an older installation.
 :::
 
 ## Prepare the upgrade
@@ -35,15 +35,13 @@ Do not use `composer update` as a routine deployment step. Do not rerun a
 fresh-install seeder against live records.
 
 Review the update command in your installed release before using it. Do not
-assume it provides the backup and failure handling of the current development
-command. Keep the site in maintenance mode if an update fails.
+assume it provides the backup and failure handling of the V3 command. Keep the site in maintenance mode if an update fails.
 
-## Moving to the current development code
+## Moving to V3
 
 Do not treat the new browser installer as a V2 upgrade tool. It expects an
 empty application database or a usable existing installation state. The new
 code changes academic records, account access, and campus structure.
 
 Use a tested, release-specific migration and recovery procedure. These guides
-do not establish a supported automatic migration from V2 to the development
-branch.
+do not establish a supported automatic migration from V2 to V3.

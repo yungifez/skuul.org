@@ -1,7 +1,7 @@
-# Current development
+# Skuul V3
 
 ::: danger Breaking change: data loss
-Moving an existing V2 installation to this development code is a breaking change with data loss in the live database.
+Moving an existing V2 installation to V3 is a breaking change with data loss in the live database.
 The migrations delete legacy academic records and remove schema columns.
 They do not automatically convert all V2 records into the new academic model.
 Selected JSON archives do not prevent this live-data removal and have no automatic restore or re-import workflow.
@@ -17,10 +17,10 @@ Skuul manages organizations and campuses, enrollment, teaching, assessment, fina
 These guides cover the implemented application and its main user, administrator, and developer workflows.
 
 ::: warning Version scope
-These guides describe the current development code, which uses Laravel 13 and Livewire 4.
-This code is not the published V2 release.
-Use the [V2 guides](/v2/introduction) for an older installation.
-Check the [release notes](https://github.com/yungifez/skuul/releases) before upgrading.
+These guides describe Skuul V3, which uses Laravel 13 and Livewire 4.
+V2 is deprecated.
+Use the [V2 guides](/v2/introduction) only to operate an existing V2 installation.
+Read [What's new in V3](./whats-new) before you install V3 or upgrade from V2.
 :::
 
 ## Choose your starting point

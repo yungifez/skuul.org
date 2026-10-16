@@ -148,7 +148,7 @@ See [demo isolation](../getting-started/demo).
 5. Use the tested [database and file recovery procedure](../operations#recover-production-data).
 6. Validate recovered records and access before reopening writes.
 
-Moving V2 to the development code is a breaking change with data loss in the live database.
+Moving V2 to V3 is a breaking change with data loss in the live database.
 A migration rollback cannot recover the deleted legacy records.
 Do not run migrations again, reinstall, reseed roles, or generate a new application key as an incident shortcut.
 Use [upgrade stop conditions](../getting-started/updating) and retain the original backup and `APP_KEY`.

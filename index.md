@@ -7,10 +7,10 @@ hero:
   tagline: Manage campuses, student records, teaching, and fees.
   actions:
     - theme: brand
-      text: Current development
+      text: V3 guides
       link: /current/introduction
     - theme: alt
-      text: V2 release guides
+      text: V2 guides (deprecated)
       link: /v2/introduction
 
 features:
@@ -28,6 +28,6 @@ features:
     details: Assign campus access and roles, and record audited changes.
 ---
 
-Use **Current development** for the Laravel 13 code. Use **V2 release guides**
-for older installations. Read the [release notes](https://github.com/yungifez/skuul/releases)
-before choosing a version or upgrading.
+Use the **V3 guides** for the current Laravel 13 release. V2 is deprecated;
+use its guides only to operate an existing V2 installation. Read
+[What's new in V3](/current/whats-new) before you install or upgrade.
