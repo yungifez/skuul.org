@@ -49,7 +49,7 @@ The role editor grants only permissions already held by its authorized manager.
 It does not remove existing holders. They keep its permissions.
 Remove the assignments themselves when revoking authority.
 A teacher who is also a guardian retains staff scope while staff roles remain assigned.
-Verify family access separately through **Everything of mine**.
+Verify family access separately through the **My school** group in the sidebar.
 
 ## Prepare a staff leaver
 

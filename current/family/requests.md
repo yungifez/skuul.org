@@ -7,9 +7,9 @@ A request is a message. It does not change a mark, invoice, attendance entry, or
 
 ## Send a request
 
-![A parent's request form sits above earlier requests, one of them answered by the school.](/images/current/family-request-light-desktop.webp)
+![A parent's request form sits above earlier requests, one of them answered by the school. The sidebar lists the open portal pages.](/images/current/family-request-light-desktop.webp)
 
-1. Open **Everything of mine**, find the learner, and select **Requests**.
+1. In the sidebar, select **Requests**. A guardian with several children first opens a page of the right child, or selects the child in **Everything of mine**.
 2. Under **Ask the school**, enter **What you need**.
 3. Select **Kind of request**: **Document request**, **Correction request**, **Appointment request**, or **Acknowledgement**.
 4. Enter **More detail (optional)**.
@@ -85,7 +85,7 @@ It stays open when the campus hides **Requests** from families, so staff can fin
 
 | Problem | Action |
 | --- | --- |
-| The family has no **Requests** button | Check the guardian link, the **Student and guardian portal** tool, and the **Requests** family page. |
+| The family has no **Requests** link | Check the guardian link, the **Student and guardian portal** tool, and the **Requests** family page. |
 | The record did not change after an answer | Make the change in its own screen, such as attendance or the gradebook. |
 | **Take back** is missing | The request is final. |
 | The answer is refused with **An answered request must carry the answer.** | Enter a **Response** for **Answered**. |

@@ -9,15 +9,15 @@ Creating your account alone does not link your children.
 1. Open the latest invitation sent to your own email address.
 2. Set your password and complete the required sign-in steps.
 3. Sign in. The dashboard shows the current **Notices**.
-4. In the sidebar, under **My school**, select **Everything of mine**.
-5. On the **My school** page, check the names, admission numbers, and campuses of your linked learners.
-6. Select an area button under the learner whose record you need.
+4. In the sidebar, check the **My school** group. It lists the open pages of one learner.
+5. With more than one child, select **Everything of mine**. On the **My school** page, check the names, admission numbers, and campuses of your linked learners.
+6. Select a page button under the child whose record you need. The sidebar then follows that child.
 
 The default sidebar shows these entries:
 
 | Group | Entries |
 | --- | --- |
-| My school | **Everything of mine**, **Notification settings**, **School calendar** |
+| My school, or the child's name when you have several children | The open pages of one child, **Everything of mine** (only with several children), **Notification settings** |
 | People | **Students** |
 | Operations | **Notices** |
 
@@ -25,7 +25,7 @@ The default sidebar shows these entries:
 Use your own account and mailbox. Do not share a learner's password.
 Ask the school to [review guardian links](../people/guardians) when a learner is absent or incorrectly linked.
 Different campuses can show different portal areas.
-Recheck the learner and campus when you move between siblings.
+Recheck the learner and campus when you move between siblings. The group header shows the name of the child.
 
 ## Follow a learner's academic records
 
@@ -64,7 +64,7 @@ Confidential health, safeguarding, and support records are not family portal are
 
 ## Submit and follow a request
 
-1. Open **Requests** for the intended learner.
+1. Open **Requests** in the sidebar for the intended learner.
 2. Under **Ask the school**, enter **What you need**.
 3. Select the **Kind of request**: Document request, Correction request, Appointment request, or Acknowledgement.
 4. Enter **More detail (optional)** when the school needs more information.

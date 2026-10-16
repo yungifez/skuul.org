@@ -72,7 +72,7 @@ A custom title does not grant the permissions associated with that job.
 ## People with more than one role
 
 A teacher who is also a guardian keeps their permitted staff access.
-Use **My school → Everything of mine** for the family task and the staff pages for teaching work.
+Use the **My school** group in the sidebar for the family task and the staff pages for teaching work.
 Confirm the learner and campus in both contexts.
 An account with a staff role is not treated as a portal-only account.
 Review all assigned roles when restricting access; removing one role might leave another permission grant.
