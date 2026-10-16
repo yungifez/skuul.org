@@ -9,8 +9,8 @@ An employment record, account access, and teaching assignments are separate.
 1. Open **Staff → Staff directory**.
 2. Select **Add an employment record**.
 3. Select the **Person**. The person must have an account in this school first.
-4. Enter the optional **Job title**, **Department**, and **Staff number**.
-5. Select the **Employment** type and the optional **Joined on** date.
+4. Enter the optional **Job title** and **Department**.
+5. Select the **Employment** type. Enter the optional **Staff number** and **Joined on** date.
 6. Select **Save the record**.
 
 The app opens the new record and shows **The employment record was saved.**
@@ -26,6 +26,7 @@ The record holds qualifications, working hours, and leave. It has no appraisal w
 The directory shows the number of people **Working now** and **Away today**.
 Filter it by **State**, or select **Only the people away today**.
 Select **Open profile** to open a record.
+The **Person** list shows every person with an account in this school, including people who already have a record. Selecting one of them gives the error **This person already has an employment record here.**
 
 ## Process leave
 
@@ -38,6 +39,7 @@ Approved leave affects teaching availability.
 3. Enter the **From** and **To** dates, and an optional **Why**.
 4. Select **Ask for these days**.
 
+The **Person** list holds only people with an employment record here.
 The app shows **The leave was asked for.**
 The request starts in the **Requested** state.
 The app holds the days at once, so nobody can ask for the same days twice.
@@ -61,7 +63,7 @@ Withdraw that cover first.
 3. Enter the **Left on** date. An empty date means today.
 4. Select **Save**.
 
-The app withdraws leave held after the leaving date.
+The app cancels leave held after the leaving date. The request then shows **Cancelled**.
 The leaver keeps campus access until the end of the last day.
 A daily scheduled process then ends the campus membership.
 It does not end the person's access at other schools.

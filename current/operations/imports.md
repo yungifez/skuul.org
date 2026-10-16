@@ -75,7 +75,7 @@ Employment values are `full_time`, `part_time`, `contract`, `volunteer`, or `int
 `staff_number` accepts 30 characters.
 A staff import creates or updates the staff profile and its account.
 It does not assign subjects or teaching work.
-A learner cannot be imported as staff. The row shows **This person is still a learner. A learner cannot be made staff.**
+A learner cannot be imported as staff. The check passes the row. The write step then shows **This person is still a learner. A learner cannot be made staff.**
 
 ## Use stable source identifiers
 
@@ -102,7 +102,7 @@ Do not assume that no rows were written.
 | **Choose what the file holds.** | Select **Students** or **Staff** under **What the file holds**. |
 | **The file is missing these columns: birthday, level, section.** | Add the named columns to the first line. |
 | **The email must be a valid email address.** | Correct the address. Make sure the mail domain can receive mail. |
-| **The birthday field must match the format Y-m-d.** | Write the date as `YYYY-MM-DD`, for example `2012-04-01`. |
+| **The birthday does not match the format Y-m-d.** | Write the date as `YYYY-MM-DD`, for example `2012-04-01`. |
 | **The birthday must be a date before today.** | Correct the birthday. |
 | **There is no level called Grade 99.** | Use the exact level name on the working campus. |
 | **The level Grade 9 has no section called 9Z in this cycle.** | Use the exact section name. Check the **Working academic year**. |

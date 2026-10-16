@@ -10,7 +10,7 @@ There is no separate invite form. The invitation goes out when you create the pe
 1. Create the person from **Teachers**, **Parents**, **Students**, or **Admins**, or import them.
 2. Enter a valid email address. The application sends the invitation to it.
 3. Ask the person to open the link and set a password.
-4. Check **Account invitations** to see that the invitation was accepted.
+4. Open **People → Account invitations** to see that the invitation was accepted.
 
 ![The invitation list shows one pending invitation with its expiry and its resend and revoke actions.](/images/current/account-invitations-light-desktop.webp)
 
@@ -59,7 +59,7 @@ Use `manage account access` in the person's campus for account access controls.
 The policy blocks managing your own account or a person with broader authority.
 Organization and platform invitation visibility have separate scope checks.
 
-1. Open **Account invitations**.
+1. Open **People → Account invitations**.
 2. Select **Pending** and search by name or email.
 3. Check the recipient, inviting person, campus memberships, and expiry.
 4. Select **Resend invitation** for an eligible pending invitation.
