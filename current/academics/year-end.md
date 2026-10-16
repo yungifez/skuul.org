@@ -9,127 +9,148 @@ Choose the campus, ending cycle, and period in the [workspace](../using/workspac
 Assign an owner for marks, result review, official documents, calendar closure, and learner placement.
 Review [calendar permissions](./calendars) and [result permissions](./results).
 Prepare an authorized reviewer who did not submit the result revision.
-Plan the handover date with staff before restricting the ending period.
+Plan the handover date with staff before you restrict the ending period.
 
 | Work | Responsible access |
 | --- | --- |
-| Finish marks and submit results | Gradebook access plus `publish result` to submit; teaching assignments also apply. |
-| Approve result revisions | Authorized separate reviewer with `approve result`. |
-| Issue report cards or transcripts | Authorized publisher using the official-document workflow. |
+| Finish marks and submit results | Gradebook access plus `publish result` to submit. Teaching assignments also apply. |
+| Approve result revisions | A separate reviewer with `approve result`. |
+| Publish report cards or issue transcripts | `create report` and access to the learner's academic records. |
 | Close or reopen teaching periods | `close academic period` or `reopen academic period`. |
-| Build the next cycle and structure | Calendar, section, and course-offering management permissions. |
-| Place learners | Enrollment authority; promotion authority for the same-cycle promotion form. |
+| Build the next cycle and its structure | Calendar, section, and course-offering management permissions. |
+| Place learners | Enrollment authority. Promotion authority for the promotion form. |
 
 ## Finish and approve academic work
 
 1. Review every offering's roster and expected assessment items.
-2. Correct missing entries and review Incomplete, Missing, and Excluded states deliberately.
-3. Check the displayed weighted result for sample learners.
-4. Save marks and resolve each row's reported error.
-5. Submit the intended result revision through **Send for approval**.
-6. Ask the separate reviewer to check and approve the revision.
-7. Review rejected revisions and submit corrections where needed.
-8. Confirm the approved revision available to the family account.
+2. Correct missing entries. Review Incomplete, Missing, and Excluded states deliberately.
+3. Check the weighted result for some learners.
+4. Save marks and resolve each row's error.
+5. In the learner's ⋯ menu on the mark sheet, select **Send for approval**.
+6. Ask the separate reviewer to select **Approve**, or **Send back** with a reason.
+7. For a result that was sent back, correct it and select **Send a new revision**.
+8. Confirm that the family account shows the approved result.
 9. List the official documents to issue after the period reaches an eligible state.
 
+The person who sent a result cannot approve it.
 A zero mark is a recorded score.
-An absent entry and an Incomplete state represent unfinished work.
+An absent entry and an Incomplete state show unfinished work.
 Use [gradebook instructions](./gradebooks) to interpret all entry states.
-Approved results and published documents retain snapshots.
-Changing later marks does not silently update an already published document.
+Approved results and published documents keep snapshots.
+Later mark changes do not change a document that is already published.
 
 ## Review what closure actually checks
 
-The closure review blocks unentered roster grades and entries still marked Incomplete.
-It warns about draft timetables.
-A cycle review also warns that it will close its open child periods.
-These findings do not verify every result approval or official document.
-They do not verify attendance completeness or perform financial reconciliation.
+The close action blocks a term with roster grades that are not entered or are still Incomplete.
+The message is **This period is not ready to close. Grade entries are still incomplete.**
+The app also records two warnings with the closure, but the close form does not show them:
 
-Complete those separate reviews even when the calendar reports no blocking work.
+- Timetables of the term are still in draft.
+- Closing a cycle also closes the periods that are still open in it.
+
+The close action does not check result approval or official documents.
+It does not check attendance or finance.
+
+Complete those separate reviews even when the close action reports no blocking work.
 An unpaid invoice does not stop academic closure.
 Closing an academic period does not close its financial period.
-The scheduler opens due Scheduled periods; it does not close them automatically.
+The scheduler opens Scheduled periods when they are due. It does not close periods.
 
 ## Close the intended period
 
-1. Open the ending period under **Setup → Academic cycles**.
-2. Select **Start closing** when ready to restrict work to corrections.
-3. Finish the identified corrections.
-4. Select **Close** and read every finding.
-5. Resolve blocking work before confirming normal closure.
-6. Enter a closure note where needed and confirm **Close**.
-7. Reload the period and verify its Closed state.
-8. Confirm that ordinary academic edits are now refused.
+1. Open **Setup → Academic cycles**. The page heading is **Academic years**.
+2. Open the row actions of the cycle and select **View academic year**.
+3. To close a term, open **Actions for** the term (⋯) and select **Start closing**.
+   To close the whole cycle, select **Start closing** at the top of the page.
+4. The status changes to **Closing**. Finish the corrections.
+5. Select **Close**. Enter a **Note (optional)**, then select **Close** again.
+6. If the app shows **This period is not ready to close.**, resolve the named work.
+7. Select **Close** again after the corrections.
+8. Reload the page and check that the status is **Closed**.
+9. Check that normal academic edits are now refused.
 
 Closing the whole cycle also closes its child periods.
-**Close with this work still open** overrides the reviewed outstanding work.
-Use that option only with an authorized, recorded decision about the named findings.
-Do not use it to complete the checklist without reviewing the affected records.
+If work is still open, the close form shows the check box **Close with this work still open**.
+Select it only with an authorized, recorded decision about the named findings.
+Do not use it to skip the review of the affected records.
 
 ## Issue official documents
 
 Report-card publication requires a period in Closing, Closed, or Archived state.
 An Open period is not eligible, even when its subject results are approved.
+For an Open period, the app shows **Report cards can be published only while an academic period is closing or finished.**
 The publisher needs `create report` and access to the learner's academic records.
 
-1. Confirm the intended period's eligible state.
-2. Open the report-card directory and select the learner and period.
-3. Select **Publish**, then inspect the resulting card and source result revisions.
-4. Issue an eligible transcript separately when required.
-5. Check the document available through the intended family account.
+The **Report cards** and **Transcripts** pages are not in the menu.
+Open them at `/dashboard/report-cards` and `/dashboard/transcripts`.
 
-Transcripts require approved subject results and have their own revision history.
-Use [official-document instructions](./results) when reissuing a card or transcript.
-Do not treat a report export as publication of an official document.
+1. Check that the period is in an eligible state.
+2. Open **Report cards**. Under **Publish a report card**, select the **Learner** and the term.
+3. Select **Publish**. Inspect the card and its source result revisions.
+4. If necessary, open **Transcripts**. Under **Issue a transcript**, select the **Learner** and select **Issue transcript**.
+5. Check the document in the family account.
+
+For a reissue, enter **Reason for a revision**.
+Transcripts require published subject results and have their own revision history.
+Use [official-document instructions](./results) when you reissue a card or transcript.
+A report export is not an official document.
 
 ## Prepare the next cycle
 
-1. Create or review the next draft calendar in the same campus.
-2. Check every period's dates and reporting structure.
-3. Preview section copying from the ending cycle to the target cycle.
-4. Review sections to copy, skip, and leave behind.
-5. Apply the copy, then inspect the target draft sections.
-6. Review capacity, rooms, and teacher assignments before activation.
-7. Preview course-offering copying after matching periods and sections exist.
-8. Resolve the preview's problems and review skipped offerings.
-9. Apply the copy and inspect the target offerings.
-10. Assign teachers and review the target learner rosters separately.
-11. Activate eligible structure and publish the reviewed calendar through their normal controls.
+1. Create or review the next draft cycle on the same campus.
+2. Check the dates and reporting structure of every period.
+3. Open **Setup → Sections** and select **Roll sections into another year**.
+4. Select **Copy from** (the ending cycle) and **Create in** (the next cycle).
+5. Review **Will be created as drafts**, **Already in**, and **Left behind**.
+6. Select **Create N draft sections**. Then inspect the draft sections in the next cycle.
+7. Review capacity, rooms, and teacher assignments before activation.
+8. Open **Subjects being taught**. In its ⋯ menu, select **Roll over subjects**.
+9. Select **Copy from** and **Create in**. Review **Need attention first** and **Already in**.
+10. Select **Copy N subjects**. Then inspect the target offerings.
+11. Assign teachers and review the target learner rosters separately.
+12. Activate the structure and publish the calendar through their normal controls.
 
-Section copying creates drafts and skips matching names within the target level and cycle.
-It leaves archived or ineligible source sections behind.
-Offering copying needs corresponding target periods and sections.
-Copying structure does not move learners, copy marks, or carry teacher assignments forward.
-Select the target cycle and use [Change placement](../people/students#change-a-placement) for eligible continuing learners.
-The existing promotion form selects source and destination sections from the working cycle only.
+Section copying creates drafts. It skips a section whose name already exists for that level in the target cycle.
+It leaves archived sections and sections of archived levels behind.
+A section copy cannot go into a closed cycle.
+Subject copying needs the matching sections in the target cycle.
+Otherwise the row shows **Create the matching sections in the new year first.**
+Copying does not move learners, copy marks, or carry teachers forward.
+
+To place continuing learners, set the **Working academic year** to the next cycle.
+Then use [Change placement](../people/students#change-a-placement) on each learner.
+The promotion form selects source and destination sections from the working cycle only.
 It has no destination-cycle selector.
-Do not use it as an automatic next-cycle migration or create duplicate learner identities.
+Do not use it as an automatic next-cycle migration. Do not create duplicate learner identities.
 
 ## Correct work after closure
 
-1. Confirm the owning campus, cycle, period, and existing record.
-2. Obtain authorized agreement about the correction.
-3. Reopen a Closed parent cycle or period first if needed.
-4. Select **Reopen**, enter **Why it is reopening**, and confirm.
-5. Complete the appropriate grade revision or record correction.
+1. Confirm the campus, cycle, period, and record.
+2. Get an authorized agreement about the correction.
+3. If the parent cycle is Closed, reopen it first.
+4. On the period, select **Reopen**, enter **Why it is reopening**, and select **Reopen**.
+5. Complete the grade revision or record correction.
 6. Review approval and document publication separately.
-7. Close the period again after the corrected work is reviewed.
+7. Close the period again after you review the corrected work.
 
+**Reopen** shows on a Closing or Closed period.
+Without a reason, the app shows **Say why it is reopening.**
 An Archived period cannot reopen.
-Keep the correction reason and prior published records in their intended history.
+Keep the correction reason and the earlier published records in their history.
 Do not delete the learner or recreate the period to bypass closure.
 
 | Problem | Action |
 | --- | --- |
-| Closure is ready but family results are absent | Review result approval and family access separately. |
-| Target offerings cannot be copied | Create matching target periods and sections, then review the preview again. |
-| Target sections have no learners | Perform deliberate placement changes; copying does not enroll learners. |
-| Promotion cannot select next year's section | Use the eligible learner placement workflow in the target cycle. |
-| Historical report differs from corrected marks | Check its published snapshot and document revision workflow. |
+| **This period is not ready to close. Grade entries are still incomplete.** | Enter the missing grades or resolve Incomplete entries. |
+| Closure is complete but family results are absent | Review result approval and family access separately. |
+| **Create the matching sections in the new year first.** | Copy or create the target sections, then review the subject copy again. |
+| Target sections have no learners | Change placements deliberately. Copying does not enroll learners. |
+| Promotion cannot select next year's section | Set the next cycle as the working year and use **Change placement**. |
+| **Report cards can be published only while an academic period is closing or finished.** | Start closing the period first. |
+| A historical report differs from corrected marks | Check its published snapshot and the document revision workflow. |
 
 ## Check the result
 
-Retain the ending period's status, approved result revision identifiers, published document identifiers, and outstanding decisions.
-Check sample target learner placements, active sections, teacher assignments, and offering rosters.
-Confirm that finance staff reviewed [their separate closure](../finance/reconciliation).
+Keep the ending period's status, approved result revisions, published documents, and open decisions.
+Check some target learner placements, active sections, teacher assignments, and offering rosters.
+Confirm that finance staff completed [their separate closure](../finance/reconciliation).
