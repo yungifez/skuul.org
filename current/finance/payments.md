@@ -22,7 +22,7 @@ Invoice amounts are whole numbers. See [invoice amount rules](./invoices).
 Record money received and review any credit left unallocated.
 
 1. Open the invoice and select **Take payment**.
-2. Check the learner under **From**, and what is **Owed**.
+2. Check the learner under **From**, and what is **Paid** and **Owed**.
 3. Enter **Amount**.
 4. Check **Received on**. It shows today. A future date is refused.
 5. Under **Paid by**, select how the money came.
@@ -56,8 +56,8 @@ The message names the date of the earlier payment. Check it before you try again
 **Split across fees** shows when the invoice owes more than one fee.
 Without a split, the payment clears the oldest fees first.
 
-1. Select **Split across fees**.
-2. Enter the amount for each fee. A blank fee gets nothing.
+1. Tick **Split across fees**.
+2. Enter the amount against each fee. A blank fee gets nothing.
 3. Select **Record payment**.
 
 The split cannot be more than the payment, or more than a fee owes.

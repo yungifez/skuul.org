@@ -43,7 +43,8 @@ A result that waits for approval is not shown. The family sees the last approved
 A rejected result is never shown.
 Attendance shows totals only. It counts the days the school took a register.
 The attendance rate is the days present divided by the days recorded. Late days count as present. Excused days do not.
-**Invoices and payments** is read-only. The portal has no online payment. Pay through the school's own process.
+**Invoices and payments** is read-only. It lists invoices with their total and balance. It does not list payments or receipts.
+The portal has no online payment. Pay through the school's own process.
 
 ## Choose the pages a campus shows
 

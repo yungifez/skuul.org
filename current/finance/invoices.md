@@ -8,6 +8,8 @@ An open financial period must cover the invoice's issue date.
 
 The Finance page lists the campus's invoices.
 Filter by **Financial period** and status, or search the rows.
+The list opens on the current school year with the status **Due**. It hides paid invoices.
+Select **All** or **Paid** in the status filter to see them.
 
 ## Access and setup
 
@@ -77,6 +79,7 @@ If you select **Create invoice** twice, the app creates the invoices once.
 Select an invoice number to open it.
 The status is **Not paid**, **Part paid**, or **Paid**.
 The ellipsis beside **Take payment** has **Print invoice**, **Edit**, and **Student account**.
+When the invoice is **Paid**, **Print receipt** replaces **Take payment**. The ellipsis then has **Edit** and **Student account**.
 Use **Take payment** for money received. See [payments](./payments).
 
 ## Correct an invoice
