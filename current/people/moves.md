@@ -72,6 +72,9 @@ The learner becomes a member of the receiving campus.
 The earlier campus membership stays, so the earlier campus keeps access to its own records.
 The earlier campus no longer lists the learner as a current learner.
 Its staff can still open the profile. The **Enrollment** section then says **Not enrolled in this school**.
+The profile and the printed record keep the name, gender, date of birth, and nationality.
+They hide the email, phone, address, and guardian contacts, because the receiving campus holds them now.
+The earlier campus cannot set the learner's password or send an account invitation.
 The earlier campus keeps its own unpaid bills on that profile.
 
 At the earlier campus, the move also ends:
