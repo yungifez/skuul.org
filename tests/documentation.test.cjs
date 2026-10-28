@@ -18,6 +18,31 @@ const guideExists = guide => {
   assert(fs.existsSync(path.join(dist, guide + '.html')), `Guide was not built: ${guide}`);
 };
 
+test('the documentation homepage provides branding and direct links to useful guides', () => {
+  const home = read('.vitepress/dist/index.html');
+  assert.match(home, /rel="icon"[^>]*href="\/images\/skuul-logo\.png"/);
+  assert.match(home, /class="VPImage logo"[^>]*src="\/images\/skuul-logo\.png"/);
+  assert(home.includes('Read the documentation'));
+  assert(home.includes('Find your role'));
+  assert(home.includes('Try the demo'));
+  const cards = [...home.matchAll(/<a\b[^>]*class="[^"]*\bVPFeature\b[^"]*"[^>]*>/g)];
+  assert.equal(cards.length, 6, 'Every task card must open a guide');
+  for (const card of cards) {
+    assert.match(card[0], /href="\/current\//);
+  }
+  assert(fs.existsSync(path.join(dist, 'images/skuul-logo.png')));
+});
+
+test('the built theme uses the application palette in light and dark mode', () => {
+  const css = files(path.join(dist, 'assets')).filter(file => file.endsWith('.css'))
+    .map(file => fs.readFileSync(file, 'utf8')).join('\n');
+  for (const color of ['105 20% 93%', '145 18% 13%', '28 38% 74%', '145 20% 6%', '45 28% 92%', '28 50% 64%']) {
+    assert(css.includes(color), `The built theme omits application color ${color}`);
+  }
+  assert(css.includes('--vp-button-brand-text:'), 'Brand buttons need their own readable text color');
+  assert(css.includes('--vp-c-brand-1:'), 'Use the installed VitePress brand tokens');
+});
+
 test('every current guide is inventoried, built, and present in navigation', () => {
   const markdown = files(path.join(root, 'current')).filter(file => file.endsWith('.md'))
     .map(file => path.relative(root, file).replaceAll(path.sep, '/').slice(0, -3));

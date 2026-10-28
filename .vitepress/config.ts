@@ -4,13 +4,20 @@ export default defineConfig({
   title: 'Skuul',
   base: '/',
   description: 'School management documentation',
+  head: [['link', { rel: 'icon', type: 'image/png', href: '/images/skuul-logo.png' }]],
   themeConfig: {
+    logo: { src: '/images/skuul-logo.png', alt: 'Skuul' },
+    siteTitle: 'Skuul docs',
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'V3', link: '/current/introduction' },
-      { text: 'User guides', link: '/current/using/workspace' },
+      { text: 'Documentation', link: '/current/introduction' },
+      { text: 'User guides', link: '/current/using/roles' },
+      { text: 'Install & set up', link: '/current/getting-started/installation' },
       { text: 'Developers', link: '/current/development' },
-      { text: 'V2 (deprecated)', link: '/v2/introduction' }
+      { text: 'Versions', items: [
+        { text: 'V3 documentation', link: '/current/introduction' },
+        { text: 'V2 (deprecated)', link: '/v2/introduction' }
+      ] },
+      { text: 'Try the demo', link: 'https://demo.skuul.org/' }
     ],
     sidebar: {
       '/current/': [
